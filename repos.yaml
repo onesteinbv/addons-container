@@ -150,6 +150,12 @@
     merges:
         - oca 15.0
 
+./contract:
+    remotes:
+        oca: https://github.com/OCA/contract.git
+    merges:
+        - oca 15.0
+
 ./project:
     remotes:
         oca: https://github.com/OCA/project.git
