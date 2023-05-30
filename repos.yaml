@@ -15,6 +15,13 @@
     merges:
         - onestein 15.0
 
+
+./addons-customer-nextcloud
+    remotes:
+        onestein: git@github.com:onesteinbv/addons-customer-nextcloud.git
+    merges:
+        - onestein 15.0
+
 # third-party
 ./addons-third-party:
     remotes:
