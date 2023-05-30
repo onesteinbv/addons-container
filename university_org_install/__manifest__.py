@@ -147,10 +147,6 @@
         'web_responsive',
         'website_odoo_debranding',
 
-        # Custom
-        #'community_org_base',
-        'university_org_base',
-
         # Onestein
         'base_municipality',
         'mass_mailing_membership_committee',

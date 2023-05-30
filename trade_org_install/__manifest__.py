@@ -147,9 +147,6 @@
         'web_responsive',
         'website_odoo_debranding',
 
-        # Custom
-        'community_org_base',
-
         # Onestein
         'base_municipality',
         'mass_mailing_membership_committee',
@@ -196,9 +193,6 @@
         'website_snippet_dynamic_link',
         'website_snippet_openstreetmap',
         'website_two_steps_share_technical',
-
-        # 3rd-Party
-        
     ],
     'data': [],
 }

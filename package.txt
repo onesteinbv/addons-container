@@ -3,17 +3,13 @@ account_financial_consolidation_report
 accountancy_install
 accountancy_mollie
 accountancy_roles
-community_org_base
 community_org_install
 consolidation_account
 gandhi_serif_font
 l10n_nl_rgs
 membership_accessibility
-services_org_base
 services_org_install
-trade_org_base
 trade_org_install
-university_org_base
 university_org_install
 website_device_visibility
 addons-generic/base_municipality

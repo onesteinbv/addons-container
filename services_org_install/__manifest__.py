@@ -211,9 +211,6 @@
         'web_timeline',
         'website_odoo_debranding',
 
-        # Custom
-        #community_org_base',
-
         # Onestein
         #base_municipality'
         #mass_mailing_membership_committee',
@@ -268,9 +265,6 @@
         'mollie_subscription_ept',
         'payment_mollie_official',
         'l10n_nl_rgs',
-
-        # custom
-        'services_org_base',
 
     ],
     'data': [],
