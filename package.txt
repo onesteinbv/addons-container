@@ -83,7 +83,7 @@ oca/product_category_tax
 oca/account_move_tier_validation
 oca/account_move_tier_validation_forward
 oca/account_reconciliation_widget
-vertical-association/membership_extension
+oca/membership_extension
 oca/account_banking_pain_base
 oca/account_banking_sepa_credit_transfer
 oca/account_banking_sepa_direct_debit
