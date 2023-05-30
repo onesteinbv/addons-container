@@ -164,7 +164,7 @@
 
 ./vertical-association:
     remotes:
-        oca: https://github.com/OCA/partner-contact.git
+        oca: https://github.com/OCA/vertical-association.git
     merges:
         - oca 15.0
 
