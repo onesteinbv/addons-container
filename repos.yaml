@@ -156,6 +156,12 @@
     merges:
         - oca 15.0
 
+./social:
+    remotes:
+        oca: https://github.com/OCA/social.git
+    merges:
+        - oca 15.0
+
 ./project:
     remotes:
         oca: https://github.com/OCA/project.git
