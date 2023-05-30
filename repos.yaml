@@ -162,6 +162,12 @@
     merges:
         - oca 15.0
 
+./timesheet:
+    remotes:
+        oca: https://github.com/OCA/timesheet.git
+    merges:
+        - oca 15.0
+
 ./project:
     remotes:
         oca: https://github.com/OCA/project.git
