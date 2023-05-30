@@ -1,0 +1,53 @@
+#oe_snippets > .o_we_customize_panel {
+    we-button.o_we_desktop {
+        > div {
+            // FIXME maybe there is some refactoring to do so that all SVG icons
+            // can be properly aligned with extra CSS rules...
+            display: flex;
+            align-items: center;
+
+            svg {
+                width: 15px;
+                fill: $o-we-color-danger;
+                margin-bottom: 0;
+
+                &:hover {
+                    fill: darken($o-we-color-danger, 7.5%);
+                }
+            }
+        }
+        &.active > div > svg {
+            fill: $o-we-sidebar-content-field-color;
+
+            &:hover {
+                fill: $o-we-sidebar-content-field-pressed-color;
+            }
+        }
+    }
+}
+
+.o_snippet_override_invisible {
+    display: block !important;
+    opacity: 70%;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        // Content is 0px wide => use available width.
+        width: -webkit-fill-available;
+        width: -moz-available;
+        right: 20px;
+        z-index: 100;
+        background-color: $o-we-accent;
+        font-size: 0px;
+        content: "."; // Content is mandatory.
+    }
+    &.d-md-none::before, &.d-lg-none::before {
+        height: 50px;
+        -webkit-mask: url("/website_device_visibility/static/src/img/desktop_invisible.svg") no-repeat 100% 100%;
+    }
+    &:not(.d-md-none):not(.d-lg-none)::before {
+        height: 30px;
+        -webkit-mask: url("/website/static/src/img/snippets_options/mobile_invisible.svg") no-repeat 100% 100%;
+    }
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="device_visibility" inherit_id="website.snippet_options">
+    <xpath expr="//div[@data-js='MobileVisibility']" position="replace">
+        <div data-js="DeviceVisibility" data-selector="section, section .row > div"
+                data-exclude=".s_col_no_resize.row > div, .s_masonry_block .s_col_no_resize">
+            <we-button class="o_we_link o_we_desktop" data-toggle-device-visibility="no_desktop" title="Show/Hide on Desktop"
+                data-no-preview="true"
+                data-active-img="/website_device_visibility/static/src/img/desktop_invisible.svg"
+                data-img="/website_device_visibility/static/src/img/desktop_visible.svg"
+            />
+            <we-button class="o_we_link o_we_mobile" data-toggle-device-visibility="no_mobile" title="Show/Hide on Mobile"
+                data-no-preview="true"
+                data-active-img="/website/static/src/img/snippets_options/mobile_invisible.svg"
+                data-img="/website/static/src/img/snippets_options/mobile_visible.svg"
+            />
+        </div>
+    </xpath>
+</template>
+</odoo>
