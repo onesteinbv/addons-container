@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+  <template
+        id="assets_backend"
+        name="account assets"
+        inherit_id="account.assets_backend"
+    >
+    <xpath expr="." position="inside">
+      <script
+                type="text/javascript"
+                src="/consolidation_account/static/src/js/reconciliation.js"
+            />
+    </xpath>
+  </template>
+
+</odoo>

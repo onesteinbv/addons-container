@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<odoo>
+
+    <menuitem id="consolidation_account_main_menu" name="Consolidation" parent="account.menu_finance_configuration" groups="account.group_account_manager" sequence="20" />
+    <menuitem id="consolidation_account_menu" action="action_view_consolidation_account" parent="consolidation_account_main_menu" groups="account.group_account_manager" sequence="10" />
+    <menuitem id="consolidation_chart_menu" action="action_view_consolidation_chart" parent="consolidation_account_main_menu" groups="account.group_account_manager" sequence="20" />
+    <menuitem id="consolidation_group_menu" action="action_consolidation_group_tree" parent="consolidation_account_main_menu" groups="account.group_account_manager" sequence="30" />
+
+</odoo>

@@ -1,0 +1,239 @@
+./odoo:
+    defaults:
+        depth: 20
+    remotes:
+        odoo: https://github.com/odoo/odoo.git
+    merges:
+        -
+            remote: odoo
+            ref: "cedd0603a24aa0c0e6716c2e0f49e89c870eae04"
+            depth: 1000
+# onestein
+./addons-generic:
+    remotes:
+        onestein: git@github.com:onesteinbv/addons-generic.git
+    merges:
+        - onestein 16.0
+
+# third-party
+./addons-third-party:
+    remotes:
+        onestein: git@github.com:onesteinbv/addons-third-party.git
+    merges:
+        - onestein 16.0
+
+# oca
+./account-financial-reporting:
+    remotes:
+        oca: https://github.com/OCA/account-financial-reporting.git
+    merges:
+        - oca 16.0
+
+./account-financial-tools:
+    remotes:
+        oca: https://github.com/OCA/account-financial-tools.git
+    merges:
+        - oca 16.0
+        - oca refs/pull/1509/head
+        - oca refs/pull/1616/head
+        - oca refs/pull/1617/head
+        - oca refs/pull/1618/head
+
+./account-reconcile:
+    remotes:
+        oca: https://github.com/OCA/account-reconcile.git
+    merges:
+        - oca 16.0
+        - oca refs/pull/541/head
+
+./account-invoicing:
+    remotes:
+        oca: https://github.com/OCA/account-invoicing.git
+    merges:
+        - oca 16.0
+        - oca refs/pull/1373/head
+
+./addons-pre-oca:
+    remotes:
+        onestein: git@github.com:onesteinbv/addons-pre-oca.git
+    merges:
+        - onestein 16.0
+
+./bank-payment:
+    remotes:
+        oca: https://github.com/OCA/bank-payment.git
+        onestein: https://github.com/onesteinbv/bank-payment.git
+    merges:
+        - oca 16.0
+        - oca refs/pull/974/head
+        - onestein 16.0-mig-account_banking_pain_base-wpichler
+        - oca refs/pull/990/head
+#        - oca refs/pull/1029/head
+        - onestein 16.0-migration-account_banking_sepa_direct_debit-Studio73  # in place of oca refs/pull/1029/head
+
+./bank-statement-import:
+    remotes:
+        oca: https://github.com/OCA/bank-statement-import.git
+        onestein: https://github.com/onesteinbv/bank-statement-import.git
+    merges:
+        - oca 16.0
+        - oca refs/pull/556/head
+        - oca refs/pull/576/head
+        - oca refs/pull/548/head
+        - oca refs/pull/554/head
+#        - oca refs/pull/562/head
+        - onestein 16.0-mig-account_bank_statement_import_oca_camt54-sonhd91  # in place of oca refs/pull/562/head
+
+./community-data-files:
+    remotes:
+        oca: https://github.com/OCA/community-data-files.git
+    merges:
+        - oca 16.0
+
+./contract:
+    remotes:
+        oca: https://github.com/OCA/contract.git
+    merges:
+        - oca 16.0
+
+./credit-control:
+    remotes:
+        oca: https://github.com/OCA/credit-control.git
+    merges:
+        - oca 16.0
+        - oca refs/pull/268/head
+
+./currency:
+    remotes:
+        oca: https://github.com/OCA/currency.git
+    merges:
+        - oca 16.0
+
+./e-commerce:
+    remotes:
+        oca: https://github.com/OCA/e-commerce.git
+    merges:
+        - oca 16.0
+        - oca refs/pull/746/head
+
+./hr:
+    remotes:
+        oca: https://github.com/OCA/hr.git
+    merges:
+        - oca 16.0
+
+./l10n-netherlands:
+    remotes:
+        oca: https://github.com/OCA/l10n-netherlands.git
+    merges:
+        - oca 16.0
+        - oca refs/pull/372/head
+        - oca refs/pull/377/head
+
+./mis-builder:
+    remotes:
+        oca: https://github.com/OCA/mis-builder.git
+    merges:
+        - oca 16.0
+
+./partner-contact:
+    remotes:
+        oca: https://github.com/OCA/partner-contact.git
+    merges:
+        - oca 16.0
+
+./product-attribute:
+    remotes:
+        oca: https://github.com/OCA/product-attribute.git
+    merges:
+        - oca 16.0
+        - oca refs/pull/1302/head
+
+./reporting-engine:
+    remotes:
+        oca: https://github.com/OCA/reporting-engine.git
+    merges:
+        - oca 16.0
+        - oca refs/pull/673/head
+
+./server-auth:
+    remotes:
+        oca: https://github.com/OCA/server-auth.git
+    merges:
+        - oca 16.0
+        - oca refs/pull/482/head
+
+./server-backend:
+    remotes:
+        oca: https://github.com/OCA/server-backend.git
+    merges:
+        - oca 16.0
+
+./server-brand:
+    remotes:
+        oca: https://github.com/OCA/server-brand.git
+    merges:
+        - oca 16.0
+
+./server-tools:
+    remotes:
+        oca: https://github.com/OCA/server-tools.git
+    merges:
+        - oca 16.0
+        - oca refs/pull/2565/head
+
+./server-ux:
+    remotes:
+        oca: https://github.com/OCA/server-ux.git
+    merges:
+        - oca 16.0
+        - oca refs/pull/621/head
+#        - oca refs/pull/645/head
+
+./social:
+    remotes:
+        oca: https://github.com/OCA/social.git
+    merges:
+        - oca 16.0
+
+./stock-logistics-warehouse:
+    remotes:
+        oca: https://github.com/OCA/stock-logistics-warehouse.git
+    merges:
+        - oca 16.0
+
+./timesheet:
+    remotes:
+        oca: https://github.com/OCA/timesheet.git
+    merges:
+        - oca 16.0
+        - oca refs/pull/580/head
+
+./web:
+    remotes:
+        oca: https://github.com/OCA/web.git
+    merges:
+        - oca 16.0
+        - oca refs/pull/2463/head
+
+./website:
+    remotes:
+        oca: https://github.com/OCA/website.git
+    merges:
+        - oca 16.0
+
+./mollie:
+    remotes:
+        mollie: https://github.com/mollie/mollie-odoo.git
+        onestein: https://github.com/onesteinbv/mollie-odoo.git
+    merges:
+        - mollie 16.0
+        - onestein 16_imp_mollie_account_sync_community_version
+
+./edi:
+    remotes:
+        oca: https://github.com/OCA/edi.git
+    merges:
+        - oca 16.0
+        - oca refs/pull/724/head
+        - oca refs/pull/725/head

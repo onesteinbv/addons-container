@@ -1,0 +1,2002 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+   <data noupdate="0">   
+      
+    <record id="account_tag_01" model="account.account.tag">
+            <field name="name">Immateriële vaste activa</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_02" model="account.account.tag">
+            <field name="name">Materiële vaste activa</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_02_1" model="account.account.tag">
+            <field name="name">Vastgoedbeleggingen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_03" model="account.account.tag">
+            <field name="name">Financiële vaste activa</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_30" model="account.account.tag">
+            <field name="name">Voorraden</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_35" model="account.account.tag">
+            <field name="name">Onderhanden projecten (activa)</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_11" model="account.account.tag">
+            <field name="name">Vorderingen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_04" model="account.account.tag">
+            <field name="name">Effecten (kortlopend)</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_10" model="account.account.tag">
+            <field name="name">Liquide middelen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_05" model="account.account.tag">
+            <field name="name">Groepsvermogen - Eigen vermogen - Kapitaal</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_06" model="account.account.tag">
+            <field name="name">Egalisatierekening</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_07" model="account.account.tag">
+            <field name="name">Voorzieningen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_08" model="account.account.tag">
+            <field name="name">Langlopende schulden</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_12" model="account.account.tag">
+            <field name="name">Kortlopende schulden</field>
+            <field name="applicability">accounts</field>
+    </record>   
+      
+    <record id="account_tag_80" model="account.account.tag">
+            <field name="name">Netto-omzet</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_80_1" model="account.account.tag">
+            <field name="name">Netto resultaat exploitatie van vastgoedportefeuille</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_80_2" model="account.account.tag">
+            <field name="name">Netto resultaat verkocht vastgoed in ontwikkeling</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_80_3" model="account.account.tag">
+            <field name="name">Netto gerealiseerd resultaat verkoop vastgoedportefeuille</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_80_4" model="account.account.tag">
+            <field name="name">Waardeveranderingen vastgoedportefeuille</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_80_5" model="account.account.tag">
+            <field name="name">Netto resultaat overige activiteiten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_44" model="account.account.tag">
+            <field name="name">Overige organisatiekosten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_80_6" model="account.account.tag">
+            <field name="name">Kosten omtrent leefbaarheid</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_80_8" model="account.account.tag">
+            <field name="name">Verkoopkosten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_80_9" model="account.account.tag">
+            <field name="name">Algemene beheerskosten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_81" model="account.account.tag">
+            <field name="name">Wijziging voorraden</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_70" model="account.account.tag">
+            <field name="name">Kostprijs van de omzet</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_82" model="account.account.tag">
+            <field name="name">Overige bedrijfsopbrengsten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_40" model="account.account.tag">
+            <field name="name">Lasten uit hoofde van personeelsbeloningen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_41" model="account.account.tag">
+            <field name="name">Afschrijvingen op immateriële en materiële vaste activa</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_41_1" model="account.account.tag">
+            <field name="name">Waardeveranderingen van immateriële en materiële vaste activa en vastgoedbeleggingen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_41_2" model="account.account.tag">
+            <field name="name">Overige waardeveranderingen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_42" model="account.account.tag">
+            <field name="name">Overige bedrijfskosten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_45" model="account.account.tag">
+            <field name="name">Opbrengst van vorderingen die tot de vaste activa behoren en van effecten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_46" model="account.account.tag">
+            <field name="name">Vrijval herwaarderingsreserve</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_47" model="account.account.tag">
+            <field name="name">Waardeveranderingen van financiële vaste activa en van effecten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_50" model="account.account.tag">
+            <field name="name">Financiële baten en lasten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_60" model="account.account.tag">
+            <field name="name">Belastingen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_84" model="account.account.tag">
+            <field name="name">Aandeel in resultaat van ondernemingen waarin wordt deelgenomen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_88" model="account.account.tag">
+            <field name="name">Ledenbetalingen (inclusief reeds betaalde voorschotten)</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_89" model="account.account.tag">
+            <field name="name">Aandeel derden</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_90" model="account.account.tag">
+            <field name="name">Nettoresultaat</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_95" model="account.account.tag">
+            <field name="name">Mutatie fiscale oudedagsreserve</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0101000" model="account.account.tag">
+            <field name="name">Kosten van oprichting en van uitgifte van aandelen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0102000" model="account.account.tag">
+            <field name="name">Kosten van ontwikkeling</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0106000" model="account.account.tag">
+            <field name="name">Concessies, vergunningen en intellectuele eigendom</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0107000" model="account.account.tag">
+            <field name="name">Goodwill</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0109000" model="account.account.tag">
+            <field name="name">Vooruitbetalingen op immateriële vaste activa</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0105000" model="account.account.tag">
+            <field name="name">Bouwclaims</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0110000" model="account.account.tag">
+            <field name="name">Overige immateriële vaste activa</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0201000" model="account.account.tag">
+            <field name="name">Terreinen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0202000" model="account.account.tag">
+            <field name="name">Bedrijfsgebouwen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0203000" model="account.account.tag">
+            <field name="name">Verbouwingen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0210000" model="account.account.tag">
+            <field name="name">Machines en installaties</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0214000" model="account.account.tag">
+            <field name="name">Andere vaste bedrijfsmiddelen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0215000" model="account.account.tag">
+            <field name="name">Inventaris</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0213000" model="account.account.tag">
+            <field name="name">Automobielen en overige transportmiddelen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0209000" model="account.account.tag">
+            <field name="name">Huurdersinvesteringen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0211000" model="account.account.tag">
+            <field name="name">Vliegtuigen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0212000" model="account.account.tag">
+            <field name="name">Schepen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0221000" model="account.account.tag">
+            <field name="name">Meerjaren plantopstand</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0222000" model="account.account.tag">
+            <field name="name">Gebruiksvee</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0216000" model="account.account.tag">
+            <field name="name">Vaste bedrijfsmiddelen in uitvoering</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0216100" model="account.account.tag">
+            <field name="name">Vooruitbetalingen op materiële vaste activa</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0217000" model="account.account.tag">
+            <field name="name">Niet aan de bedrijfsuitoefening dienstbare materiële vaste activa</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0218000" model="account.account.tag">
+            <field name="name">Onroerende en roerende zaken ten dienste van de exploitatie</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0204000" model="account.account.tag">
+            <field name="name">Vastgoedbeleggingen in ontwikkeling bestemd voor eigen exploitatie</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0205000" model="account.account.tag">
+            <field name="name">Vastgoedbeleggingen in exploitatie</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0206000" model="account.account.tag">
+            <field name="name">Niet -Daeb-vastgoed in exploitatie</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0207000" model="account.account.tag">
+            <field name="name">Onroerende zaken verkocht onder voorwaarden</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0301000" model="account.account.tag">
+            <field name="name">Deelnemingen in groepsmaatschappijen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0302000" model="account.account.tag">
+            <field name="name">Deelnemingen in overige verbonden maatschappijen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0305000" model="account.account.tag">
+            <field name="name">Vorderingen op groepsmaatschappijen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0307000" model="account.account.tag">
+            <field name="name">Vorderingen op overige verbonden maatschappijen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0303000" model="account.account.tag">
+            <field name="name">Overige deelnemingen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0306000" model="account.account.tag">
+            <field name="name">Vorderingen op participanten en op maatschappijen waarin wordt deelgenomen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0304000" model="account.account.tag">
+            <field name="name">Overige effecten (langlopend)</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0309000" model="account.account.tag">
+            <field name="name">Overige vorderingen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0308000" model="account.account.tag">
+            <field name="name">Latente belastingvorderingen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0310000" model="account.account.tag">
+            <field name="name">Te vorderen BWS-subsidies</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0320000" model="account.account.tag">
+            <field name="name">Leningen u/g (langlopend)</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0330000" model="account.account.tag">
+            <field name="name">Interne lening</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0340000" model="account.account.tag">
+            <field name="name">Netto vermogenswaarde niet-Daeb</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_3002000" model="account.account.tag">
+            <field name="name">Voorraad grond- en hulpstoffen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_3102000" model="account.account.tag">
+            <field name="name">Halffabrikaten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_3101000" model="account.account.tag">
+            <field name="name">Onderhanden werk</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_3103000" model="account.account.tag">
+            <field name="name">Gereed product</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_3001000" model="account.account.tag">
+            <field name="name">Handelsgoederen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_3004000" model="account.account.tag">
+            <field name="name">Vooruitbetalingen op voorraden</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_3003000" model="account.account.tag">
+            <field name="name">Emballage</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_3104000" model="account.account.tag">
+            <field name="name">Vastgoed</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_3105000" model="account.account.tag">
+            <field name="name">Niet gebruiksvee</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_3106000" model="account.account.tag">
+            <field name="name">Overige voorraden</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_3501000" model="account.account.tag">
+            <field name="name">Onderhanden projecten in opdracht van derden</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1101000" model="account.account.tag">
+            <field name="name">Vorderingen op handelsdebiteuren</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1103099" model="account.account.tag">
+            <field name="name">Vorderingen op groepsmaatschappijen (kortlopend)</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1103109" model="account.account.tag">
+            <field name="name">Vorderingen op overige verbonden maatschappijen (kortlopend)</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1103119" model="account.account.tag">
+            <field name="name">Vorderingen op participanten en op maatschappijen waarin wordt deelgenomen (kortlopend)</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1103300" model="account.account.tag">
+            <field name="name">Vorderingen op leden van de coöperatie</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1103129" model="account.account.tag">
+            <field name="name">Van aandeelhouders opgevraagde stortingen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1103159" model="account.account.tag">
+            <field name="name">Vorderingen uit hoofde van belastingen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1103169" model="account.account.tag">
+            <field name="name">Latente belastingvorderingen (kortlopend)</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1103039" model="account.account.tag">
+            <field name="name">Te vorderen subsidies</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1103149" model="account.account.tag">
+            <field name="name">Vorderingen uit hoofde van pensioenen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1103000" model="account.account.tag">
+            <field name="name">Overige vorderingen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1104000" model="account.account.tag">
+            <field name="name">Overlopende activa</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1105000" model="account.account.tag">
+            <field name="name">Tussenrekeningen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1104105" model="account.account.tag">
+            <field name="name">Overheid</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0401000" model="account.account.tag">
+            <field name="name">Aandelen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0402000" model="account.account.tag">
+            <field name="name">Obligaties</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0403000" model="account.account.tag">
+            <field name="name">Overige effecten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0404000" model="account.account.tag">
+            <field name="name">Optierechten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0405000" model="account.account.tag">
+            <field name="name">Optieverplichtingen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0406000" model="account.account.tag">
+            <field name="name">Derivaten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1001000" model="account.account.tag">
+            <field name="name">Kasmiddelen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1002000" model="account.account.tag">
+            <field name="name">Tegoeden op bankgirorekeningen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1003000" model="account.account.tag">
+            <field name="name">Kruisposten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0501000" model="account.account.tag">
+            <field name="name">Aandelenkapitaal</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0509049" model="account.account.tag">
+            <field name="name">Kapitaal stichting, coöperatie en vereniging</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0509069" model="account.account.tag">
+            <field name="name">Commanditair kapitaal</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0502000" model="account.account.tag">
+            <field name="name">Agio</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0503000" model="account.account.tag">
+            <field name="name">Herwaarderingsreserves</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0504000" model="account.account.tag">
+            <field name="name">Wettelijke reserves</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0505000" model="account.account.tag">
+            <field name="name">Statutaire reserves</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0507000" model="account.account.tag">
+            <field name="name">Bestemmingsfondsen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0505019" model="account.account.tag">
+            <field name="name">Bestemmingsreserves</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0507100" model="account.account.tag">
+            <field name="name">Financiële instrumenten op basis van juridische vorm geclassificeerd als eigen vermogen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0506000" model="account.account.tag">
+            <field name="name">Overige reserves</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0506009" model="account.account.tag">
+            <field name="name">Onverdeelde winst</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0509000" model="account.account.tag">
+            <field name="name">Eigen vermogen onderneming natuurlijke personen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0509100" model="account.account.tag">
+            <field name="name">Eigen vermogen firmant 2</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0509200" model="account.account.tag">
+            <field name="name">Eigen vermogen firmant 3</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0509300" model="account.account.tag">
+            <field name="name">Eigen vermogen firmant 4</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0509400" model="account.account.tag">
+            <field name="name">Eigen vermogen firmant 5</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0509079" model="account.account.tag">
+            <field name="name">Overige kapitaalcomponenten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0510000" model="account.account.tag">
+            <field name="name">Fiscale reserves</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0508000" model="account.account.tag">
+            <field name="name">Aandeel van derden</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0601000" model="account.account.tag">
+            <field name="name">Egalisatierekening</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0701000" model="account.account.tag">
+            <field name="name">Voorziening voor pensioenen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0702000" model="account.account.tag">
+            <field name="name">Voorziening voor belastingen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0704000" model="account.account.tag">
+            <field name="name">Overige voorzieningen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0704174" model="account.account.tag">
+            <field name="name">Voorziening voor onrendabele investeringen en herstructureringen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0801000" model="account.account.tag">
+            <field name="name">Achtergestelde schulden</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0802000" model="account.account.tag">
+            <field name="name">Converteerbare leningen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0803000" model="account.account.tag">
+            <field name="name">Obligatieleningen, pandbrieven en andere leningen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0804000" model="account.account.tag">
+            <field name="name">Financiële lease verplichtingen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0805000" model="account.account.tag">
+            <field name="name">Schulden aan banken</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0806059" model="account.account.tag">
+            <field name="name">Ontvangen vooruitbetalingen op bestellingen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0806069" model="account.account.tag">
+            <field name="name">Schulden aan leveranciers en handelskredieten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0806079" model="account.account.tag">
+            <field name="name">Te betalen wissels en cheques</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0806009" model="account.account.tag">
+            <field name="name">Schulden aan groepsmaatschappijen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0806019" model="account.account.tag">
+            <field name="name">Schulden aan overige verbonden maatschappijen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0806029" model="account.account.tag">
+            <field name="name">Schulden aan participanten en aan maatschappijen waarin wordt deelgenomen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0806039" model="account.account.tag">
+            <field name="name">Belastingen en premies sociale verzekeringen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0806044" model="account.account.tag">
+            <field name="name">Schulden uit hoofde van belastingen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0806049" model="account.account.tag">
+            <field name="name">Schulden ter zake van pensioenen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0705000" model="account.account.tag">
+            <field name="name">Negatieve goodwill</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0806148" model="account.account.tag">
+            <field name="name">Oudedagsverplichting</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0807000" model="account.account.tag">
+            <field name="name">Participaties (geclassificeerd als vreemd vermogen)</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0806119" model="account.account.tag">
+            <field name="name">Schulden aan overheid (langlopend)</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0806109" model="account.account.tag">
+            <field name="name">Verplichtingen uit hoofde van onroerende zaken verkocht onder voorwaarden</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0806129" model="account.account.tag">
+            <field name="name">Overige schulden</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_0806170" model="account.account.tag">
+            <field name="name">Overlopende passiva</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1201000" model="account.account.tag">
+            <field name="name">Kortlopende leningen-schulden-verplichtingen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1211000" model="account.account.tag">
+            <field name="name">Schulden aan overheid (kortlopend)</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1209029" model="account.account.tag">
+            <field name="name">Schulden aan banken</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1209040" model="account.account.tag">
+            <field name="name">Ontvangen vooruitbetalingen op bestellingen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1203000" model="account.account.tag">
+            <field name="name">Schulden aan leveranciers en handelskredieten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1209079" model="account.account.tag">
+            <field name="name">Te betalen wissels en cheques</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1208100" model="account.account.tag">
+            <field name="name">Schulden aan groepsmaatschappijen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1208200" model="account.account.tag">
+            <field name="name">Schulden aan overige verbonden maatschappijen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1208300" model="account.account.tag">
+            <field name="name">Schulden aan participanten en aan maatschappijen waarin wordt deelgenomen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1208400" model="account.account.tag">
+            <field name="name">Schulden uit hoofde van belasting naar de winst</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1208500" model="account.account.tag">
+            <field name="name">Kortlopende financiële lease verplichtingen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1205009" model="account.account.tag">
+            <field name="name">Belastingen en premies sociale verzekeringen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1204089" model="account.account.tag">
+            <field name="name">Schulden ter zake van pensioenen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1201059" model="account.account.tag">
+            <field name="name">Aflossingsverplichtingen van langlopende leningen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1209119" model="account.account.tag">
+            <field name="name">Onderhanden projecten (passiva) overige schulden</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1204000" model="account.account.tag">
+            <field name="name">Salarisverwerking</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1209000" model="account.account.tag">
+            <field name="name">Overige schulden</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1210000" model="account.account.tag">
+            <field name="name">Overlopende passiva</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1220000" model="account.account.tag">
+            <field name="name">Tussenrekeningen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1230000" model="account.account.tag">
+            <field name="name">Uit te keren dividend aan houders van aandelen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1240000" model="account.account.tag">
+            <field name="name">Uit te keren dividend aan houders van preferente aandelen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1250000" model="account.account.tag">
+            <field name="name">Schulden aan daeb-niet daeb</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_1260000" model="account.account.tag">
+            <field name="name">Schulden aan leden van de coöperatie</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8001000" model="account.account.tag">
+            <field name="name">Netto-omzet uit leveringen geproduceerde goederen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8002000" model="account.account.tag">
+            <field name="name">Netto-omzet uit verkoop van handelsgoederen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8003000" model="account.account.tag">
+            <field name="name">Opbrengsten uit het verlenen van diensten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8007000" model="account.account.tag">
+            <field name="name">Toegerekende opbrengsten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8008000" model="account.account.tag">
+            <field name="name">Agrarische bedrijfsopbrengsten veeteelt</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8004000" model="account.account.tag">
+            <field name="name">Overige netto-omzet</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8005000" model="account.account.tag">
+            <field name="name">Netto-omzet intercompany transacties</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8006000" model="account.account.tag">
+            <field name="name">Kortingen, bonussen en provisies</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8009000" model="account.account.tag">
+            <field name="name">Netto-omzet groepen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8010000" model="account.account.tag">
+            <field name="name">Huuropbrengsten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8011000" model="account.account.tag">
+            <field name="name">Opbrengsten servicecontracten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8012000" model="account.account.tag">
+            <field name="name">Lasten servicecontracten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8013000" model="account.account.tag">
+            <field name="name">Overheidsbijdragen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8014000" model="account.account.tag">
+            <field name="name">Lasten verhuur en beheeractiviteiten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8015000" model="account.account.tag">
+            <field name="name">Lasten onderhoudsactiviteiten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8016000" model="account.account.tag">
+            <field name="name">Overige directe operationele lasten explotatie bezit</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8020000" model="account.account.tag">
+            <field name="name">Omzet verkocht vastgoed in ontwikkeling</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8021000" model="account.account.tag">
+            <field name="name">Uitgaven verkocht vastgoed in ontwikkeling</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8022000" model="account.account.tag">
+            <field name="name">Toegerekende organisatiekosten verkocht vastgoed in ontwikkeling</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8023000" model="account.account.tag">
+            <field name="name">Toegerekende financieringskosten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8030000" model="account.account.tag">
+            <field name="name">Verkoopopbrengst vastgoedportefeuille</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8031000" model="account.account.tag">
+            <field name="name">Toegerekende organisatiekosten verkoop vastgoedportefeuille</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8032000" model="account.account.tag">
+            <field name="name">Boekwaarde verkochte vastgoedportefeuille</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8033000" model="account.account.tag">
+            <field name="name">Directe kosten inzake verkoop vastgoedportefeuille</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8040000" model="account.account.tag">
+            <field name="name">Overige waardeveranderingen van vastgoedportefeuille</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8041000" model="account.account.tag">
+            <field name="name">Niet-gerealiseerde waardeveranderingen van vastgoedportefeuille</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8042000" model="account.account.tag">
+            <field name="name">Niet-gerealiseerde waardeveranderingen van vastgoedportefeuille verkocht onder voorwaarden</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8043000" model="account.account.tag">
+            <field name="name">Niet-gerealiseerde waardeveranderingen van vastgoedportefeuille bestemd voor verkoop</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8050000" model="account.account.tag">
+            <field name="name">Opbrengsten overige activiteiten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8051000" model="account.account.tag">
+            <field name="name">Kosten overige activiteiten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4400000" model="account.account.tag">
+            <field name="name">Overige organisatiekosten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8060000" model="account.account.tag">
+            <field name="name">Kosten omtrent leefbaarheid</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8080000" model="account.account.tag">
+            <field name="name">Verkoopkosten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8090000" model="account.account.tag">
+            <field name="name">Algemene beheerskosten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8101000" model="account.account.tag">
+            <field name="name">Wijziging in voorraden grond- en hulpstoffen, gereed product en handelsgoederen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8102000" model="account.account.tag">
+            <field name="name">Wijziging in voorraden onderhanden werk</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8103000" model="account.account.tag">
+            <field name="name">Wijziging in onderhanden projecten in opdracht van derden</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8104000" model="account.account.tag">
+            <field name="name">Geactiveerde productie voor het eigen bedrijf</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8110000" model="account.account.tag">
+            <field name="name">Wijziging agrarische voorraden</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8120000" model="account.account.tag">
+            <field name="name">Waardeveranderingen van agrarische voorraden</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8130000" model="account.account.tag">
+            <field name="name">Marge-voorraden</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_7001000" model="account.account.tag">
+            <field name="name">Kosten van grond- en hulpstoffen / halffabrikaten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_7002000" model="account.account.tag">
+            <field name="name">Kosten van personeel</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_7003000" model="account.account.tag">
+            <field name="name">Kosten uitbesteed werk en andere externe kosten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4301000" model="account.account.tag">
+            <field name="name">Toegerekende kosten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_7101000" model="account.account.tag">
+            <field name="name">Inkoopwaarde agrarisch</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4302000" model="account.account.tag">
+            <field name="name">Agrarische bedrijfskosten veeteelt</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_7004000" model="account.account.tag">
+            <field name="name">Kosten van rente en afschrijvingen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_7005000" model="account.account.tag">
+            <field name="name">Inkoopwaarde handelsgoederen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_7006000" model="account.account.tag">
+            <field name="name">Inkoopwaarde productiegoederen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_7007000" model="account.account.tag">
+            <field name="name">Inkoopkortingen en bonussen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_7008000" model="account.account.tag">
+            <field name="name">Betalingskortingen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_7009000" model="account.account.tag">
+            <field name="name">Kostprijs intercompany transacties</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_7010000" model="account.account.tag">
+            <field name="name">Mutatie omzetvorderingen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_7011000" model="account.account.tag">
+            <field name="name">Voorraadmutatie</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_7012000" model="account.account.tag">
+            <field name="name">Privé-gebruik goederen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_7013000" model="account.account.tag">
+            <field name="name">Privé-gebruik diensten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_7200000" model="account.account.tag">
+            <field name="name">Kostprijs - inkoopwaarde groepen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_7201000" model="account.account.tag">
+            <field name="name">Kostprijs van de omzet niet ingekocht bij leden (Coöperatie)</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_7202000" model="account.account.tag">
+            <field name="name">Totaal van lasten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8215000" model="account.account.tag">
+            <field name="name">Baten als tegenprestatie voor de levering van producten en/of diensten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8207000" model="account.account.tag">
+            <field name="name">Subsidiebaten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8216000" model="account.account.tag">
+            <field name="name">Sponsorbijdragen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8203000" model="account.account.tag">
+            <field name="name">Baten en giften uit fondsenwerving</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8204000" model="account.account.tag">
+            <field name="name">Baten uit gezamenlijke acties</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8205000" model="account.account.tag">
+            <field name="name">Baten uit acties van derden</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8208000" model="account.account.tag">
+            <field name="name">Huurontvangsten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8209000" model="account.account.tag">
+            <field name="name">Opbrengsten servicecontracten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8211000" model="account.account.tag">
+            <field name="name">College-, cursus-, les- en examengelden</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8210000" model="account.account.tag">
+            <field name="name">Netto verkoopresultaat vastgoedportefeuille</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8212000" model="account.account.tag">
+            <field name="name">Baten werk in opdracht van derden</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8201000" model="account.account.tag">
+            <field name="name">Ontvangen managementvergoeding</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8202000" model="account.account.tag">
+            <field name="name">Ontvangen doorbelasting personeelskosten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8213000" model="account.account.tag">
+            <field name="name">Overige opbrengsten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8206000" model="account.account.tag">
+            <field name="name">Verzekeringsuitkeringen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8214000" model="account.account.tag">
+            <field name="name">Som van de (geworven) baten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8218900" model="account.account.tag">
+            <field name="name">Exploitatiesubsidies</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8219000" model="account.account.tag">
+            <field name="name">Doorberekening overige bedrijfsopbrengsten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4001000" model="account.account.tag">
+            <field name="name">Lonen en salarissen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4002000" model="account.account.tag">
+            <field name="name">Sociale lasten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4003000" model="account.account.tag">
+            <field name="name">Pensioenlasten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4004008" model="account.account.tag">
+            <field name="name">Overige lasten uit hoofde van personeelsbeloningen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4101000" model="account.account.tag">
+            <field name="name">Afschrijvingen op immateriële vaste activa</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4102000" model="account.account.tag">
+            <field name="name">Afschrijvingen op materiële vaste activa</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4103008" model="account.account.tag">
+            <field name="name">Afschrijvingen vastgoed</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4105000" model="account.account.tag">
+            <field name="name">Boekresultaat op immateriële vaste activa</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4106000" model="account.account.tag">
+            <field name="name">Boekresultaat op materiële vaste activa</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4107000" model="account.account.tag">
+            <field name="name">Boekresultaat vastgoed</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4199000" model="account.account.tag">
+            <field name="name">Doorberekende afschrijvingen en waardeveranderingen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4103000" model="account.account.tag">
+            <field name="name">Waardeveranderingen van immateriële vaste activa</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4104000" model="account.account.tag">
+            <field name="name">Waardeveranderingen van materiële vaste activa</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4105500" model="account.account.tag">
+            <field name="name">Wijziging in de reële waarde van vastgoedbeleggingen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4106009" model="account.account.tag">
+            <field name="name">Bijzondere waardeverminderingen van vlottende activa</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4106200" model="account.account.tag">
+            <field name="name">Gerealiseerde waardeveranderingen van beleggingen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4106300" model="account.account.tag">
+            <field name="name">Niet-gerealiseerde waardeveranderingen van beleggingen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4216000" model="account.account.tag">
+            <field name="name">Baten uit niet-ondernemingsactiviteiten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4216100" model="account.account.tag">
+            <field name="name">Lasten uit niet-ondernemingsactiviteiten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4003999" model="account.account.tag">
+            <field name="name">Werkkostenregeling - detail</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4012000" model="account.account.tag">
+            <field name="name">Overige personeelsgerelateerde kosten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4201000" model="account.account.tag">
+            <field name="name">Huisvestingskosten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4202000" model="account.account.tag">
+            <field name="name">Exploitatie- en machinekosten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4203000" model="account.account.tag">
+            <field name="name">Verkoop gerelateerde kosten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4204000" model="account.account.tag">
+            <field name="name">Autokosten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4205000" model="account.account.tag">
+            <field name="name">Transportkosten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4206000" model="account.account.tag">
+            <field name="name">Kantoorkosten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4207000" model="account.account.tag">
+            <field name="name">Organisatiekosten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4208000" model="account.account.tag">
+            <field name="name">Assurantiekosten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4209000" model="account.account.tag">
+            <field name="name">Accountants- en advieskosten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4210000" model="account.account.tag">
+            <field name="name">Administratieve lasten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4211000" model="account.account.tag">
+            <field name="name">Kosten fondsenwerving</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4212000" model="account.account.tag">
+            <field name="name">Kosten stamrecht en lijfrentes</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4213000" model="account.account.tag">
+            <field name="name">Dotaties en vrijval (fiscale) reserves</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4214000" model="account.account.tag">
+            <field name="name">Dotaties en vrijval voorzieningen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_4215000" model="account.account.tag">
+            <field name="name">Andere kosten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8401000" model="account.account.tag">
+            <field name="name">Opbrengst van vorderingen die tot de vaste activa behoren en van effecten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8301000" model="account.account.tag">
+            <field name="name">Vrijval uit herwaarderingsreserve</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8302000" model="account.account.tag">
+            <field name="name">Vrijval egalisatierekening IPR</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8303000" model="account.account.tag">
+            <field name="name">Vrijval overige egalisatierekeningen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8405000" model="account.account.tag">
+            <field name="name">Waardeveranderingen van financiële vaste activa en van effecten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8402000" model="account.account.tag">
+            <field name="name">Rentebaten en soortgelijke opbrengsten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8404000" model="account.account.tag">
+            <field name="name">Rentelasten en soortgelijke kosten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8406000" model="account.account.tag">
+            <field name="name">Overige rentelasten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8407000" model="account.account.tag">
+            <field name="name">Wisselkoersverschillen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8408000" model="account.account.tag">
+            <field name="name">Kosten van beleggingen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8409000" model="account.account.tag">
+            <field name="name">Kosten van beheer en administratie</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8497000" model="account.account.tag">
+            <field name="name">Opbrengsten uit niet op netto-vermogenswaarde e.d. gewaardeerde deelnemingen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8498000" model="account.account.tag">
+            <field name="name">Waardeveranderingen van niet op netto-vermogenswaarde e.d. gewaardeerde deelnemingen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8500000" model="account.account.tag">
+            <field name="name">Derivaten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8510000" model="account.account.tag">
+            <field name="name">Positieve verschil tussen het ontvangen bedrag en de bij het aangaan van de lening als schuld erkende hoofdsom</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8511000" model="account.account.tag">
+            <field name="name">Positieve herwaarderingen van puttable financiële instrumenten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8512000" model="account.account.tag">
+            <field name="name">(Amortisatie van) agio en disagio</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8513000" model="account.account.tag">
+            <field name="name">Negatieve verschil tussen het ontvangen bedrag en de bij het aangaan van de lening als schuld erkende hoofdsom</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8499000" model="account.account.tag">
+            <field name="name">Doorberekende financiële baten en lasten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8514000" model="account.account.tag">
+            <field name="name">Negatieve herwaarderingen van puttable financiële instrumenten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8515000" model="account.account.tag">
+            <field name="name">Aflossingspremies</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8516000" model="account.account.tag">
+            <field name="name">Emissiekosten</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8517000" model="account.account.tag">
+            <field name="name">Kosten bij vervroegde aflossing (eenmalig)</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8518000" model="account.account.tag">
+            <field name="name">Bijkomende kosten ter afsluiting van een financiering</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8519000" model="account.account.tag">
+            <field name="name">Valutaverschillen op leningen voor zover zij als een correctie van de verschuldigde rentekosten kunnen worden aangemerkt</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8520000" model="account.account.tag">
+            <field name="name">Rentekosten begrepen in de leasetermijn in geval van financiële leasing</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_9101000" model="account.account.tag">
+            <field name="name">Belastingen over de winst of het verlies</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8410000" model="account.account.tag">
+            <field name="name">Aandeel in resultaat van ondernemingen waarin wordt deelgenomen</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_8420000" model="account.account.tag">
+            <field name="name">Aandeel in resultaat van ondernemingen waarin wordt deelgenomen - vrijstelling</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_9001100" model="account.account.tag">
+            <field name="name">Ledenbetalingen (inclusief reeds betaalde voorschotten)</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_9001000" model="account.account.tag">
+            <field name="name">Resultaat aandeel van derden</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_9999000" model="account.account.tag">
+            <field name="name">Nettoresultaat na belastingen (B.V.)</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_9999100" model="account.account.tag">
+            <field name="name">Nettoresultaat (EZ-VOF)</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+      
+    <record id="account_tag_9104000" model="account.account.tag">
+            <field name="name">Mutatie fiscale oudedagsreserve</field>
+            <field name="applicability">accounts</field>
+    </record>
+    
+   </data>
+</odoo>

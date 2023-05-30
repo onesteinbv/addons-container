@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<odoo>
+    
+    <record id="consolidation_chart_view_tree" model="ir.ui.view">
+        <field name="name">consolidation.chart.tree</field>
+        <field name="model">consolidation.chart</field>
+        <field name="arch" type="xml">
+            <tree string="Consolidation Charts">
+                <field name="name"/>
+                <field name="mandatory"/>
+            </tree>
+        </field>
+    </record>
+    
+    <record id="consolidation_chart_view_form" model="ir.ui.view">
+        <field name="name">consolidation.chart.form</field>
+        <field name="model">consolidation.chart</field>
+        <field name="arch" type="xml">
+            <form string="Consolidation Chart">
+                <sheet>
+                    <header>
+                    </header>
+                    <div class="oe_button_box" name="button_box">
+                        <button class="oe_stat_button" name="action_open_consolidation_accounts" type="object" icon="fa-bars">
+                            <div class="o_stat_info">
+                                <span class="o_stat_value">
+                                    <field name="consolidation_accounts_count"/>
+                                </span>
+                                <span class="o_stat_text">
+                                        Consolidation Accounts
+                                </span>
+                            </div>
+                        </button>
+                    </div>
+                    <div>
+                        <h1 style="font-size: 1.9rem;">
+                            <div class="row">
+                                <div class="col col-md-8">
+                                    <label for="name"/>
+                                    <div>
+                                        <field name="name" placeholder="e.g. Consolidation Scheme" class="oe_inline" style="width:80% !important;"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </h1>
+                    </div>
+                    <group>
+                        <group string="Settings" name="group_settings">
+                            <field name="mandatory"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="consolidation_chart_view_search" model="ir.ui.view">
+        <field name="name">consolidation.chart.search</field>
+        <field name="model">consolidation.chart</field>
+        <field name="arch" type="xml">
+            <search string="Consolidation Charts">
+                <field name="name"/>
+                <field name="mandatory"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_view_consolidation_chart" model="ir.actions.act_window">
+        <field name="name">Consolidation Chart of Accounts</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">consolidation.chart</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="consolidation_chart_view_search" />
+    </record>
+    
+</odoo>
