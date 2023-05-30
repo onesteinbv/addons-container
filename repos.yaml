@@ -77,6 +77,12 @@
     merges:
         - oca 15.0
 
+./helpdesk:
+    remotes:
+        oca: git@github.com:OCA/helpdesk.git
+    merges:
+        - oca 15.0
+
 ./l10n-netherlands:
     remotes:
         oca: https://github.com/OCA/l10n-netherlands.git
@@ -136,3 +142,34 @@
         oca: https://github.com/OCA/web.git
     merges:
         - oca 15.0
+        - oca refs/pull/2450/head
+
+./website:
+    remotes:
+        oca: https://github.com/OCA/website.git
+    merges:
+        - oca 15.0
+
+./project:
+    remotes:
+        oca: https://github.com/OCA/project.git
+    merges:
+        - oca 15.0
+
+./partner-contact:
+    remotes:
+        oca: https://github.com/OCA/partner-contact.git
+    merges:
+        - oca 15.0
+
+./vertical-association:
+    remotes:
+        oca: https://github.com/OCA/partner-contact.git
+    merges:
+        - oca 15.0
+
+./design-themes:
+    remotes:
+        odoo: git@github.com:odoo/design-themes.git
+    merges:
+        - odoo 15.0
