@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_consolidation_group_form" model="ir.ui.view">
+        <field name="name">consolidation.group.form</field>
+        <field name="model">consolidation.group</field>
+        <field name="arch" type="xml">
+            <form string="Consolidation Group">
+            <sheet>
+                <group>
+                    <field name="name"/>
+                    <label for="code_prefix_start" string="Code Prefix"/>
+                    <div>
+                        From <field name="code_prefix_start" class="oe_inline"/> to <field name="code_prefix_end" class="oe_inline"/>
+                    </div>
+                    <field name="chart_id" options="{'no_create': True}"/>
+                </group>
+                <group>
+                    <group id="links">
+                        <label for="account_ids"/>
+                        <field name="account_ids" widget="many2many" nolabel="1" options="{'no_create_edit': True}"/>
+                    </group>
+                </group>
+            </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_consolidation_group_search" model="ir.ui.view">
+        <field name="name">consolidation.group.search</field>
+        <field name="model">consolidation.group</field>
+        <field name="arch" type="xml">
+            <search string="Consolidation groups">
+                <field name="name"
+                       filter_domain="['|', ('code_prefix_start', '=like', str(self) + '%'), ('name', 'ilike', self)]"
+                       string="Consolidation group"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="view_consolidation_group_tree" model="ir.ui.view">
+        <field name="name">consolidation.group.tree</field>
+        <field name="model">consolidation.group</field>
+        <field name="arch" type="xml">
+            <tree string="Consolidation Group">
+                <field name="code_prefix_start"/>
+                <field name="code_prefix_end"/>
+                <field name="name"/>
+                <field name="chart_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_consolidation_group_tree" model="ir.actions.act_window">
+        <field name="name">Consolidation Groups</field>
+        <field name="res_model">consolidation.group</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="view_consolidation_group_search"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new consolidation group
+            </p>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="consolidation_account_view_form" model="ir.ui.view" >
+        <field name="inherit_id" ref="consolidation_account.consolidation_account_view_form" />
+        <field name="model">consolidation.account</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='deprecated']" position="after">
+                <field name="centralized" />
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

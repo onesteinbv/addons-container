@@ -2,6 +2,12 @@
 ./community_org_install
 ./membership_accessibility
 ./l10n_nl_rgs
+./consolidation_account
+./accountancy_roles
+./accountancy_mollie
+./accountancy_install
+./account_financial_consolidation_report
+./account_accountant
 account-financial-reporting/account_financial_report
 account-financial-tools/account_asset_management
 account-financial-tools/account_asset_management_menu

@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+<odoo>
+    
+    <record id="consolidation_account_view_tree" model="ir.ui.view">
+        <field name="name">consolidation.account.tree</field>
+        <field name="model">consolidation.account</field>
+        <field name="arch" type="xml">
+            <tree string="Consolidation Accounts">
+                <field name="chart_id"/>
+                <field name="name"/>
+                <field name="code"/>
+                <field name="group_id"/>
+                <field name="deprecated"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="consolidation_account_view_form" model="ir.ui.view">
+        <field name="name">consolidation.account.form</field>
+        <field name="model">consolidation.account</field>
+        <field name="arch" type="xml">
+            <form string="Consolidation Account">
+                <group name="g1">
+                    <group name="g1l">
+                        <field name="name"/>
+                        <field name="chart_id"/>
+                        <field name="group_id"/>
+                    </group>
+                    <group name="g1r">
+                        <field name="code"/>
+                        <field name="deprecated"/>
+                    </group>
+                </group>
+                <group name="g2">
+                    <field name="account_ids" widget="many2many_tags" />
+                    <field name="tag_ids" widget="many2many_tags" />
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="consolidation_account_view_search" model="ir.ui.view">
+        <field name="name">consolidation.account.search</field>
+        <field name="model">consolidation.account</field>
+        <field name="arch" type="xml">
+            <search string="Consolidation Accounts">
+                <field name="name" filter_domain="['|', ('name', 'ilike', self), ('code', '=like', str(self)+'%')]" string="Consolidation Account" />
+                <field name="chart_id"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_view_consolidation_account" model="ir.actions.act_window">
+        <field name="name">Consolidation Accounts</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">consolidation.account</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="consolidation_account_view_search" />
+    </record>
+</odoo>

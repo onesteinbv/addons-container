@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_consolidation_account_user,consolidation.account user,model_consolidation_account,account.group_account_user,1,0,0,0
+access_consolidation_account_manager,consolidation.account manager,model_consolidation_account,account.group_account_manager,1,1,1,1
+access_consolidation_chart_user,consolidation.chart user,model_consolidation_chart,account.group_account_user,1,0,0,0
+access_consolidation_chart_manager,consolidation.chart manager,model_consolidation_chart,account.group_account_manager,1,1,1,1
+access_consolidation_group_user,consolidation.group user,model_consolidation_group,account.group_account_user,1,0,0,0
+access_consolidation_group_manager,consolidation.group manager,model_consolidation_group,account.group_account_manager,1,1,1,1

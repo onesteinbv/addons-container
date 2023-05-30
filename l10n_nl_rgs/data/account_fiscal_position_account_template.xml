@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <!-- Fiscal Position Account Templates -->
+
+        <!-- NON-EU Countries -->
+        <record
+            id="fiscal_position_account_non_eu_1"
+            model="account.fiscal.position.account.template">
+            <field name="position_id"     ref="fiscal_position_template_non_eu" />
+            <field name="account_src_id"  ref="7001010" />
+            <field name="account_dest_id" ref="7001020" />
+        </record>
+        <record
+            id="fiscal_position_account_non_eu_2"
+            model="account.fiscal.position.account.template">
+            <field name="position_id"     ref="fiscal_position_template_non_eu" />
+            <field name="account_src_id"  ref="7001050" />
+            <field name="account_dest_id" ref="7001060" />
+        </record>
+        <record
+            id="fiscal_position_account_non_eu_4"
+            model="account.fiscal.position.account.template">
+            <field name="position_id"     ref="fiscal_position_template_non_eu" />
+            <field name="account_src_id"  ref="8002010" />
+            <field name="account_dest_id" ref="8002080" />
+        </record>
+        <record
+            id="fiscal_position_account_non_eu_5"
+            model="account.fiscal.position.account.template">
+            <field name="position_id"     ref="fiscal_position_template_non_eu" />
+            <field name="account_src_id"  ref="8002020" />
+            <field name="account_dest_id" ref="8002080" />
+        </record>
+        <record
+            id="fiscal_position_account_non_eu_6"
+            model="account.fiscal.position.account.template">
+            <field name="position_id"     ref="fiscal_position_template_non_eu" />
+            <field name="account_src_id"  ref="8002030" />
+            <field name="account_dest_id" ref="8002080" />
+        </record>
+
+        <!-- EU Countries -->
+        <record
+            id="fiscal_position_account_eu_1"
+            model="account.fiscal.position.account.template">
+            <field name="position_id"     ref="fiscal_position_template_eu" />
+            <field name="account_src_id"  ref="7001010" />
+            <field name="account_dest_id" ref="7001020" />
+        </record>
+        <record
+            id="fiscal_position_account_eu_2"
+            model="account.fiscal.position.account.template">
+            <field name="position_id"     ref="fiscal_position_template_eu" />
+            <field name="account_src_id"  ref="7001050" />
+            <field name="account_dest_id" ref="7001060" />
+        </record>
+        <record
+            id="fiscal_position_account_eu_4"
+            model="account.fiscal.position.account.template">
+            <field name="position_id"     ref="fiscal_position_template_eu" />
+            <field name="account_src_id"  ref="8002010" />
+            <field name="account_dest_id" ref="8002090" />
+        </record>
+        <record
+            id="fiscal_position_account_eu_5"
+            model="account.fiscal.position.account.template">
+            <field name="position_id"     ref="fiscal_position_template_eu" />
+            <field name="account_src_id"  ref="8002020" />
+            <field name="account_dest_id" ref="8002090" />
+        </record>
+        <record
+            id="fiscal_position_account_eu_6"
+            model="account.fiscal.position.account.template">
+            <field name="position_id"     ref="fiscal_position_template_eu" />
+            <field name="account_src_id"  ref="8002030" />
+            <field name="account_dest_id" ref="8002090" />
+        </record>
+
+        <!-- Installatie / afstandsverkopen -->
+        <record
+            id="fiscal_position_account_installatie_afstand_1"
+            model="account.fiscal.position.account.template">
+            <field name="position_id"     ref="fiscal_position_template_eu_no_taxes_report" />
+            <field name="account_src_id"  ref="8002010" />
+            <field name="account_dest_id" ref="8002100" />
+        </record>
+
+        <record
+            id="fiscal_position_account_installatie_afstand_2"
+            model="account.fiscal.position.account.template">
+            <field name="position_id"     ref="fiscal_position_template_eu_no_taxes_report" />
+            <field name="account_src_id"  ref="8002020" />
+            <field name="account_dest_id" ref="8002100" />
+        </record>
+
+        <record
+            id="fiscal_position_account_installatie_afstand_3"
+            model="account.fiscal.position.account.template">
+            <field name="position_id"     ref="fiscal_position_template_eu_no_taxes_report" />
+            <field name="account_src_id"  ref="8002030" />
+            <field name="account_dest_id" ref="8002100" />
+        </record>
+
+    </data>
+</openerp>

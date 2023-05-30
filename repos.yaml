@@ -1,0 +1,138 @@
+./odoo:
+    defaults:
+        depth: 20
+    remotes:
+        odoo: https://github.com/odoo/odoo.git
+    merges:
+        -
+            remote: odoo
+            ref: "cedd0603a24aa0c0e6716c2e0f49e89c870eae04"
+            depth: 1000
+# onestein
+./addons-generic:
+    remotes:
+        onestein: git@github.com:onesteinbv/addons-generic.git
+    merges:
+        - onestein 15.0
+
+# third-party
+./addons-third-party:
+    remotes:
+        onestein: git@github.com:onesteinbv/addons-third-party.git
+    merges:
+        - onestein 15.0
+
+# oca
+./account-financial-reporting:
+    remotes:
+        oca: https://github.com/OCA/account-financial-reporting.git
+    merges:
+        - oca 15.0
+
+./account-financial-tools:
+    remotes:
+        oca: https://github.com/OCA/account-financial-tools.git
+    merges:
+        - oca 15.0
+
+./account-reconcile:
+    remotes:
+        oca: https://github.com/OCA/account-reconcile.git
+    merges:
+        - oca 15.0
+
+./account-invoicing:
+    remotes:
+        oca: https://github.com/OCA/account-invoicing.git
+    merges:
+        - oca 15.0
+
+./addons-pre-oca:
+    remotes:
+        onestein: git@github.com:onesteinbv/addons-pre-oca.git
+    merges:
+        - onestein 15.0
+
+./bank-payment:
+    remotes:
+        oca: https://github.com/OCA/bank-payment.git
+    merges:
+        - oca 15.0
+
+./bank-statement-import:
+    remotes:
+        oca: https://github.com/OCA/bank-statement-import.git
+    merges:
+        - oca 15.0
+
+./credit-control:
+    remotes:
+        oca: https://github.com/OCA/credit-control.git
+    merges:
+        - oca 15.0
+
+./currency:
+    remotes:
+        oca: https://github.com/OCA/currency.git
+    merges:
+        - oca 15.0
+
+./l10n-netherlands:
+    remotes:
+        oca: https://github.com/OCA/l10n-netherlands.git
+    merges:
+        - oca 15.0
+
+./mis-builder:
+    remotes:
+        oca: https://github.com/OCA/mis-builder.git
+    merges:
+        - oca 15.0
+
+./product-attribute:
+    remotes:
+        oca: https://github.com/OCA/product-attribute.git
+    merges:
+        - oca 15.0
+
+./reporting-engine:
+    remotes:
+        oca: https://github.com/OCA/reporting-engine.git
+    merges:
+        - oca 15.0
+
+./server-backend:
+    remotes:
+        oca: https://github.com/OCA/server-backend.git
+    merges:
+        - oca 15.0
+
+./server-brand:
+    remotes:
+        oca: https://github.com/OCA/server-brand.git
+    merges:
+        - oca 15.0
+
+./server-tools:
+    remotes:
+        oca: https://github.com/OCA/server-tools.git
+    merges:
+        - oca 15.0
+
+./server-ux:
+    remotes:
+        oca: https://github.com/OCA/server-ux.git
+    merges:
+        - oca 15.0
+
+./stock-logistics-warehouse:
+    remotes:
+        oca: https://github.com/OCA/stock-logistics-warehouse.git
+    merges:
+        - oca 15.0
+
+./web:
+    remotes:
+        oca: https://github.com/OCA/web.git
+    merges:
+        - oca 15.0

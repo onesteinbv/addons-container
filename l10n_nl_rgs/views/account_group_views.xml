@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_account_group_form" model="ir.ui.view">
+            <field name="name">account.group.form</field>
+            <field name="model">account.group</field>
+            <field name="inherit_id" ref="account.view_account_group_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='company_id']" position="after">
+                    <field name="referentiecode"/>
+                    <field name="code"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_account_group_search" model="ir.ui.view">
+            <field name="name">account.group.search</field>
+            <field name="model">account.group</field>
+            <field name="inherit_id" ref="account.view_account_group_search"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="referentiecode" filter_domain="['|', ('referentiecode','ilike',self), ('referentiecode','=like',str(self)+'%')]" string="Referentiecode"/>
+                    <field name="code" filter_domain="['|', ('code','ilike',self), ('code','=like',str(self)+'%')]" string="Code"/>
+
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_account_group_tree" model="ir.ui.view">
+            <field name="name">account.group.tree</field>
+            <field name="model">account.group</field>
+            <field name="inherit_id" ref="account.view_account_group_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='company_id']" position="after">
+                    <field name="referentiecode"/>
+                    <field name="code"/>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>
