@@ -143,7 +143,6 @@ website/website_odoo_debranding
 website/website_snippet_dynamic_link
 social/mail_tracking
 timesheet/hr_timesheet_sheet
-server-tools/base_fontawesome
 server-tools/auditlog
 server-brand/disable_odoo_online
 server-brand/remove_odoo_enterprise
