@@ -6,7 +6,7 @@
     merges:
         -
             remote: odoo
-            ref: "cedd0603a24aa0c0e6716c2e0f49e89c870eae04"
+            ref: "2edd7559d6f96bd25b54ac22ad4e622df77852a3"
             depth: 1000
 # onestein
 ./addons-generic:
