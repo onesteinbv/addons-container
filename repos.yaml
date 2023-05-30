@@ -20,6 +20,7 @@
         onestein: git@github.com:onesteinbv/addons-customer-nextcloud.git
     merges:
         - onestein 15.0
+        - onestein refs/pull/12/head
 
 # third-party
 ./addons-third-party:
