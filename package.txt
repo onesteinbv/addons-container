@@ -139,10 +139,10 @@ oca/disable_odoo_online
 oca/remove_odoo_enterprise
 addons-customer-nextcloud/nextcloud_odoo_sync
 addons-customer-nextcloud/nextcloud_calendar_instance_per_user
-addons-pre-oca/mass_mailing_partner
-addons-pre-oca/account_statement_import_online_paypal
+oca/mass_mailing_partner
+oca/account_statement_import_online_paypal
 addons-pre-oca/website_matomo_tag_manager
-addons-pre-oca/membership_variable_period
+oca/membership_variable_period
 addons-third-party/mollie_account_sync
 addons-third-party/payment_mollie_official
 addons-third-party/mollie_subscription_ept
