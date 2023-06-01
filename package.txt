@@ -2,7 +2,6 @@ account_accountant
 account_financial_consolidation_report
 accountancy_install
 accountancy_mollie
-accountancy_roles
 community_org_install
 consolidation_account
 gandhi_serif_font
@@ -118,7 +117,6 @@ oca/report_qweb_parameter
 oca/report_wkhtmltopdf_param
 oca/report_xlsx
 oca/report_xlsx_helper
-oca/base_user_role
 oca/base_fontawesome
 oca/date_range
 oca/base_tier_validation_forward
