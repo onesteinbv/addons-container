@@ -2,7 +2,6 @@
 ./consolidation_account
 ./accountancy_install
 ./accountancy_mollie
-./accountancy_roles
 ./l10n_nl_rgs
 account-financial-reporting/account_financial_report
 account-financial-tools/account_asset_management
@@ -61,7 +60,6 @@ reporting-engine/report_qweb_parameter
 reporting-engine/report_wkhtmltopdf_param
 reporting-engine/report_xlsx
 reporting-engine/report_xlsx_helper
-server-backend/base_user_role
 server-brand/disable_odoo_online
 server-brand/remove_odoo_enterprise
 server-tools/base_fontawesome
