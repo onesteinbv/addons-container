@@ -253,7 +253,7 @@
 
         # 3rd-Party
         'mollie_account_sync',
-        'mollie_subscription_ept',
+        #'mollie_subscription_ept',
         'payment_mollie_official',
         'l10n_nl_rgs',
 
