@@ -31,8 +31,10 @@ oca/account_payment_purchase
 oca/account_payment_purchase_stock
 oca/account_payment_sale
 oca/account_reconcile_oca
+oca/account_statement_base
 oca/account_statement_import_base
 oca/account_statement_import_file
+oca/account_statement_import_file_reconcile_oca
 oca/account_statement_import_camt
 oca/account_statement_import_camt54
 oca/account_statement_import_online
