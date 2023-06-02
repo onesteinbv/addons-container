@@ -1,8 +1,12 @@
 account_financial_consolidation_report
-consolidation_account
 accountancy_install
 accountancy_mollie
+community_org_install
+consolidation_account
 l10n_nl_rgs
+services_org_install
+trade_org_install
+university_org_install
 oca/account_asset_management
 oca/account_banking_mandate
 oca/account_banking_mandate_sale
