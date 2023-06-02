@@ -89,7 +89,7 @@
         # 'consolidation_account',
         # 'account_financial_consolidation_report',
         'accountancy_mollie',
-        'accountancy_roles',
+        #'accountancy_roles',
 
         # PRE-OCA
         'account_statement_import_online_paypal',

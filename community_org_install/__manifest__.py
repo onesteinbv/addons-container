@@ -234,6 +234,9 @@
         #'website_snippet_openstreetmap',
         #'website_two_steps_share_technical',
 
+        # CUSTOM
+        'accountancy_mollie',
+
         # 3rd-Party
         'mollie_account_sync',
         #'mollie_subscription_ept',
