@@ -48,7 +48,6 @@
         #event_crm_sale',
         #event_sale',
         #event_sms',
-        'fetchmail',
         'google_recaptcha',
         'helpdesk_mgmt',
         'helpdesk_mgmt_project',
