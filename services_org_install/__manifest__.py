@@ -12,7 +12,6 @@
         # Base
         'account',
         'account_edi',
-        'account_edi_facturx',
         'account_edi_ubl_cii',
         'account_payment',
         'account_sale_timesheet',
