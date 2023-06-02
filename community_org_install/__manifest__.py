@@ -200,7 +200,7 @@
         'web_editor_fontawesome',
         #'website_event_external_map',
         'website_event_share_filter_option',
-        'website_hide_navbar_technical',
+        #'website_hide_navbar_technical',
         'website_mass_mailing_membership_section',
         'website_membership_registration',
         'website_membership_section',
