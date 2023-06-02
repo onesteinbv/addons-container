@@ -25,15 +25,11 @@
         'account_financial_report',
         # OCA account-financial-tools
         'account_asset_management',
-        #'account_asset_management_menu',  Not needed, see comment https://github.com/OCA/account-financial-tools/pull/1549#issuecomment-1375284811
-        #'account_balance_line', Included in core
         'account_fiscal_position_vat_check',
         'account_fiscal_year',
         'account_invoice_constraint_chronology',
         'account_journal_lock_date',
         'account_lock_date_update',
-        #'account_move_force_removal', Not needed anymore
-        #'account_move_line_menu', Not needed, already included instandard Odoo
         'account_move_line_purchase_info',
         'account_move_line_sale_info',
         'account_move_line_tax_editable',
@@ -44,13 +40,12 @@
         'product_category_tax',
         # OCA account-invoicing
         'account_move_tier_validation',
-        #'account_move_tier_validation_forward', Not needed: already in base_tier_validation_forward
         # OCA account-reconcile
         'account_reconcile_oca',
         # OCA bank-payment
 	    'account_banking_pain_base',
 	    'account_banking_sepa_credit_transfer',
-        #'account_banking_sepa_direct_debit', Seems still a work in progress
+        'account_banking_sepa_direct_debit',
         'account_payment_sale',
         # OCA bank-statement-import
 		'account_statement_import_camt',
