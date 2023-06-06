@@ -5,27 +5,33 @@
 
 {
     'name': 'Netherlands - RGS Accounting (3.5.2)',
-    'version': '3.0',
+    'version': '3.1',
     'category': 'Accounting/Localizations/Account Charts',
     'author': 'Onestein',
     'website': 'http://www.onestein.eu',
     'depends': [
         'account',
+        'account_asset_management',
         'l10n_nl',
+        'l10n_multilang'
     ],
     'data': [
+        'security/ir.model.access.csv',
         'data/account_account_tag.xml',
         'data/account_chart_template.xml',
         'data/account_group_template.xml',
         'data/account.account.template.csv',
         'data/account_chart_template_post_data.xml',
-        # 'data/account_tax_group_data.xml',
-        # 'data/account_tax_report_data.xml',
+        'data/account_tax_group_data.xml',
         'data/account_tax_template.xml',
         'data/account_fiscal_position_template.xml',
         'data/account_fiscal_position_tax_template.xml',
         'data/account_fiscal_position_account_template.xml',
+        'data/account_asset_group_template.xml',
+        'data/account_asset_profile_template.xml',
         'data/account_chart_template_data.xml',
+        # 'data/account_asset_journal.xml',
+        
         'views/account_account_views.xml',
         'views/account_group_views.xml',
     ],
