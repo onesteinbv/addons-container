@@ -191,6 +191,7 @@
         'l10n_nl_bsn',
         'l10n_nl_postcode',
         'l10n_nl_tax_statement',
+        'l10n_nl_xaf_auditfile_export',
         'mail_tracking',
         'mass_mailing_partner',
         'partner_external_map',
