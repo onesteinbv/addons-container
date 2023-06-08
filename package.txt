@@ -61,6 +61,7 @@ oca/l10n_nl_bank
 oca/l10n_nl_bsn
 oca/l10n_nl_postcode
 oca/l10n_nl_tax_statement
+oca/l10n_nl_xaf_auditfile_export
 oca/mail_tracking
 oca/mass_mailing_partner
 oca/membership_extension

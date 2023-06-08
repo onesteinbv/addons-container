@@ -174,6 +174,7 @@
         'l10n_nl_bsn',
         'l10n_nl_postcode',
         'l10n_nl_tax_statement',
+        'l10n_nl_xaf_auditfile_export',
         'partner_external_map',
         'product_category_product_link',
         'project_role',
