@@ -10,7 +10,7 @@ membership_accessibility
 services_org_install
 trade_org_install
 university_org_install
-website_device_visibility
+addons-generic/base_company_management
 addons-generic/base_municipality
 addons-generic/mass_mailing_membership_committee
 addons-generic/mass_mailing_membership_section
@@ -21,6 +21,7 @@ addons-generic/membership_hr_recruitment
 addons-generic/membership_section
 addons-generic/project_role_members
 addons-generic/web_editor_fontawesome
+addons-generic/website_device_visibility
 addons-generic/website_event_external_map
 addons-generic/website_event_share_filter_option
 addons-generic/website_hide_navbar_technical
@@ -103,6 +104,7 @@ oca/base_fontawesome
 oca/base_tier_validation
 oca/base_tier_validation_formula
 oca/base_tier_validation_forward
+oca/base_user_management
 oca/base_vat_optional_vies
 oca/contract
 oca/contract_payment_mode
