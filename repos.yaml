@@ -15,19 +15,7 @@
     merges:
         - onestein 16.0
 
-./addons-pre-oca:
-    remotes:
-        onestein: git@github.com:onesteinbv/addons-pre-oca.git
-    merges:
-        - onestein 16.0
-
 # third-party
-./addons-third-party:
-    remotes:
-        onestein: git@github.com:onesteinbv/addons-third-party.git
-    merges:
-        - onestein 16.0
-
 ./design-themes:
     remotes:
         odoo: git@github.com:odoo/design-themes.git

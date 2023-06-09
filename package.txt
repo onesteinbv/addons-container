@@ -90,6 +90,6 @@ oca/web_widget_x2many_2d_matrix
 oca/website_odoo_debranding
 oca/helpdesk_mgmt
 oca/helpdesk_mgmt_project
-addons-third-party/mollie_account_sync
-addons-third-party/payment_mollie_official
+mollie/mollie_account_sync
+mollie/payment_mollie_official
 design-themes/*

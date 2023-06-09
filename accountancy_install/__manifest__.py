@@ -50,6 +50,7 @@
         # OCA bank-statement-import
 		'account_statement_import_camt',
 	    'account_statement_import_camt54',
+        'account_statement_import_online_paypal',
 	    'account_statement_import_online_ponto',
         # OCA credit-control
         'account_invoice_overdue_reminder',
@@ -91,9 +92,6 @@
         # 'account_financial_consolidation_report',
         'accountancy_mollie',
         #'accountancy_roles',
-
-        # PRE-OCA
-        'account_statement_import_online_paypal',
 
         # THIRD-PARTY
         'mollie_account_sync',
