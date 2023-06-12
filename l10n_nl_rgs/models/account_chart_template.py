@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+# Part of Odoo. See LICENSE file for full copyright and licensing details.
+
+# Copyright (C) 2016 Onestein (<http://www.onestein.eu>).
 
 from odoo import api, Command, models, _
 
@@ -6,6 +9,29 @@ from odoo import api, Command, models, _
 class AccountChartTemplate(models.Model):
     _inherit = 'account.chart.template'
 
+    def _load_template(self, company, code_digits=None, account_ref=None, taxes_ref=None):
+        self.ensure_one()
+        if not code_digits:
+            code_digits = self.code_digits
+
+        account_ref, taxes_ref = super(AccountChartTemplate, self)._load_template(
+            company, code_digits=code_digits,
+            account_ref=account_ref, taxes_ref=taxes_ref)
+
+        return account_ref, taxes_ref
+
+    def _prepare_all_journals(self, acc_template_ref, company, journals_dict=None):
+        journals_dict = [
+            {'name': _('Accruals'), 'type': 'general', 'code': _('ACCR'), 'favorite': True, 'color': 11, 'sequence': 15},
+            {'name': _('Depreciations'), 'type': 'general', 'code': 'DEPR', 'favorite': True, 'color': 11, 'sequence': 16},
+            {'name': _('Foreign currency revaluation'), 'type': 'general', 'code': _('FCR'), 'favorite': True, 'sequence': 17},
+            {'name': _('Wages'), 'type': 'general', 'code': _('WAG'), 'favorite': True, 'sequence': 18},
+            {'name': _('Inventory Valuation'), 'type': 'general', 'code': _('STJ'), 'favorite': True, 'sequence': 19}]
+        resp_journals = super(AccountChartTemplate, self)._prepare_all_journals(
+            acc_template_ref, company, journals_dict=journals_dict)
+        # TODO: Remove unwanted journals
+        return resp_journals
+    
     @api.model
     def _prepare_transfer_account_for_direct_creation(self, name, company):
         res = super(AccountChartTemplate, self)._prepare_transfer_account_for_direct_creation(name, company)
