@@ -58,7 +58,6 @@ addons-generic/website_share_tumblr
 addons-generic/website_share_wordpress
 addons-generic/website_snippet_openstreetmap
 addons-generic/website_two_steps_share_technical
-addons-generic/payment_mollie_fix
 oca/account_asset_management
 oca/account_asset_management_menu
 oca/account_balance_line

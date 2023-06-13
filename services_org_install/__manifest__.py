@@ -212,7 +212,6 @@
         'website_local_fonts',
 
         # Onestein
-        'payment_mollie_fix',
         'mass_mailing_help',
         'nextcloud_odoo_sync',
         'web_editor_fontawesome',
