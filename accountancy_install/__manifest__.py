@@ -15,7 +15,6 @@
         'l10n_nl_rgs',
 
         # BASE
-        
         'payment_mollie',
         'sale_stock',
         'sale_management',
@@ -95,6 +94,8 @@
         # 'consolidation_account',
         # 'account_financial_consolidation_report',
         'accountancy_mollie',
+        'base_customer_company',
+        'base_customer_user',
 
         # PRE-OCA
         'account_statement_import_online_paypal',

@@ -12,3 +12,7 @@ fi
 if [[ "$PREPARE_CUSTOMER_USER" == "true" ]]; then
   gosu odoo python /odoo/scripts/prepare_customer_user.py -d $DB_NAME --log-level=error --email "$COMPANY_EMAIL" --group-file /odoo/scripts/groups.txt
 fi
+
+if [[ "$UPDATE_COMPANY" == "true" ]]; then
+  gosu odoo python /odoo/scripts/update_company.py -d $DB_NAME --log-level=error --name "$COMPANY_NAME" --email "$COMPANY_EMAIL" --coc "$COMPANY_COC" --city "$COMPANY_CITY" --zip "$COMPANY_ZIP" --street "$COMPANY_STREET"
+fi
