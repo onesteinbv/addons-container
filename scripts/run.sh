@@ -16,3 +16,5 @@ fi
 if [[ "$UPDATE_COMPANY" == "true" ]]; then
   gosu odoo python /odoo/scripts/update_company.py -d $DB_NAME --log-level=error --name "$COMPANY_NAME" --email "$COMPANY_EMAIL" --coc "$COMPANY_COC" --city "$COMPANY_CITY" --zip "$COMPANY_ZIP" --street "$COMPANY_STREET"
 fi
+
+gosu odoo python /odoo/scripts/uninstall_modules.py -d $DB_NAME --log-level=error --modules "$MODULES"
