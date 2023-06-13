@@ -95,7 +95,6 @@
         # CUSTOM
         # 'consolidation_account',
         # 'account_financial_consolidation_report',
-        'accountancy_mollie',
         'base_customer_company',
         'base_customer_user',
 

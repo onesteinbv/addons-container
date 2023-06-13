@@ -1,7 +1,6 @@
 account_accountant
 account_financial_consolidation_report
 accountancy_install
-accountancy_mollie
 base_customer_company
 base_customer_user
 community_org_install
