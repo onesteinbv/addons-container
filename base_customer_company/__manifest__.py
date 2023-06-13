@@ -1,5 +1,6 @@
 {
     "name": "Customer Company",
+    "license": "AGPL-3",
     "version": "15.0.1.0.0",
     "category": "Technical Settings",
     "author": "Onestein",
