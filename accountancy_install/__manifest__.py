@@ -90,8 +90,6 @@
         # CUSTOM
         # 'consolidation_account',
         # 'account_financial_consolidation_report',
-        'accountancy_mollie',
-        #'accountancy_roles',
 
         # THIRD-PARTY
         'mollie_account_sync',
