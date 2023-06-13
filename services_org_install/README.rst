@@ -1,5 +1,5 @@
 ======================================
-Community Based Organization - Install
+Services Based Organization - Install
 ======================================
 
-Community Based Organization - Install
+Services Based Organization - Install

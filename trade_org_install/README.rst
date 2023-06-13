@@ -1,5 +1,5 @@
 ======================================
-Community Based Organization - Install
+Trade Based Organization - Install
 ======================================
 
-Community Based Organization - Install
+Trade Based Organization - Install

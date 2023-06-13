@@ -152,6 +152,7 @@ oca/helpdesk_mgmt_project
 addons-customer-nextcloud/nextcloud_odoo_sync
 addons-customer-nextcloud/nextcloud_calendar_instance_per_user
 addons-pre-oca/website_matomo_tag_manager
+addons-pre-oca/website_local_fonts
 addons-third-party/mollie_account_sync
 addons-third-party/payment_mollie_official
 addons-third-party/mollie_subscription_ept

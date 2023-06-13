@@ -89,6 +89,8 @@
         'web_no_bubble',
         'web_responsive',
         'web_search_with_and',
+        # OCA website
+        'website_local_fonts',
 
         # CUSTOM
         # 'consolidation_account',

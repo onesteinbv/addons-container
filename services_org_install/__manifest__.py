@@ -209,6 +209,7 @@
         'web_widget_x2many_2d_matrix',
         'web_timeline',
         'website_odoo_debranding',
+        'website_local_fonts',
 
         # Onestein
         'payment_mollie_fix',
