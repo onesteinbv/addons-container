@@ -207,7 +207,6 @@
         #base_municipality'
         #mass_mailing_membership_committee',
         #mass_mailing_membership_section',
-        #'payment_mollie_fix',
         #'mass_mailing_help',
         #membership_committee',
         #membership_hr',
