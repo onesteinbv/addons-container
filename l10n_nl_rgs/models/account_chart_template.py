@@ -9,17 +9,6 @@ from odoo import api, Command, models, _
 class AccountChartTemplate(models.Model):
     _inherit = 'account.chart.template'
 
-    def _load_template(self, company, code_digits=None, account_ref=None, taxes_ref=None):
-        self.ensure_one()
-        if not code_digits:
-            code_digits = self.code_digits
-
-        account_ref, taxes_ref = super(AccountChartTemplate, self)._load_template(
-            company, code_digits=code_digits,
-            account_ref=account_ref, taxes_ref=taxes_ref)
-
-        return account_ref, taxes_ref
-
     def _prepare_all_journals(self, acc_template_ref, company, journals_dict=None):
         journals_dict = [
             {'name': _('Accruals'), 'type': 'general', 'code': _('ACCR'), 'favorite': True, 'color': 11, 'sequence': 15},
@@ -54,3 +43,21 @@ class AccountChartTemplate(models.Model):
         if account_template.referentiecode:
             vals.update({'referentiecode': account_template.referentiecode})
         return vals
+
+    def generate_account_groups(self, company):
+        """ Inherit this method to fix reference code missing in account groups"""
+        self.ensure_one()
+        group_templates = self.env['account.group.template'].search([('chart_template_id', '=', self.id)])
+        template_vals = []
+        for group_template in group_templates:
+            vals = {
+                'name': group_template.name,
+                'code_prefix_start': group_template.code_prefix_start,
+                'code_prefix_end': group_template.code_prefix_end,
+                'company_id': company.id,
+                'code': group_template.code,
+                'referentiecode': group_template.referentiecode
+            }
+            template_vals.append((group_template, vals))
+        groups = self._create_records_with_xmlid('account.group', template_vals, company)
+    
