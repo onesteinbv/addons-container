@@ -196,7 +196,7 @@
         'membership_hr',
         'membership_hr_recruitment',
         'membership_section',
-        #'project_role_members',
+        'project_role_members',
         #'web_editor_fontawesome',
         #'website_event_external_map',
         #'website_event_share_filter_option',
