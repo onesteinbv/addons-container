@@ -13,6 +13,7 @@
     "depends": [
         # PREOCA?
         'l10n_nl_rgs',
+        'l10n_nl_rgs_asset',
 
         # BASE
         

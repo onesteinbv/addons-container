@@ -188,7 +188,7 @@
         'website_odoo_debranding',
 
         # Onestein
-        #'base_municipality',
+        'base_municipality',
         #'mass_mailing_membership_committee',
         #'mass_mailing_membership_section',
         #'mass_mailing_help',
@@ -239,6 +239,7 @@
         #'mollie_subscription_ept',
         'payment_mollie_official',
         'l10n_nl_rgs',
+        'l10n_nl_rgs_asset',
     ],
     'data': [],
 }

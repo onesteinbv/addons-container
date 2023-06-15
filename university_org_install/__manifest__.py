@@ -146,7 +146,7 @@
         'website_odoo_debranding',
 
         # Onestein
-        #'base_municipality',
+        'base_municipality',
         #'mass_mailing_membership_committee',
         #'mass_mailing_membership_section',
         #'mass_mailing_help',
