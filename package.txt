@@ -1,5 +1,7 @@
 account_financial_consolidation_report
 accountancy_install
+base_customer_company
+base_customer_user
 community_org_install
 consolidation_account
 l10n_nl_rgs
