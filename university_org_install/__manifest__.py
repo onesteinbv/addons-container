@@ -150,7 +150,7 @@
         #'mass_mailing_membership_committee',
         #'mass_mailing_membership_section',
         #'mass_mailing_help',
-        #'membership_committee',
+        'membership_committee',
         'membership_hr',
         'membership_hr_recruitment',
         'membership_section',
