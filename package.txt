@@ -8,6 +8,7 @@ services_org_install
 trade_org_install
 university_org_install
 addons-generic/base_municipality
+addons-generic/membership_section
 oca/account_asset_management
 oca/account_banking_mandate
 oca/account_banking_mandate_sale
