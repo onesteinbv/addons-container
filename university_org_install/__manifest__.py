@@ -151,7 +151,7 @@
         #'mass_mailing_membership_section',
         #'mass_mailing_help',
         #'membership_committee',
-        #'membership_hr',
+        'membership_hr',
         #'membership_hr_recruitment',
         'membership_section',
         #'project_role_members',
