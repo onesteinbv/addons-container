@@ -3,6 +3,7 @@ accountancy_install
 community_org_install
 consolidation_account
 l10n_nl_rgs
+l10n_nl_rgs_asset
 services_org_install
 trade_org_install
 university_org_install
