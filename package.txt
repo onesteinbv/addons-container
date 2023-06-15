@@ -9,6 +9,7 @@ trade_org_install
 university_org_install
 addons-generic/base_municipality
 addons-generic/membership_hr
+addons-generic/membership_hr_recruitment
 addons-generic/membership_section
 oca/account_asset_management
 oca/account_banking_mandate
