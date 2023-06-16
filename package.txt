@@ -17,6 +17,7 @@ addons-generic/membership_hr
 addons-generic/membership_hr_recruitment
 addons-generic/membership_section
 addons-generic/project_role_members
+addons-generic/website_membership_section
 oca/account_asset_management
 oca/account_banking_mandate
 oca/account_banking_mandate_sale
