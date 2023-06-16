@@ -147,8 +147,8 @@
 
         # Onestein
         'base_municipality',
-        #'mass_mailing_membership_committee',
-        #'mass_mailing_membership_section',
+        'mass_mailing_membership_committee',
+        'mass_mailing_membership_section',
         #'mass_mailing_help',
         'membership_committee',
         'membership_hr',
