@@ -21,9 +21,9 @@
     merges:
         - onestein 15.0
 
-./addons-customer-nextcloud:
+./addons-project-nextcloud:
     remotes:
-        onestein: git@github.com:onesteinbv/addons-customer-nextcloud.git
+        onestein: git@github.com:onesteinbv/addons-project-nextcloud.git
     merges:
         - onestein 15.0
         - onestein refs/pull/12/head

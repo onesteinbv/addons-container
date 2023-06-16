@@ -13,7 +13,7 @@ def _recurse_dependencies(env, modules):
 @click_odoo.env_options(default_log_level="error")
 # @click.option("--module", "-m", multiple=True, default=[])
 @click.option("--modules")
-def main(env, modules):
+def main(env, modules):  # Confusing modules are actually the modules you want to keep
     modules = list(map(lambda m: m.strip(), modules.split(",")))
     click.echo("Uninstalling modules...")
     modules = env["ir.module.module"].search([

@@ -148,8 +148,8 @@ oca/website_odoo_debranding
 oca/website_snippet_dynamic_link
 oca/helpdesk_mgmt
 oca/helpdesk_mgmt_project
-addons-customer-nextcloud/nextcloud_odoo_sync
-addons-customer-nextcloud/nextcloud_calendar_instance_per_user
+addons-project-nextcloud/nextcloud_odoo_sync
+addons-project-nextcloud/nextcloud_calendar_instance_per_user
 addons-pre-oca/website_matomo_tag_manager
 addons-pre-oca/website_local_fonts
 addons-third-party/mollie_account_sync
