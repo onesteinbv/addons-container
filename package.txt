@@ -62,6 +62,7 @@ oca/base_fontawesome
 oca/base_tier_validation
 oca/base_tier_validation_formula
 oca/base_tier_validation_forward
+oca/base_user_management
 oca/base_vat_optional_vies
 oca/contract
 oca/contract_payment_mode
