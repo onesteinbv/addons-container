@@ -1,7 +1,5 @@
-# -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
-
-# Copyright (C) 2016 Onestein (<http://www.onestein.eu>).
+# Copyright 2023 Onestein (<http://www.onestein.eu>)
+# License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 from odoo import api, Command, models, _
 
@@ -23,7 +21,7 @@ class AccountChartTemplate(models.Model):
 
         # Generate Asset Profiles from Templates
         self.generate_account_asset_profile(
-            asset_group_ref, account_ref, company)
+            asset_group_ref, company)
 
         return account_ref, taxes_ref
 
@@ -36,29 +34,38 @@ class AccountChartTemplate(models.Model):
         for group_template in group_templates:
             vals = {
                 'name': group_template.name,
-                'code': group_template.code
+                'code': group_template.code,
+                'company_id': company.id,
             }
             template_vals.append((group_template, vals))
         groups = self._create_records_with_xmlid(
             'account.asset.group', template_vals, company)
-        
+
         for template, group in zip(group_templates, groups):
             asset_group_ref[template] = group
         return asset_group_ref
 
-    def generate_account_asset_profile(self, asset_group_ref, account_ref, company):
+    def generate_account_asset_profile(self, asset_group_ref, company):
         self.ensure_one()
+
+        def _get_account_id(template, company):
+            [external_id] = template.get_external_id().values()
+            (name, module) = external_id.split(".")
+            external_name = "%s.%d_%s" % (name, company.id, module)
+            _, res_id = self.env['ir.model.data']._xmlid_to_res_model_res_id(external_name)
+            return res_id
+
         profiles = self.env['account.asset.profile.template'].search(
             [('chart_template_id', '=', self.id)])
 
-        # first create fiscal positions in batch
+        # create asset profiles
         template_vals = []
         for profile in profiles:
             vals = {
                 'name': profile.name,
-                'account_asset_id': account_ref[profile.account_asset_id].id,
-                'account_expense_depreciation_id': account_ref[profile.account_expense_depreciation_id].id,
-                'account_depreciation_id': account_ref[profile.account_depreciation_id].id,
+                'account_asset_id': _get_account_id(profile.account_asset_id, company),
+                'account_expense_depreciation_id': _get_account_id(profile.account_expense_depreciation_id, company),
+                'account_depreciation_id': _get_account_id(profile.account_depreciation_id, company),
                 'group_ids': [asset_group_ref[group].id for group in profile.group_ids],
                 'days_calc': profile.days_calc,
                 'asset_product_item': profile.asset_product_item,
@@ -66,7 +73,8 @@ class AccountChartTemplate(models.Model):
                 'method_period': profile.method_period,
                 'method_time': profile.method_time,
                 'method_progress_factor': profile.method_progress_factor,
-                'note': profile.note
+                'note': profile.note,
+                'company_id': company.id,
             }
             if profile.journal_code:
                 journal = self.env['account.journal'].search([
