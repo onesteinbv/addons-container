@@ -1,7 +1,5 @@
-# -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
-
-# Copyright (C) 2016 Onestein (<http://www.onestein.eu>).
+# Copyright 2023 Onestein (<http://www.onestein.eu>)
+# License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 {
     'name': 'Netherlands - RGS Accounting (3.5.2) with Assets',
@@ -22,6 +20,7 @@
     ],
     'demo': [
     ],
+    "post_init_hook": "post_init_hook",
     'auto_install': False,
     'installable': True,
     'license': 'LGPL-3',
