@@ -20,7 +20,7 @@ class AccountChartTemplate(models.Model):
             acc_template_ref, company, journals_dict=journals_dict)
         # TODO: Remove unwanted journals
         return resp_journals
-    
+
     @api.model
     def _prepare_transfer_account_for_direct_creation(self, name, company):
         res = super(AccountChartTemplate, self)._prepare_transfer_account_for_direct_creation(name, company)
@@ -47,6 +47,11 @@ class AccountChartTemplate(models.Model):
     def generate_account_groups(self, company):
         """ Inherit this method to fix reference code missing in account groups"""
         self.ensure_one()
+
+        if self != self.env.ref('l10n_nl_rgs.l10nnl_rgs_chart_template', False):
+            return super().generate_account_groups(company)
+
+        # Overrides standard Odoo method
         group_templates = self.env['account.group.template'].search([('chart_template_id', '=', self.id)])
         template_vals = []
         for group_template in group_templates:
@@ -60,4 +65,3 @@ class AccountChartTemplate(models.Model):
             }
             template_vals.append((group_template, vals))
         groups = self._create_records_with_xmlid('account.group', template_vals, company)
-    
