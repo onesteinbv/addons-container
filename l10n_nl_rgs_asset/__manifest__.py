@@ -16,7 +16,6 @@
         'data/account_chart_template.xml',
         'data/account_asset_group_template.xml',
         'data/account_asset_profile_template.xml',
-        'data/account_chart_template_data.xml',
     ],
     'demo': [
     ],
