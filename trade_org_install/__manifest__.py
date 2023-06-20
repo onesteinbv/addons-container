@@ -133,7 +133,7 @@
 
         # Community
         'account_reconcile_oca',
-        #'website_matomo_tag_manager',
+        'website_analytics_matomo',
         'account_statement_import_file_reconcile_oca',
         'account_statement_import_camt',
         'account_statement_import_online',

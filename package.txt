@@ -100,6 +100,7 @@ oca/web_responsive
 oca/web_search_with_and
 oca/web_timeline
 oca/web_widget_x2many_2d_matrix
+oca/website_analytics_matomo
 oca/website_odoo_debranding
 oca/helpdesk_mgmt
 oca/helpdesk_mgmt_project
