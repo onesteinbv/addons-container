@@ -135,7 +135,7 @@
 
         # Community
         'account_reconciliation_widget',
-        'website_matomo_tag_manager',
+        'website_analytics_matomo',
         'account_statement_import',
         'account_statement_import_camt',
         'account_statement_import_online',

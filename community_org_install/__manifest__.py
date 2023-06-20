@@ -169,7 +169,7 @@
         'account_move_tier_validation_forward',
         'account_reconciliation_widget',
         'account_statement_import_online_paypal',
-        'website_matomo_tag_manager',
+        'website_analytics_matomo',
         'account_statement_import',
         'account_statement_import_camt',
         'account_statement_import_online',
