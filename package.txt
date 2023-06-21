@@ -1,3 +1,4 @@
+account_asset_management_template
 account_financial_consolidation_report
 accountancy_install
 base_customer_company
