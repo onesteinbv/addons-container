@@ -9,14 +9,9 @@
     'website': 'http://www.onestein.eu',
     'depends': [
         'account_asset_management',
-        'l10n_generic_coa',
     ],
     'data': [
         'security/ir.model.access.csv',
-    ],
-    'demo': [
-        'demo/account_asset_group_template.xml',
-        'demo/account_asset_profile_template.xml',
     ],
     'license': 'LGPL-3',
 }
