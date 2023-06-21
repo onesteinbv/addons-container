@@ -10,6 +10,11 @@ class AccountChartTemplate(models.Model):
     _inherit = 'account.chart.template'
 
     def _prepare_all_journals(self, acc_template_ref, company, journals_dict=None):
+
+        if self != self.env.ref('l10n_nl_rgs.l10nnl_rgs_chart_template', False):
+            return super(AccountChartTemplate, self)._prepare_all_journals(
+                acc_template_ref, company, journals_dict=journals_dict)
+
         journals_dict = [
             {'name': _('Accruals'), 'type': 'general', 'code': _('ACCR'), 'favorite': True, 'color': 11, 'sequence': 15},
             {'name': _('Depreciations'), 'type': 'general', 'code': 'DEPR', 'favorite': True, 'color': 11, 'sequence': 16},
