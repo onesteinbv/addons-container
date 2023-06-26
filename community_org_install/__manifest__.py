@@ -139,7 +139,6 @@
         'website_sms',
 
         # Community
-        'account_credit_control',
         "account_invoice_overdue_reminder",
         'account_reconciliation_widget',
         'account_usability',
