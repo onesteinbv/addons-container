@@ -14,6 +14,7 @@
         # PREOCA?
         'l10n_nl_rgs',
         'l10n_nl_rgs_asset',
+        'l10n_nl_rgs_mis_report',
 
         # BASE
         
