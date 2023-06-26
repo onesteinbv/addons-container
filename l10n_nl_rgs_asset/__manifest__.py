@@ -3,24 +3,21 @@
 
 {
     'name': 'Netherlands - RGS Accounting (3.5.2) with Assets',
-    'version': '3.1',
+    'version': '15.0.1.0.0',
     'category': 'Accounting/Localizations/Account Charts',
     'author': 'Onestein',
     'website': 'http://www.onestein.eu',
     'depends': [
         'l10n_nl_rgs',
-        'account_asset_management'
+        'account_asset_management_template'
     ],
     'data': [
-        'security/ir.model.access.csv',
         'data/account_chart_template.xml',
         'data/account_asset_group_template.xml',
         'data/account_asset_profile_template.xml',
     ],
-    'demo': [
-    ],
     "post_init_hook": "post_init_hook",
-    'auto_install': False,
+    'auto_install': True,
     'installable': True,
     'license': 'LGPL-3',
 }
