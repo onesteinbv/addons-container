@@ -1,4 +1,5 @@
 account_accountant
+account_asset_management_template
 account_financial_consolidation_report
 accountancy_install
 base_customer_company
@@ -8,6 +9,7 @@ consolidation_account
 gandhi_serif_font
 l10n_nl_rgs
 l10n_nl_rgs_asset
+l10n_nl_rgs_mis_report
 membership_accessibility
 services_org_install
 trade_org_install
