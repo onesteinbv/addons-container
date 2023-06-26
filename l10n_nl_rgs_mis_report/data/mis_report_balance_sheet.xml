@@ -7,7 +7,7 @@
         </record>
 
         <!-- Activa -->
-        <record id="mis_report_kpi_l10n_nl_rgs_balance_sheet_01" model="mis.report.kpi">
+        <record id="mis_report_kpi_l10n_nl_rgs_balance_sheet_activa" model="mis.report.kpi">
             <field name="report_id" ref="mis_report_l10n_nl_rgs_balance_sheet" />
             <field name="type">num</field>
             <field name="compare_method">pct</field>
@@ -1418,7 +1418,7 @@
         </record>
 
         <!-- Passiva en Eigen vermogen -->
-        <record id="mis_report_kpi_l10n_nl_rgs_balance_sheet_01" model="mis.report.kpi">
+        <record id="mis_report_kpi_l10n_nl_rgs_balance_sheet_passiva" model="mis.report.kpi">
             <field name="report_id" ref="mis_report_l10n_nl_rgs_balance_sheet" />
             <field name="type">num</field>
             <field name="compare_method">pct</field>
