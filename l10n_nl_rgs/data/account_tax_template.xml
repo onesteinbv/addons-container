@@ -449,7 +449,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_3b')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_3b_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
@@ -460,7 +460,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_3b')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_3b_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
@@ -482,7 +482,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_3b')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_3b_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
@@ -493,7 +493,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_3b')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_3b_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
