@@ -69,4 +69,14 @@ class AccountChartTemplate(models.Model):
                 'referentiecode': group_template.referentiecode
             }
             template_vals.append((group_template, vals))
+        
         groups = self._create_records_with_xmlid('account.group', template_vals, company)
+        
+        for group_template in group_templates.filtered(lambda agt: agt.parent_id):
+            parent_group = groups.filtered(lambda ag: ag.code == group_template.parent_id.code)
+            group = groups.filtered(lambda ag: ag.code == group_template.code)
+            if group and parent_group:
+                group.parent_id = parent_group.id
+                    
+
+
