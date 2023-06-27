@@ -53,8 +53,6 @@ class AccountGroup(models.Model):
     def _compute_group_accounts(self):
         if self.company_id.chart_template_id != self.env.ref('l10n_nl_rgs.l10nnl_rgs_chart_template', False):
             return super(AccountGroup, self)._compute_group_accounts()
-        account_obj = self.env["account.account"]
-        accounts = account_obj.search([])
         for group in self:
             gr_accounts = group.get_all_account_ids()
             group.compute_account_ids = [(6, 0, gr_accounts.ids)]

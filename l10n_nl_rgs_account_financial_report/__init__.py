@@ -1,2 +1,2 @@
-# Copyright (C) 2016 Onestein (<http://www.onestein.eu>).
 from . import models
+from .init_hook import post_init_hook
