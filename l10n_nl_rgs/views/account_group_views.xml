@@ -10,6 +10,7 @@
                 <xpath expr="//field[@name='company_id']" position="after">
                     <field name="referentiecode"/>
                     <field name="code"/>
+                    <field name="parent_id"/>
                 </xpath>
             </field>
         </record>
