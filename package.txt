@@ -23,6 +23,7 @@ addons-generic/mass_mailing_help
 addons-generic/membership_committee
 addons-generic/membership_hr
 addons-generic/membership_hr_recruitment
+addons-generic/membership_mollie_subscription
 addons-generic/membership_section
 addons-generic/project_role_members
 addons-generic/web_editor_fontawesome
@@ -154,6 +155,8 @@ oca/helpdesk_mgmt
 oca/helpdesk_mgmt_project
 addons-project-nextcloud/nextcloud_odoo_sync
 addons-project-nextcloud/nextcloud_calendar_instance_per_user
+addons-pre-oca/membership_prorate
+addons-pre-oca/membership_prorate_variable_period
 addons-pre-oca/website_local_fonts
 addons-third-party/mollie_account_sync
 addons-third-party/payment_mollie_official
