@@ -6,4 +6,4 @@
 Fake Account Accountant
 -----------------------
 
-Fake module to be able to install enterprise modules
+Fake enterprise module to be able to install this module: https://github.com/mollie/mollie-odoo/blob/15.0/mollie_account_sync
