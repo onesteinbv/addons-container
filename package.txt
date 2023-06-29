@@ -15,6 +15,7 @@ university_org_install
 addons-generic/base_municipality
 addons-generic/mass_mailing_membership_committee
 addons-generic/mass_mailing_membership_section
+addons-generic/mass_mailing_help
 addons-generic/membership_committee
 addons-generic/membership_hr
 addons-generic/membership_hr_recruitment
