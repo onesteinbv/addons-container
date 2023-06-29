@@ -6,7 +6,6 @@ base_customer_company
 base_customer_user
 community_org_install
 consolidation_account
-gandhi_serif_font
 l10n_nl_rgs
 l10n_nl_rgs_account_financial_report
 l10n_nl_rgs_asset
