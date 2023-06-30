@@ -35,7 +35,7 @@
         'account_move_line_purchase_info',
         'account_move_line_sale_info',
         'account_move_line_tax_editable',
-		'account_move_name_sequence',
+        'account_move_name_sequence',
         'account_move_print',
         'account_usability',
         'base_vat_optional_vies',
@@ -45,36 +45,36 @@
         # OCA account-reconcile
         'account_reconcile_oca',
         # OCA bank-payment
-	    'account_banking_pain_base',
-	    'account_banking_sepa_credit_transfer',
+        'account_banking_pain_base',
+        'account_banking_sepa_credit_transfer',
         'account_banking_sepa_direct_debit',
         'account_payment_sale',
         # OCA bank-statement-import
-		'account_statement_import_camt',
-	    'account_statement_import_camt54',
+        'account_statement_import_camt',
+        'account_statement_import_camt54',
         'account_statement_import_online_paypal',
-	    'account_statement_import_online_ponto',
+        'account_statement_import_online_ponto',
         # OCA credit-control
         'account_invoice_overdue_reminder',
         # OCA currency
         'currency_rate_update',
         # OCA l10n-netherlands
         'l10n_nl_bank',
-	    'l10n_nl_bsn',
-	    'l10n_nl_postcode',
+        'l10n_nl_bsn',
+        'l10n_nl_postcode',
         'l10n_nl_tax_statement',
         'l10n_nl_xaf_auditfile_export',
         # OCA mis-builder
-	    'mis_builder',
-		'mis_builder_budget',
+        'mis_builder',
+        'mis_builder_budget',
         # OCA product-attribute
         'product_category_product_link',
         # OCA reporting-engine
-	    'report_qr',
-	    'report_qweb_parameter',
-	    'report_wkhtmltopdf_param',
+        'report_qr',
+        'report_qweb_parameter',
+        'report_wkhtmltopdf_param',
         'report_xlsx',
-	    'report_xlsx_helper',
+        'report_xlsx_helper',
         # OCA server-brand
         'disable_odoo_online',
         'remove_odoo_enterprise',
