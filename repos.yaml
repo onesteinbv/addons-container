@@ -22,14 +22,6 @@
     merges:
         - odoo 16.0
 
-./mollie:
-    remotes:
-        mollie: https://github.com/mollie/mollie-odoo.git
-        onestein: https://github.com/onesteinbv/mollie-odoo.git
-    merges:
-        - mollie 16.0
-        - onestein 16_imp_mollie_account_sync_community_version
-
 # oca
 ./oca:
     remotes:

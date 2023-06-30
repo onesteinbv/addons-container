@@ -25,6 +25,8 @@ addons-generic/website_mass_mailing_membership_section
 addons-generic/website_membership_section
 addons-generic/website_project
 addons-generic/website_project_role_members
+addons-third-party/mollie_account_sync
+addons-third-party/payment_mollie_official
 oca/account_asset_management
 oca/account_banking_mandate
 oca/account_banking_mandate_sale
@@ -109,6 +111,4 @@ oca/website_analytics_matomo
 oca/website_odoo_debranding
 oca/helpdesk_mgmt
 oca/helpdesk_mgmt_project
-mollie/mollie_account_sync
-mollie/payment_mollie_official
 design-themes/*
