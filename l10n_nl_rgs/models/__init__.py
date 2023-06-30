@@ -9,4 +9,5 @@ from . import account_chart_template
 from . import account_group_template
 from . import account_group
 from . import account_journal
+from . import res_config_settings
 

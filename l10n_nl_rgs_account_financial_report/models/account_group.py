@@ -56,11 +56,3 @@ class AccountGroup(models.Model):
         for group in self:
             gr_accounts = group.get_all_account_ids()
             group.compute_account_ids = [(6, 0, gr_accounts.ids)]
-
-    def get_all_account_ids(self):
-        accounts = self.env['account.account']
-        for rec in self:
-            accounts += rec.account_ids
-            if rec.group_child_ids:
-                accounts += rec.group_child_ids.get_all_account_ids()
-        return accounts

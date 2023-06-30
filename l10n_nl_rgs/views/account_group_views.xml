@@ -9,6 +9,7 @@
             <field name="arch" type="xml">
                 <xpath expr="//field[@name='company_id']" position="after">
                     <field name="referentiecode"/>
+                    <field name="sort_code"/>
                     <field name="code"/>
                     <field name="parent_id"/>
                 </xpath>
@@ -34,11 +35,24 @@
             <field name="inherit_id" ref="account.view_account_group_tree"/>
             <field name="arch" type="xml">
                 <xpath expr="//field[@name='company_id']" position="after">
+                    <field name="sort_code"/>
                     <field name="referentiecode"/>
                     <field name="code"/>
                 </xpath>
             </field>
         </record>
+
+        <record id="account_account_group_action" model="ir.actions.act_window">
+            <field name="name">Account Groups</field>
+            <field name="res_model">account.group</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_action_account_group" 
+        action="account_account_group_action" 
+        sequence="10" 
+        groups="base.group_no_one" 
+        parent="account.account_account_menu"/>
 
     </data>
 </odoo>

@@ -3,11 +3,18 @@
 
 # Copyright (C) 2016 Onestein (<http://www.onestein.eu>).
 
-from odoo import api, Command, models, _
+from odoo import fields, api, Command, models, _
 
 
 class AccountChartTemplate(models.Model):
     _inherit = 'account.chart.template'
+
+    rgs_type = fields.Selection([
+        ('rgs_basic', 'Basic'),
+        ('rgs_extended', 'Extended'),
+        ('rgs_ez', 'EZ / VOF'),
+        ('rgs_zzp', 'ZZP'),
+        ('rgs_bv', 'BV')])
 
     def _prepare_all_journals(self, acc_template_ref, company, journals_dict=None):
 
@@ -45,9 +52,34 @@ class AccountChartTemplate(models.Model):
     def _get_account_vals(self, company, account_template, code_acc, tax_template_ref):
         self.ensure_one()
         vals = super()._get_account_vals(company, account_template, code_acc, tax_template_ref)
-        if account_template.referentiecode:
-            vals.update({'referentiecode': account_template.referentiecode})
+        
+        if self == self.env.ref('l10n_nl_rgs.l10nnl_rgs_chart_template', False):
+            vals.update({
+                'referentiecode': account_template.referentiecode,
+                'sort_code': account_template.sort_code})
         return vals
+
+    def generate_account(self, tax_template_ref, acc_template_ref, code_digits, company):
+        if self != self.env.ref('l10n_nl_rgs.l10nnl_rgs_chart_template', False):
+            return super().generate_account(tax_template_ref, acc_template_ref, code_digits, company)
+
+        self.ensure_one()
+        account_tmpl_obj = self.env['account.account.template']
+        acc_template = account_tmpl_obj.search([('nocreate', '!=', True), ('chart_template_id', '=', self.id)], order='id')
+        template_vals = []
+        for account_template in acc_template:
+            if not account_template[self.rgs_type]:
+                continue
+            code_main = account_template.code and len(account_template.code) or 0
+            code_acc = account_template.code or ''
+            if code_main > 0 and code_main <= code_digits:
+                code_acc = str(code_acc) + (str('0'*(code_digits-code_main)))
+            vals = self._get_account_vals(company, account_template, code_acc, tax_template_ref)
+            template_vals.append((account_template, vals))
+        accounts = self._create_records_with_xmlid('account.account', template_vals, company)
+        for template, account in zip(acc_template, accounts):
+            acc_template_ref[template] = account
+        return acc_template_ref
 
     def generate_account_groups(self, company):
         """ Inherit this method to fix reference code missing in account groups"""
@@ -60,13 +92,16 @@ class AccountChartTemplate(models.Model):
         group_templates = self.env['account.group.template'].search([('chart_template_id', '=', self.id)])
         template_vals = []
         for group_template in group_templates:
+            if not group_template[self.rgs_type]:
+                continue
             vals = {
                 'name': group_template.name,
                 'code_prefix_start': group_template.code_prefix_start,
                 'code_prefix_end': group_template.code_prefix_end,
                 'company_id': company.id,
                 'code': group_template.code,
-                'referentiecode': group_template.referentiecode
+                'referentiecode': group_template.referentiecode,
+                'sort_code': group_template.sort_code
             }
             template_vals.append((group_template, vals))
         
@@ -77,6 +112,58 @@ class AccountChartTemplate(models.Model):
             group = groups.filtered(lambda ag: ag.code == group_template.code)
             if group and parent_group:
                 group.parent_id = parent_group.id
-                    
 
+    def _load_template(self, company, code_digits=None, account_ref=None, taxes_ref=None):
+        if self != self.env.ref('l10n_nl_rgs.l10nnl_rgs_chart_template', False):
+            return super(AccountChartTemplate, self)._load_template(
+                company, code_digits=code_digits,
+                account_ref=account_ref, taxes_ref=taxes_ref)
 
+        account_ref, taxes_ref = super(AccountChartTemplate, self)._load_template(
+            company, code_digits=code_digits,
+            account_ref=account_ref, taxes_ref=taxes_ref)
+
+        # Add allowed journals to accounts basaed on group settings
+        self.add_account_allowed_journals(company)
+
+        return account_ref, taxes_ref
+
+    def add_account_allowed_journals(self, company):
+        """ Inherit this method to fix reference code missing in account groups"""
+        self.ensure_one()
+
+        group_templates = self.env['account.group.template'].search([
+            ('chart_template_id', '=', self.id),
+            '|',
+            ('rgs_allowed_journals_code', '!=', False),
+            ('rgs_allowed_journals_type', '!=', False)])
+
+        for group_template in group_templates:
+            group = self.env['account.group'].search([
+                ('company_id', '=', company.id),
+                ('referentiecode', '=', group_template.referentiecode)])
+            if not group:
+                continue
+            journals = self.env['account.journal']
+            if group_template.rgs_allowed_journals_type:
+                type_list = [jtype for jtype in group_template.rgs_allowed_journals_type.split(",")]
+                journals |= self.get_allowed_account_journals_based_on_type(company, type_list)
+            if group_template.rgs_allowed_journals_code:
+                code_list = [jcode for jcode in group_template.rgs_allowed_journals_code.split(",")]
+                journals |= self.get_allowed_account_journals_based_on_code(company, code_list)
+
+            if journals:
+                accounts = group.get_all_account_ids()
+                accounts.write({
+                    'allowed_journal_ids': [(6, 0, journals.ids)]
+                })
+
+    def get_allowed_account_journals_based_on_type(self, company, type_list):
+        return self.env['account.journal'].search([
+            ('company_id', '=', company.id),
+            ('type', 'in', type_list)])
+
+    def get_allowed_account_journals_based_on_code(self, company, code_list):
+        return self.env['account.journal'].search([
+            ('company_id', '=', company.id),
+            ('code', 'in', code_list)])

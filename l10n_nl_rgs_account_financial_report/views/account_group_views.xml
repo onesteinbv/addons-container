@@ -10,6 +10,7 @@
                 <xpath expr="//field[@name='company_id']" position="after">
                     <field name="complete_code" readonly="1"/>
                     <field name="complete_name" readonly="1"/>
+                    <field name="level" readonly="1"/>
                     <field name="account_ids" readonly="1"/>
                     <field name="group_child_ids" readonly="1"/>
                     <field name="compute_account_ids" readonly="1"/>
