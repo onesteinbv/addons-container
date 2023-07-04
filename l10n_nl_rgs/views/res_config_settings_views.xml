@@ -8,10 +8,13 @@
             <field name="priority" eval="41"/>
             <field name="inherit_id" ref="base.res_config_settings_view_form"/>
             <field name="arch" type="xml">
-                <field name="chart_template_id" position="after">
-                    <!-- <label for="rgs_type" string="RGS Type" class="col-2 o_light_label"/> -->
-                    <field name="rgs_type"/>
-                </field>
+                <xpath expr="//field[@name='chart_template_id']/.." position="after">
+                    <div class="row mt16" attrs="{'invisible': [('is_l10n_nl_rgs', '!=', True)]}">
+                        <label for="l10n_nl_rgs_type" string="RGS Type" class="col-2 o_light_label"/>
+                        <field name="l10n_nl_rgs_type" attrs="{'required': [('is_l10n_nl_rgs', '=', True)]}"/>
+                        <field name="is_l10n_nl_rgs" invisible="1"/>
+                    </div>
+                </xpath>
             </field>
         </record>
 
