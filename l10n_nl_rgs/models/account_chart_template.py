@@ -9,13 +9,6 @@ from odoo import fields, api, Command, models, _
 class AccountChartTemplate(models.Model):
     _inherit = 'account.chart.template'
 
-    rgs_type = fields.Selection([
-        ('rgs_basic', 'Basic'),
-        ('rgs_extended', 'Extended'),
-        ('rgs_ez', 'EZ / VOF'),
-        ('rgs_zzp', 'ZZP'),
-        ('rgs_bv', 'BV')])
-
     def _prepare_all_journals(self, acc_template_ref, company, journals_dict=None):
 
         if self != self.env.ref('l10n_nl_rgs.l10nnl_rgs_chart_template', False):
@@ -68,7 +61,7 @@ class AccountChartTemplate(models.Model):
         acc_template = account_tmpl_obj.search([('nocreate', '!=', True), ('chart_template_id', '=', self.id)], order='id')
         template_vals = []
         for account_template in acc_template:
-            if not account_template[self.rgs_type]:
+            if not account_template[company.l10n_nl_rgs_type]:
                 continue
             code_main = account_template.code and len(account_template.code) or 0
             code_acc = account_template.code or ''
@@ -92,7 +85,7 @@ class AccountChartTemplate(models.Model):
         group_templates = self.env['account.group.template'].search([('chart_template_id', '=', self.id)])
         template_vals = []
         for group_template in group_templates:
-            if not group_template[self.rgs_type]:
+            if not group_template[company.l10n_nl_rgs_type]:
                 continue
             vals = {
                 'name': group_template.name,
