@@ -28,3 +28,10 @@
         onestein: git@github.com:onesteinbv/addons-oca.git
     merges:
         - onestein 16.0
+
+# third-party
+./addons-third-party:
+    remotes:
+        onestein: git@github.com:onesteinbv/addons-third-party.git
+    merges:
+        - onestein 16.0
