@@ -71,6 +71,7 @@ oca/base_tier_validation_formula
 oca/base_tier_validation_forward
 oca/base_user_management
 oca/base_vat_optional_vies
+oca/base_view_inheritance_extension
 oca/contract
 oca/contract_payment_mode
 oca/currency_rate_update
