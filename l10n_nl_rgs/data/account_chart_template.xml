@@ -13,6 +13,7 @@
             <field name="spoken_languages" eval="'nl_NL;en_GB;'"/>
             <field name="currency_id" ref="base.EUR"/>
             <field name="country_id" ref="base.nl"/>
+            <field name="rgs_type">rgs_extended</field>
         </record>
 
     </data>

@@ -6,7 +6,13 @@
 from odoo import api, fields, models, _
 
 
-class AccountAccountTemplayte(models.Model):
+class AccountAccountTemplate(models.Model):
     _inherit = 'account.account.template'
 
     referentiecode = fields.Char(string='Referentiecode')
+    sort_code = fields.Char(string='Sorting code')
+    rgs_basic = fields.Boolean(default=False)
+    rgs_extended = fields.Boolean(default=False)
+    rgs_ez = fields.Boolean(default=False)
+    rgs_zzp = fields.Boolean(default=False)
+    rgs_bv = fields.Boolean(default=False)

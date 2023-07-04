@@ -26,6 +26,7 @@
         'data/account_fiscal_position_tax_template.xml',
         'data/account_fiscal_position_account_template.xml',
         'data/account_chart_template_data.xml',
+        'views/res_config_settings_views.xml',
         'views/account_account_views.xml',
         'views/account_group_views.xml',
     ],
