@@ -64,6 +64,7 @@
         'l10n_nl_postcode',
         'l10n_nl_tax_statement',
         'l10n_nl_tax_statement_date_range',
+        'l10n_nl_tax_statement_icp',
         'l10n_nl_xaf_auditfile_export',
         # OCA mis-builder
         'mis_builder',
