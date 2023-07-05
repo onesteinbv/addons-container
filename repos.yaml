@@ -15,6 +15,12 @@
     merges:
         - onestein 16.0
 
+./addons-project-nextcloud:
+    remotes:
+        onestein: git@github.com:onesteinbv/addons-project-nextcloud.git
+    merges:
+        - onestein 16.0
+
 # third-party
 ./design-themes:
     remotes:
