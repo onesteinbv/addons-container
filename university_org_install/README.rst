@@ -1,5 +1,5 @@
-======================================
-Community Based Organization - Install
-======================================
+=======================================
+University Based Organization - Install
+=======================================
 
-Community Based Organization - Install
+University Based Organization - Install
