@@ -29,6 +29,7 @@ addons-third-party/mollie_account_sync
 addons-third-party/payment_mollie_official
 oca/account_asset_management
 oca/account_banking_mandate
+oca/account_banking_mandate_contact
 oca/account_banking_mandate_sale
 oca/account_banking_pain_base
 oca/account_banking_sepa_credit_transfer
