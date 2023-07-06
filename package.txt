@@ -22,6 +22,7 @@ addons-generic/membership_hr_recruitment
 addons-generic/membership_section
 addons-generic/project_role_members
 addons-generic/website_mass_mailing_membership_section
+addons-generic/website_membership_registration
 addons-generic/website_membership_section
 addons-generic/website_project
 addons-generic/website_project_role_members
