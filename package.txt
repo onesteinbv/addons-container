@@ -27,6 +27,7 @@ addons-generic/website_membership_section
 addons-generic/website_project
 addons-generic/website_project_role_members
 addons-generic/website_event_share_filter_option
+addons-generic/website_hide_navbar_technical
 addons-generic/website_sale_share_filter_option
 addons-generic/website_share_base
 addons-generic/website_share_blogger
