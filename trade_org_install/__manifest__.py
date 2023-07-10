@@ -155,7 +155,6 @@
         'membership_hr_recruitment',
         'membership_section',
         'project_role_members',
-        #'website_event_external_map',
         'website_event_share_filter_option',
         'website_hide_navbar_technical',
         'website_mass_mailing_membership_section',
