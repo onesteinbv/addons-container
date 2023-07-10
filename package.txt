@@ -26,6 +26,8 @@ addons-generic/website_membership_registration
 addons-generic/website_membership_section
 addons-generic/website_project
 addons-generic/website_project_role_members
+addons-generic/website_event_share_filter_option
+addons-generic/website_share_filter_option_technical
 addons-third-party/mollie_account_sync
 addons-third-party/payment_mollie_official
 oca/account_asset_management
