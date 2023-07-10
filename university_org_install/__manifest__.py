@@ -187,7 +187,7 @@
         'website_share_telegram',
         'website_share_tumblr',
         'website_share_wordpress',
-        #'website_snippet_dynamic_link',
+        'website_snippet_dynamic_link',
         'website_snippet_openstreetmap',
         'website_two_steps_share_technical',
 
