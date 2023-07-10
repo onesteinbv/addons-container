@@ -198,7 +198,7 @@
         'l10n_nl_rgs_account_financial_report',
         'l10n_nl_rgs_asset',
         'l10n_nl_rgs_mis_report',
-        'nextcloud_odoo_sync',
+        #'nextcloud_odoo_sync',
     ],
     'data': [],
 }

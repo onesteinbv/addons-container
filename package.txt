@@ -117,6 +117,4 @@ oca/website_odoo_debranding
 oca/website_snippet_openstreetmap
 oca/helpdesk_mgmt
 oca/helpdesk_mgmt_project
-addons-project-nextcloud/nextcloud_odoo_sync
-addons-project-nextcloud/nextcloud_calendar_instance_per_user
 design-themes/*
