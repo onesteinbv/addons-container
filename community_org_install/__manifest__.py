@@ -206,9 +206,9 @@
         'website_membership_section',
         'website_project',
         'website_project_role_members',
-        #'website_sale_share_filter_option',
-        #'website_share_blogger',
-        #'website_share_diaspora',
+        'website_sale_share_filter_option',
+        'website_share_blogger',
+        'website_share_diaspora',
         #'website_share_filter_option_blogger',
         #'website_share_filter_option_diaspora',
         #'website_share_filter_option_friendica',
@@ -232,7 +232,7 @@
         #'website_share_wordpress',
         #'website_snippet_dynamic_link',
         'website_snippet_openstreetmap',
-        #'website_two_steps_share_technical',
+        'website_two_steps_share_technical',
 
         # 3rd-Party
         'mollie_account_sync',
