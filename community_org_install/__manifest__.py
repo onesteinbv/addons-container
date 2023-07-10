@@ -198,7 +198,6 @@
         'membership_hr_recruitment',
         'membership_section',
         'project_role_members',
-        #'web_editor_fontawesome',
         #'website_event_external_map',
         #'website_event_share_filter_option',
         #'website_hide_navbar_technical',
@@ -232,7 +231,7 @@
         #'website_share_tumblr',
         #'website_share_wordpress',
         #'website_snippet_dynamic_link',
-        #'website_snippet_openstreetmap',
+        'website_snippet_openstreetmap',
         #'website_two_steps_share_technical',
 
         # 3rd-Party

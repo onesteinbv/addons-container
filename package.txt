@@ -114,6 +114,7 @@ oca/web_timeline
 oca/web_widget_x2many_2d_matrix
 oca/website_analytics_matomo
 oca/website_odoo_debranding
+oca/website_snippet_openstreetmap
 oca/helpdesk_mgmt
 oca/helpdesk_mgmt_project
 addons-project-nextcloud/nextcloud_odoo_sync
