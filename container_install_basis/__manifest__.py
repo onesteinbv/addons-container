@@ -51,6 +51,7 @@
         "date_range",
 
         # Dutch localization
+        "l10n_nl_rgs",
         "l10n_nl_bank",
         "l10n_nl_bsn",
         "l10n_nl_postcode",
