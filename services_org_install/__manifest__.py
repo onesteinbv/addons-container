@@ -185,14 +185,11 @@
         'website_odoo_debranding',
 
         # Onestein
-        #base_municipality'
-        #project_role_members',
-        #website_project',
-        #website_project_role_members',
         'mass_mailing_help',
-        
+
         # 3rd-Party
         'mollie_account_sync',
+        'mollie_subscription_ept',
         'payment_mollie_official',
         'l10n_nl_rgs',
         'l10n_nl_rgs_account_financial_report',

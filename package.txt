@@ -55,6 +55,7 @@ addons-generic/website_share_tumblr
 addons-generic/website_share_wordpress
 addons-generic/website_two_steps_share_technical
 addons-third-party/mollie_account_sync
+addons-third-party/mollie_subscription_ept
 addons-third-party/payment_mollie_official
 oca/account_asset_management
 oca/account_banking_mandate
