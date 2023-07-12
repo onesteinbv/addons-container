@@ -30,6 +30,9 @@ def main(env, email, group_file, group):
             })
 
         if customer_user.state == "new":
+            group_ids.append(
+                env.ref("base_onboarding.onboarding_group").id
+            )
             try:
                 customer_user.action_reset_password()
             except Exception as e:

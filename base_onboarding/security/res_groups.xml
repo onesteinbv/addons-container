@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="onboarding_group" model="res.groups">
+        <field name="name">Onboarding</field>
+        <field name="category_id" ref="base.module_category_hidden"/>
+        <field
+            name="implied_ids"
+            eval="[
+                Command.link(ref('base_mail_security.manage_mail_servers_group')),
+                Command.link(ref('website_security.group_website_security_config'))
+            ]"
+        />
+    </record>
+</odoo>

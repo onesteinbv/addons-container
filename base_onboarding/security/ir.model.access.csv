@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+base_onboarding.access_base_onboarding_wizard,access_base_onboarding_wizard,base_onboarding.model_base_onboarding_wizard,base.group_user,1,1,1,1

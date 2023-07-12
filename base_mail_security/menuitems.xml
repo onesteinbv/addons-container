@@ -3,7 +3,7 @@
     <record model="ir.ui.menu" id="base.menu_administration">
         <field
             name="groups_id"
-            eval="[(4,ref('curq_mail_security.manage_mail_servers_group'))]"
+            eval="[(4,ref('base_mail_security.manage_mail_servers_group'))]"
         />
     </record>
 

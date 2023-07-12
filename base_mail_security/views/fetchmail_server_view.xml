@@ -5,7 +5,7 @@
         <field name="model">fetchmail.server</field>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='server_type']" position="before">
-                <field name="curq" groups="base.group_erp_manager" />
+                <field name="private" groups="base.group_erp_manager" />
             </xpath>
             <xpath expr="//field[@name='object_id']" position="attributes">
                 <attribute name="groups">base.group_erp_manager</attribute>

@@ -5,7 +5,7 @@
         <field name="model">ir.mail_server</field>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='name']" position="after">
-                <field name="curq" groups="base.group_erp_manager" />
+                <field name="private" groups="base.group_erp_manager" />
             </xpath>
         </field>
     </record>
