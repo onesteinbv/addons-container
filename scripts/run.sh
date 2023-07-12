@@ -17,4 +17,8 @@ if [[ "$UPDATE_COMPANY" == "true" ]]; then
   python /odoo/scripts/update_company.py -c $ODOO_RC -d $DB_NAME --log-level=error --name "$COMPANY_NAME" --email "$COMPANY_EMAIL" --coc "$COMPANY_COC" --city "$COMPANY_CITY" --zip "$COMPANY_ZIP" --street "$COMPANY_STREET"
 fi
 
-python /odoo/scripts/uninstall_modules.py -c $ODOO_RC -d $DB_NAME --log-level=error --modules "$MODULES"
+if [[ -n "$UNINSTALL_MODULES" && "$UNINSTALL_MODULES" == "True" ]]; then
+  python /odoo/scripts/uninstall_modules.py -c $ODOO_RC -d $DB_NAME --log-level=error --modules "$MODULES" --do-uninstall
+else
+  python /odoo/scripts/uninstall_modules.py -c $ODOO_RC -d $DB_NAME --log-level=error --modules "$MODULES"
+fi
