@@ -59,6 +59,8 @@
         'base_customer_user',
         'base_partner_security',
         'base_mail_security',
+        'base_onboarding',
+        "container_password_security",
 
         "crm",
         #"mail_debrand",
