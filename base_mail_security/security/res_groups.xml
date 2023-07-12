@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="manage_mail_servers_group" model="res.groups">
+        <field name="name">Manage Mail Servers</field>
+    </record>
+</odoo>

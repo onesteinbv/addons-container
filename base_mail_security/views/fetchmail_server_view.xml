@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_email_server_form" model="ir.ui.view">
+        <field name="inherit_id" ref="mail.view_email_server_form" />
+        <field name="model">fetchmail.server</field>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='server_type']" position="before">
+                <field name="curq" groups="base.group_erp_manager" />
+            </xpath>
+            <xpath expr="//field[@name='object_id']" position="attributes">
+                <attribute name="groups">base.group_erp_manager</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>

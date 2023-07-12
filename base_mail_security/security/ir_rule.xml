@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="ir_mail_server_rule" model="ir.rule">
+        <field name="name">ir_mail_server_rule</field>
+        <field name="model_id" ref="base.model_ir_mail_server"/>
+        <field name="domain_force">[('private', '=', False)]</field>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_create" eval="True"/>
+        <field name="perm_write" eval="True"/>
+        <field name="perm_unlink" eval="True"/>
+        <field name="groups" eval="[(4,ref('base_mail_security.manage_mail_servers_group'))]"/>
+    </record>
+
+    <record id="fetchmail_server_rule" model="ir.rule">
+        <field name="name">ir_mail_server_rule</field>
+        <field name="model_id" ref="mail.model_fetchmail_server"/>
+        <field name="domain_force">[('private', '=', False)]</field>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_create" eval="True"/>
+        <field name="perm_write" eval="True"/>
+        <field name="perm_unlink" eval="True"/>
+        <field name="groups" eval="[(4,ref('base_mail_security.manage_mail_servers_group'))]"/>
+    </record>
+</odoo>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.menu" id="base.menu_administration">
+        <field
+            name="groups_id"
+            eval="[(4,ref('curq_mail_security.manage_mail_servers_group'))]"
+        />
+    </record>
+
+    <menuitem
+        id="base_mail_config_menu"
+        parent="base.menu_administration"
+        name="Email"
+        groups="base_mail_security.manage_mail_servers_group"
+    />
+
+    <menuitem
+        id="base_mail_incoming_menu"
+        parent="base_mail_config_menu"
+        name="Incoming Mail Servers"
+        action="mail.action_email_server_tree"
+    />
+
+    <menuitem
+        id="base_mail_outgoing_menu"
+        parent="base_mail_config_menu"
+        name="Outgoing Mail Servers"
+        action="base.action_ir_mail_server_list"
+    />
+</odoo>
