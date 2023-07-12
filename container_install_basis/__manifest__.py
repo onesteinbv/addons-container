@@ -82,7 +82,7 @@
 
         # Debranding
         "remove_odoo_enterprise",
-        #"base_import_debranding",
+        "base_import_debranding",
         "website_odoo_debranding",
         # 'support_branding',  # TODO do we need it?
     ],
