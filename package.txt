@@ -138,6 +138,7 @@ oca/partner_contact_birthdate
 oca/partner_contact_personal_information_page
 oca/partner_external_map
 oca/partner_firstname
+oca/password_security
 oca/product_category_product_link
 oca/product_category_tax
 oca/project_role
