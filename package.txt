@@ -8,6 +8,8 @@ base_mail_security
 base_onboarding
 community_org_install
 consolidation_account
+container_install_standard
+container_install_basis
 container_password_security
 l10n_nl_rgs
 l10n_nl_rgs_account_financial_report
