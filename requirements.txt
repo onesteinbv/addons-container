@@ -4,3 +4,4 @@ caldav==1.2.1
 unidecode
 openupgradelib
 astor
+zxcvbn
