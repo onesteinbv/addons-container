@@ -133,6 +133,7 @@ oca/membership_extension
 oca/membership_variable_period
 oca/mis_builder
 oca/mis_builder_budget
+oca/multi_step_wizard
 oca/partner_contact_birthdate
 oca/partner_contact_personal_information_page
 oca/partner_external_map
