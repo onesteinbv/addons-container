@@ -17,10 +17,6 @@
         "account_payment_mode",
         "account_payment_order",
         "account_payment_partner",
-        #"account_partner_default_account",
-        #"sales_team_disabled",
-        #"sales_team_disabled_crm",
-        #"sales_team_disabled_sale",
 
         # Extra security
         "website_security",
@@ -52,12 +48,6 @@
         # Dutch localization
         "l10n_nl_rgs",
         "l10n_nl_bank",
-        "l10n_nl_bsn",
-        "l10n_nl_postcode",
-        "l10n_nl_rgs",
-        "l10n_nl_tax_statement",
-        "l10n_nl_tax_statement_date_range",
-        'l10n_nl_tax_statement_icp',
         "l10n_nl_xaf_auditfile_export",
 
         # Containers
@@ -66,7 +56,6 @@
         #"password_security",
         "web_no_bubble",
 
-        #"partner_country_default_nl",
         "crm",
         #"mail_debrand",
         #"curq_account",

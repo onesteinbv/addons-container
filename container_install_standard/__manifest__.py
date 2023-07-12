@@ -12,26 +12,17 @@
     "depends": [
         "container_install_basis",
 
-        #"mass_mailing",
-        #"curq_mass_mailing",
-
-        #"sale_expense",
-        #"mis_builder",
-
         # Timesheets
-        #"sale_timesheet",
         "hr_timesheet_sheet",
 
-        # Unece
-        #"base_unece",
-        #"uom_unece",
-        #"account_payment_unece",
-        #"account_tax_unece",
-        #"l10n_nl_account_tax_unece",
+        # Dutch localization
+        "l10n_nl_postcode",
+        "l10n_nl_tax_statement",
+        "l10n_nl_tax_statement_date_range",
+        'l10n_nl_tax_statement_icp',
 
         # Accountancy
         "account_financial_report",
-        #"currency_rate_update",
         "product_category_product_link",
         "account_statement_import_camt",
         "account_statement_import_camt54",
