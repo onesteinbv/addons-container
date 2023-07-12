@@ -3,6 +3,8 @@ account_financial_consolidation_report
 accountancy_install
 base_customer_company
 base_customer_user
+base_partner_security
+base_mail_security
 community_org_install
 consolidation_account
 l10n_nl_rgs

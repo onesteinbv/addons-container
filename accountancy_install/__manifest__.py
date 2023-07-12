@@ -94,12 +94,6 @@
         'web_responsive',
         'web_search_with_and',
 
-        # CUSTOM
-        # 'consolidation_account',
-        # 'account_financial_consolidation_report',
-        'base_customer_company',
-        'base_customer_user',
-
         # THIRD-PARTY
         'mollie_account_sync',
         'payment_mollie_official',
