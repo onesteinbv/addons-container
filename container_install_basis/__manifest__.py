@@ -29,7 +29,6 @@
         #"base_debug_disabled",  # enabling this will cause all flavors to have debug disabled
 
         # Accountancy
-        "account_financial_report",
         "account_fiscal_position_vat_check",
         "account_fiscal_year",
         "account_invoice_constraint_chronology",

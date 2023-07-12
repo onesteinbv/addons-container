@@ -30,7 +30,8 @@
         #"l10n_nl_account_tax_unece",
 
         # Accountancy
-        "currency_rate_update",
+        "account_financial_report",
+        #"currency_rate_update",
         "product_category_product_link",
         "account_statement_import_camt",
         "account_statement_import_camt54",
