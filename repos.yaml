@@ -17,6 +17,8 @@
 
 # third-party
 ./design-themes:
+    defaults:
+        depth: 20
     remotes:
         odoo: git@github.com:odoo/design-themes.git
     merges:

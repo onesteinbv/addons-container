@@ -25,8 +25,8 @@
         # Extra security
         "website_security",
         "base_user_management",
-        #"base_company_management",
-        "base_debug_disabled",
+        "base_company_management",
+        #"base_debug_disabled",  # enabling this will cause all flavors to have debug disabled
 
         # Accountancy
         "account_financial_report",

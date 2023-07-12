@@ -9,6 +9,8 @@
     'website': 'https://www.onestein.nl',
     'license': 'AGPL-3',
     'depends': [
+        'container_install_standard',
+
         # Base
         'account',
         'account_edi',
@@ -154,11 +156,9 @@
         'account_move_line_tax_editable',
         'account_move_name_sequence',
         'account_move_print',
-        'account_usability',
         'base_vat_optional_vies',
         'product_category_tax',
         'account_move_tier_validation',
-        'account_reconcile_oca',
         'account_statement_import_online_paypal',
         'website_analytics_matomo',
         'account_statement_import_file_reconcile_oca',

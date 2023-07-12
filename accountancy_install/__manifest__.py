@@ -11,6 +11,8 @@
     "author": "Onestein BV, André Schenkels",
     "website": "https://www.onestein.nl",
     "depends": [
+        'container_install_standard',
+
         # PREOCA?
         'l10n_nl_rgs',
         'l10n_nl_rgs_account_financial_report',
