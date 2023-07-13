@@ -15,6 +15,7 @@ l10n_nl_rgs
 l10n_nl_rgs_account_financial_report
 l10n_nl_rgs_asset
 l10n_nl_rgs_mis_report
+membership_accessibility
 services_org_install
 trade_org_install
 university_org_install

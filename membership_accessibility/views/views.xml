@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="view_partner_form">
+        <field name="name">res.partner.form.inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="membership.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='membership']" position='attributes'>
+                <attribute name="groups">membership_accessibility.group_membership_user</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="res_users_view_form_simple_modif" model="ir.ui.view">
+        <field name="name">res.users.preferences.form.simplified.inherit</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form_simple_modif"/>
+        <field name="arch" type="xml">
+            <notebook position="inside">
+                <page string="Membership" name="membership">
+                    <group>
+                        <group>
+                            <field name="free_member" readonly="1"/>
+                            <field name="membership_category_ids" widget="many2many_tags" readonly="1"/>
+                            <field name="is_adhered_member" attrs="{'invisible': [('associate_member', '=', False)]}" readonly="1"/>
+                            <label for="membership_state"/>
+                            <div>
+                                <field name="membership_state" readonly="1"/>
+                            </div>
+                        </group>
+                        <group>
+                            <field name="associate_member" attrs="{'invisible':[('free_member','=',True)]}" readonly="1"/>
+                            <field name="membership_start"
+                                   attrs="{'invisible':['|',('membership_start','=',False),('is_adhered_member', '=', True)]}" readonly="1"/>
+                            <field name="membership_start_adhered"
+                                   attrs="{'invisible':[('is_adhered_member','=',False)]}" readonly="1"/>
+                            <field name="membership_last_start"
+                                   attrs="{'invisible':[('membership_last_start','=',False)]}" readonly="1"/>
+                            <field name="membership_stop" attrs="{'invisible':[('membership_stop','=',False)]}" readonly="1"/>
+                            <field name="membership_cancel" attrs="{'invisible':[('membership_cancel','=',False)]}" readonly="1"/>
+                        </group>
+                    </group>
+                    <field name="member_lines" nolabel="1" colspan="4" readonly="1">
+                        <tree string="Memberships">
+                            <field name="date"/>
+                            <field name="membership_id" options="{'no_open': True, 'no_create': True}"/>
+                            <field name="category_id" optional="hide" options="{'no_open': True, 'no_create': True}"/>
+                            <field name="member_price"/>
+                            <field name="account_invoice_id" options="{'no_open': True, 'no_create': True}"/>
+                            <field name="state"/>
+                            <field name="date_from" optional="show"/>
+                            <field name="date_to" optional="show"/>
+                            <field name="date_cancel" optional="hide"/>
+                        </tree>
+                    </field>
+                    <field name="section_membership_ids" nolabel="1" colspan="4" readonly="1">
+                        <tree>
+                            <field name="section_id"/>
+                            <field name="start_date"/>
+                        </tree>
+                    </field>
+                    <field name="committee_membership_ids" nolabel="1" colspan="4" readonly="1">
+                        <tree string="Memberships" editable="top">
+                            <field name="committee_id"/>
+                        </tree>
+                    </field>
+                </page>
+                <page name="subscriptions" string="Subscriptions" attrs="{'invisible': [('mollie_subscription_ids', '=', False)]}">
+                    <field name="mollie_subscription_ids" widget="one2many">
+                        <tree string="subscriptions" create="0" delete="0" edit="0">
+                            <field name="name"/>
+                            <field name="description"/>
+                            <field name="amount"/>
+                            <field name="startDate"/>
+                            <field name="nextPaymentDate"/>
+                            <field name="status"/>
+                        </tree>
+                    </field>
+                </page>
+            </notebook>
+        </field>
+    </record>
+
+    <record id="sale.sale_menu_root" model="ir.ui.menu">
+        <field
+            name="groups_id"
+            eval="[(6,0,[ref('membership_accessibility.group_sale_crm_contact_access')])]"
+        />
+    </record>
+
+    <record id="crm.crm_menu_root" model="ir.ui.menu">
+        <field
+            name="groups_id"
+            eval="[(6,0,[ref('membership_accessibility.group_sale_crm_contact_access')])]"
+        />
+    </record>
+
+    <record id="contacts.menu_contacts" model="ir.ui.menu">
+        <field
+            name="groups_id"
+            eval="[(6,0,[ref('membership_accessibility.group_sale_crm_contact_access')])]"
+        />
+    </record>
+
+</odoo>

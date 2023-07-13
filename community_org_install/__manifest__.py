@@ -193,6 +193,7 @@
         'mass_mailing_membership_committee',
         'mass_mailing_membership_section',
         'mass_mailing_help',
+        'membership_accessibility',
         'membership_committee',
         'membership_hr',
         'membership_hr_recruitment',
