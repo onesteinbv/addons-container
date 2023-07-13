@@ -191,6 +191,7 @@
         'mollie_account_sync',
         'mollie_subscription_ept',
         'payment_mollie_official',
+        'membership_mollie_subscription',
         'l10n_nl_rgs',
         'l10n_nl_rgs_account_financial_report',
         'l10n_nl_rgs_asset',

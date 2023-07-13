@@ -53,7 +53,7 @@
         # Containers
         "hr_employee_firstname",
         "partner_firstname",
-        #"password_security",
+        "password_security",
         "web_no_bubble",
         'base_customer_company',
         'base_customer_user',
