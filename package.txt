@@ -29,6 +29,7 @@ addons-generic/mass_mailing_help
 addons-generic/membership_committee
 addons-generic/membership_hr
 addons-generic/membership_hr_recruitment
+addons-generic/membership_mollie_subscription
 addons-generic/membership_section
 addons-generic/project_role_members
 addons-generic/website_mass_mailing_membership_section
