@@ -187,6 +187,7 @@
         #'web_widget_dropdown_dynamic',
         'web_responsive',
         'website_odoo_debranding',
+        'hr_expense_remove_mobile_link',
 
         # Onestein
         'base_municipality',

@@ -183,6 +183,7 @@
         'web_widget_x2many_2d_matrix',
         'web_timeline',
         'website_odoo_debranding',
+        'hr_expense_remove_mobile_link',
 
         # Onestein
         'mass_mailing_help',
