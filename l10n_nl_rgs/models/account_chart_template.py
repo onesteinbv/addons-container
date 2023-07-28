@@ -117,7 +117,8 @@ class AccountChartTemplate(models.Model):
             account_ref=account_ref, taxes_ref=taxes_ref)
 
         # Add allowed journals to accounts based on group settings
-        self.add_account_allowed_journals(company)
+        if company.l10n_nl_rgs_setup_allowed_journals:
+            self.add_account_allowed_journals(company)
 
         return account_ref, taxes_ref
 

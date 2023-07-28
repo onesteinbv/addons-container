@@ -17,3 +17,5 @@ class AccountAccount(models.Model):
 
         for rec in self.filtered(lambda acc: not acc.referentiecode and acc.group_id and acc.group_id.referentiecode):
             rec.referentiecode = rec.group_id.referentiecode
+
+        return resp
