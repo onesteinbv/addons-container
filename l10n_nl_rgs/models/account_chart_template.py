@@ -60,9 +60,11 @@ class AccountChartTemplate(models.Model):
         account_tmpl_obj = self.env['account.account.template']
         acc_template = account_tmpl_obj.search([('nocreate', '!=', True), ('chart_template_id', '=', self.id)], order='id')
         template_vals = []
+        acc_template_done = self.env["account.account.template"]
         for account_template in acc_template:
             if not account_template[company.l10n_nl_rgs_type]:
                 continue
+            acc_template_done |= account_template
             code_main = account_template.code and len(account_template.code) or 0
             code_acc = account_template.code or ''
             if code_main > 0 and code_main <= code_digits:
@@ -70,7 +72,7 @@ class AccountChartTemplate(models.Model):
             vals = self._get_account_vals(company, account_template, code_acc, tax_template_ref)
             template_vals.append((account_template, vals))
         accounts = self._create_records_with_xmlid('account.account', template_vals, company)
-        for template, account in zip(acc_template, accounts):
+        for template, account in zip(acc_template_done, accounts):
             acc_template_ref[template] = account
         return acc_template_ref
 
