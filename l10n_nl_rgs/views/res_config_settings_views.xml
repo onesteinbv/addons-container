@@ -15,8 +15,8 @@
                         <field name="is_l10n_nl_rgs" invisible="1"/>
                     </div>
                     <div class="row mt16" attrs="{'invisible': [('is_l10n_nl_rgs', '!=', True)]}">
-                        <label for="l10n_nl_rgs_setup_allowed_journals" string="Setup allowed journals" class="col-2 o_light_label" />
-                        <field name="l10n_nl_rgs_setup_allowed_journals" class="oe_inline" />
+                        <label for="l10n_nl_rgs_disable_allowed_journals" string="Disable allowed journals" class="col-2 o_light_label" />
+                        <field name="l10n_nl_rgs_disable_allowed_journals" class="oe_inline" />
                     </div>
                 </xpath>
             </field>
