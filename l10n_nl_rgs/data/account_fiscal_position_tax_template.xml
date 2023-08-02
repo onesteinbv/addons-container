@@ -62,6 +62,33 @@
             <field name="tax_src_id" ref="btw_21_buy"/>
             <field name="tax_dest_id" ref="btw_I_21"/>
         </record>
-        
+
+        <record id="fiscal_position_template_eu_private_1" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_eu_private"/>
+            <field name="tax_src_id" ref="btw_0"/>
+            <field name="tax_dest_id" ref="btw_X0_producten"/>
+        </record>
+        <record id="fiscal_position_template_eu_private_2_9" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_eu_private"/>
+            <field name="tax_src_id" ref="btw_9"/>
+            <field name="tax_dest_id" ref="btw_X0_producten"/>
+        </record>
+        <record id="fiscal_position_template_eu_private_3" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_eu_private"/>
+            <field name="tax_src_id" ref="btw_21"/>
+            <field name="tax_dest_id" ref="btw_X0_producten"/>
+        </record>
+
+        <record id="fiscal_position_template_eu_private_9" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_eu_private"/>
+            <field name="tax_src_id" ref="btw_9_buy"/>
+            <field name="tax_dest_id" ref="btw_I_9"/>
+        </record>
+        <record id="fiscal_position_template_eu_private_7" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_eu_private"/>
+            <field name="tax_src_id" ref="btw_21_buy"/>
+            <field name="tax_dest_id" ref="btw_I_21"/>
+        </record>
+
     </data>
 </openerp>
