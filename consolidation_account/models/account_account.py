@@ -12,7 +12,7 @@ class AccountAccount(models.Model):
         relation="account_consolidation_account_rel",
         column1='account_id',
         column2='consolidation_account_id',
-        string="Consolidation Account",
+        string="Consolidation Accounts",
         help="Select the consolidation accounts that should be used for this account.")
 
     
