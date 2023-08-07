@@ -133,11 +133,13 @@ class AccountChartTemplate(models.Model):
             '|',
             ('rgs_allowed_journals_code', '!=', False),
             ('rgs_allowed_journals_type', '!=', False)])
+        referentiecodes = group_templates.mapped("referentiecode")
+        all_groups = self.env['account.group'].search([
+            ('company_id', '=', company.id),
+            ('referentiecode', 'in', referentiecodes)])
 
         for group_template in group_templates:
-            group = self.env['account.group'].search([
-                ('company_id', '=', company.id),
-                ('referentiecode', '=', group_template.referentiecode)])
+            group = all_groups.filtered(lambda g: g.referentiecode == group_template.referentiecode)
             if not group:
                 continue
             journals = self.env['account.journal']

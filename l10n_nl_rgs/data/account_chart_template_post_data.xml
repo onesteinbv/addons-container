@@ -6,13 +6,21 @@
         <field name="property_account_payable_id" ref="pay"/>
         <field name="property_account_expense_categ_id" ref="7001010"/>
         <field name="property_account_income_categ_id" ref="8003010"/>
-        <!-- <field name="property_stock_account_input_categ_id" ref="0120"/> -->
-        <!-- <field name="property_stock_account_output_categ_id" ref="0129"/> -->
-        <!-- <field name="property_stock_valuation_account_id" ref="4830"/> -->
+        <!-- <field name="property_stock_account_input_categ_id" ref="?"/> -->
+        <!-- <field name="property_stock_account_output_categ_id" ref="?"/> -->
+        <!-- <field name="property_stock_valuation_account_id" ref="?"/> -->
+        <!-- <field name="property_tax_payable_account_id" ref="?"/> -->
+        <!-- <field name="property_tax_receivable_account_id" ref="?"/> -->
+        <!-- <field name="property_account_expense_id" ref="?"/> -->
+        <!-- <field name="property_account_income_id" ref="?"/> -->
+        <!-- <field name="property_advance_tax_payment_account_id" ref="?"/> -->
         <field name="expense_currency_exchange_account_id" ref="4210050"/>
         <field name="income_currency_exchange_account_id" ref="8407010"/>
         <field name="default_pos_receivable_account_id" ref="recv_pos" />
-        <!-- <field name="account_journal_early_pay_discount_loss_account_id" ref="7065"/> -->
-        <!-- <field name="account_journal_early_pay_discount_gain_account_id" ref="8065"/> -->
+        <!-- <field name="account_journal_suspense_account_id" ref="?"/> -->
+        <!-- <field name="account_journal_early_pay_discount_loss_account_id" ref="?"/> -->
+        <!-- <field name="account_journal_early_pay_discount_gain_account_id" ref="?"/> -->
+        <!-- <field name="default_cash_difference_income_account_id" ref="?"/> -->
+        <!-- <field name="default_cash_difference_expense_account_id" ref="?"/> -->
     </record>
 </odoo>

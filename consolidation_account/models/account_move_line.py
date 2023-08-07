@@ -14,12 +14,7 @@ class AccountMoveLine(models.Model):
         inverse="_inverse_consolidation_account_ids",
         store=True)
 
-    @api.onchange("account_id")
-    def _onchange_account_id(self):
-        super()._onchange_account_id()
-        if self.account_id:
-            self.consolidation_account_ids = self.account_id.consolidation_account_ids
-
+    @api.depends("account_id.consolidation_account_ids")
     def _compute_consolidation_account_ids(self):
         for rec in self:
             if rec.account_id and rec.account_id.consolidation_account_ids:
