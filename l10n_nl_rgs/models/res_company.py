@@ -7,6 +7,8 @@ class Company(models.Model):
     l10n_nl_rgs_type = fields.Selection([
         ('rgs_basic', 'Basic'),
         ('rgs_extended', 'Extended'),
+    ], default="rgs_basic")
+    l10n_nl_company_type = fields.Selection([
         ('rgs_ez', 'EZ / VOF'),
         ('rgs_zzp', 'ZZP'),
         ('rgs_bv', 'BV')

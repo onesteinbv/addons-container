@@ -11,6 +11,10 @@ class ResConfigSettings(models.TransientModel):
         related='company_id.l10n_nl_rgs_type',
         string='RGS Type',
         readonly=False)
+    l10n_nl_company_type = fields.Selection(
+        related='company_id.l10n_nl_company_type',
+        string='Company Type',
+        readonly=False)
     is_l10n_nl_rgs = fields.Boolean(
         compute="_compute_is_l10n_nl_rgs",
     )
