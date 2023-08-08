@@ -3,6 +3,7 @@
 
 # Copyright (C) 2016 Onestein (<http://www.onestein.eu>).
 
+from odoo.exceptions import ValidationError
 from odoo import api, fields, models, _
 
 
@@ -18,3 +19,12 @@ class AccountJournal(models.Model):
             account_vals['tag_ids'].append((4, self.env.ref('l10n_nl_rgs.account_tag_1003000').id))
 
         return account_vals
+
+    @api.model
+    def _fill_missing_values(self, vals):
+        chart_template = self.env.company.chart_template_id
+        is_rgs = chart_template == self.env.ref('l10n_nl_rgs.l10nnl_rgs_chart_template')
+        is_bank = vals.get('type') == "bank"
+        if not vals.get("default_account_id") and is_bank and is_rgs:
+            raise ValidationError(_("Bank Account is required."))
+        return super()._fill_missing_values(vals)
