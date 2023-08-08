@@ -21,7 +21,21 @@
             <field name="tax_src_id" ref="btw_21"/>
             <field name="tax_dest_id" ref="btw_X1"/>
         </record>
-        
+        <record id="position_tax_extracom_d_0" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_non_eu"/>
+            <field name="tax_src_id" ref="btw_0_d"/>
+            <field name="tax_dest_id" ref="btw_X1"/>
+        </record>
+        <record id="position_tax_extracom_d_9" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_non_eu"/>
+            <field name="tax_src_id" ref="btw_9_d"/>
+            <field name="tax_dest_id" ref="btw_X3"/>
+        </record>
+        <record id="position_tax_extracom_d_21" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_non_eu"/>
+            <field name="tax_src_id" ref="btw_21_d"/>
+            <field name="tax_dest_id" ref="btw_X1"/>
+        </record>
         <!-- VAT on buying from outside the EU -->
         <record id="position_tax_extracom_9" model="account.fiscal.position.tax.template">
             <field name="position_id" ref="fiscal_position_template_non_eu"/>
@@ -33,7 +47,16 @@
             <field name="tax_src_id" ref="btw_21_buy"/>
             <field name="tax_dest_id" ref="btw_E2"/>
         </record>
-    
+        <record id="position_tax_extracom_d_9" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_non_eu"/>
+            <field name="tax_src_id" ref="btw_9_buy_d"/>
+            <field name="tax_dest_id" ref="btw_E1_9"/>
+        </record>
+        <record id="position_tax_extracom_d_7" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_non_eu"/>
+            <field name="tax_src_id" ref="btw_21_buy_d"/>
+            <field name="tax_dest_id" ref="btw_E2"/>
+        </record>
 
         <!-- EU Countries -->
         <record id="position_tax_intracom_1" model="account.fiscal.position.tax.template">
@@ -51,7 +74,21 @@
             <field name="tax_src_id" ref="btw_21"/>
             <field name="tax_dest_id" ref="btw_X0_producten"/>
         </record>
-
+        <record id="position_tax_intracom_d_1" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_eu"/>
+            <field name="tax_src_id" ref="btw_0_d"/>
+            <field name="tax_dest_id" ref="btw_X0_diensten"/>
+        </record>
+        <record id="position_tax_intracom_d_2_9" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_eu"/>
+            <field name="tax_src_id" ref="btw_9_d"/>
+            <field name="tax_dest_id" ref="btw_X0_diensten"/>
+        </record>
+        <record id="position_tax_intracom_d_3" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_eu"/>
+            <field name="tax_src_id" ref="btw_21_d"/>
+            <field name="tax_dest_id" ref="btw_X0_diensten"/>
+        </record>
         <record id="position_tax_intracom_9" model="account.fiscal.position.tax.template">
             <field name="position_id" ref="fiscal_position_template_eu"/>
             <field name="tax_src_id" ref="btw_9_buy"/>
@@ -61,6 +98,16 @@
             <field name="position_id" ref="fiscal_position_template_eu"/>
             <field name="tax_src_id" ref="btw_21_buy"/>
             <field name="tax_dest_id" ref="btw_I_21"/>
+        </record>
+        <record id="position_tax_intracom_d_9" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_eu"/>
+            <field name="tax_src_id" ref="btw_9_buy_d"/>
+            <field name="tax_dest_id" ref="btw_I_9_d"/>
+        </record>
+        <record id="position_tax_intracom_d_7" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_eu"/>
+            <field name="tax_src_id" ref="btw_21_buy_d"/>
+            <field name="tax_dest_id" ref="btw_I_21_d"/>
         </record>
 
         <record id="fiscal_position_template_eu_private_1" model="account.fiscal.position.tax.template">
@@ -78,7 +125,21 @@
             <field name="tax_src_id" ref="btw_21"/>
             <field name="tax_dest_id" ref="btw_X0_producten"/>
         </record>
-
+        <record id="fiscal_position_template_eu_private_d_1" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_eu_private"/>
+            <field name="tax_src_id" ref="btw_0_d"/>
+            <field name="tax_dest_id" ref="btw_X0_diensten"/>
+        </record>
+        <record id="fiscal_position_template_eu_private_d_2_9" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_eu_private"/>
+            <field name="tax_src_id" ref="btw_9_d"/>
+            <field name="tax_dest_id" ref="btw_X0_diensten"/>
+        </record>
+        <record id="fiscal_position_template_eu_private_d_3" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_eu_private"/>
+            <field name="tax_src_id" ref="btw_21_d"/>
+            <field name="tax_dest_id" ref="btw_X0_diensten"/>
+        </record>
         <record id="fiscal_position_template_eu_private_9" model="account.fiscal.position.tax.template">
             <field name="position_id" ref="fiscal_position_template_eu_private"/>
             <field name="tax_src_id" ref="btw_9_buy"/>
@@ -88,6 +149,16 @@
             <field name="position_id" ref="fiscal_position_template_eu_private"/>
             <field name="tax_src_id" ref="btw_21_buy"/>
             <field name="tax_dest_id" ref="btw_I_21"/>
+        </record>
+        <record id="fiscal_position_template_eu_private_d_9" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_eu_private"/>
+            <field name="tax_src_id" ref="btw_9_buy_d"/>
+            <field name="tax_dest_id" ref="btw_I_9_d"/>
+        </record>
+        <record id="fiscal_position_template_eu_private_d_7" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_eu_private"/>
+            <field name="tax_src_id" ref="btw_21_buy_d"/>
+            <field name="tax_dest_id" ref="btw_I_21_d"/>
         </record>
 
     </data>
