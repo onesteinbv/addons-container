@@ -169,3 +169,30 @@ class AccountChartTemplate(models.Model):
         return self.env['account.journal'].search([
             ('company_id', '=', company.id),
             ('code', 'in', code_list)])
+
+    def _create_bank_journals(self, company, acc_template_ref):
+        self.ensure_one()
+        if self != self.env.ref('l10n_nl_rgs.l10nnl_rgs_chart_template', False):
+            return super()._create_bank_journals(company, acc_template_ref)
+
+        bank_journals = self.env['account.journal']
+        # Create the journals that will trigger the account.account creation
+        for acc in self._get_default_bank_journals_data():
+            vals = {
+                'name': acc['acc_name'],
+                'type': acc['account_type'],
+                'company_id': company.id,
+                'currency_id': acc.get('currency_id', self.env['res.currency']).id,
+                'sequence': 10,
+            }
+            if acc['account_type'] == "bank":
+                code = self.bank_account_code_prefix + "0"
+                account = self.env['account.account'].search([
+                    ('code', '=', code),
+                    ('company_id', '=', company.id)
+                ], limit=1)
+                if account:
+                    vals.update({"default_account_id": account.id})
+            bank_journals += self.env['account.journal'].create(vals)
+
+        return bank_journals
