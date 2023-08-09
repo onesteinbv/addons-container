@@ -185,10 +185,15 @@ class AccountChartTemplate(models.Model):
                 'currency_id': acc.get('currency_id', self.env['res.currency']).id,
                 'sequence': 10,
             }
-            if acc['account_type'] == "bank":
-                code = self.bank_account_code_prefix + "0"
+            # Bank/cash
+            account_code = False
+            if acc['account_type'] == "bank" and self.bank_account_code_prefix:
+                account_code = self.bank_account_code_prefix + "0"
+            if acc['account_type'] == "cash" and self.cash_account_code_prefix:
+                account_code = self.cash_account_code_prefix + "0"
+            if account_code:
                 account = self.env['account.account'].search([
-                    ('code', '=', code),
+                    ('code', '=', account_code),
                     ('company_id', '=', company.id)
                 ], limit=1)
                 if account:

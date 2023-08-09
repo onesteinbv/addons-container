@@ -27,4 +27,7 @@ class AccountJournal(models.Model):
         is_bank = vals.get('type') == "bank"
         if not vals.get("default_account_id") and is_bank and is_rgs:
             raise ValidationError(_("Bank Account is required."))
+        is_cash = vals.get('type') == "cash"
+        if not vals.get("default_account_id") and is_cash and is_rgs:
+            raise ValidationError(_("Cash Account is required."))
         return super()._fill_missing_values(vals)
