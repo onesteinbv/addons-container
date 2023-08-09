@@ -154,6 +154,8 @@ oca/report_qweb_parameter
 oca/report_wkhtmltopdf_param
 oca/report_xlsx
 oca/report_xlsx_helper
+oca/spreadsheet_dashboard_oca
+oca/spreadsheet_oca
 oca/web_help
 oca/web_no_bubble
 oca/web_responsive

@@ -61,6 +61,7 @@
         'base_mail_security',
         'base_onboarding',
         "container_password_security",
+        "spreadsheet_dashboard_oca",
 
         "crm",
         #"mail_debrand",
