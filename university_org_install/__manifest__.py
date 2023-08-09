@@ -69,7 +69,6 @@
         'mass_mailing_event_track',
         'mass_mailing_sale',
         'membership',
-        'partner_autocomplete',
         'payment',
         'payment_demo',
         'payment_custom',

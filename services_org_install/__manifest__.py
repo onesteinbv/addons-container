@@ -67,7 +67,6 @@
         'mass_mailing_sale',
         'mis_builder',
         'mis_builder_budget',
-        'partner_autocomplete',
         'payment',
         'payment_custom',
         'phone_validation',
