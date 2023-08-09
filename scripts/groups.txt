@@ -18,7 +18,7 @@ website_security.group_website_security_config
 base.group_user
 sale.group_auto_done_setting
 mail.group_mail_template_editor
-curq_mail_security.manage_mail_servers_group
+base_mail_security.manage_mail_servers_group
 uom.group_uom
 product.group_stock_packaging
 product.group_product_variant
