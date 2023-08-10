@@ -10,5 +10,6 @@ def post_init_hook(cr, _):
     companies = env["res.company"].search([])
     companies.write({
         "password_special": 0,
-        "password_history": 0
+        "password_history": 0,
+        "password_minimum": 0
     })
