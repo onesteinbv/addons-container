@@ -13,3 +13,7 @@ def main(env):  # We have this script because module_change_auto_install doesn't
     ])
     if iap_modules:
         iap_modules.button_immediate_uninstall()
+
+
+if __name__ == '__main__':
+    main()
