@@ -217,7 +217,7 @@
                     <field name="rgs_zzp">1</field>
                     <field name="rgs_bv"></field>
                     <field name="rgs_allowed_journals_code">MISC</field>
-                    <field name="rgs_allowed_journals_type">purchase,bank</field>
+                    <field name="rgs_allowed_journals_type">sale,purchase,bank</field>
                     <field name="chart_template_id" ref="l10n_nl_rgs.l10nnl_rgs_chart_template"/>
                     <field name="parent_id" ref="l10n_nl_rgs.account_group_B"/>
             </record>

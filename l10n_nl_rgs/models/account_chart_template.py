@@ -141,6 +141,9 @@ class AccountChartTemplate(models.Model):
         all_groups = self.env['account.group'].search([
             ('company_id', '=', company.id),
             ('referentiecode', 'in', referentiecodes)])
+        all_journals = self.env['account.journal'].search([
+            ('company_id', '=', company.id),
+        ])
 
         for group_template in group_templates:
             group = all_groups.filtered(lambda g: g.referentiecode == group_template.referentiecode)
@@ -149,10 +152,10 @@ class AccountChartTemplate(models.Model):
             journals = self.env['account.journal']
             if group_template.rgs_allowed_journals_type:
                 type_list = [jtype for jtype in group_template.rgs_allowed_journals_type.split(",")]
-                journals |= self.get_allowed_account_journals_based_on_type(company, type_list)
+                journals |= self.get_allowed_account_journals_based_on_type(all_journals, type_list)
             if group_template.rgs_allowed_journals_code:
                 code_list = [jcode for jcode in group_template.rgs_allowed_journals_code.split(",")]
-                journals |= self.get_allowed_account_journals_based_on_code(company, code_list)
+                journals |= self.get_allowed_account_journals_based_on_code(all_journals, code_list)
 
             if journals:
                 accounts = group.get_all_account_ids()
@@ -160,15 +163,11 @@ class AccountChartTemplate(models.Model):
                     'allowed_journal_ids': [(6, 0, journals.ids)]
                 })
 
-    def get_allowed_account_journals_based_on_type(self, company, type_list):
-        return self.env['account.journal'].search([
-            ('company_id', '=', company.id),
-            ('type', 'in', type_list)])
+    def get_allowed_account_journals_based_on_type(self, all_journals, type_list):
+        return all_journals.filtered(lambda j: j.type in type_list)
 
-    def get_allowed_account_journals_based_on_code(self, company, code_list):
-        return self.env['account.journal'].search([
-            ('company_id', '=', company.id),
-            ('code', 'in', code_list)])
+    def get_allowed_account_journals_based_on_code(self, all_journals, code_list):
+        return all_journals.filtered(lambda j: j.code in code_list)
 
     def _create_bank_journals(self, company, acc_template_ref):
         self.ensure_one()
@@ -187,6 +186,7 @@ class AccountChartTemplate(models.Model):
             }
             # Bank/cash
             account_code = False
+            account = self.env['account.account']
             if acc['account_type'] == "bank" and self.bank_account_code_prefix:
                 account_code = self.bank_account_code_prefix + "0"
             if acc['account_type'] == "cash" and self.cash_account_code_prefix:
@@ -196,8 +196,11 @@ class AccountChartTemplate(models.Model):
                     ('code', '=', account_code),
                     ('company_id', '=', company.id)
                 ], limit=1)
-                if account:
-                    vals.update({"default_account_id": account.id})
-            bank_journals += self.env['account.journal'].create(vals)
+            if account:
+                vals.update({"default_account_id": account.id})
+            new_journal = self.env['account.journal'].create(vals)
+            bank_journals += new_journal
+            if account:
+                account.allowed_journal_ids |= new_journal
 
         return bank_journals
