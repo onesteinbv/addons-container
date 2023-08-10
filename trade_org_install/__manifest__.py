@@ -38,8 +38,6 @@
         'contacts',
         'loyalty',
         'crm',
-        'crm_iap_enrich',
-        'crm_iap_mine',
         'crm_sms',
         'digest',
         'event',
