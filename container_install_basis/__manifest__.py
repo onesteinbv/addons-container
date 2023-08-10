@@ -22,7 +22,6 @@
         "website_security",
         "base_user_management",
         "base_company_management",
-        #"base_debug_disabled",  # enabling this will cause all flavors to have debug disabled
 
         # Accountancy
         "account_fiscal_position_vat_check",
@@ -64,9 +63,6 @@
         "spreadsheet_dashboard_oca",
 
         "crm",
-        #"mail_debrand",
-        #"web_tree_many2one_clickable",
-        #"web_dialog_size",
 
         # Debranding
         "remove_odoo_enterprise",

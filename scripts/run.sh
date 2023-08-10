@@ -24,3 +24,5 @@ if [[ -n "$UNINSTALL_MODULES" && "$UNINSTALL_MODULES" == "True" ]]; then
 else
   python /odoo/scripts/uninstall_modules.py -c $ODOO_RC -d $DB_NAME --log-level=error --modules "$MODULES"
 fi
+
+python /odoo/scripts/remove_iap.py -c $ODOO_RC -d $DB_NAME --log-level=error
