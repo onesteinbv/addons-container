@@ -25,6 +25,8 @@ def main(env, modules, do_uninstall):
     ])
     desired_modules = _recurse_dependencies(env, modules)
     to_uninstall = installed_modules - desired_modules
+    # Filter themes
+    to_uninstall = to_uninstall.filtered(lambda l: not l.name.startswith("theme_"))
 
     click.echo("Install modules...")
     modules.button_immediate_install()
