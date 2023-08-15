@@ -59,6 +59,7 @@
         'base_partner_security',
         'base_mail_security',
         'base_onboarding',
+        "container_hr_recruitment",
         "container_password_security",
         "spreadsheet_dashboard_oca",
 

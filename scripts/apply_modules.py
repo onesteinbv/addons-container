@@ -15,7 +15,7 @@ def _recurse_dependencies(env, modules):
 @click.option("--do-uninstall", is_flag=True, default=False)
 def main(env, modules, do_uninstall):
     modules = list(map(lambda m: m.strip(), modules.split(",")))
-    click.echo("Uninstalling modules...")
+    click.echo("Applying modules...")
     modules = env["ir.module.module"].search([
         ("name", "in", modules)
     ])
