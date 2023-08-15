@@ -147,7 +147,6 @@
         'account_statement_import_online',
         'account_statement_import_online_ponto',
         'auditlog',
-        'base_fontawesome',
         'base_user_role',
         'project_role',
         'currency_rate_update',

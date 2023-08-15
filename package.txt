@@ -110,7 +110,6 @@ oca/account_statement_import_online_paypal
 oca/account_statement_import_online_ponto
 oca/account_usability
 oca/auditlog
-oca/base_fontawesome
 oca/base_tier_validation
 oca/base_tier_validation_formula
 oca/base_tier_validation_forward

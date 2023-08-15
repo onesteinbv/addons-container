@@ -132,7 +132,6 @@
         'account_statement_import_camt',
         'account_statement_import_online',
         'account_statement_import_online_ponto',
-        'base_fontawesome',
         'partner_external_map',
         'project_role',
         #'web_widget_dropdown_dynamic',

@@ -84,7 +84,6 @@
         'disable_odoo_online',
         'remove_odoo_enterprise',
         # OCA server-tools
-        'base_fontawesome',
         # OCA server-ux
         'date_range',
         # OCA stock-logistics-warehouse
