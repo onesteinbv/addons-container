@@ -1,5 +1,6 @@
 import click
 import click_odoo
+from odoo.exceptions import MissingError
 
 
 @click.command()
@@ -12,7 +13,11 @@ def main(env):  # We have this script because module_change_auto_install doesn't
         ("state", "=", "installed")
     ])
     if iap_modules:
-        iap_modules.button_immediate_uninstall()
+        try:
+            iap_modules.button_immediate_uninstall()
+        except MissingError:
+            iap_modules.button_immediate_upgrade()
+            iap_modules.button_immediate_uninstall()
 
 
 if __name__ == '__main__':
