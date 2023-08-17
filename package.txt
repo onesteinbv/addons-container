@@ -11,7 +11,6 @@ consolidation_account
 container_install_standard
 container_install_basis
 container_hr_recruitment
-container_password_security
 l10n_nl_rgs
 l10n_nl_rgs_account_financial_report
 l10n_nl_rgs_asset
@@ -144,7 +143,6 @@ oca/partner_contact_birthdate
 oca/partner_contact_personal_information_page
 oca/partner_external_map
 oca/partner_firstname
-oca/password_security
 oca/product_category_product_link
 oca/product_category_tax
 oca/project_role

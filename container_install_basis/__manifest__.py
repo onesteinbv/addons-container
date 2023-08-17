@@ -52,7 +52,6 @@
         # Containers
         "hr_employee_firstname",
         "partner_firstname",
-        "password_security",
         "web_no_bubble",
         'base_customer_company',
         'base_customer_user',
@@ -60,7 +59,6 @@
         'base_mail_security',
         'base_onboarding',
         "container_hr_recruitment",
-        "container_password_security",
         "spreadsheet_dashboard_oca",
 
         "crm",
