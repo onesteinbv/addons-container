@@ -25,9 +25,14 @@ class AccountJournal(models.Model):
         chart_template = self.env.company.chart_template_id
         is_rgs = chart_template == self.env.ref('l10n_nl_rgs.l10nnl_rgs_chart_template')
         is_bank = vals.get('type') == "bank"
-        if not vals.get("default_account_id") and is_bank and is_rgs:
-            raise ValidationError(_("Bank Account is required."))
         is_cash = vals.get('type') == "cash"
-        if not vals.get("default_account_id") and is_cash and is_rgs:
-            raise ValidationError(_("Cash Account is required."))
+        if not vals.get("default_account_id") and is_rgs and (is_bank or is_cash):
+            account = chart_template._l10n_nl_rgs_get_create_bank_cash_account(vals['type'], self.env.company)
+            if account:
+                vals.update({"default_account_id": account.id})
+            else:
+                if is_bank:
+                    raise ValidationError(_("Bank Account is required."))
+                if is_cash:
+                    raise ValidationError(_("Cash Account is required."))
         return super()._fill_missing_values(vals)
