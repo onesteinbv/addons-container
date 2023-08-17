@@ -9,6 +9,7 @@
         'l10n_nl_rgs',
         'base_view_inheritance_extension',
         'account_usability',
+        'product_category_tax',
     ],
     'data': [
         'views/account_journal_views.xml',
