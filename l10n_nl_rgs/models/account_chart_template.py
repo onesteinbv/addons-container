@@ -58,19 +58,17 @@ class AccountChartTemplate(models.Model):
 
         self.ensure_one()
         account_tmpl_obj = self.env['account.account.template']
-        acc_template = account_tmpl_obj.search([('nocreate', '!=', True), ('chart_template_id', '=', self.id)], order='id')
+        acc_template = account_tmpl_obj.search([('chart_template_id', '=', self.id)], order='id')
         template_vals = []
         acc_template_done = self.env["account.account.template"]
         for account_template in acc_template:
-            if not account_template[company.l10n_nl_company_type] and not account_template["rgs_basic"] and not account_template["rgs_extended"]:
-                continue
             acc_template_done |= account_template
             code_main = account_template.code and len(account_template.code) or 0
             code_acc = account_template.code or ''
             if code_main > 0 and code_main <= code_digits:
                 code_acc = str(code_acc) + (str('0'*(code_digits-code_main)))
             vals = self._get_account_vals(company, account_template, code_acc, tax_template_ref)
-            if company.l10n_nl_rgs_type != "rgs_extended" and not account_template["rgs_basic"] and account_template["rgs_extended"]:
+            if account_template.nocreate:
                 vals.update({
                     "deprecated": True,
                 })
@@ -91,8 +89,6 @@ class AccountChartTemplate(models.Model):
         group_templates = self.env['account.group.template'].search([('chart_template_id', '=', self.id)])
         template_vals = []
         for group_template in group_templates:
-            if not group_template[company.l10n_nl_company_type] and not group_template["rgs_basic"] and not group_template["rgs_extended"]:
-                continue
             vals = {
                 'name': group_template.name,
                 'code_prefix_start': group_template.code_prefix_start,
