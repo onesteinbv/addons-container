@@ -13,7 +13,7 @@
         </record>
         <record id="fiscal_position_template_national_no_vat" model="account.fiscal.position.template">
             <field name="sequence">1</field>
-            <field name="name">Binnenland privaat</field>
+            <field name="name">Binnenland B2C</field>
             <field name="chart_template_id" ref="l10nnl_rgs_chart_template" />
             <field name="auto_apply" eval="True"/>
             <field name="vat_required" eval="False"/>
@@ -21,7 +21,7 @@
         </record>
         <record id="fiscal_position_template_eu_private" model="account.fiscal.position.template">
             <field name="sequence">2</field>
-            <field name="name">EU landen privaat</field>
+            <field name="name">EU landen B2C</field>
             <field name="chart_template_id" ref="l10nnl_rgs_chart_template" />
             <field name="auto_apply" eval="True"/>
             <field name="country_group_id" ref="base.europe"/>
