@@ -43,6 +43,7 @@
         "report_xlsx",
         "report_xlsx_helper",
         "date_range",
+        "product_margin",
 
         # Dutch localization
         "l10n_nl_rgs",
