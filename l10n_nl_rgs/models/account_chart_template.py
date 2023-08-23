@@ -216,3 +216,17 @@ class AccountChartTemplate(models.Model):
                 #new_account = self.env["account.account"].create({"code": new_code, "company_id": company.id})
                 #return new_account
                 pass
+
+    @api.model
+    def _create_cash_discount_loss_account(self, company, code_digits):
+        rgs_coa = self.env.ref('l10n_nl_rgs.l10nnl_rgs_chart_template', False)
+        if company.chart_template_id == rgs_coa and company.default_cash_difference_expense_account_id:
+            return company.default_cash_difference_expense_account_id
+        return super()._create_cash_discount_loss_account(company, code_digits)
+
+    @api.model
+    def _create_cash_discount_gain_account(self, company, code_digits):
+        rgs_coa = self.env.ref('l10n_nl_rgs.l10nnl_rgs_chart_template', False)
+        if company.chart_template_id == rgs_coa and company.default_cash_difference_income_account_id:
+            return company.default_cash_difference_income_account_id
+        return super()._create_cash_discount_gain_account(company, code_digits)
