@@ -184,6 +184,7 @@ class AccountChartTemplate(models.Model):
             account = self._l10n_nl_rgs_get_create_bank_cash_account(acc['account_type'], company)
             if account:
                 vals.update({"default_account_id": account.id})
+                account.deprecated = False
             new_journal = self.env['account.journal'].create(vals)
             bank_journals += new_journal
             if account:

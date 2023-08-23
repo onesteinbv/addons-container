@@ -30,6 +30,7 @@ class AccountJournal(models.Model):
             account = chart_template._l10n_nl_rgs_get_create_bank_cash_account(vals['type'], self.env.company)
             if account:
                 vals.update({"default_account_id": account.id})
+                account.deprecated = False
             else:
                 if is_bank:
                     raise ValidationError(_("Bank Account is required."))
