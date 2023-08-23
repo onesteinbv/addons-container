@@ -14,6 +14,7 @@
     ],
     'data': [
         'security/ir_sequence_security.xml',
+        'data/res_groups.xml',
         'views/account_journal_views.xml',
     ],
     'auto_install': True,
