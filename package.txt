@@ -77,6 +77,7 @@ oca/account_banking_mandate_sale
 oca/account_banking_pain_base
 oca/account_banking_sepa_credit_transfer
 oca/account_banking_sepa_direct_debit
+oca/account_chart_update
 oca/account_financial_report
 oca/account_fiscal_position_vat_check
 oca/account_fiscal_year
