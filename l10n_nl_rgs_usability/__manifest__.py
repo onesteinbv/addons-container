@@ -10,8 +10,10 @@
         'base_view_inheritance_extension',
         'account_usability',
         'product_category_tax',
+        'account_move_name_sequence',
     ],
     'data': [
+        'security/ir_sequence_security.xml',
         'views/account_journal_views.xml',
     ],
     'auto_install': True,
