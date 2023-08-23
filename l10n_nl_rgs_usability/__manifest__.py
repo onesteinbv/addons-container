@@ -14,8 +14,12 @@
     ],
     'data': [
         'security/ir_sequence_security.xml',
+        'data/account_payment_term.xml',
         'data/res_groups.xml',
         'views/account_journal_views.xml',
+    ],
+    'demo': [
+        'demo/account_demo.xml',
     ],
     'auto_install': True,
     'installable': True,
