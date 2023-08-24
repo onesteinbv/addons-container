@@ -11,6 +11,9 @@
         'account_usability',
         'product_category_tax',
         'account_move_name_sequence',
+        "account_payment_order",
+        "account_payment_mode",
+        "account_banking_sepa_credit_transfer",
     ],
     'data': [
         'security/ir_sequence_security.xml',
@@ -21,6 +24,7 @@
     'demo': [
         'demo/account_demo.xml',
     ],
+    "post_init_hook": "post_init_hook",
     'auto_install': True,
     'installable': True,
     'license': 'LGPL-3',
