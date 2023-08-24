@@ -6,6 +6,10 @@ import click_odoo
 @click_odoo.env_options(default_log_level="error")
 @click.option("--domain")
 def main(env, domain):
+    if not domain:
+        return click.echo(
+            "Argument for parameter domain is empty. Not changing web.base.url"
+        )
     click.echo("Setting web.base.url to `https://%s`" % domain)
 
     base_url = env["ir.config_parameter"].search([
