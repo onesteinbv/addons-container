@@ -142,11 +142,9 @@
         # Onestein
         'base_municipality',
         'mass_mailing_help',
-        'project_role_members',
         'website_event_share_filter_option',
         'website_hide_navbar_technical',
         'website_project',
-        'website_project_role_members',
         'website_sale_share_filter_option',
         'website_share_blogger',
         'website_share_diaspora',
