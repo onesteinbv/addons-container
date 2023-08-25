@@ -16,7 +16,7 @@
         <!-- <field name="property_advance_tax_payment_account_id" ref="?"/> -->
         <field name="expense_currency_exchange_account_id" ref="4210050"/>
         <field name="income_currency_exchange_account_id" ref="8407010"/>
-        <field name="default_pos_receivable_account_id" ref="recv_pos" />
+        <field name="default_pos_receivable_account_id" ref="recv" />
         <!-- <field name="account_journal_suspense_account_id" ref="?"/> -->
         <!-- <field name="account_journal_early_pay_discount_loss_account_id" ref="?"/> -->
         <!-- <field name="account_journal_early_pay_discount_gain_account_id" ref="?"/> -->

@@ -1432,7 +1432,6 @@
 "9999110","Netto resultaat (EZ-VOF)","Netto resultaat (EZ-VOF)","9999110","WNerKapKap","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_9999100","0","Z.08.B010",1
 "pay","Handelscrediteuren nominaal schulden aan leveranciers en handelskredieten","Handelscrediteuren nominaal","1203010","BSchCreHac","liability_payable","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1203000","1","M.D.A",0
 "recv","Handelsdebiteuren nominaal","Handelsdebiteuren nominaal","1101010","BVorDebHad","asset_receivable","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1101000","1","G.A.010",0
-"recv_pos","Handelsdebiteuren nominaal","Handelsdebiteuren kassa","1101015","BVorDebHad","asset_receivable","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1101000","1","G.A.010",0
 "vat_payable_0","Af te dragen BTW overige tarieven","Te betalen Omzetbelasting","1205010.02","BSchBepBtw","liability_current","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1205009","0","M.K.A",0
 "vat_payable_0_d","Af te dragen BTW overige tarieven diensten","Te betalen Omzetbelasting","1205010.42","BSchBepBtw","liability_current","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1205009","0","M.K.A",0
 "vat_payable_0_d_eu","Af te dragen BTW overige tarieven binnen de EU diensten","Te betalen EU omzetbelasting","1205020.78","BSchBepEob","liability_current","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1205009","0","M.K.A200",1
