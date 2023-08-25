@@ -29,3 +29,8 @@ msgstr "Rekening"
 #: model:ir.model,name:l10n_nl_rgs_usability.model_account_chart_template
 msgid "Account Chart Template"
 msgstr "Grootboekschema sjabloon"
+
+#. module: l10n_nl_rgs_usability
+#: model_terms:account.payment.term,note:l10n_nl_rgs_usability.account_payment_term_14days
+msgid "Payment terms: 14 Days"
+msgstr "Betalingsconditie: 14 dagen"
