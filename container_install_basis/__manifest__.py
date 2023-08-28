@@ -44,11 +44,20 @@
         "report_xlsx_helper",
         "date_range",
         "product_margin",
+        "account_financial_report",
+        "product_category_product_link",
+        "account_statement_import_camt",
+        "account_statement_import_camt54",
+        "account_statement_import_file_reconcile_oca",
 
         # Dutch localization
         "l10n_nl_rgs",
         "l10n_nl_bank",
         "l10n_nl_xaf_auditfile_export",
+        "l10n_nl_postcode",
+        "l10n_nl_tax_statement",
+        "l10n_nl_tax_statement_date_range",
+        'l10n_nl_tax_statement_icp',
 
         # Containers
         "hr_employee_firstname",
@@ -63,6 +72,9 @@
         "spreadsheet_dashboard_oca",
 
         "crm",
+
+        # Timesheets
+        "hr_timesheet_sheet",
 
         # Debranding
         "remove_odoo_enterprise",

@@ -12,21 +12,6 @@
     "depends": [
         "container_install_basis",
 
-        # Timesheets
-        "hr_timesheet_sheet",
-
-        # Dutch localization
-        "l10n_nl_postcode",
-        "l10n_nl_tax_statement",
-        "l10n_nl_tax_statement_date_range",
-        'l10n_nl_tax_statement_icp',
-
-        # Accountancy
-        "account_financial_report",
-        "product_category_product_link",
-        "account_statement_import_camt",
-        "account_statement_import_camt54",
-        "account_statement_import_file_reconcile_oca",
     ],
     "data": [],
     "application": True,
