@@ -17,6 +17,17 @@
         "account_payment_mode",
         "account_payment_order",
         "account_payment_partner",
+        "sale_stock",
+        "payment_mollie",
+        "crm",
+        "hr_expense",
+        "project_hr_expense",
+        "project_purchase",
+        "account_move_line_purchase_info",
+        "account_move_line_sale_info",
+        "account_move_line_stock_info",
+        "purchase_stock",
+        "sale_purchase_stock",
 
         # Extra security
         "website_security",
@@ -70,8 +81,6 @@
         'base_onboarding',
         "container_hr_recruitment",
         "spreadsheet_dashboard_oca",
-
-        "crm",
 
         # Timesheets
         "hr_timesheet_sheet",
