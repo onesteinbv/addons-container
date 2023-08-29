@@ -98,7 +98,7 @@
         'snailmail_account',
         'social_media',
         'stock',
-        'stock_account',
+        #'stock_account',
         'stock_sms',
         'survey',
         'uom',
