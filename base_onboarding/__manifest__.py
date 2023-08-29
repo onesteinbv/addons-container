@@ -13,6 +13,7 @@
         "multi_step_wizard",
         "website_security",
         "base_mail_security",
+        "web",
         "mail"
     ],
     "data": [
