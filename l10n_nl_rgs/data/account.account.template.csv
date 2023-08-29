@@ -1383,7 +1383,6 @@
 "8406100","Borgstellingsvergoeding WSW","Borgstellingsvergoeding WSW","8406100","WFbeOrlWsw","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8406000","0","Z.02.C100",1
 "8406110","Bereidstellingsprovisie Obligolening WSW","Bereidstellingsprovisie Obligolening WSW","8406110","WFbeOrlObl","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8406000","0","Z.02.C110",1
 "8407010","Valutakoersverschillen winst","Valutakoersverschillen rentelasten en soortgelijke kosten","8407010","WFbeWisWis","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8407000","0","Z.02.D020",0
-"8407011","Valutakoersverschillen verlies","Valutakoersverschillen rentelasten en soortgelijke kosten","8407011","WFbeWisWis","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8407000","0","Z.02.D020",0
 "8408010","Kosten van beleggingen rentelasten en soortgelijke kosten","Kosten van beleggingen","8408010","WFbeKvbKvb","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8408000","0","Z.02.E020",0
 "8409010","Kosten van beheer en administratie rentelasten en soortgelijke kosten","Kosten van beheer en administratie","8409010","WFbeKbaKba","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8409000","0","Z.02.F020",1
 "8410010","Resultaat deelnemingen (dividend)","Resultaat deelnemingen (dividend)","8410010","WRedAirAwd","income_other","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8410000","0","Z.04.A010",0
