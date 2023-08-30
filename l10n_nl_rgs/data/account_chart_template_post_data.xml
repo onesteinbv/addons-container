@@ -5,9 +5,9 @@
         <field name="property_account_receivable_id" ref="recv"/>
         <field name="property_account_payable_id" ref="pay"/>
         <field name="property_account_expense_categ_id" ref="7001010"/>
-        <field name="property_account_income_categ_id" ref="8003010"/>
+        <field name="property_account_income_categ_id" ref="8001010"/>
         <field name="property_stock_account_input_categ_id" ref="1210010"/>
-        <field name="property_stock_account_output_categ_id" ref="1210010"/>
+        <field name="property_stock_account_output_categ_id" ref="1104030"/>
         <field name="property_stock_valuation_account_id" ref="3002010"/>
         <!-- <field name="property_tax_payable_account_id" ref="?"/> -->
         <!-- <field name="property_tax_receivable_account_id" ref="?"/> -->
@@ -18,8 +18,8 @@
         <field name="income_currency_exchange_account_id" ref="8407010"/>
         <field name="default_pos_receivable_account_id" ref="recv" />
         <!-- <field name="account_journal_suspense_account_id" ref="?"/> -->
-        <!-- <field name="account_journal_early_pay_discount_loss_account_id" ref="?"/> -->
-        <!-- <field name="account_journal_early_pay_discount_gain_account_id" ref="?"/> -->
+        <field name="account_journal_early_pay_discount_loss_account_id" ref="7008010"/>
+        <field name="account_journal_early_pay_discount_gain_account_id" ref="7008020"/>
         <field name="default_cash_difference_income_account_id" ref="4210070"/>
         <field name="default_cash_difference_expense_account_id" ref="4210070"/>
         <field name="account_journal_payment_debit_account_id" ref="1101050"/>
