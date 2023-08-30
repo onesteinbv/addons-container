@@ -359,7 +359,7 @@
 "1101020","Handelsdebiteuren intercompany","Handelsdebiteuren intercompany","1101020","BVorDebHdi","asset_receivable","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1101000","1","G.A.020",0
 "1101030","Voorziening voor oninbaarheid op vorderingen op handelsdebiteuren ","Voorziening voor oninbaarheid op vorderingen op handelsdebiteuren","1101030","BVorDebVdd","asset_current","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1101000","0","G.A.030",0
 "1101040","Huurdebiteuren","Huurdebiteuren","1101040","BVorDebHdb","asset_receivable","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1101000","1","G.A.040",1
-"1101050","Tussenrekening ontvangsten debiteuren (ontvangsten onderweg)","Tussenrekening ontvangsten debiteuren (ontvangsten onderweg)","1101050","BVorDebTus","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1101000","0","G.A.050",0
+"1101050","Tussenrekening ontvangsten debiteuren (ontvangsten onderweg)","Tussenrekening ontvangsten debiteuren (ontvangsten onderweg)","1101050","BVorDebTus","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1101000","1","G.A.050",0
 "1101060","Voorziening voor oninbaarheid op vorderingen op huurdebiteuren","Voorziening voor oninbaarheid op vorderingen op huurdebiteuren","1101060","BVorDebVhd","asset_current","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1101000","0","G.A.060",1
 "1102010","Terug te vorderen Omzetbelasting vorderingen uit hoofde van belastingen","Terug te vorderen Omzetbelasting","1102010","BVorVbkTvo","liability_current","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1103159","0","G.G.B",0
 "1102015","Terug te vorderen EU omzetbelasting","Terug te vorderen EU omzetbelasting","1102015","BVorVbkEob","liability_current","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1103159","0","G.G.B030",1
@@ -450,17 +450,17 @@
 "1104230","Vooruitbetaalde kosten fondsenwerving overlopende activa","Vooruitbetaalde kosten fondsenwerving","1104230","BVorOvaVkf","asset_prepayments","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1104000","0","G.L.T",0
 "1104240","Vooruitbetaalde andere kosten overlopende activa","Vooruitbetaalde andere kosten","1104240","BVorOvaVan","asset_prepayments","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1104000","0","G.L.U",0
 "1104250","Pensioenvordering onder overlopende activa","Pensioenvordering onder overlopende activa","1104250","BVorOvaPen","asset_prepayments","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1104000","0","G.L.Z.Z030",1
-"1105100","Tussenrekeningen betalingen","Tussenrekeningen betalingen","1105100","BVorTusTbt","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1105000","0","G.M.A",1
-"1105200","Tussenrekeningen salarissen","Tussenrekeningen salarissen","1105200","BVorTusTsa","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1105000","0","G.M.B",1
-"1105300","Tussenrekeningen inkopen","Tussenrekeningen inkopen","1105300","BVorTusTin","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1105000","0","G.M.C",1
-"1105400","Tussenrekeningen projecten","Tussenrekeningen projecten","1105400","BVorTusTpj","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1105000","0","G.M.D",1
-"1105500","Tussenrekeningen productie","Tussenrekeningen productie","1105500","BVorTusTpr","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1105000","0","G.M.E",1
-"1105600","Tussenrekeningen dienstverlening","Tussenrekeningen dienstverlening","1105600","BVorTusTdv","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1105000","0","G.M.F",1
-"1105700","Tussenrekening voorraden","Tussenrekening voorraden","1105700","BVorTusTvr","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1105000","0","G.M.G",1
-"1105800","Tussenrekeningen verkopen","Tussenrekeningen verkopen","1105800","BVorTusTvk","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1105000","0","G.M.H",1
-"1105900","Tussenrekeningen ontvangsten","Tussenrekeningen ontvangsten","1105900","BVorTusTon","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1105000","0","G.M.I",1
-"1106000","Tussenrekeningen overig","Tussenrekeningen overig","1106000","BVorTusTov","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1105000","0","G.M.J",1
-"1107000","Tussenrekeningen leningen","Tussenrekeningen leningen","1107000","BVorTusLen","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1105000","0","G.M.K",1
+"1105100","Tussenrekeningen betalingen","Tussenrekeningen betalingen","1105100","BVorTusTbt","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1105000","1","G.M.A",1
+"1105200","Tussenrekeningen salarissen","Tussenrekeningen salarissen","1105200","BVorTusTsa","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1105000","1","G.M.B",1
+"1105300","Tussenrekeningen inkopen","Tussenrekeningen inkopen","1105300","BVorTusTin","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1105000","1","G.M.C",1
+"1105400","Tussenrekeningen projecten","Tussenrekeningen projecten","1105400","BVorTusTpj","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1105000","1","G.M.D",1
+"1105500","Tussenrekeningen productie","Tussenrekeningen productie","1105500","BVorTusTpr","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1105000","1","G.M.E",1
+"1105600","Tussenrekeningen dienstverlening","Tussenrekeningen dienstverlening","1105600","BVorTusTdv","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1105000","1","G.M.F",1
+"1105700","Tussenrekening voorraden","Tussenrekening voorraden","1105700","BVorTusTvr","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1105000","1","G.M.G",1
+"1105800","Tussenrekeningen verkopen","Tussenrekeningen verkopen","1105800","BVorTusTvk","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1105000","1","G.M.H",1
+"1105900","Tussenrekeningen ontvangsten","Tussenrekeningen ontvangsten","1105900","BVorTusTon","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1105000","1","G.M.I",1
+"1106000","Tussenrekeningen overig","Tussenrekeningen overig","1106000","BVorTusTov","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1105000","1","G.M.J",1
+"1107000","Tussenrekeningen leningen","Tussenrekeningen leningen","1107000","BVorTusLen","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1105000","1","G.M.K",1
 "1201010","Achtergestelde schulden","Achtergestelde schulden","1201010","BSchKolAlk","liability_non_current","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1201000","0","M.A.A",0
 "1201020","Converteerbare leningen","Converteerbare leningen","1201020","BSchKolClk","liability_non_current","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1201000","0","M.A.B",0
 "1201030","Obligatieleningen, pandbrieven en andere leningen","Obligatieleningen, pandbrieven en andere leningen","1201030","BSchKolAok","liability_non_current","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1201000","0","M.A.C",1
@@ -474,7 +474,7 @@
 "1203020","Handelscrediteuren intercompany","Handelscrediteuren intercompany","1203020","BSchCreHci","liability_payable","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1203000","1","M.D.B",0
 "1203030","Ontvangen vooruitbetalingen op bestellingen","Ontvangen vooruitbetalingen op bestellingen","1203030","BSchCreVbk","liability_current","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1203000","0","M.D.C",0
 "1203040","Kostencrediteuren","Kostencrediteuren","1203040","BSchCreKcr","liability_payable","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1203000","1","M.D.D",1
-"1203050","Tussenrekening betalingen crediteuren (betalingen onderweg)","Tussenrekening betalingen crediteuren (betalingen onderweg)","1203050","BSchCreTus","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1203000","0","M.D.E",0
+"1203050","Tussenrekening betalingen crediteuren (betalingen onderweg)","Tussenrekening betalingen crediteuren (betalingen onderweg)","1203050","BSchCreTus","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1203000","1","M.D.E",0
 "1203060","Tussenrekening te fiatteren facturen","Tussenrekening te fiatteren facturen","1203060","BSchCreTtf","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1203000","0","M.D.F",1
 "1204010","Netto lonen overige schulden","Netto lonen","1204010","BSchSalNet","liability_current","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1204000","0","M.O.A",0
 "1204020","Voorschotten personeel","Voorschotten personeel","1204020","BSchSalVpe","liability_current","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1204000","0","M.O.B",0
@@ -1383,7 +1383,6 @@
 "8406100","Borgstellingsvergoeding WSW","Borgstellingsvergoeding WSW","8406100","WFbeOrlWsw","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8406000","0","Z.02.C100",1
 "8406110","Bereidstellingsprovisie Obligolening WSW","Bereidstellingsprovisie Obligolening WSW","8406110","WFbeOrlObl","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8406000","0","Z.02.C110",1
 "8407010","Valutakoersverschillen winst","Valutakoersverschillen rentelasten en soortgelijke kosten","8407010","WFbeWisWis","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8407000","0","Z.02.D020",0
-"8407011","Valutakoersverschillen verlies","Valutakoersverschillen rentelasten en soortgelijke kosten","8407011","WFbeWisWis","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8407000","0","Z.02.D020",0
 "8408010","Kosten van beleggingen rentelasten en soortgelijke kosten","Kosten van beleggingen","8408010","WFbeKvbKvb","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8408000","0","Z.02.E020",0
 "8409010","Kosten van beheer en administratie rentelasten en soortgelijke kosten","Kosten van beheer en administratie","8409010","WFbeKbaKba","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8409000","0","Z.02.F020",1
 "8410010","Resultaat deelnemingen (dividend)","Resultaat deelnemingen (dividend)","8410010","WRedAirAwd","income_other","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8410000","0","Z.04.A010",0
@@ -1432,7 +1431,6 @@
 "9999110","Netto resultaat (EZ-VOF)","Netto resultaat (EZ-VOF)","9999110","WNerKapKap","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_9999100","0","Z.08.B010",1
 "pay","Handelscrediteuren nominaal schulden aan leveranciers en handelskredieten","Handelscrediteuren nominaal","1203010","BSchCreHac","liability_payable","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1203000","1","M.D.A",0
 "recv","Handelsdebiteuren nominaal","Handelsdebiteuren nominaal","1101010","BVorDebHad","asset_receivable","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1101000","1","G.A.010",0
-"recv_pos","Handelsdebiteuren nominaal","Handelsdebiteuren kassa","1101015","BVorDebHad","asset_receivable","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1101000","1","G.A.010",0
 "vat_payable_0","Af te dragen BTW overige tarieven","Te betalen Omzetbelasting","1205010.02","BSchBepBtw","liability_current","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1205009","0","M.K.A",0
 "vat_payable_0_d","Af te dragen BTW overige tarieven diensten","Te betalen Omzetbelasting","1205010.42","BSchBepBtw","liability_current","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1205009","0","M.K.A",0
 "vat_payable_0_d_eu","Af te dragen BTW overige tarieven binnen de EU diensten","Te betalen EU omzetbelasting","1205020.78","BSchBepEob","liability_current","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1205009","0","M.K.A200",1

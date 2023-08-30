@@ -111,7 +111,7 @@ msgstr "Afschrijvingen vastgoed"
 #. module: l10n_nl_rgs_mis_report
 #: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_05_02
 msgid "Agio"
-msgstr "Gemak"
+msgstr "Agio"
 
 #. module: l10n_nl_rgs_mis_report
 #: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_43_02
@@ -631,12 +631,12 @@ msgstr "Mutatie omzetvorderingen"
 #. module: l10n_nl_rgs_mis_report
 #: model:mis.report,name:l10n_nl_rgs_mis_report.mis_report_l10n_nl_rgs_balance_sheet
 msgid "NL RGS Balance Sheet"
-msgstr "NL RGS Balance Sheet"
+msgstr "NL RGS Balans"
 
 #. module: l10n_nl_rgs_mis_report
 #: model:mis.report,name:l10n_nl_rgs_mis_report.mis_report_l10n_nl_rgs_pl
 msgid "NL RGS Profit Loss"
-msgstr "NL RGS Profit Loss"
+msgstr "NL RGS Winst en Verlies"
 
 #. module: l10n_nl_rgs_mis_report
 #: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_07_05
