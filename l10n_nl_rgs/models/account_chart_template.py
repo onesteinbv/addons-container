@@ -108,21 +108,15 @@ class AccountChartTemplate(models.Model):
             if group and parent_group:
                 group.parent_id = parent_group.id
 
-    def _load_template(self, company, code_digits=None, account_ref=None, taxes_ref=None):
-        if self != self.env.ref('l10n_nl_rgs.l10nnl_rgs_chart_template', False):
-            return super(AccountChartTemplate, self)._load_template(
-                company, code_digits=code_digits,
-                account_ref=account_ref, taxes_ref=taxes_ref)
+    def _load(self, company):
+        res = super()._load(company)
+        if self == self.env.ref('l10n_nl_rgs.l10nnl_rgs_chart_template'):
 
-        account_ref, taxes_ref = super(AccountChartTemplate, self)._load_template(
-            company, code_digits=code_digits,
-            account_ref=account_ref, taxes_ref=taxes_ref)
+            # Add allowed journals to accounts based on group settings
+            if not company.l10n_nl_rgs_disable_allowed_journals:
+                self.add_account_allowed_journals(company)
 
-        # Add allowed journals to accounts based on group settings
-        if not company.l10n_nl_rgs_disable_allowed_journals:
-            self.add_account_allowed_journals(company)
-
-        return account_ref, taxes_ref
+        return res
 
     def add_account_allowed_journals(self, company):
         """ Inherit this method to fix reference code missing in account groups"""
@@ -155,9 +149,8 @@ class AccountChartTemplate(models.Model):
 
             if journals:
                 accounts = group.get_all_account_ids()
-                accounts.write({
-                    'allowed_journal_ids': [(6, 0, journals.ids)]
-                })
+                for account in accounts:
+                    account.allowed_journal_ids |= journals
 
     def get_allowed_account_journals_based_on_type(self, all_journals, type_list):
         return all_journals.filtered(lambda j: j.type in type_list)
