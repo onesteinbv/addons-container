@@ -4009,7 +4009,7 @@
                     <field name="rgs_zzp">1</field>
                     <field name="rgs_bv"></field>
                     <field name="rgs_allowed_journals_code"></field>
-                    <field name="rgs_allowed_journals_type"></field>
+                    <field name="rgs_allowed_journals_type">bank</field>
                     <field name="code_prefix_start">4210</field>
                     <field name="code_prefix_end">4210</field>
                     <field name="chart_template_id" ref="l10n_nl_rgs.l10nnl_rgs_chart_template"/>
@@ -4028,7 +4028,7 @@
                     <field name="rgs_zzp"></field>
                     <field name="rgs_bv"></field>
                     <field name="rgs_allowed_journals_code"></field>
-                    <field name="rgs_allowed_journals_type"></field>
+                    <field name="rgs_allowed_journals_type">bank</field>
                     <field name="code_prefix_start">4211</field>
                     <field name="code_prefix_end">4211</field>
                     <field name="chart_template_id" ref="l10n_nl_rgs.l10nnl_rgs_chart_template"/>
@@ -4047,7 +4047,7 @@
                     <field name="rgs_zzp"></field>
                     <field name="rgs_bv"></field>
                     <field name="rgs_allowed_journals_code"></field>
-                    <field name="rgs_allowed_journals_type"></field>
+                    <field name="rgs_allowed_journals_type">bank</field>
                     <field name="code_prefix_start">4212</field>
                     <field name="code_prefix_end">4212</field>
                     <field name="chart_template_id" ref="l10n_nl_rgs.l10nnl_rgs_chart_template"/>
@@ -4066,7 +4066,7 @@
                     <field name="rgs_zzp"></field>
                     <field name="rgs_bv"></field>
                     <field name="rgs_allowed_journals_code"></field>
-                    <field name="rgs_allowed_journals_type"></field>
+                    <field name="rgs_allowed_journals_type">bank</field>
                     <field name="code_prefix_start">4213</field>
                     <field name="code_prefix_end">4213</field>
                     <field name="chart_template_id" ref="l10n_nl_rgs.l10nnl_rgs_chart_template"/>
@@ -4085,7 +4085,7 @@
                     <field name="rgs_zzp"></field>
                     <field name="rgs_bv"></field>
                     <field name="rgs_allowed_journals_code"></field>
-                    <field name="rgs_allowed_journals_type"></field>
+                    <field name="rgs_allowed_journals_type">bank</field>
                     <field name="code_prefix_start">4214</field>
                     <field name="code_prefix_end">4214</field>
                     <field name="chart_template_id" ref="l10n_nl_rgs.l10nnl_rgs_chart_template"/>
@@ -4104,7 +4104,7 @@
                     <field name="rgs_zzp">1</field>
                     <field name="rgs_bv"></field>
                     <field name="rgs_allowed_journals_code"></field>
-                    <field name="rgs_allowed_journals_type"></field>
+                    <field name="rgs_allowed_journals_type">bank</field>
                     <field name="code_prefix_start">4215</field>
                     <field name="code_prefix_end">4215</field>
                     <field name="chart_template_id" ref="l10n_nl_rgs.l10nnl_rgs_chart_template"/>
@@ -4123,7 +4123,7 @@
                     <field name="rgs_zzp"></field>
                     <field name="rgs_bv"></field>
                     <field name="rgs_allowed_journals_code"></field>
-                    <field name="rgs_allowed_journals_type"></field>
+                    <field name="rgs_allowed_journals_type">bank</field>
                     <field name="code_prefix_start">42160</field>
                     <field name="code_prefix_end">42160</field>
                     <field name="chart_template_id" ref="l10n_nl_rgs.l10nnl_rgs_chart_template"/>
@@ -4142,7 +4142,7 @@
                     <field name="rgs_zzp"></field>
                     <field name="rgs_bv"></field>
                     <field name="rgs_allowed_journals_code"></field>
-                    <field name="rgs_allowed_journals_type"></field>
+                    <field name="rgs_allowed_journals_type">bank</field>
                     <field name="code_prefix_start">42161</field>
                     <field name="code_prefix_end">42161</field>
                     <field name="chart_template_id" ref="l10n_nl_rgs.l10nnl_rgs_chart_template"/>
@@ -4218,7 +4218,7 @@
                     <field name="rgs_zzp">1</field>
                     <field name="rgs_bv"></field>
                     <field name="rgs_allowed_journals_code"></field>
-                    <field name="rgs_allowed_journals_type"></field>
+                    <field name="rgs_allowed_journals_type">sale</field>
                     <field name="code_prefix_start">7001</field>
                     <field name="code_prefix_end">7001</field>
                     <field name="chart_template_id" ref="l10n_nl_rgs.l10nnl_rgs_chart_template"/>
