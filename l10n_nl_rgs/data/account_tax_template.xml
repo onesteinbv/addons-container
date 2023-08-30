@@ -115,7 +115,7 @@
     <record id="btw_0_d" model="account.tax.template">
         <field name="sequence">10</field>
         <field name="chart_template_id" ref="l10nnl_rgs_chart_template"/>
-        <field name="name">Verkopen - BTW 0% (nul-tarief) diensten</field>
+        <field name="name">Verkopen - BTW 0% (nul-tarief)</field>
         <field name="description">0% BTW diensten</field>
         <field eval="0" name="amount"/>
         <field name="amount_type">percent</field>
@@ -148,7 +148,7 @@
     <record id="btw_9_d" model="account.tax.template">
         <field name="sequence">10</field>
         <field name="chart_template_id" ref="l10nnl_rgs_chart_template"/>
-        <field name="name">Verkopen - BTW laag (9%) diensten</field>
+        <field name="name">Verkopen - BTW laag (9%)</field>
         <field name="description">9% BTW diensten</field>
         <field eval="9" name="amount"/>
         <field name="amount_type">percent</field>
@@ -185,7 +185,7 @@
     <record id="btw_21_d" model="account.tax.template">
         <field name="sequence">6</field>
         <field name="chart_template_id" ref="l10nnl_rgs_chart_template"/>
-        <field name="name">Verkopen - BTW hoog (21%) diensten</field>
+        <field name="name">Verkopen - BTW hoog (21%)</field>
         <field name="description">21% BTW diensten</field>
         <field eval="21" name="amount"/>
         <field name="amount_type">percent</field>
