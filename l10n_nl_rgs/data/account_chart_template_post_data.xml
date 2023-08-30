@@ -5,9 +5,9 @@
         <field name="property_account_receivable_id" ref="recv"/>
         <field name="property_account_payable_id" ref="pay"/>
         <field name="property_account_expense_categ_id" ref="7001010"/>
-        <field name="property_account_income_categ_id" ref="8003010"/>
+        <field name="property_account_income_categ_id" ref="8001010"/>
         <field name="property_stock_account_input_categ_id" ref="1210010"/>
-        <field name="property_stock_account_output_categ_id" ref="1210010"/>
+        <field name="property_stock_account_output_categ_id" ref="1104030"/>
         <field name="property_stock_valuation_account_id" ref="3002010"/>
         <!-- <field name="property_tax_payable_account_id" ref="?"/> -->
         <!-- <field name="property_tax_receivable_account_id" ref="?"/> -->
