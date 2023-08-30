@@ -15,6 +15,11 @@ def pre_init_hook(cr):
 
     env = api.Environment(cr, SUPERUSER_ID, {})
     installed_langs = dict(env['res.lang'].get_installed())
+    # Dutch
     lang = "nl_NL"
+    if lang not in installed_langs:
+        env['res.lang']._activate_lang(lang)
+    # English
+    lang = "en_US"
     if lang not in installed_langs:
         env['res.lang']._activate_lang(lang)
