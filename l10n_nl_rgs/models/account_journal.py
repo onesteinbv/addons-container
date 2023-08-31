@@ -37,3 +37,13 @@ class AccountJournal(models.Model):
                 if is_cash:
                     raise ValidationError(_("Cash Account is required."))
         return super()._fill_missing_values(vals)
+
+    @api.model_create_multi
+    def create(self, vals_list):
+        journals = super().create(vals_list)
+        for journal in journals:
+            if journal.company_id.chart_template_id == self.env.ref('l10n_nl_rgs.l10nnl_rgs_chart_template', False):
+                if journal.default_account_id:
+                    journal.default_account_id.allowed_journal_ids |= journal
+
+        return journals
