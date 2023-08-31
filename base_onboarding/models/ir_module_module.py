@@ -18,6 +18,7 @@ class IrModuleModule(models.Model):
         res = super().button_choose_theme()
         if self.env.context.get('active_model') == 'base.onboarding.wizard':
             wizard = self.env['base.onboarding.wizard'].search([('id', '=', self.env.context.get('active_id'))])
-            wizard.open_next()
+            if wizard.state == "theme":
+                wizard.open_next()
             res = wizard._reopen_self()
         return res
