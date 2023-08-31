@@ -2262,7 +2262,7 @@
                     <field name="rgs_bv"></field>
                     <field name="rgs_allowed_journals_code"></field>
                     <field name="rgs_allowed_journals_type"></field>
-                    <field name="code_prefix_start">0704</field>
+                    <field name="code_prefix_start">0703</field>
                     <field name="code_prefix_end">0704</field>
                     <field name="chart_template_id" ref="l10n_nl_rgs.l10nnl_rgs_chart_template"/>
                     <field name="parent_id" ref="l10n_nl_rgs.account_group_07"/>
@@ -2914,7 +2914,7 @@
                     <field name="parent_id" ref="l10n_nl_rgs.account_group_11"/>
             </record>
             
-      
+
             <record id="account_group_1103300" model="account.group.template">
                     <field name="name">Vorderingen op leden van de coöperatie</field>
                     <field name="code">1103300</field>
@@ -3099,7 +3099,7 @@
                     <field name="rgs_allowed_journals_code"></field>
                     <field name="rgs_allowed_journals_type"></field>
                     <field name="code_prefix_start">120501</field>
-                    <field name="code_prefix_end">120501</field>
+                    <field name="code_prefix_end">120800</field>
                     <field name="chart_template_id" ref="l10n_nl_rgs.l10nnl_rgs_chart_template"/>
                     <field name="parent_id" ref="l10n_nl_rgs.account_group_12"/>
             </record>
@@ -5721,7 +5721,7 @@
                     <field name="rgs_allowed_journals_code"></field>
                     <field name="rgs_allowed_journals_type"></field>
                     <field name="code_prefix_start">8402</field>
-                    <field name="code_prefix_end">8402</field>
+                    <field name="code_prefix_end">8403</field>
                     <field name="chart_template_id" ref="l10n_nl_rgs.l10nnl_rgs_chart_template"/>
                     <field name="parent_id" ref="l10n_nl_rgs.account_group_50"/>
             </record>
