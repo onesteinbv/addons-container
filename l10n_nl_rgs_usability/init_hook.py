@@ -15,3 +15,7 @@ def post_init_hook(cr, _):
 
         # Generate payment modes
         env["account.chart.template"]._generate_payment_modes(company)
+
+    # Set payment credit account for bank journals
+    journals = env['account.journal'].search([])
+    journals._set_journal_bank_payment_credit_account()
