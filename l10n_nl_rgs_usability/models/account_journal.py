@@ -17,4 +17,5 @@ class AccountJournal(models.Model):
                 lines = journal.outbound_payment_method_line_ids
                 sepa_lines = lines.filtered(lambda l: l.payment_method_id.code == "sepa_credit_transfer")
                 for line in sepa_lines:
-                    line.payment_account_id = journal.company_id.account_journal_payment_credit_account_id
+                    if not line.payment_account_id:
+                        line.payment_account_id = journal.company_id.account_journal_payment_credit_account_id
