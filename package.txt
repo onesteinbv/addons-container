@@ -82,6 +82,7 @@ oca/account_chart_update
 oca/account_financial_report
 oca/account_fiscal_position_vat_check
 oca/account_fiscal_year
+oca/account_fiscal_year_auto_create
 oca/account_invoice_constraint_chronology
 oca/account_invoice_overdue_reminder
 oca/account_journal_lock_date

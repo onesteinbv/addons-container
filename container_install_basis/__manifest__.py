@@ -61,6 +61,7 @@
         "account_statement_import_camt54",
         "account_statement_import_file_reconcile_oca",
         "account_period_auto_create",
+        "account_fiscal_year_auto_create",
 
         # Dutch localization
         "l10n_nl_rgs",
