@@ -2776,7 +2776,7 @@
                     <field name="rgs_allowed_journals_code"></field>
                     <field name="rgs_allowed_journals_type"></field>
                     <field name="code_prefix_start">11030</field>
-                    <field name="code_prefix_end">11030</field>
+                    <field name="code_prefix_end">11032</field>
                     <field name="chart_template_id" ref="l10n_nl_rgs.l10nnl_rgs_chart_template"/>
                     <field name="parent_id" ref="l10n_nl_rgs.account_group_11"/>
             </record>
@@ -2928,7 +2928,7 @@
                     <field name="rgs_allowed_journals_code"></field>
                     <field name="rgs_allowed_journals_type"></field>
                     <field name="code_prefix_start">11033</field>
-                    <field name="code_prefix_end">11033</field>
+                    <field name="code_prefix_end">11034</field>
                     <field name="chart_template_id" ref="l10n_nl_rgs.l10nnl_rgs_chart_template"/>
                     <field name="parent_id" ref="l10n_nl_rgs.account_group_11"/>
             </record>
