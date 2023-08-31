@@ -7,7 +7,10 @@ class OnboardingWizard(models.TransientModel):
     _description = "Onboarding Wizard"
 
     def _default_website(self):
-        return self.env['website'].search([('company_id', '=', self.env.company.id)], limit=1)
+        website = self.env['website'].search([('company_id', '=', self.env.company.id)], limit=1)
+        if not website:   # Get the first available website if there's no website found for the current active company
+            website = self.env['website'].search([], limit=1)
+        return website
 
     company_id = fields.Many2one(
         comodel_name='res.company',
