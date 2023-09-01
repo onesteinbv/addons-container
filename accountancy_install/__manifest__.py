@@ -42,7 +42,6 @@
         'account_move_print',
         'account_usability',
         'base_vat_optional_vies',
-        'product_category_tax',
         # OCA account-invoicing
         'account_move_tier_validation',
         # OCA account-reconcile

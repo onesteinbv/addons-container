@@ -9,3 +9,4 @@ in module l10n_nl_rgs. The idea is to leave l10n_nl_rgs as much generic as possi
 - add multi-company rule for Sequence
 - enable analytic accounting by default
 - automatically load pre-defined payment terms and payment modes
+- automatically add payment account in SEPA payment method line
