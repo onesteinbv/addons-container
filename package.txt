@@ -147,7 +147,6 @@ oca/partner_contact_personal_information_page
 oca/partner_external_map
 oca/partner_firstname
 oca/product_category_product_link
-oca/product_category_tax
 oca/project_role
 oca/project_timeline
 oca/remove_odoo_enterprise

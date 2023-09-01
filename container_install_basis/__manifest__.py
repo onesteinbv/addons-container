@@ -44,7 +44,6 @@
         "account_move_print",
         "account_usability",
         "base_vat_optional_vies",
-        "product_category_tax",
         "account_reconcile_oca",
         "account_statement_base",
         "account_payment_sale",

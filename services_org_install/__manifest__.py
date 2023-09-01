@@ -138,7 +138,6 @@
         'account_move_name_sequence',
         'account_move_print',
         'base_vat_optional_vies',
-        'product_category_tax',
         'account_move_tier_validation',
         'account_statement_import_online_paypal',
         'website_analytics_matomo',
