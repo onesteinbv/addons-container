@@ -111,6 +111,84 @@
             ]"/>
     </record>
 
+    <!-- Verkoop BTW incl-->
+    <record id="btw_9_incl" model="account.tax.template">
+        <field name="sequence">10</field>
+        <field name="chart_template_id" ref="l10nnl_rgs_chart_template"/>
+        <field name="name">Verkopen - BTW laag incl. (9%)</field>
+        <field name="description">9% BTW Incl.</field>
+        <field eval="9" name="amount"/>
+        <field name="amount_type">percent</field>
+        <field name="price_include">True</field>
+        <field name="type_tax_use">sale</field>
+        <field name="tax_scope">consu</field>
+        <field name="tax_group_id" ref="l10n_nl.tax_group_9"/>
+        <field name="invoice_repartition_line_ids" eval="[(5,0,0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1b')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable_l'),
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1b')],
+                }),
+            ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5,0,0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1b')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable_l'),
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1b')],
+                }),
+            ]"/>
+    </record>
+    <record id="btw_21_incl" model="account.tax.template">
+        <field name="sequence">5</field>
+        <field name="chart_template_id" ref="l10nnl_rgs_chart_template"/>
+        <field name="name">Verkopen - BTW hoog incl. (21%)</field>
+        <field name="description">21% BTW Incl.</field>
+        <field eval="21" name="amount"/>
+        <field name="amount_type">percent</field>
+        <field name="price_include">True</field>
+        <field name="type_tax_use">sale</field>
+        <field name="tax_scope">consu</field>
+        <field name="tax_group_id" ref="l10n_nl.tax_group_21"/>
+        <field name="invoice_repartition_line_ids" eval="[(5,0,0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1a')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable_h'),
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1a')],
+                }),
+            ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5,0,0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1a')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable_h'),
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1a')],
+                }),
+            ]"/>
+    </record>
+
     <!-- Verkoop BTW Diensten -->
     <record id="btw_0_d" model="account.tax.template">
         <field name="sequence">10</field>
@@ -189,6 +267,84 @@
         <field name="description">21% BTW diensten</field>
         <field eval="21" name="amount"/>
         <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="tax_scope">service</field>
+        <field name="tax_group_id" ref="l10n_nl.tax_group_21"/>
+        <field name="invoice_repartition_line_ids" eval="[(5,0,0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1a')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable_h_d'),
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1a')],
+                }),
+            ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5,0,0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1a')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable_h_d'),
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1a')],
+                }),
+            ]"/>
+    </record>
+
+    <!-- Verkoop BTW Diensten incl-->
+    <record id="btw_9_d_incl" model="account.tax.template">
+        <field name="sequence">10</field>
+        <field name="chart_template_id" ref="l10nnl_rgs_chart_template"/>
+        <field name="name">Verkopen - BTW laag incl. (9%)</field>
+        <field name="description">9% BTW diensten Incl.</field>
+        <field eval="9" name="amount"/>
+        <field name="amount_type">percent</field>
+        <field name="price_include">True</field>
+        <field name="type_tax_use">sale</field>
+        <field name="tax_scope">service</field>
+        <field name="tax_group_id" ref="l10n_nl.tax_group_9"/>
+        <field name="invoice_repartition_line_ids" eval="[(5,0,0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1b')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable_l_d'),
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1b')],
+                }),
+            ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5,0,0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1b')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable_l_d'),
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1b')],
+                }),
+            ]"/>
+    </record>
+    <record id="btw_21_d_incl" model="account.tax.template">
+        <field name="sequence">6</field>
+        <field name="chart_template_id" ref="l10nnl_rgs_chart_template"/>
+        <field name="name">Verkopen - BTW hoog incl. (21%)</field>
+        <field name="description">21% BTW diensten Incl.</field>
+        <field eval="21" name="amount"/>
+        <field name="amount_type">percent</field>
+        <field name="price_include">True</field>
         <field name="type_tax_use">sale</field>
         <field name="tax_scope">service</field>
         <field name="tax_group_id" ref="l10n_nl.tax_group_21"/>
