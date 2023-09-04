@@ -19,3 +19,12 @@ class AccountJournal(models.Model):
                 for line in sepa_lines:
                     if not line.payment_account_id:
                         line.payment_account_id = journal.company_id.account_journal_payment_credit_account_id
+
+    def unlink(self):
+        if self.env.context.get('force_delete'):
+            for journal in self:
+                payment_modes = self.env["account.payment.mode"].search([
+                    ("fixed_journal_id", "=", journal.id),
+                ])
+                payment_modes.unlink()
+        return super().unlink()

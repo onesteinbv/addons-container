@@ -19,3 +19,9 @@ def post_init_hook(cr, _):
     # Set payment credit account for bank journals
     journals = env['account.journal'].search([])
     journals._set_journal_bank_payment_credit_account()
+
+    # Auto-install RGS for main company
+    main_company = env.ref('base.main_company', False)
+    rgs = env.ref('l10n_nl_rgs.l10nnl_rgs_chart_template', False)
+    if main_company and main_company.chart_template_id != rgs:
+        rgs._load(main_company)
