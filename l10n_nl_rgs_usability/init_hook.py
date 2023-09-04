@@ -23,5 +23,5 @@ def post_init_hook(cr, _):
     # Auto-install RGS for main company
     main_company = env.ref('base.main_company', False)
     rgs = env.ref('l10n_nl_rgs.l10nnl_rgs_chart_template', False)
-    if main_company and main_company.chart_template_id != rgs:
+    if main_company and main_company.chart_template_id != rgs and not rgs.existing_accounting(main_company):
         rgs._load(main_company)
