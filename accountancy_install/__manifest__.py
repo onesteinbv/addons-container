@@ -38,7 +38,6 @@
         'account_move_line_purchase_info',
         'account_move_line_sale_info',
         'account_move_line_tax_editable',
-        'account_move_name_sequence',
         'account_move_print',
         'account_usability',
         'base_vat_optional_vies',
