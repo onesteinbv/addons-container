@@ -40,7 +40,6 @@
         "account_invoice_constraint_chronology",
         "account_journal_lock_date",
         "account_lock_date_update",
-        "account_move_name_sequence",
         "account_move_print",
         "account_usability",
         "base_vat_optional_vies",

@@ -148,7 +148,6 @@
         'account_move_line_sale_info',
         'account_move_line_stock_info',
         'account_move_line_tax_editable',
-        'account_move_name_sequence',
         'account_move_print',
         'base_vat_optional_vies',
         'account_move_tier_validation',

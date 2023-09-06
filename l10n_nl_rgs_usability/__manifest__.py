@@ -9,7 +9,6 @@
         'l10n_nl_rgs',
         'base_view_inheritance_extension',
         'account_usability',
-        'account_move_name_sequence',
         "account_payment_order",
         "account_payment_mode",
         "account_banking_sepa_credit_transfer",
