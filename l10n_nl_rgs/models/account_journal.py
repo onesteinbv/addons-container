@@ -41,8 +41,17 @@ class AccountJournal(models.Model):
     @api.model_create_multi
     def create(self, vals_list):
         journals = super().create(vals_list)
+        coa = self.env.ref('l10n_nl_rgs.l10nnl_rgs_chart_template', False)
+        if not coa:
+            return journals
         for journal in journals:
-            if journal.company_id.chart_template_id == self.env.ref('l10n_nl_rgs.l10nnl_rgs_chart_template', False):
+            if journal.company_id.chart_template_id == coa:
+                all_accounts = self.env["account.account"].search([
+                    ("company_id", "=", journal.company_id.id),
+                ])
+                all_bank_accounts = all_accounts.filtered(lambda a: "bank" in a.allowed_journal_ids.mapped("type"))
+                for account in all_bank_accounts:
+                    account.allowed_journal_ids |= journal
                 if journal.default_account_id:
                     journal.default_account_id.allowed_journal_ids |= journal
 
