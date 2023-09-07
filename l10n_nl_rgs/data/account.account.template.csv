@@ -351,11 +351,11 @@
 "1002050","Internetrekening tegoeden op bankgirorekeningen","Internetrekening","1002050","BLimBanInb","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1002000","0","I.B.F",0
 "1002060","G-rekening tegoeden op bankgirorekeningen","G-rekening","1002060","BLimBanGrb","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1002000","0","I.B.E",0
 "1002070","(Bedrijfs)spaarrekening","(Bedrijfs)spaarrekening","1002070","BLimBanSpa","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1002000","0","I.B.G",0
-"1003010","Stortingen onderweg kruisposten","Stortingen onderweg","1003010","BLimKruSto","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1003000","1","I.C010",0
-"1003015","Tussenrekening kluis","Tussenrekening kluis","1003015","BLimKruKlu","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1003000","1","I.C015",0
-"1003020","PIN betalingen kruisposten","PIN betalingen","1003020","BLimKruPib","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1003000","1","I.C020",0
-"1003030","Creditcard afrekening kruisposten","Creditcard afrekening","1003030","BLimKruCra","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1003000","1","I.C030",0
-"1003040","Wissels en cheques kruisposten","Wissels en cheques","1003040","BLimKruWec","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1003000","1","I.C040",0
+"1003010","Stortingen onderweg kruisposten","Stortingen onderweg","1003010","BLimKruSto","asset_current","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1003000","1","I.C010",0
+"1003015","Tussenrekening kluis","Tussenrekening kluis","1003015","BLimKruKlu","asset_current","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1003000","1","I.C015",0
+"1003020","PIN betalingen kruisposten","PIN betalingen","1003020","BLimKruPib","asset_current","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1003000","1","I.C020",0
+"1003030","Creditcard afrekening kruisposten","Creditcard afrekening","1003030","BLimKruCra","asset_current","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1003000","1","I.C030",0
+"1003040","Wissels en cheques kruisposten","Wissels en cheques","1003040","BLimKruWec","asset_current","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1003000","1","I.C040",0
 "1101020","Handelsdebiteuren intercompany","Handelsdebiteuren intercompany","1101020","BVorDebHdi","asset_receivable","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1101000","1","G.A.020",0
 "1101030","Voorziening voor oninbaarheid op vorderingen op handelsdebiteuren ","Voorziening voor oninbaarheid op vorderingen op handelsdebiteuren","1101030","BVorDebVdd","asset_current","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1101000","0","G.A.030",0
 "1101040","Huurdebiteuren","Huurdebiteuren","1101040","BVorDebHdb","asset_receivable","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1101000","1","G.A.040",1
