@@ -12,3 +12,4 @@ in module l10n_nl_rgs. The idea is to leave l10n_nl_rgs as much generic as possi
 - automatically add payment account in SEPA payment method line
 - automatically install RGS for main company
 - automatically install RGS when creating a new company
+- remove onboarding setup step regarding COA setup

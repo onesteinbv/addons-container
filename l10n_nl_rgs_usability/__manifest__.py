@@ -18,6 +18,7 @@
         'data/account_payment_term.xml',
         'data/res_groups.xml',
         'views/account_journal_views.xml',
+        'views/account_onboarding_templates.xml',
     ],
     'demo': [
         'demo/account_demo.xml',
