@@ -38,3 +38,4 @@ sales_team.group_sale_salesman_all_leads
 sales_team.group_sale_salesman
 point_of_sale.group_pos_manager
 base_company_management.group_manage_companies
+membership_accessibility.group_sale_crm_contact_access
