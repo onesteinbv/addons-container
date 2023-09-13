@@ -157,7 +157,6 @@
         'account_statement_import_camt',
         'account_statement_import_online',
         'account_statement_import_online_ponto',
-        'base_user_role',
         'currency_rate_update',
         'date_range',
         'l10n_nl_bank',
