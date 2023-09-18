@@ -194,6 +194,7 @@
         'web_responsive',
         'website_odoo_debranding',
         'website_local_fonts',
+        'website_breadcrumb',
 
         # Onestein
         'base_municipality',
