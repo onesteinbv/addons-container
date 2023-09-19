@@ -229,3 +229,36 @@ class AccountChartTemplate(models.Model):
         if company.chart_template_id == rgs_coa and company.default_cash_difference_income_account_id:
             return company.default_cash_difference_income_account_id
         return super()._create_cash_discount_gain_account(company, code_digits)
+
+    @api.model
+    def generate_journals(self, acc_template_ref, company, journals_dict=None):
+        res = super().generate_journals(acc_template_ref, company, journals_dict=journals_dict)
+        if self != self.env.ref('l10n_nl_rgs.l10nnl_rgs_chart_template', False):
+            return res
+        journals = self.env['account.journal'].search([
+            ('company_id', '=', company.id),
+        ])
+        for journal in journals:
+            if journal.code == "INV" and journal.with_context(lang='en_US').name == "Customer Invoices":
+                journal.update_field_translations('name', {'nl_NL': 'Klantfacturen'})
+            elif journal.code == "BILL" and journal.with_context(lang='en_US').name == "Vendor Bills":
+                journal.update_field_translations('name', {'nl_NL': 'Leveranciersfacturen'})
+            elif journal.code == "MISC" and journal.with_context(lang='en_US').name == "Miscellaneous Operations":
+                journal.update_field_translations('name', {'nl_NL': 'Memoriaal'})
+            elif journal.code == "EXCH" and journal.with_context(lang='en_US').name == "Exchange Difference":
+                journal.update_field_translations('name', {'nl_NL': 'Wisselkoers verschil'})
+            elif journal.code == "CABA" and journal.with_context(lang='en_US').name == "Cash Basis Taxes":
+                journal.update_field_translations('name', {'nl_NL': 'Kasstelsel BTW'})
+            elif journal.code == "CSH1" and journal.with_context(lang='en_US').name == "Cash":
+                journal.update_field_translations('name', {'nl_NL': 'Kas'})
+            elif journal.code == "ACCR" and journal.with_context(lang='en_US').name == "Accruals":
+                journal.update_field_translations('name', {'nl_NL': 'Overlopende rekeningen'})
+            elif journal.code == "DEPR" and journal.with_context(lang='en_US').name == "Depreciations":
+                journal.update_field_translations('name', {'nl_NL': 'Afschrijvingen'})
+            elif journal.code == "FCR" and journal.with_context(lang='en_US').name == "Foreign currency revaluation":
+                journal.update_field_translations('name', {'nl_NL': 'Herwaardering vreemde valuta'})
+            elif journal.code == "WAG" and journal.with_context(lang='en_US').name == "Wages":
+                journal.update_field_translations('name', {'nl_NL': 'Lonen'})
+            elif journal.code == "STJ" and journal.with_context(lang='en_US').name == "Inventory Valuation":
+                journal.update_field_translations('name', {'nl_NL': 'Voorraadwaardering'})
+        return res
