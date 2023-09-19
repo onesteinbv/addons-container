@@ -25,3 +25,9 @@ def post_init_hook(cr, _):
     rgs = env.ref('l10n_nl_rgs.l10nnl_rgs_chart_template', False)
     if main_company and main_company.chart_template_id != rgs and not rgs.existing_accounting(main_company):
         rgs._load(main_company)
+
+    # Archive the cash basis tax journal
+    journals = env['account.journal'].search([])
+    for journal in journals.filtered(lambda j: j.code == "CABA"):
+        if journal.company_id.chart_template_id == env.ref('l10n_nl_rgs.l10nnl_rgs_chart_template', False):
+            journal.active = False
