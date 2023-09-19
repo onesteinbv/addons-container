@@ -13,6 +13,7 @@
         "account_payment_mode",
         "account_banking_sepa_credit_transfer",
         "account_invoice_constraint_chronology",
+        "account_fiscal_year_auto_create",
     ],
     'data': [
         'security/ir_sequence_security.xml',

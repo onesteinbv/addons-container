@@ -1,7 +1,6 @@
 # Copyright 2023 Onestein (<http://www.onestein.eu>)
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
-import re
 from odoo import SUPERUSER_ID
 from odoo.api import Environment
 
@@ -31,3 +30,8 @@ def post_init_hook(cr, _):
     for journal in journals.filtered(lambda j: j.code == "CABA"):
         if journal.company_id.chart_template_id == env.ref('l10n_nl_rgs.l10nnl_rgs_chart_template', False):
             journal.active = False
+
+    # Create fiscal year for current year
+    companies = env["res.company"].search([])
+    for company in companies:
+        company._create_fiscal_year_for_current_year()
