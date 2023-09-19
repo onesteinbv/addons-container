@@ -23,7 +23,12 @@ class AccountChartTemplate(models.Model):
             {'name': _('Inventory Valuation'), 'type': 'general', 'code': _('STJ'), 'favorite': True, 'sequence': 19}]
         resp_journals = super(AccountChartTemplate, self)._prepare_all_journals(
             acc_template_ref, company, journals_dict=journals_dict)
-        # TODO: Remove unwanted journals
+
+        # Archive unwanted journals
+        for journal in resp_journals:
+            if journal["code"] == "CABA":
+                journal["active"] = False
+
         return resp_journals
 
     @api.model
