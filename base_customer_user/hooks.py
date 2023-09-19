@@ -23,3 +23,7 @@ def pre_init_hook(cr):
     lang = "en_US"
     if lang not in installed_langs:
         env['res.lang']._activate_lang(lang)
+
+    # Force translation of all modules to Dutch
+    mods = env['ir.module.module'].search([('state', '=', 'installed')])
+    mods._update_translations(["nl_NL"], True)
