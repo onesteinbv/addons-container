@@ -83,6 +83,7 @@
         'base_onboarding',
         "container_hr_recruitment",
         "spreadsheet_dashboard_oca",
+        "partner_country_default_nl",
 
         # Timesheets
         "hr_timesheet_sheet",
