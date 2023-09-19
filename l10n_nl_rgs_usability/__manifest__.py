@@ -12,6 +12,7 @@
         "account_payment_order",
         "account_payment_mode",
         "account_banking_sepa_credit_transfer",
+        "account_invoice_constraint_chronology",
     ],
     'data': [
         'security/ir_sequence_security.xml',

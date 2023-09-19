@@ -28,3 +28,19 @@ class AccountJournal(models.Model):
                 ])
                 payment_modes.unlink()
         return super().unlink()
+
+    @api.model_create_multi
+    def create(self, vals_list):
+        for vals in vals_list:
+            if 'check_chronology' not in vals and vals.get("type") == "purchase":
+                vals['check_chronology'] = True
+        return super().create(vals_list)
+
+    @api.onchange("type")
+    def _onchange_type(self):
+        res = super()._onchange_type()
+        if self.type in ["purchase"]:
+            self.check_chronology = True
+        else:
+            self.check_chronology = False
+        return res
