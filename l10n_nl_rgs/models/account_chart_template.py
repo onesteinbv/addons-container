@@ -232,9 +232,15 @@ class AccountChartTemplate(models.Model):
 
     @api.model
     def generate_journals(self, acc_template_ref, company, journals_dict=None):
+        """Workaround to translate journal names to Dutch, since standard Odoo doesn't do that"""
         res = super().generate_journals(acc_template_ref, company, journals_dict=journals_dict)
         if self != self.env.ref('l10n_nl_rgs.l10nnl_rgs_chart_template', False):
             return res
+        installed_langs = dict(self.env['res.lang'].get_installed())
+        # Install Dutch language if not done yet
+        lang = "nl_NL"
+        if lang not in installed_langs:
+            self.env['res.lang']._activate_lang(lang)
         journals = self.env['account.journal'].search([
             ('company_id', '=', company.id),
         ])
