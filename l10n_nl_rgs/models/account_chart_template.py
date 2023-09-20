@@ -121,6 +121,9 @@ class AccountChartTemplate(models.Model):
             if not company.l10n_nl_rgs_disable_allowed_journals:
                 self.add_account_allowed_journals(company)
 
+            # Workaround to translate journal names to Dutch
+            self._translate_journal_names_to_dutch(company)
+
         return res
 
     def add_account_allowed_journals(self, company):
@@ -230,12 +233,9 @@ class AccountChartTemplate(models.Model):
             return company.default_cash_difference_income_account_id
         return super()._create_cash_discount_gain_account(company, code_digits)
 
-    @api.model
-    def generate_journals(self, acc_template_ref, company, journals_dict=None):
+    def _translate_journal_names_to_dutch(self, company):
         """Workaround to translate journal names to Dutch, since standard Odoo doesn't do that"""
-        res = super().generate_journals(acc_template_ref, company, journals_dict=journals_dict)
-        if self != self.env.ref('l10n_nl_rgs.l10nnl_rgs_chart_template', False):
-            return res
+
         installed_langs = dict(self.env['res.lang'].get_installed())
         # Install Dutch language if not done yet
         lang = "nl_NL"
@@ -255,7 +255,7 @@ class AccountChartTemplate(models.Model):
                 journal.update_field_translations('name', {'nl_NL': 'Wisselkoers verschil'})
             elif journal.code == "CABA" and journal.with_context(lang='en_US').name == "Cash Basis Taxes":
                 journal.update_field_translations('name', {'nl_NL': 'Kasstelsel BTW'})
-            elif journal.code == "CSH1" and journal.with_context(lang='en_US').name == "Cash":
+            elif journal.code.startswith("CSH") and journal.with_context(lang='en_US').name == "Cash":
                 journal.update_field_translations('name', {'nl_NL': 'Kas'})
             elif journal.code == "ACCR" and journal.with_context(lang='en_US').name == "Accruals":
                 journal.update_field_translations('name', {'nl_NL': 'Overlopende rekeningen'})
@@ -267,4 +267,3 @@ class AccountChartTemplate(models.Model):
                 journal.update_field_translations('name', {'nl_NL': 'Lonen'})
             elif journal.code == "STJ" and journal.with_context(lang='en_US').name == "Inventory Valuation":
                 journal.update_field_translations('name', {'nl_NL': 'Voorraadwaardering'})
-        return res
