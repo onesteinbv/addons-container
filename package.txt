@@ -20,6 +20,7 @@ membership_accessibility
 services_org_install
 trade_org_install
 university_org_install
+account_statement_import_online_ponto_log
 addons-generic/account_period_auto_create
 addons-generic/base_debug_disabled
 addons-generic/base_import_debranding
