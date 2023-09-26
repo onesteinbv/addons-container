@@ -160,4 +160,6 @@ addons-pre-oca/website_local_fonts
 addons-third-party/mollie_account_sync
 addons-third-party/payment_mollie_official
 addons-third-party/mollie_subscription_ept
+addons-third-party/website_payment_recurring_donations
+addons-third-party/website_payment_recurring_donations_mollie
 design-themes/*
