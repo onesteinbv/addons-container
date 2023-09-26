@@ -74,6 +74,7 @@ addons-third-party/mollie_account_sync
 addons-third-party/mollie_subscription_ept
 addons-third-party/payment_mollie_official
 oca/account_asset_management
+oca/account_spread_cost_revenue
 oca/account_banking_mandate
 oca/account_banking_mandate_contact
 oca/account_banking_mandate_sale

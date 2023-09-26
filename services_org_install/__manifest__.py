@@ -125,6 +125,7 @@
         'account_usability',
         'account_financial_report',
         'account_asset_management',
+        'account_spread_cost_revenue',
         'account_banking_sepa_credit_transfer',
         'account_banking_sepa_direct_debit',
         'account_fiscal_position_vat_check',
