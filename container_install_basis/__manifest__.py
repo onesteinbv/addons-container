@@ -61,7 +61,6 @@
         "account_period_auto_create",
         "account_fiscal_year_auto_create",
         "account_statement_import_online_ponto",
-        "account_statement_import_online_ponto_log",
 
         # Dutch localization
         "l10n_nl_rgs",
