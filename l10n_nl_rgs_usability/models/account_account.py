@@ -6,7 +6,7 @@ class AccountAccount(models.Model):
     _inherit = 'account.account'
 
     @api.model
-    def name_search(self, name, args=None, operator="ilike", limit=100):
+    def name_search(self, name="", args=None, operator="ilike", limit=100):
         chart_template = self.env.company.chart_template_id
         is_rgs = chart_template == self.env.ref('l10n_nl_rgs.l10nnl_rgs_chart_template')
         # Bank
