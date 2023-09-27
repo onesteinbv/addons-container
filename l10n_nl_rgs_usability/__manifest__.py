@@ -21,6 +21,7 @@
         'data/res_groups.xml',
         'views/account_journal_views.xml',
         'views/account_onboarding_templates.xml',
+        'views/account_journal_dashboard.xml',
     ],
     'demo': [
         'demo/account_demo.xml',
