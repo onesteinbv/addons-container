@@ -21,6 +21,7 @@
         "payment_mollie",
         "crm",
         "hr_expense",
+        "hr_expense_remove_mobile_link",
         "project_hr_expense",
         "project_purchase",
         "account_move_line_purchase_info",
