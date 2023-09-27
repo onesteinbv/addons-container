@@ -114,6 +114,7 @@ oca/account_statement_import_online
 oca/account_statement_import_online_paypal
 oca/account_statement_import_online_ponto
 oca/account_usability
+oca/agreement
 oca/auditlog
 oca/base_tier_validation
 oca/base_tier_validation_formula
@@ -127,6 +128,8 @@ oca/contract_payment_mode
 oca/currency_rate_update
 oca/date_range
 oca/disable_odoo_online
+oca/helpdesk_mgmt
+oca/helpdesk_mgmt_project
 oca/hr_employee_firstname
 oca/hr_expense_remove_mobile_link
 oca/hr_timesheet_sheet
@@ -151,7 +154,10 @@ oca/partner_external_map
 oca/partner_firstname
 oca/product_category_product_link
 oca/project_role
+oca/project_task_add_very_high
+oca/project_task_default_stage
 oca/project_timeline
+oca/project_timeline_hr_timesheet
 oca/remove_odoo_enterprise
 oca/report_qr
 oca/report_qweb_parameter
