@@ -90,6 +90,7 @@ oca/account_invoice_constraint_chronology
 oca/account_invoice_overdue_reminder
 oca/account_journal_lock_date
 oca/account_lock_date_update
+oca/account_move_line_attachment_preview
 oca/account_move_line_purchase_info
 oca/account_move_line_sale_info
 oca/account_move_line_stock_info
