@@ -14,6 +14,7 @@
         "account_banking_sepa_credit_transfer",
         "account_invoice_constraint_chronology",
         "account_fiscal_year_auto_create",
+        "account_financial_report",
     ],
     'data': [
         'security/ir_sequence_security.xml',
@@ -22,6 +23,7 @@
         'views/account_journal_views.xml',
         'views/account_onboarding_templates.xml',
         'views/account_journal_dashboard.xml',
+        'views/menuitems.xml',
     ],
     'demo': [
         'demo/account_demo.xml',
