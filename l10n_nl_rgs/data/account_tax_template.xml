@@ -707,7 +707,7 @@
         <field name="sequence">20</field>
         <field name="chart_template_id" ref="l10nnl_rgs_chart_template"/>
         <field name="name">Verkopen - Export goederen binnen EU</field>
-        <field name="description">VAT - Reverse charge</field>
+        <field name="description">BTW export binnen EU (producten)</field>
         <field eval="0" name="amount"/>
         <field name="amount_type">percent</field>
         <field name="type_tax_use">sale</field>
@@ -740,7 +740,7 @@
         <field name="sequence">20</field>
         <field name="chart_template_id" ref="l10nnl_rgs_chart_template"/>
         <field name="name">Verkopen - Export diensten binnen EU</field>
-        <field name="description">VAT - Reverse charge</field>
+        <field name="description">BTW export binnen EU (diensten)</field>
         <field eval="0" name="amount"/>
         <field name="amount_type">percent</field>
         <field name="type_tax_use">sale</field>
@@ -874,7 +874,7 @@
         <field name="sequence">20</field>
         <field name="chart_template_id" ref="l10nnl_rgs_chart_template"/>
         <field name="name">Verkopen - Export goederen buiten EU</field>
-        <field name="description">VAT export non-EU</field>
+        <field name="description">BTW export buiten EU (producten)</field>
         <field eval="0" name="amount"/>
         <field name="amount_type">percent</field>
         <field name="type_tax_use">sale</field>
@@ -907,7 +907,7 @@
         <field name="sequence">21</field>
         <field name="chart_template_id" ref="l10nnl_rgs_chart_template"/>
         <field name="name">Verkopen - Export diensten buiten EU</field>
-        <field name="description">Out of scope of Dutch VAT (non-EU recipient of service)</field>
+        <field name="description">BTW export buiten EU (diensten)</field>
         <field eval="0" name="amount"/>
         <field name="amount_type">percent</field>
         <field name="type_tax_use">sale</field>
