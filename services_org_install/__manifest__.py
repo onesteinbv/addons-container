@@ -40,7 +40,6 @@
         'contract_payment_mode',
         'crm',
         'crm_sms',
-        'digest',
         'google_recaptcha',
         'helpdesk_mgmt',
         'helpdesk_mgmt_project',

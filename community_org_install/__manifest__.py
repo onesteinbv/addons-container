@@ -42,7 +42,6 @@
         'loyalty',
         'crm',
         'crm_sms',
-        'digest',
         'event',
         'event_crm',
         'event_crm_sale',
