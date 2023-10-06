@@ -12,6 +12,7 @@
     "depends": [
         "sale_management",
         "website",
+        "website_sale",
         "web_responsive",
         "disable_odoo_online",
         "account_payment_mode",
