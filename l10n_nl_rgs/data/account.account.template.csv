@@ -635,26 +635,26 @@
 "3501050","Onderhanden projecten in opdracht van derden, voorschotten onderhanden projecten in opdracht van derden","Onderhanden projecten in opdracht van derden, voorschotten","3501050","BProOnpOpv","asset_current","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_3501000","0","F.A.C",0
 "3501060","Onderhanden projecten in opdracht van derden, inhoudingen op gedeclareerde termijnen onderhanden projecten in opdracht van derden","Onderhanden projecten in opdracht van derden, inhoudingen op gedeclareerde termijnen","3501060","BProOnpOpi","asset_current","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_3501000","0","F.A.E",0
 "3501070","Winstopslag onderhanden projecten","Winstopslag onderhanden projecten","3501070","BProOnpWin","asset_current","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_3501000","0","F.A.G",0
-"4001010","Bezoldiging van bestuurders en gewezen bestuurders lonen en salarissen","Bezoldiging van bestuurders en gewezen bestuurders","4001010","WPerLesSld","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.A",0
-"4001020","Bezoldiging van commissarissen en gewezen commissarissen lonen en salarissen","Bezoldiging van commissarissen en gewezen commissarissen","4001020","WPerLesBvc","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.B",0
-"4001030","Tantièmes en provisie lonen en salarissen","Tantièmes en provisie","4001030","WPerLesTep","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.C",0
+"4001010","Bezoldiging van bestuurders en gewezen bestuurders","Bezoldiging van bestuurders en gewezen bestuurders","4001010","WPerLesSld","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.A",0
+"4001020","Bezoldiging van commissarissen en gewezen commissarissen","Bezoldiging van commissarissen en gewezen commissarissen","4001020","WPerLesBvc","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.B",0
+"4001030","Tantièmes en provisie","Tantièmes en provisie","4001030","WPerLesTep","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.C",0
 "4001040","Lonen en salarissen","Lonen","4001040","WPerLesLon","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.D",0
-"4001050","Overwerk lonen en salarissen","Overwerk","4001050","WPerLesOwe","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.E",0
-"4001060","Onregelmatigheidstoeslag lonen en salarissen","Onregelmatigheidstoeslag","4001060","WPerLesOnr","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.F",0
-"4001070","Vakantiebijslag lonen en salarissen","Vakantiebijslag","4001070","WPerLesVag","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.G",0
-"4001080","Vakantiedagen lonen en salarissen","Vakantiedagen","4001080","WPerLesVad","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.H",0
-"4001090","Gratificaties lonen en salarissen","Gratificaties","4001090","WPerLesGra","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.I",0
-"4001100","Lonen in natura lonen en salarissen","Lonen in natura","4001100","WPerLesLin","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.J",0
-"4001110","Spaarloon lonen en salarissen","Spaarloon","4001110","WPerLesTls","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.K",1
-"4001120","Loonkostenreductie lonen en salarissen","Loonkostenreductie","4001120","WPerLesLoo","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.N",1
-"4001130","Overige toeslagen lonen en salarissen","Overige toeslagen","4001130","WPerLesOvt","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.O",0
-"4001140","Ontslaguitkeringen lonen en salarissen","Ontslagvergoedingen","4001140","WPerLesOnu","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.L",0
+"4001050","Overwerk","Overwerk","4001050","WPerLesOwe","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.E",0
+"4001060","Onregelmatigheidstoeslag","Onregelmatigheidstoeslag","4001060","WPerLesOnr","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.F",0
+"4001070","Vakantiebijslag","Vakantiebijslag","4001070","WPerLesVag","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.G",0
+"4001080","Vakantiedagen","Vakantiedagen","4001080","WPerLesVad","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.H",0
+"4001090","Gratificaties","Gratificaties","4001090","WPerLesGra","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.I",0
+"4001100","Lonen in natura","Lonen in natura","4001100","WPerLesLin","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.J",0
+"4001110","Spaarloon","Spaarloon","4001110","WPerLesTls","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.K",1
+"4001120","Loonkostenreductie","Loonkostenreductie","4001120","WPerLesLoo","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.N",1
+"4001130","Overige toeslagen","Overige toeslagen","4001130","WPerLesOvt","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.O",0
+"4001140","Ontslaguitkeringen","Ontslagvergoedingen","4001140","WPerLesOnu","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.L",0
 "4001150","Op aandelen gebaseerde betalingen opgenomen onder lonen en salarissen","Lasten in verband met op aandelen gebaseerde betalingen","4001150","WPerLesLiv","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.M",1
-"4001160","Overige lonen en salarissen lonen en salarissen","Overige lonen en salarissen","4001160","WPerLesOlr","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.P",0
-"4001170","Loonkostensubsidie (LIV) lonen en salarissen","Loonkostensubsidie (LIV)","4001170","WPerLesLks","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.Q",1
+"4001160","Overige lonen en salarissen","Overige lonen en salarissen","4001160","WPerLesOlr","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.P",0
+"4001170","Loonkostensubsidie (LIV)","Loonkostensubsidie (LIV)","4001170","WPerLesLks","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.Q",1
 "4001180","Overige loon(kosten)subsidies","Overige loon(kosten)subsidies","4001180","WPerLesOls","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.R",0
 "4001190","Eindejaarsuitkering","Eindejaarsuitkering","4001190","WPerLesEuk","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.S",1
-"4001990","Doorberekende Lonen en salarissen lonen en salarissen","Doorberekende Lonen en salarissen","4001990","WPerLesDle","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.Z",1
+"4001990","Doorberekende Lonen en salarissen","Doorberekende Lonen en salarissen","4001990","WPerLesDle","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.Z",1
 "4001999","Doorberekend / Overboeking ivm functionele indeling lonen en salarissen","Doorberekend / Overboeking ivm functionele indeling lonen en salarissen","4001999","WPerLesDfw","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.Z1",1
 "4002010","Premies sociale verzekeringen sociale lasten","Premies sociale verzekeringen","4002010","WPerSolPsv","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4002000","0","S.B.A",0
 "4002020","Bijdrage ziektekostenverzekering sociale lasten","Bijdrage ziektekostenverzekering","4002020","WPerSolBiz","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4002000","0","S.B.C",1
