@@ -161,5 +161,62 @@
             <field name="tax_dest_id" ref="btw_ink_0"/>
         </record>
 
+        <!-- Installatie en Afstandsverkopen -->
+        <record id="position_tax_installatie_en_afstandsverkopen_1" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_installatie_en_afstandsverkopen"/>
+            <field name="tax_src_id" ref="btw_0"/>
+            <field name="tax_dest_id" ref="btw_X10"/>
+        </record>
+        <record id="position_tax_installatie_en_afstandsverkopen_10" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_installatie_en_afstandsverkopen"/>
+            <field name="tax_src_id" ref="btw_verk_0"/>
+            <field name="tax_dest_id" ref="btw_X10"/>
+        </record>
+        <record id="position_tax_installatie_en_afstandsverkopen_2_9" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_installatie_en_afstandsverkopen"/>
+            <field name="tax_src_id" ref="btw_9"/>
+            <field name="tax_dest_id" ref="btw_X10"/>
+        </record>
+        <record id="position_tax_installatie_en_afstandsverkopen_3" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_installatie_en_afstandsverkopen"/>
+            <field name="tax_src_id" ref="btw_21"/>
+            <field name="tax_dest_id" ref="btw_X10"/>
+        </record>
+        <record id="position_tax_installatie_en_afstandsverkopen_2_9_incl" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_installatie_en_afstandsverkopen"/>
+            <field name="tax_src_id" ref="btw_9_incl"/>
+            <field name="tax_dest_id" ref="btw_X10"/>
+        </record>
+        <record id="position_tax_installatie_en_afstandsverkopen_3_incl" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_installatie_en_afstandsverkopen"/>
+            <field name="tax_src_id" ref="btw_21_incl"/>
+            <field name="tax_dest_id" ref="btw_X10"/>
+        </record>
+        <record id="position_tax_installatie_en_afstandsverkopen_d_1" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_installatie_en_afstandsverkopen"/>
+            <field name="tax_src_id" ref="btw_0_d"/>
+            <field name="tax_dest_id" ref="btw_X10"/>
+        </record>
+        <record id="position_tax_installatie_en_afstandsverkopen_d_2_9" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_installatie_en_afstandsverkopen"/>
+            <field name="tax_src_id" ref="btw_9_d"/>
+            <field name="tax_dest_id" ref="btw_X10"/>
+        </record>
+        <record id="position_tax_installatie_en_afstandsverkopen_d_3" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_installatie_en_afstandsverkopen"/>
+            <field name="tax_src_id" ref="btw_21_d"/>
+            <field name="tax_dest_id" ref="btw_X10"/>
+        </record>
+        <record id="position_tax_installatie_en_afstandsverkopen_d_2_9_incl" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_installatie_en_afstandsverkopen"/>
+            <field name="tax_src_id" ref="btw_9_d_incl"/>
+            <field name="tax_dest_id" ref="btw_X10"/>
+        </record>
+        <record id="position_tax_installatie_en_afstandsverkopen_d_3_incl" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_installatie_en_afstandsverkopen"/>
+            <field name="tax_src_id" ref="btw_21_d_incl"/>
+            <field name="tax_dest_id" ref="btw_X10"/>
+        </record>
+
     </data>
 </openerp>
