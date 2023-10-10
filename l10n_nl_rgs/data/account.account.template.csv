@@ -345,7 +345,7 @@
 "1002013","Rekening-courant bank - Naam C - en","Rekening-courant bank- Naam C","1002013","BLimBanRbd","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1002000","0","I.B.A220",1
 "1002014","Rekening-courant bank - Naam D - ","Rekening-courant bank- Naam D","1002014","BLimBanRbe","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1002000","0","I.B.A230",1
 "1002015","Rekening-courant bank - Naam E - ","Rekening-courant bank- Naam E","1002015","BLimBanRbf","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1002000","0","I.B.A240",1
-"1002020","Depotrekening,"Depotrekening","1002020","BLimBanDrk","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1002000","0","I.B.B",0
+"1002020","Depotrekening","Depotrekening","1002020","BLimBanDrk","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1002000","0","I.B.B",0
 "1002030","Depositorekening","Depositorekening","1002030","BLimBanDep","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1002000","0","I.B.C",0
 "1002040","Beleggingsrekeningn","Beleggingsrekening","1002040","BLimBanBel","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1002000","0","I.B.D",0
 "1002050","Internetrekening","Internetrekening","1002050","BLimBanInb","asset_cash","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_1002000","0","I.B.F",0
