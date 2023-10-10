@@ -656,15 +656,15 @@
 "4001190","Eindejaarsuitkering","Eindejaarsuitkering","4001190","WPerLesEuk","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.S",1
 "4001990","Doorberekende Lonen en salarissen","Doorberekende Lonen en salarissen","4001990","WPerLesDle","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.Z",1
 "4001999","Doorberekend / Overboeking ivm functionele indeling lonen en salarissen","Doorberekend / Overboeking ivm functionele indeling lonen en salarissen","4001999","WPerLesDfw","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4001000","0","S.A.Z1",1
-"4002010","Premies sociale verzekeringen sociale lasten","Premies sociale verzekeringen","4002010","WPerSolPsv","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4002000","0","S.B.A",0
-"4002020","Bijdrage ziektekostenverzekering sociale lasten","Bijdrage ziektekostenverzekering","4002020","WPerSolBiz","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4002000","0","S.B.C",1
+"4002010","Premies sociale verzekeringen","Premies sociale verzekeringen","4002010","WPerSolPsv","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4002000","0","S.B.A",0
+"4002020","Bijdrage ziektekostenverzekering","Bijdrage ziektekostenverzekering","4002020","WPerSolBiz","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4002000","0","S.B.C",1
 "4002030","Overige premies sociale lasten","Overige premies","4002030","WPerSolOpr","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4002000","0","S.B.D",1
-"4002040","Overige sociale fondsen sociale lasten","Overige sociale fondsen","4002040","WPerSolOsf","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4002000","0","S.B.E",1
-"4002050","Overige sociale lasten sociale lasten","Overige sociale lasten","4002050","WPerSolOss","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4002000","0","S.B.F",0
-"4002990","Doorberekende sociale lasten sociale lasten","Doorberekende sociale lasten","4002990","WPerSolDsl","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4002000","0","S.B.Z",1
+"4002040","Overige sociale fondsen","Overige sociale fondsen","4002040","WPerSolOsf","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4002000","0","S.B.E",1
+"4002050","Overige sociale lasten","Overige sociale lasten","4002050","WPerSolOss","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4002000","0","S.B.F",0
+"4002990","Doorberekende sociale lasten","Doorberekende sociale lasten","4002990","WPerSolDsl","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4002000","0","S.B.Z",1
 "4002999","Doorberekend / Overboeking ivm functionele indeling sociale lasten","Doorberekend / Overboeking ivm functionele indeling sociale lasten","4002999","WPerSolDfw","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4002000","0","S.B.Z1",1
-"4003010","Pensioenpremies pensioenlasten","Pensioenpremies","4003010","WPerPenPen","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4003000","0","S.C.A",0
-"4003015","Aanvullende pensioenlasten pensioenlasten","Aanvullende pensioenlasten","4003015","WPerPenAap","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4003000","0","S.C.B",0
+"4003010","Pensioenpremies","Pensioenpremies","4003010","WPerPenPen","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4003000","0","S.C.A",0
+"4003015","Aanvullende pensioenlasten","Aanvullende pensioenlasten","4003015","WPerPenAap","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4003000","0","S.C.B",0
 "4003020","Dotatie pensioenvoorziening directie","Dotatie pensioenvoorziening directie","4003020","WPerPenDpe","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4003000","0","S.C.C",0
 "4003030","Vrijval pensioenvoorziening directie","Vrijval pensioenvoorziening directie","4003030","WPerPenVpv","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4003000","0","S.C.D",1
 "4003040","Dotatie voorziening backserviceverplichting directie","Dotatie voorziening backserviceverplichting directie","4003040","WPerPenDvb","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4003000","0","S.C.E",1
@@ -676,21 +676,21 @@
 "4003995","Doorberekend / Overboeking ivm functionele indeling pensioenlasten","Doorberekend / Overboeking ivm functionele indeling pensioenlasten","4003995","WPerPenDfw","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4003000","0","S.C.Z1",1
 "4004000","Werkkosten vrije ruimte overige personeelsgerelateerde kosten","Werkkosten vrije ruimte","4004000","WBedWkrWkf","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4003999","0","W.A.A",1
 "4004009","Overige lasten met betrekking tot personeelsbeloningen overige lasten uit hoofde van personeelsbeloningen","Overige lasten met betrekking tot personeelsbeloningen","4004009","WPerOluOlp","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4003000","0","S.D.A",0
-"4004099","Doorberekend / Overboeking ivm functionele indeling overige lasten personeel","Doorberekend / Overboeking ivm functionele indeling overige lasten personeel","4004099","WPerOluDfw","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4003000","0","S.D.Z",1
-"4005000","Werkkosten met nihilwaardering overige personeelsgerelateerde kosten","Werkkosten met nihilwaardering","4005000","WBedWkrWkn","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4003999","0","W.A.B",1
-"4006000","Werkkosten gericht vrijgesteld overige personeelsgerelateerde kosten","Werkkosten gericht vrijgesteld","4006000","WBedWkrWkg","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4003999","0","W.A.C",1
-"4007000","Werkkosten noodzakelijkheidscriterium overige personeelsgerelateerde kosten","Werkkosten noodzakelijkheidscriterium","4007000","WBedWkrWkc","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4003999","0","W.A.D",1
-"4008000","Werkkosten intermediair overige personeelsgerelateerde kosten","Werkkosten intermediair","4008000","WBedWkrWki","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4003999","0","W.A.E",1
-"4009000","Werkkosten belast loon overige personeelsgerelateerde kosten","Werkkosten belast loon","4009000","WBedWkrWkb","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4003999","0","W.A.F",1
-"4010000","Werkkosten geen of vrijgesteld loon overige personeelsgerelateerde kosten","Werkkosten geen of vrijgesteld loon","4010000","WBedWkrWkv","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4003999","0","W.A.G",1
-"4011000","Werkkosten overig overige personeelsgerelateerde kosten","Werkkosten overig","4011000","WBedWkrWko","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4003999","0","W.A.H",1
-"4012010","Uitzendkrachten overige personeelskosten","Uitzendkrachten","4012010","WBedOvpUik","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4012000","0","W.B.A",0
-"4012020","Uitzendbedrijven overige personeelskosten","Uitzendbedrijven","4012020","WBedOvpUit","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4012000","0","W.B.C",1
-"4012030","Management fee overige personeelskosten","Management fee","4012030","WBedOvpMaf","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4012000","0","W.B.D",0
-"4012040","Ingehuurde ZZP-ers overige personeelskosten","Ingehuurde ZZP-ers","4012040","WBedOvpZzp","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4012000","0","W.B.E",0
-"4012050","Ingehuurde payrollers overige personeelskosten","Ingehuurde payrollers","4012050","WBedOvpPay","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4012000","0","W.B.F",0
-"4012060","Overig ingeleend personeel overige personeelskosten","Overig ingeleend personeel","4012060","WBedOvpOip","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4012000","0","W.B.G",0
-"4012070","Wervingskosten overige personeelskosten","Wervingskosten","4012070","WBedOvpWer","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4012000","0","W.B.H",0
+"4004099","Doorberekend / Overboeking ivm functionele indeling","Doorberekend / Overboeking ivm functionele indeling overige lasten personeel","4004099","WPerOluDfw","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4003000","0","S.D.Z",1
+"4005000","Werkkosten met nihilwaardering","Werkkosten met nihilwaardering","4005000","WBedWkrWkn","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4003999","0","W.A.B",1
+"4006000","Werkkosten gericht vrijgesteld","Werkkosten gericht vrijgesteld","4006000","WBedWkrWkg","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4003999","0","W.A.C",1
+"4007000","Werkkosten noodzakelijkheidscriterium","Werkkosten noodzakelijkheidscriterium","4007000","WBedWkrWkc","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4003999","0","W.A.D",1
+"4008000","Werkkosten intermediair","Werkkosten intermediair","4008000","WBedWkrWki","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4003999","0","W.A.E",1
+"4009000","Werkkosten belast loon","Werkkosten belast loon","4009000","WBedWkrWkb","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4003999","0","W.A.F",1
+"4010000","Werkkosten geen of vrijgesteld loon","Werkkosten geen of vrijgesteld loon","4010000","WBedWkrWkv","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4003999","0","W.A.G",1
+"4011000","Werkkosten overig","Werkkosten overig","4011000","WBedWkrWko","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4003999","0","W.A.H",1
+"4012010","Uitzendkrachten","Uitzendkrachten","4012010","WBedOvpUik","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4012000","0","W.B.A",0
+"4012020","Uitzendbedrijven","Uitzendbedrijven","4012020","WBedOvpUit","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4012000","0","W.B.C",1
+"4012030","Management fee","Management fee","4012030","WBedOvpMaf","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4012000","0","W.B.D",0
+"4012040","Ingehuurde ZZP-ers","Ingehuurde ZZP-ers","4012040","WBedOvpZzp","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4012000","0","W.B.E",0
+"4012050","Ingehuurde payrollers","Ingehuurde payrollers","4012050","WBedOvpPay","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4012000","0","W.B.F",0
+"4012060","Overig ingeleend personeel","Overig ingeleend personeel","4012060","WBedOvpOip","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4012000","0","W.B.G",0
+"4012070","Wervingskosten","Wervingskosten","4012070","WBedOvpWer","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4012000","0","W.B.H",0
 "4012071","Werkkleding","Werkkleding","4012071","WBedOvpWkv","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4012000","0","W.B.H010",1
 "4012072","Werkplek thuis","Werkplek thuis","4012072","WBedOvpWpt","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4012000","0","W.B.H020",1
 "4012073","Thuiswerkvergoeding","Thuiswerkvergoeding","4012073","WBedOvpThv","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4012000","0","W.B.H030",1
