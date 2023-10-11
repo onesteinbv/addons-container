@@ -11,7 +11,10 @@
         'account_usability',
         "account_payment_order",
         "account_payment_mode",
+        "account_payment_partner",
+        "account_banking_pain_base",
         "account_banking_sepa_credit_transfer",
+        "account_banking_mandate",
         "account_invoice_constraint_chronology",
         "account_fiscal_year_auto_create",
         "account_financial_report",
@@ -23,6 +26,7 @@
         'views/account_journal_views.xml',
         'views/account_onboarding_templates.xml',
         'views/account_journal_dashboard.xml',
+        'views/account_move_view.xml',
         'views/menuitems.xml',
     ],
     'demo': [
