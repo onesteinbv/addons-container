@@ -24,8 +24,15 @@
         <field name="model">account.move</field>
         <field name="inherit_id" ref="account_payment_partner.view_move_form" />
         <field name="arch" type="xml">
+            <field name="payment_mode_id" position="before">
+                <field name="mandate_visible" invisible="1" />
+            </field>
             <field name="payment_mode_id" position="attributes">
-                <attribute name="groups">account_banking_pain_base.group_pain_multiple_identifier</attribute>
+                <attribute name="attrs" operation="update">
+                    {
+                        'invisible': [('mandate_visible', '=', False)]
+                    }
+                </attribute>
             </field>
         </field>
     </record>
