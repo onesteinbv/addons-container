@@ -1247,10 +1247,10 @@
 "8130010","Marge-voorraden","Marge-voorraden","8130010","WWivMrvMrv","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8130000","0","P.G.A",1
 "8201010","Ontvangen managementvergoeding","Ontvangen managementvergoeding","8201010","WOvbOnmOnm","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8201000","0","R.L.A",0
 "8202010","Ontvangen doorbelasting personeelskosten","Ontvangen doorbelasting personeelskosten","8202010","WOvbOdpOdp","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8202000","0","R.M.A",0
-"8203010","Collecten","Collecten","8203010","WOvbBueCol","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8203000","0","R.D.A",1
-"8203020","Donaties en giften","Donaties en giften","8203020","WOvbBueDeg","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8203000","0","R.D.B",1
-"8203030","Contributies","Contributies","8203030","WOvbBueCtb","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8203000","0","R.D.C",1
-"8203040","Sponsoring","Sponsoring","8203040","WOvbBueSpo","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8203000","0","R.D.D",1
+"8203010","Collecten","Collecten","8203010","WOvbBueCol","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8203000","0","R.D.A",0
+"8203020","Donaties en giften","Donaties en giften","8203020","WOvbBueDeg","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8203000","0","R.D.B",0
+"8203030","Contributies","Contributies","8203030","WOvbBueCtb","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8203000","0","R.D.C",0
+"8203040","Sponsoring","Sponsoring","8203040","WOvbBueSpo","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8203000","0","R.D.D",0
 "8203050","Nalatenschappen","Nalatenschappen","8203050","WOvbBueNal","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8203000","0","R.D.E",1
 "8203060","Eigen loterijen en prijsvragen","Eigen loterijen en prijsvragen","8203060","WOvbBueEle","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8203000","0","R.D.F",1
 "8203070","Verkoop goederen","Verkoop goederen","8203070","WOvbBueVeg","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8203000","0","R.D.G",1
