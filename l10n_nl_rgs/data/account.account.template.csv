@@ -694,7 +694,7 @@
 "4012071","Werkkleding","Werkkleding","4012071","WBedOvpWkv","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4012000","0","W.B.H010",1
 "4012072","Werkplek thuis","Werkplek thuis","4012072","WBedOvpWpt","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4012000","0","W.B.H020",1
 "4012073","Thuiswerkvergoeding","Thuiswerkvergoeding","4012073","WBedOvpThv","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4012000","0","W.B.H030",1
-"4012074","Maaltijden en consumpties personeel","Maaltijden en consumpties personeel","4012074","WBedOvpMlv","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4012000","0","W.B.H040",1
+"4012074","Maaltijden en consumpties personeel","Maaltijden en consumpties personeel","4012074","WBedOvpMlv","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4012000","0","W.B.H040",0
 "4012075","Personeeluitjes en -geschenken","Personeeluitjes en -geschenken","4012075","WBedOvpPug","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4012000","0","W.B.H050",1
 "4012076","Werkgeversbijdrage personeelsvereniging, -fonds belast","Werkgeversbijdrage personeelsvereniging, -fonds belast","4012076","WBedOvpWbp","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4012000","0","W.B.H060",1
 "4012077","(Overige) Vergoedingen personeel","(Overige) Vergoedingen personeel","4012077","WBedOvpOvb","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4012000","0","W.B.H070",1
@@ -1027,8 +1027,8 @@
 "4301080","CO2-, OCAP- en waterkosten","CO2-, OCAP- en waterkosten","4301080","WKprAklCoe","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4301000","0","Q.D090",1
 "4301085","Potten en grondkosten","Potten en grondkosten","4301085","WKprAklPeg","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4301000","0","Q.D095",1
 "4301090","Overige teeltkosten","Overige teeltkosten","4301090","WKprAklOte","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4301000","0","Q.D100",1
-"4301100","Gaskostenn","Gaskosten","4301100","WKprAklGko","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4301000","0","Q.D110",1
-"4301110","Elektrakostenen","Elektrakosten","4301110","WKprAklEkn","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4301000","0","Q.D120",1
+"4301100","Gaskosten","Gaskosten","4301100","WKprAklGko","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4301000","0","Q.D110",1
+"4301110","Elektra kosten","Elektrakosten","4301110","WKprAklEkn","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4301000","0","Q.D120",1
 "4301115","Water kosten","Water kosten","4301115","WKprAklWkn","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4301000","0","Q.D125",1
 "4301120","Onderhoudskosten WKK","Onderhoudskosten WKK","4301120","WKprAklOwk","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4301000","0","Q.D130",1
 "4301130","Leasekosten WKK","Leasekosten WKK","4301130","WKprAklLew","expense","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_4301000","0","Q.D140",1
@@ -1175,17 +1175,17 @@
 "8003120","Netto-omzet uit verleende diensten waarvan overboeking naar andere rubriek opbrengsten uit het verlenen van diensten","Netto-omzet uit verleende diensten waarvan overboeking naar andere rubriek","8003120","WOmzNodNon","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8003000","0","O.C120",1
 "8003150","Netto-omzet van onbelaste diensten","Netto-omzet van onbelaste diensten","8003150","WOmzNodNod","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8003000","0","O.C150",1
 "8004010","Overige netto-omzet waarvan licenties overige netto-omzet","Overige netto-omzet waarvan licenties","8004010","WOmzNooNdl","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8004000","0","O.F.A",0
-"8004020","Opbrengsten uit royalty's overige netto-omzet","Opbrengsten uit royalty's","8004020","WOmzNooNdy","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8004000","0","O.F.B",0
-"8004030","Opbrengsten uit dividenden overige netto-omzet","Opbrengsten uit dividenden","8004030","WOmzNooNdd","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8004000","0","O.F.C",0
-"8004040","Opbrengsten uit overige bronnen overige netto-omzet","Opbrengsten uit overige bronnen","8004040","WOmzNooNdo","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8004000","0","O.F.F",0
-"8004050","Overige netto-omzet waarvan overboeking naar andere rubriek overige netto-omzet","Overige netto-omzet waarvan overboeking naar andere rubriek","8004050","WOmzNooNon","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8004000","0","O.F.G",1
-"8004060","Opbrengsten uit rente overige netto-omzet","Opbrengsten uit rente","8004060","WOmzNooOur","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8004000","0","O.F.D",0
-"8004070","Overige netto-omzet waarvan niet elders genoemd overige netto-omzet","Overige netto-omzet waarvan niet elders genoemd","8004070","WOmzNooOnw","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8004000","0","O.F.E",1
+"8004020","Opbrengsten uit royalty's","Opbrengsten uit royalty's","8004020","WOmzNooNdy","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8004000","0","O.F.B",0
+"8004030","Opbrengsten uit dividenden","Opbrengsten uit dividenden","8004030","WOmzNooNdd","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8004000","0","O.F.C",0
+"8004040","Opbrengsten uit overige bronnen","Opbrengsten uit overige bronnen","8004040","WOmzNooNdo","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8004000","0","O.F.F",0
+"8004050","Overige netto-omzet waarvan overboeking naar andere rubriek","Overige netto-omzet waarvan overboeking naar andere rubriek","8004050","WOmzNooNon","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8004000","0","O.F.G",1
+"8004060","Opbrengsten uit rente","Opbrengsten uit rente","8004060","WOmzNooOur","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8004000","0","O.F.D",0
+"8004070","Overige netto-omzet waarvan niet elders genoemd","Overige netto-omzet waarvan niet elders genoemd","8004070","WOmzNooOnw","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8004000","0","O.F.E",1
 "8004080","Omzet (nog te factureren)","Omzet (nog te factureren)","8004080","WOmzNooNtf","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8004000","0","O.F.H",1
 "8005010","Omzet intercompany transacties","Omzet intercompany transacties","8005010","WOmzOitOit","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8005000","0","O.G.A",1
-"8005020","Omzet verkopen aan groepsmaatschappijen netto-omzet intercompany transacties","Omzet verkopen aan groepsmaatschappijen","8005020","WOmzOitOvg","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8005000","0","O.G.B",1
-"8005030","Omzet verkopen aan overige verbonden maatschappijen netto-omzet intercompany transacties","Omzet verkopen aan overige verbonden maatschappijen","8005030","WOmzOitOvm","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8005000","0","O.G.C",1
-"8005040","Omzet verkopen aan andere deelnemingen netto-omzet intercompany transacties","Omzet verkopen aan andere deelnemingen","8005040","WOmzOitOvd","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8005000","0","O.G.D",1
+"8005020","Omzet verkopen aan groepsmaatschappijen","Omzet verkopen aan groepsmaatschappijen","8005020","WOmzOitOvg","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8005000","0","O.G.B",1
+"8005030","Omzet verkopen aan overige verbonden maatschappijen","Omzet verkopen aan overige verbonden maatschappijen","8005030","WOmzOitOvm","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8005000","0","O.G.C",1
+"8005040","Omzet verkopen aan andere deelnemingen","Omzet verkopen aan andere deelnemingen","8005040","WOmzOitOvd","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8005000","0","O.G.D",1
 "8006010","Verleende kortingen","Verleende kortingen","8006010","WOmzKebVek","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8006000","0","O.H.A",0
 "8006020","Omzetbonificaties","Omzetbonificaties","8006020","WOmzKebOmz","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8006000","0","O.H.B",0
 "8006030","Provisies","Provisies","8006030","WOmzKebPrv","income","l10n_nl_rgs.l10nnl_rgs_chart_template","l10n_nl_rgs.account_tag_8006000","0","O.H.C",0
