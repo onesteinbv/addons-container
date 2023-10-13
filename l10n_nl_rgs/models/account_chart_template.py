@@ -45,6 +45,8 @@ class AccountChartTemplate(models.Model):
         account = super()._create_liquidity_journal_suspense_account(company, code_digits)
         if company.account_fiscal_country_id.code == 'NL':
             account.tag_ids = [Command.link(self.env.ref('l10n_nl_rgs.account_tag_1003000').id)]
+            if account.referentiecode:
+                account.reconcile = True
         return account
 
     def _get_account_vals(self, company, account_template, code_acc, tax_template_ref):
