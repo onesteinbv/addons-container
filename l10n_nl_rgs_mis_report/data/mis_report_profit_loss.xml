@@ -3202,7 +3202,7 @@
             <field name="compare_method">pct</field>
             <field name="sequence">9000</field>
             <field name="name">nl_pl_result_after_tax</field>
-            <field name="description">Resultaat voor belastingen</field>
+            <field name="description">Resultaat na belastingen</field>
             <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l1i" />
             <field
                 name="expression"
