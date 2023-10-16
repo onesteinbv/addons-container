@@ -137,13 +137,17 @@ class AccountChartTemplate(models.Model):
 
     def _set_liquidity_transfer_account(self, company):
         """Set the transfer account 1003010 on the company (delete 1003011)"""
+        # set account 1003010
         transfer_account = self.env['account.account'].search([
             ('code', '=', '1003010'), ('company_id', '=', company.id)], limit=1)
         if transfer_account and company.transfer_account_id != transfer_account:
-            old_account = company.transfer_account_id
             company.transfer_account_id = transfer_account
-            if old_account.code == "1003011" and old_account.name == "Liquidity Transfer":
-                old_account.unlink()
+
+        # delete account 1003011
+        wrong_transfer_account = self.env['account.account'].search([
+            ('code', '=', '1003011'), ('company_id', '=', company.id)], limit=1)
+        if wrong_transfer_account and company.transfer_account_id != wrong_transfer_account:
+            wrong_transfer_account.unlink()
 
     def _set_liquidity_transfer_account_template(self):
         """Set liquidity transfer template: 1003010 (delete 1003011)"""
