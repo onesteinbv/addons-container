@@ -10,10 +10,10 @@
             <field name="account_depreciation_id" ref="l10n_nl_rgs.0214020"/>
             <field name="journal_code">DEPR</field>
             <field name="group_ids" eval="[(4, ref('account_asset_group_02'))]"/>
-            <field name="days_calc">True</field>
-            <field name="asset_product_item"></field>
+            <field name="days_calc">False</field>
+            <field name="asset_product_item">False</field>
             <field name="method">linear</field>
-            <field name="method_number">5</field>
+            <field name="method_number">60</field>
             <field name="method_period">month</field>
             <field name="method_time">year</field>
             <field name="method_progress_factor">0.3</field>
@@ -29,10 +29,10 @@
             <field name="account_depreciation_id" ref="l10n_nl_rgs.0202020"/>
             <field name="journal_code">DEPR</field>
             <field name="group_ids" eval="[(4, ref('account_asset_group_02'))]"/>
-            <field name="days_calc">True</field>
-            <field name="asset_product_item">True</field>
+            <field name="days_calc">False</field>
+            <field name="asset_product_item">False</field>
             <field name="method">linear</field>
-            <field name="method_number">20</field>
+            <field name="method_number">240</field>
             <field name="method_period">month</field>
             <field name="method_time">year</field>
             <field name="method_progress_factor">0.3</field>
@@ -48,10 +48,10 @@
             <field name="account_depreciation_id" ref="l10n_nl_rgs.0107020"/>
             <field name="journal_code">DEPR</field>
             <field name="group_ids" eval="[(4, ref('account_asset_group_01'))]"/>
-            <field name="days_calc">True</field>
-            <field name="asset_product_item">True</field>
+            <field name="days_calc">False</field>
+            <field name="asset_product_item">False</field>
             <field name="method">linear</field>
-            <field name="method_number">10</field>
+            <field name="method_number">120</field>
             <field name="method_period">month</field>
             <field name="method_time">year</field>
             <field name="method_progress_factor">0.3</field>
@@ -67,10 +67,10 @@
             <field name="account_depreciation_id" ref="l10n_nl_rgs.0215020"/>
             <field name="journal_code">DEPR</field>
             <field name="group_ids" eval="[(4, ref('account_asset_group_02'))]"/>
-            <field name="days_calc">True</field>
-            <field name="asset_product_item">True</field>
+            <field name="days_calc">False</field>
+            <field name="asset_product_item">False</field>
             <field name="method">linear</field>
-            <field name="method_number">5</field>
+            <field name="method_number">60</field>
             <field name="method_period">month</field>
             <field name="method_time">year</field>
             <field name="method_progress_factor">0.3</field>
@@ -86,10 +86,10 @@
             <field name="account_depreciation_id" ref="l10n_nl_rgs.0102020"/>
             <field name="journal_code">DEPR</field>
             <field name="group_ids" eval="[(4, ref('account_asset_group_01'))]"/>
-            <field name="days_calc">True</field>
-            <field name="asset_product_item">True</field>
+            <field name="days_calc">False</field>
+            <field name="asset_product_item">False</field>
             <field name="method">linear</field>
-            <field name="method_number">5</field>
+            <field name="method_number">60</field>
             <field name="method_period">month</field>
             <field name="method_time">year</field>
             <field name="method_progress_factor">0.3</field>
@@ -105,10 +105,10 @@
             <field name="account_depreciation_id" ref="l10n_nl_rgs.0210020"/>
             <field name="journal_code">DEPR</field>
             <field name="group_ids" eval="[(4, ref('account_asset_group_02'))]"/>
-            <field name="days_calc">True</field>
-            <field name="asset_product_item">True</field>
+            <field name="days_calc">False</field>
+            <field name="asset_product_item">False</field>
             <field name="method">linear</field>
-            <field name="method_number">5</field>
+            <field name="method_number">60</field>
             <field name="method_period">month</field>
             <field name="method_time">year</field>
             <field name="method_progress_factor">0.3</field>
@@ -124,10 +124,10 @@
             <field name="account_depreciation_id" ref="l10n_nl_rgs.0110020"/>
             <field name="journal_code">DEPR</field>
             <field name="group_ids" eval="[(4, ref('account_asset_group_01'))]"/>
-            <field name="days_calc">True</field>
-            <field name="asset_product_item">True</field>
+            <field name="days_calc">False</field>
+            <field name="asset_product_item">False</field>
             <field name="method">linear</field>
-            <field name="method_number">5</field>
+            <field name="method_number">60</field>
             <field name="method_period">month</field>
             <field name="method_time">year</field>
             <field name="method_progress_factor">0.3</field>
@@ -143,10 +143,10 @@
             <field name="account_depreciation_id" ref="l10n_nl_rgs.0201020"/>
             <field name="journal_code">DEPR</field>
             <field name="group_ids" eval="[(4, ref('account_asset_group_02'))]"/>
-            <field name="days_calc">True</field>
-            <field name="asset_product_item">True</field>
+            <field name="days_calc">False</field>
+            <field name="asset_product_item">False</field>
             <field name="method">linear</field>
-            <field name="method_number">20</field>
+            <field name="method_number">240</field>
             <field name="method_period">month</field>
             <field name="method_time">year</field>
             <field name="method_progress_factor">0.3</field>
@@ -162,10 +162,10 @@
             <field name="account_depreciation_id" ref="l10n_nl_rgs.0203020"/>
             <field name="journal_code">DEPR</field>
             <field name="group_ids" eval="[(4, ref('account_asset_group_02'))]"/>
-            <field name="days_calc">True</field>
-            <field name="asset_product_item">True</field>
+            <field name="days_calc">False</field>
+            <field name="asset_product_item">False</field>
             <field name="method">linear</field>
-            <field name="method_number">10</field>
+            <field name="method_number">120</field>
             <field name="method_period">month</field>
             <field name="method_time">year</field>
             <field name="method_progress_factor">0.3</field>
