@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <menuitem
+        id="mis_builder.mis_report_finance_menu"
+        parent="account.menu_finance_reports"
+        name="MIS Reporting"
+        sequence="101"
+        groups="account.group_account_user"
+    />
+</odoo>

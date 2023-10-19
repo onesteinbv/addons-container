@@ -15,6 +15,7 @@
         "data/mis_report_styles.xml",
         "data/mis_report_balance_sheet.xml",
         "data/mis_report_profit_loss.xml",
+        "views/mis_report_instance.xml",
     ],
     "installable": True,
     'license': 'LGPL-3',
