@@ -47,7 +47,7 @@ class AccountJournal(models.Model):
             self.type = False
             warning = {
                 'title': _("Warning for bank journal"),
-                'message': "Please add your bank number in menu 'Add a Bank Account'.",
+                'message': _("Please add your bank number in menu 'Add a Bank Account'."),
             }
             return {'warning': warning}
         return res
