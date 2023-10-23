@@ -31,7 +31,9 @@ def post_init_hook(cr, _):
         if journal.company_id.chart_template_id == env.ref('l10n_nl_rgs.l10nnl_rgs_chart_template', False):
             journal.active = False
 
-    # Create fiscal year for current year
     companies = env["res.company"].search([])
     for company in companies:
+        # Create fiscal year for current year
         company._create_fiscal_year_for_current_year()
+        # Verify VAT Numbers set to True
+        company.vat_check_vies = True
