@@ -10,6 +10,8 @@ class AccountChartTemplate(models.Model):
 
         # Generate payment modes
         self._generate_payment_modes(company)
+        # Generate spread templates
+        company._create_spread_templates()
         return res
 
     @api.model

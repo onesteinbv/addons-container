@@ -19,6 +19,7 @@
         "account_invoice_constraint_chronology",
         "account_fiscal_year_auto_create",
         "account_financial_report",
+        "account_spread_cost_revenue",
     ],
     'data': [
         'security/ir_sequence_security.xml',

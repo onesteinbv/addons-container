@@ -22,3 +22,4 @@ in module l10n_nl_rgs. The idea is to leave l10n_nl_rgs as much generic as possi
 - impede creating bank journals directly, use menu 'Add a Bank Account' instead
 - 'Verify VAT Numbers' set to True
 - add 'Direct debit' payment mode
+- create spread templates
