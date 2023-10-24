@@ -91,7 +91,7 @@
                     <field name="name">Immateriële vaste activa</field>
                     <field name="code">01</field>
                     <field name="referentiecode">BIva</field>
-                    <field name="sort_code">BIva</field>
+                    <field name="sort_code">A</field>
                     <field name="rgs_basic">1</field>
                     <field name="rgs_extended">1</field>
                     <field name="rgs_ez">1</field>
