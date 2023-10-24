@@ -951,8 +951,8 @@ msgstr "Resultaat aandeel van derden"
 #. module: l10n_nl_rgs_mis_report
 #: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_result_after_tax
 #: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_result_no_tax
-msgid "Resultaat voor belastingen"
-msgstr "Resultaat voor belastingen"
+msgid "Resultaat na belastingen"
+msgstr "Resultaat na belastingen"
 
 #. module: l10n_nl_rgs_mis_report
 #: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_12_04
