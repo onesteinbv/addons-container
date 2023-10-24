@@ -14,3 +14,11 @@ in module l10n_nl_rgs. The idea is to leave l10n_nl_rgs as much generic as possi
 - automatically install RGS when creating a new company
 - remove onboarding setup step regarding COA setup
 - remove onboarding "Import your first bill" popup
+- archive the cash basis tax journal
+- check_chronology active for purchase journals
+- create fiscal year for current year
+- archive VAT report menuitem
+- mandate and payment mode visibility on customer invoice
+- impede creating bank journals directly, use menu 'Add a Bank Account' instead
+- 'Verify VAT Numbers' set to True
+- add 'Direct debit' payment mode
