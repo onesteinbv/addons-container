@@ -43,3 +43,33 @@ class Company(models.Model):
                 "date_from": date_from,
                 "date_to": date_to,
             })
+
+    def _create_direct_debit_in_payment_mode(self):
+        self.ensure_one()
+        self = self.sudo()
+        payment_mode = self.env["account.payment.mode"].search([
+            ("name", "=", "Direct debit"),
+            ("company_id", "=", self.id),
+        ], limit=1)
+        if payment_mode:
+            return
+        payment_method = self.env["account.payment.method"].search([
+            ("code", "=", "sepa_direct_debit"),
+        ], limit=1)
+        bank_journal = self.env["account.journal"].search([
+            ("type", "=", "bank"),
+            ("company_id", "=", self.id),
+        ], limit=1)
+        refund_payment_mode = self.env["account.payment.mode"].search([
+            ("name", "=", "Manual"),
+            ("company_id", "=", self.id),
+        ], limit=1)
+        if payment_method:
+            self.env["account.payment.mode"].create({
+                "name": "Direct debit",
+                "company_id": self.id,
+                "payment_method_id": payment_method.id,
+                "variable_journal_ids": bank_journal,
+                "bank_account_link": "variable",
+                "refund_payment_mode_id": refund_payment_mode.id,
+            })

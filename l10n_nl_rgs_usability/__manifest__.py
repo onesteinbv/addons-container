@@ -14,6 +14,7 @@
         "account_payment_partner",
         "account_banking_pain_base",
         "account_banking_sepa_credit_transfer",
+        "account_banking_sepa_direct_debit",
         "account_banking_mandate",
         "account_invoice_constraint_chronology",
         "account_fiscal_year_auto_create",
