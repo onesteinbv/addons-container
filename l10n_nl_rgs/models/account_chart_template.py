@@ -45,6 +45,8 @@ class AccountChartTemplate(models.Model):
         account = super()._create_liquidity_journal_suspense_account(company, code_digits)
         if company.account_fiscal_country_id.code == 'NL':
             account.tag_ids = [Command.link(self.env.ref('l10n_nl_rgs.account_tag_1003000').id)]
+            if account.referentiecode:
+                account.reconcile = True
         return account
 
     def _get_account_vals(self, company, account_template, code_acc, tax_template_ref):
@@ -115,7 +117,8 @@ class AccountChartTemplate(models.Model):
 
     def _load(self, company):
         res = super()._load(company)
-        if self == self.env.ref('l10n_nl_rgs.l10nnl_rgs_chart_template'):
+        rgs = self.env.ref('l10n_nl_rgs.l10nnl_rgs_chart_template')
+        if rgs and self == rgs:
 
             # Add allowed journals to accounts based on group settings
             if not company.l10n_nl_rgs_disable_allowed_journals:
@@ -124,7 +127,47 @@ class AccountChartTemplate(models.Model):
             # Workaround to translate journal names to Dutch
             self._translate_journal_names_to_dutch(company)
 
+            # Set liquidity transfer template: 1003010 (delete 1003011)
+            self._set_liquidity_transfer_account_template()
+
+            # Set the transfer account 1003010 on the company (delete 1003011)
+            self._set_liquidity_transfer_account(company)
+
         return res
+
+    def _set_liquidity_transfer_account(self, company):
+        """Set the transfer account 1003010 on the company (delete 1003011)"""
+        # set account 1003010
+        transfer_account = self.env['account.account'].search([
+            ('code', '=', '1003010'), ('company_id', '=', company.id)], limit=1)
+        if transfer_account and company.transfer_account_id != transfer_account:
+            company.transfer_account_id = transfer_account
+
+        # delete account 1003011
+        wrong_transfer_account = self.env['account.account'].search([
+            ('code', '=', '1003011'), ('company_id', '=', company.id)], limit=1)
+        if wrong_transfer_account and company.transfer_account_id != wrong_transfer_account:
+            wrong_transfer_account.unlink()
+
+    def _set_liquidity_transfer_account_template(self):
+        """Set liquidity transfer template: 1003010 (delete 1003011)"""
+        rgs = self.env.ref('l10n_nl_rgs.l10nnl_rgs_chart_template')
+        rgs_xml_id = 'l10n_nl_rgs.l10nnl_rgs_chart_template_liquidity_transfer'
+        liquidity_account_template = self.env.ref(rgs_xml_id, raise_if_not_found=False)
+        if liquidity_account_template and liquidity_account_template.code == "1003011":
+            # liquidity transfer account template
+            correct_account_template = self.env['account.account.template'].search([
+                ("code", "=", "1003010"),
+                ("chart_template_id", "=", rgs.id),
+            ])
+            if len(correct_account_template) == 1:
+                account_data = dict(
+                    xml_id=rgs_xml_id,
+                    record=correct_account_template,
+                    noupdate=True,
+                )
+                self.env['ir.model.data']._update_xmlids([account_data])
+                liquidity_account_template.unlink()
 
     def add_account_allowed_journals(self, company):
         """ Inherit this method to fix reference code missing in account groups"""

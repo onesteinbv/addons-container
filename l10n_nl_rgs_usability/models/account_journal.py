@@ -1,5 +1,5 @@
 
-from odoo import api, models
+from odoo import api, models, _
 
 
 class AccountJournal(models.Model):
@@ -43,4 +43,11 @@ class AccountJournal(models.Model):
             self.check_chronology = True
         else:
             self.check_chronology = False
+        if isinstance(self.id, models.NewId) and self.type == "bank":
+            self.type = False
+            warning = {
+                'title': _("Warning for bank journal"),
+                'message': _("Please add your bank number in menu 'Add a Bank Account'."),
+            }
+            return {'warning': warning}
         return res

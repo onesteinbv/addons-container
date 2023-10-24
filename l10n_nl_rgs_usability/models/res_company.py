@@ -6,6 +6,8 @@ from datetime import datetime
 class Company(models.Model):
     _inherit = "res.company"
 
+    vat_check_vies = fields.Boolean(default=True)
+
     @api.model_create_multi
     def create(self, vals_list):
         companies = super().create(vals_list)

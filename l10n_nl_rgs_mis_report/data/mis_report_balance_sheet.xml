@@ -743,9 +743,9 @@
             <field name="compare_method">pct</field>
             <field name="sequence">400</field>
             <field name="name">nl_30</field>
-            <field name="description">Financiële vaste activa</field>
+            <field name="description">Voorraden</field>
             <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l2" />
-            <field name="expression">+nl_30_02+nl_31_02+nl_31_01+nl_31_03+nl_30_01+nl_30_04+nl_30_03+nl_31_05</field>
+            <field name="expression">+nl_30_02+nl_31_02+nl_31_01+nl_31_03+nl_30_01+nl_30_04+nl_30_03+nl_31_05+nl_31_06</field>
         </record>
         <record
             id="mis_report_kpi_l10n_nl_rgs_balance_sheet_30_02"
@@ -907,6 +907,26 @@
                 ref="mis_report_style_l10n_nl_rgs_l4i"
             />
         </record>
+        <record
+            id="mis_report_kpi_l10n_nl_rgs_balance_sheet_31_06"
+            model="mis.report.kpi"
+        >
+            <field name="report_id" ref="mis_report_l10n_nl_rgs_balance_sheet" />
+            <field name="type">num</field>
+            <field name="compare_method">pct</field>
+            <field name="sequence">481</field>
+            <field name="name">nl_31_06</field>
+            <field name="description">Overige voorraden</field>
+            <field
+                name="expression"
+            >+bale[('group_id.code', '=', '3106000')]</field>
+            <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l3" />
+            <field name="auto_expand_accounts">True</field>
+            <field
+                name="auto_expand_accounts_style_id"
+                ref="mis_report_style_l10n_nl_rgs_l4i"
+            />
+        </record>
 
         <!-- 35 Onderhanden projecten (activa) -->
         <record id="mis_report_kpi_l10n_nl_rgs_balance_sheet_35" model="mis.report.kpi">
@@ -949,7 +969,7 @@
             <field name="name">nl_11</field>
             <field name="description">Vorderingen</field>
             <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l2" />
-            <field name="expression">+nl_11_01+nl_11_03_09_9+nl_11_03_10_9+nl_11_03_11_9+nl_11_03_12_9+nl_11_03_15_9+nl_11_03_16_9+nl_11_03_03_9+nl_11_03_14_9+nl_11_03+nl_11_04+nl_11_05</field>
+            <field name="expression">+nl_11_01+nl_11_03_09_9+nl_11_03_10_9+nl_11_03_11_9+nl_11_03_30_9+nl_11_03_12_9+nl_11_03_15_9+nl_11_03_16_9+nl_11_03_03_9+nl_11_03_14_9+nl_11_03+nl_11_04+nl_11_05</field>
         </record>
         <record
             id="mis_report_kpi_l10n_nl_rgs_balance_sheet_11_01"
@@ -1024,6 +1044,26 @@
             <field
                 name="expression"
             >+bale[('group_id.code', '=', '1103119')]</field>
+            <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l3" />
+            <field name="auto_expand_accounts">True</field>
+            <field
+                name="auto_expand_accounts_style_id"
+                ref="mis_report_style_l10n_nl_rgs_l4i"
+            />
+        </record>
+        <record
+            id="mis_report_kpi_l10n_nl_rgs_balance_sheet_11_03_30_9"
+            model="mis.report.kpi"
+        >
+            <field name="report_id" ref="mis_report_l10n_nl_rgs_balance_sheet" />
+            <field name="type">num</field>
+            <field name="compare_method">pct</field>
+            <field name="sequence">541</field>
+            <field name="name">nl_11_03_30_9</field>
+            <field name="description">Vorderingen op leden van de coöperatie</field>
+            <field
+                name="expression"
+            >+bale[('group_id.code', '=', '1103300')]</field>
             <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l3" />
             <field name="auto_expand_accounts">True</field>
             <field

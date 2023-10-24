@@ -27,3 +27,7 @@ def pre_init_hook(cr):
     # Force translation of all modules to Dutch
     mods = env['ir.module.module'].search([('state', '=', 'installed')])
     mods._update_translations(["nl_NL"], True)
+
+    # Force position of EUR currency to "before"
+    currency = env['res.currency'].search([('name', '=', 'EUR')])
+    currency.write({"position": "before"})
