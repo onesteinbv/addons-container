@@ -7,12 +7,12 @@ from odoo import api, fields, models, _
 class ResConfigSettings(models.TransientModel):
     _inherit = 'res.config.settings'
 
-    l10n_nl_rgs_type = fields.Selection(
-        related='company_id.l10n_nl_rgs_type',
-        string='RGS Type',
-        readonly=False)
     is_l10n_nl_rgs = fields.Boolean(
         compute="_compute_is_l10n_nl_rgs",
+    )
+    l10n_nl_rgs_disable_allowed_journals = fields.Boolean(
+        related='company_id.l10n_nl_rgs_disable_allowed_journals',
+        readonly=False,
     )
 
     @api.depends("chart_template_id")

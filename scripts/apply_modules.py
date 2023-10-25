@@ -13,9 +13,9 @@ def _recurse_dependencies(env, modules):
 @click_odoo.env_options(default_log_level="error")
 @click.option("--modules")
 @click.option("--do-uninstall", is_flag=True, default=False)
-def main(env, modules, do_uninstall):  # Confusing modules are actually the modules you want to keep
+def main(env, modules, do_uninstall):
     modules = list(map(lambda m: m.strip(), modules.split(",")))
-    click.echo("Uninstalling modules...")
+    click.echo("Applying modules...")
     modules = env["ir.module.module"].search([
         ("name", "in", modules)
     ])
@@ -25,9 +25,13 @@ def main(env, modules, do_uninstall):  # Confusing modules are actually the modu
     ])
     desired_modules = _recurse_dependencies(env, modules)
     to_uninstall = installed_modules - desired_modules
+    # Filter themes
+    to_uninstall = to_uninstall.filtered(lambda l: not l.name.startswith("theme_"))
+
+    click.echo("Install modules...")
+    modules.button_immediate_install()
 
     click.echo("Found %s modules to uninstall: %s" % (len(to_uninstall), ", ".join(to_uninstall.mapped("name"))))
-
     if do_uninstall:
         click.echo("Uninstalling...")
         to_uninstall.button_immediate_uninstall()

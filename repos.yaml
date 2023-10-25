@@ -8,6 +8,7 @@
             remote: odoo
             ref: "cedd0603a24aa0c0e6716c2e0f49e89c870eae04"
             depth: 1000
+
 # onestein
 ./addons-generic:
     remotes:

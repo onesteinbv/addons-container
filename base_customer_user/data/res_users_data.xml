@@ -5,5 +5,6 @@
         <field name="login">customer_user</field>
         <field name="notification_type">inbox</field>
         <field name="odoobot_state">disabled</field>
+        <field name="lang">nl_NL</field>
     </record>
 </odoo>

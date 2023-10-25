@@ -13,11 +13,12 @@
         "multi_step_wizard",
         "website_security",
         "base_mail_security",
+        "web",
         "mail"
     ],
     "data": [
-        "security/ir.model.access.csv",
         "security/res_groups.xml",
+        "security/ir.model.access.csv",
         "wizards/onboarding_wizard_view.xml",
         "views/base_document_layout_view.xml"
     ],

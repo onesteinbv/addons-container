@@ -30,6 +30,7 @@
         'account_financial_report',
         # OCA account-financial-tools
         'account_asset_management',
+        'account_spread_cost_revenue',
         'account_fiscal_position_vat_check',
         'account_fiscal_year',
         'account_invoice_constraint_chronology',
@@ -38,11 +39,9 @@
         'account_move_line_purchase_info',
         'account_move_line_sale_info',
         'account_move_line_tax_editable',
-        'account_move_name_sequence',
         'account_move_print',
         'account_usability',
         'base_vat_optional_vies',
-        'product_category_tax',
         # OCA account-invoicing
         'account_move_tier_validation',
         # OCA account-reconcile
@@ -84,7 +83,6 @@
         'disable_odoo_online',
         'remove_odoo_enterprise',
         # OCA server-tools
-        'base_fontawesome',
         # OCA server-ux
         'date_range',
         # OCA stock-logistics-warehouse

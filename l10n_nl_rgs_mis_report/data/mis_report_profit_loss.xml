@@ -42,7 +42,7 @@
             <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l3" />
             <field
                 name="expression"
-            >+nl_80_01+nl_80_02+nl_80_03+nl_80_07+nl_80_08+nl_80_04+nl_80_05+nl_80_06+nl_80_09</field>
+            >+nl_80_01+nl_80_02+nl_80_03+nl_80_07+nl_80_08+nl_80_04+nl_80_05+nl_80_06+nl_80_09+nl_80_10+nl_80_11+nl_80_12+nl_80_14+nl_80_15+nl_80_16+nl_80_30+nl_80_32+nl_80_33+nl_80_40+nl_80_50+nl_80_51</field>
         </record>
         <record
             id="mis_report_kpi_l10n_nl_rgs_pl_80_01"
@@ -191,7 +191,7 @@
             <field name="report_id" ref="mis_report_l10n_nl_rgs_pl" />
             <field name="type">num</field>
             <field name="compare_method">pct</field>
-            <field name="sequence">90</field>
+            <field name="sequence">85</field>
             <field name="name">nl_80_06</field>
             <field name="description">Agrarische bedrijfsopbrengsten veeteelt</field>
             <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l4" />
@@ -211,13 +211,253 @@
             <field name="report_id" ref="mis_report_l10n_nl_rgs_pl" />
             <field name="type">num</field>
             <field name="compare_method">pct</field>
-            <field name="sequence">95</field>
+            <field name="sequence">90</field>
             <field name="name">nl_80_09</field>
             <field name="description">Netto-omzet groepen</field>
             <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l4" />
             <field
                 name="expression"
             >-balp[('group_id.code', '=', '8009000')]</field>
+            <field name="auto_expand_accounts">True</field>
+            <field
+                name="auto_expand_accounts_style_id"
+                ref="mis_report_style_l10n_nl_rgs_l5i"
+            />
+        </record>
+        <record
+            id="mis_report_kpi_l10n_nl_rgs_pl_80_10"
+            model="mis.report.kpi"
+        >
+            <field name="report_id" ref="mis_report_l10n_nl_rgs_pl" />
+            <field name="type">num</field>
+            <field name="compare_method">pct</field>
+            <field name="sequence">90</field>
+            <field name="name">nl_80_10</field>
+            <field name="description">Huuropbrengsten</field>
+            <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l4" />
+            <field
+                name="expression"
+            >-balp[('group_id.code', '=', '8010000')]</field>
+            <field name="auto_expand_accounts">True</field>
+            <field
+                name="auto_expand_accounts_style_id"
+                ref="mis_report_style_l10n_nl_rgs_l5i"
+            />
+        </record>
+        <record
+            id="mis_report_kpi_l10n_nl_rgs_pl_80_11"
+            model="mis.report.kpi"
+        >
+            <field name="report_id" ref="mis_report_l10n_nl_rgs_pl" />
+            <field name="type">num</field>
+            <field name="compare_method">pct</field>
+            <field name="sequence">91</field>
+            <field name="name">nl_80_11</field>
+            <field name="description">Opbrengsten servicecontracten</field>
+            <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l4" />
+            <field
+                name="expression"
+            >-balp[('group_id.code', '=', '8011000')]</field>
+            <field name="auto_expand_accounts">True</field>
+            <field
+                name="auto_expand_accounts_style_id"
+                ref="mis_report_style_l10n_nl_rgs_l5i"
+            />
+        </record>
+        <record
+            id="mis_report_kpi_l10n_nl_rgs_pl_80_12"
+            model="mis.report.kpi"
+        >
+            <field name="report_id" ref="mis_report_l10n_nl_rgs_pl" />
+            <field name="type">num</field>
+            <field name="compare_method">pct</field>
+            <field name="sequence">92</field>
+            <field name="name">nl_80_12</field>
+            <field name="description">Lasten servicecontracten</field>
+            <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l4" />
+            <field
+                name="expression"
+            >-balp[('group_id.code', '=', '8012000')]</field>
+            <field name="auto_expand_accounts">True</field>
+            <field
+                name="auto_expand_accounts_style_id"
+                ref="mis_report_style_l10n_nl_rgs_l5i"
+            />
+        </record>
+        <record
+            id="mis_report_kpi_l10n_nl_rgs_pl_80_14"
+            model="mis.report.kpi"
+        >
+            <field name="report_id" ref="mis_report_l10n_nl_rgs_pl" />
+            <field name="type">num</field>
+            <field name="compare_method">pct</field>
+            <field name="sequence">93</field>
+            <field name="name">nl_80_14</field>
+            <field name="description">Lasten verhuur en beheeractiviteiten</field>
+            <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l4" />
+            <field
+                name="expression"
+            >-balp[('group_id.code', '=', '8014000')]</field>
+            <field name="auto_expand_accounts">True</field>
+            <field
+                name="auto_expand_accounts_style_id"
+                ref="mis_report_style_l10n_nl_rgs_l5i"
+            />
+        </record>
+        <record
+            id="mis_report_kpi_l10n_nl_rgs_pl_80_15"
+            model="mis.report.kpi"
+        >
+            <field name="report_id" ref="mis_report_l10n_nl_rgs_pl" />
+            <field name="type">num</field>
+            <field name="compare_method">pct</field>
+            <field name="sequence">94</field>
+            <field name="name">nl_80_15</field>
+            <field name="description">Lasten onderhoudsactiviteiten</field>
+            <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l4" />
+            <field
+                name="expression"
+            >-balp[('group_id.code', '=', '8015000')]</field>
+            <field name="auto_expand_accounts">True</field>
+            <field
+                name="auto_expand_accounts_style_id"
+                ref="mis_report_style_l10n_nl_rgs_l5i"
+            />
+        </record>
+        <record
+            id="mis_report_kpi_l10n_nl_rgs_pl_80_16"
+            model="mis.report.kpi"
+        >
+            <field name="report_id" ref="mis_report_l10n_nl_rgs_pl" />
+            <field name="type">num</field>
+            <field name="compare_method">pct</field>
+            <field name="sequence">95</field>
+            <field name="name">nl_80_16</field>
+            <field name="description">Overige directe operationele lasten explotatie bezit</field>
+            <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l4" />
+            <field
+                name="expression"
+            >-balp[('group_id.code', '=', '8016000')]</field>
+            <field name="auto_expand_accounts">True</field>
+            <field
+                name="auto_expand_accounts_style_id"
+                ref="mis_report_style_l10n_nl_rgs_l5i"
+            />
+        </record>
+        <record
+            id="mis_report_kpi_l10n_nl_rgs_pl_80_30"
+            model="mis.report.kpi"
+        >
+            <field name="report_id" ref="mis_report_l10n_nl_rgs_pl" />
+            <field name="type">num</field>
+            <field name="compare_method">pct</field>
+            <field name="sequence">96</field>
+            <field name="name">nl_80_30</field>
+            <field name="description">Verkoopopbrengst vastgoedportefeuille</field>
+            <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l4" />
+            <field
+                name="expression"
+            >-balp[('group_id.code', '=', '8030000')]</field>
+            <field name="auto_expand_accounts">True</field>
+            <field
+                name="auto_expand_accounts_style_id"
+                ref="mis_report_style_l10n_nl_rgs_l5i"
+            />
+        </record>
+        <record
+            id="mis_report_kpi_l10n_nl_rgs_pl_80_32"
+            model="mis.report.kpi"
+        >
+            <field name="report_id" ref="mis_report_l10n_nl_rgs_pl" />
+            <field name="type">num</field>
+            <field name="compare_method">pct</field>
+            <field name="sequence">97</field>
+            <field name="name">nl_80_32</field>
+            <field name="description">Boekwaarde verkochte vastgoedportefeuille</field>
+            <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l4" />
+            <field
+                name="expression"
+            >-balp[('group_id.code', '=', '8032000')]</field>
+            <field name="auto_expand_accounts">True</field>
+            <field
+                name="auto_expand_accounts_style_id"
+                ref="mis_report_style_l10n_nl_rgs_l5i"
+            />
+        </record>
+        <record
+            id="mis_report_kpi_l10n_nl_rgs_pl_80_33"
+            model="mis.report.kpi"
+        >
+            <field name="report_id" ref="mis_report_l10n_nl_rgs_pl" />
+            <field name="type">num</field>
+            <field name="compare_method">pct</field>
+            <field name="sequence">98</field>
+            <field name="name">nl_80_33</field>
+            <field name="description">Verkoopkosten</field>
+            <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l4" />
+            <field
+                name="expression"
+            >-balp[('group_id.code', '=', '8033000')]</field>
+            <field name="auto_expand_accounts">True</field>
+            <field
+                name="auto_expand_accounts_style_id"
+                ref="mis_report_style_l10n_nl_rgs_l5i"
+            />
+        </record>
+        <record
+            id="mis_report_kpi_l10n_nl_rgs_pl_80_40"
+            model="mis.report.kpi"
+        >
+            <field name="report_id" ref="mis_report_l10n_nl_rgs_pl" />
+            <field name="type">num</field>
+            <field name="compare_method">pct</field>
+            <field name="sequence">99</field>
+            <field name="name">nl_80_40</field>
+            <field name="description">Overige waardeveranderingen van vastgoedportefeuille</field>
+            <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l4" />
+            <field
+                name="expression"
+            >-balp[('group_id.code', '=', '8040000')]</field>
+            <field name="auto_expand_accounts">True</field>
+            <field
+                name="auto_expand_accounts_style_id"
+                ref="mis_report_style_l10n_nl_rgs_l5i"
+            />
+        </record>
+        <record
+            id="mis_report_kpi_l10n_nl_rgs_pl_80_50"
+            model="mis.report.kpi"
+        >
+            <field name="report_id" ref="mis_report_l10n_nl_rgs_pl" />
+            <field name="type">num</field>
+            <field name="compare_method">pct</field>
+            <field name="sequence">100</field>
+            <field name="name">nl_80_50</field>
+            <field name="description">Opbrengsten overige activiteiten</field>
+            <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l4" />
+            <field
+                name="expression"
+            >-balp[('group_id.code', '=', '8050000')]</field>
+            <field name="auto_expand_accounts">True</field>
+            <field
+                name="auto_expand_accounts_style_id"
+                ref="mis_report_style_l10n_nl_rgs_l5i"
+            />
+        </record>
+        <record
+            id="mis_report_kpi_l10n_nl_rgs_pl_80_51"
+            model="mis.report.kpi"
+        >
+            <field name="report_id" ref="mis_report_l10n_nl_rgs_pl" />
+            <field name="type">num</field>
+            <field name="compare_method">pct</field>
+            <field name="sequence">101</field>
+            <field name="name">nl_80_51</field>
+            <field name="description">Kosten overige activiteiten</field>
+            <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l4" />
+            <field
+                name="expression"
+            >-balp[('group_id.code', '=', '8051000')]</field>
             <field name="auto_expand_accounts">True</field>
             <field
                 name="auto_expand_accounts_style_id"
@@ -233,7 +473,7 @@
             <field name="report_id" ref="mis_report_l10n_nl_rgs_pl" />
             <field name="type">str</field>
             <field name="compare_method">none</field>
-            <field name="sequence">99</field>
+            <field name="sequence">103</field>
             <field name="name">nl_el_1</field>
             <field name="description"></field>
             <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l2" />
@@ -249,7 +489,7 @@
             <field name="report_id" ref="mis_report_l10n_nl_rgs_pl" />
             <field name="type">num</field>
             <field name="compare_method">pct</field>
-            <field name="sequence">100</field>
+            <field name="sequence">104</field>
             <field name="name">nl_80_8</field>
             <field name="description">Verkoopkosten</field>
             <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l3" />
@@ -947,8 +1187,70 @@
             <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l3" />
             <field
                 name="expression"
-            >+nl_82_01+nl_82_02+nl_82_13+nl_82_06+nl_82_14+nl_82_18_9+nl_82_19</field>
+            >+nl_82_07+nl_82_16+nl_82_11+nl_82_01+nl_82_02+nl_82_13+nl_82_06+nl_82_14+nl_82_18_9+nl_82_19</field>
         </record>
+
+        <record
+            id="mis_report_kpi_l10n_nl_rgs_pl_82_07"
+            model="mis.report.kpi"
+        >
+            <field name="report_id" ref="mis_report_l10n_nl_rgs_pl" />
+            <field name="type">num</field>
+            <field name="compare_method">pct</field>
+            <field name="sequence">351</field>
+            <field name="name">nl_82_07</field>
+            <field name="description">Subsidiebaten</field>
+            <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l4" />
+            <field
+                name="expression"
+            >-balp[('group_id.code', '=', '8207000')]</field>
+            <field name="auto_expand_accounts">True</field>
+            <field
+                name="auto_expand_accounts_style_id"
+                ref="mis_report_style_l10n_nl_rgs_l5i"
+            />
+        </record>
+        <record
+            id="mis_report_kpi_l10n_nl_rgs_pl_82_16"
+            model="mis.report.kpi"
+        >
+            <field name="report_id" ref="mis_report_l10n_nl_rgs_pl" />
+            <field name="type">num</field>
+            <field name="compare_method">pct</field>
+            <field name="sequence">352</field>
+            <field name="name">nl_82_16</field>
+            <field name="description">Sponsorbijdragen</field>
+            <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l4" />
+            <field
+                name="expression"
+            >-balp[('group_id.code', '=', '8216000')]</field>
+            <field name="auto_expand_accounts">True</field>
+            <field
+                name="auto_expand_accounts_style_id"
+                ref="mis_report_style_l10n_nl_rgs_l5i"
+            />
+        </record>
+        <record
+            id="mis_report_kpi_l10n_nl_rgs_pl_82_11"
+            model="mis.report.kpi"
+        >
+            <field name="report_id" ref="mis_report_l10n_nl_rgs_pl" />
+            <field name="type">num</field>
+            <field name="compare_method">pct</field>
+            <field name="sequence">353</field>
+            <field name="name">nl_82_11</field>
+            <field name="description">College-, cursus-, les- en examengelden</field>
+            <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l4" />
+            <field
+                name="expression"
+            >-balp[('group_id.code', '=', '8211000')]</field>
+            <field name="auto_expand_accounts">True</field>
+            <field
+                name="auto_expand_accounts_style_id"
+                ref="mis_report_style_l10n_nl_rgs_l5i"
+            />
+        </record>
+
         <record
             id="mis_report_kpi_l10n_nl_rgs_pl_82_01"
             model="mis.report.kpi"
@@ -2911,6 +3213,70 @@
             <field name="expression"/>
         </record>
 
+        <!-- 88 -->
+        <record
+            id="mis_report_kpi_l10n_nl_rgs_pl_88"
+            model="mis.report.kpi"
+        >
+            <field name="report_id" ref="mis_report_l10n_nl_rgs_pl" />
+            <field name="type">str</field>
+            <field name="compare_method">none</field>
+            <field name="sequence">1605</field>
+            <field name="name">nl_88</field>
+            <field name="description">Ledenbetalingen (inclusief reeds betaalde voorschotten)</field>
+            <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l2" />
+            <field name="expression"/>
+        </record>
+        <record
+            id="mis_report_kpi_l10n_nl_rgs_pl_90_01_10"
+            model="mis.report.kpi"
+        >
+            <field name="report_id" ref="mis_report_l10n_nl_rgs_pl" />
+            <field name="type">num</field>
+            <field name="compare_method">pct</field>
+            <field name="sequence">1606</field>
+            <field name="name">nl_90_01_10</field>
+            <field name="description">Ledenbetalingen (inclusief reeds betaalde voorschotten)</field>
+            <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l4" />
+            <field
+                name="expression"
+            >-balp[('group_id.code', '=', '9001100')]</field>
+            <field name="auto_expand_accounts">True</field>
+            <field
+                name="auto_expand_accounts_style_id"
+                ref="mis_report_style_l10n_nl_rgs_l5i"
+            />
+        </record>
+        <record
+            id="mis_report_kpi_l10n_nl_rgs_pl_88_total"
+            model="mis.report.kpi"
+        >
+            <field name="report_id" ref="mis_report_l10n_nl_rgs_pl" />
+            <field name="type">num</field>
+            <field name="compare_method">pct</field>
+            <field name="sequence">1607</field>
+            <field name="name">nl_88_total</field>
+            <field name="description">Totaal Ledenbetalingen (inclusief reeds betaalde voorschotten)</field>
+            <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l2" />
+            <field
+                name="expression"
+            >+nl_90_01_10</field>
+        </record>
+        <!-- Empty Line -->
+        <record
+            id="mis_report_kpi_l10n_nl_rgs_pl_el_21"
+            model="mis.report.kpi"
+        >
+            <field name="report_id" ref="mis_report_l10n_nl_rgs_pl" />
+            <field name="type">str</field>
+            <field name="compare_method">none</field>
+            <field name="sequence">1608</field>
+            <field name="name">nl_el_21</field>
+            <field name="description"></field>
+            <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l2" />
+            <field name="expression"/>
+        </record>
+
         <!-- 89 Aandeel derden -->
         <record
             id="mis_report_kpi_l10n_nl_rgs_pl_89"
@@ -2962,14 +3328,14 @@
         </record>
         <!-- Empty Line -->
         <record
-            id="mis_report_kpi_l10n_nl_rgs_pl_el_21"
+            id="mis_report_kpi_l10n_nl_rgs_pl_el_22"
             model="mis.report.kpi"
         >
             <field name="report_id" ref="mis_report_l10n_nl_rgs_pl" />
             <field name="type">str</field>
             <field name="compare_method">none</field>
             <field name="sequence">1895</field>
-            <field name="name">nl_el_21</field>
+            <field name="name">nl_el_22</field>
             <field name="description"></field>
             <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l2" />
             <field name="expression"/>
@@ -2982,11 +3348,11 @@
             <field name="compare_method">pct</field>
             <field name="sequence">9000</field>
             <field name="name">nl_pl_result_after_tax</field>
-            <field name="description">Resultaat voor belastingen</field>
+            <field name="description">Resultaat na belastingen</field>
             <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l1i" />
             <field
                 name="expression"
-            >+nl_pl_result_no_tax+nl_60_total+nl_84_total+nl_89_total</field>
+            >+nl_pl_result_no_tax+nl_60_total+nl_84_total+nl_88_total+nl_89_total</field>
         </record>
 
     </data>

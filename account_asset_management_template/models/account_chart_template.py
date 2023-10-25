@@ -61,9 +61,10 @@ class AccountChartTemplate(models.Model):
         # create asset profiles
         template_vals = []
         for profile in profiles:
+            account_asset_id = _get_account_id(profile.account_asset_id, company)
             vals = {
                 'name': profile.name,
-                'account_asset_id': _get_account_id(profile.account_asset_id, company),
+                'account_asset_id': account_asset_id,
                 'account_expense_depreciation_id': _get_account_id(profile.account_expense_depreciation_id, company),
                 'account_depreciation_id': _get_account_id(profile.account_depreciation_id, company),
                 'group_ids': [asset_group_ref[group].id for group in profile.group_ids],
@@ -82,6 +83,7 @@ class AccountChartTemplate(models.Model):
                     ('company_id', '=', company.id)])
                 if journal:
                     vals['journal_id'] = journal.id
-            template_vals.append((profile, vals))
+            if account_asset_id:
+                template_vals.append((profile, vals))
         self._create_records_with_xmlid(
             'account.asset.profile', template_vals, company)

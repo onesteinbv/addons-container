@@ -20,7 +20,9 @@ fi
 python /odoo/scripts/prepare_install_request_mail.py -c $ODOO_RC -d $DB_NAME --log-level=error --email "ict@onestein.nl"
 
 if [[ -n "$UNINSTALL_MODULES" && "$UNINSTALL_MODULES" == "True" ]]; then
-  python /odoo/scripts/uninstall_modules.py -c $ODOO_RC -d $DB_NAME --log-level=error --modules "$MODULES" --do-uninstall
+  python /odoo/scripts/apply_modules.py -c $ODOO_RC -d $DB_NAME --log-level=error --modules "$MODULES" --do-uninstall
 else
-  python /odoo/scripts/uninstall_modules.py -c $ODOO_RC -d $DB_NAME --log-level=error --modules "$MODULES"
+  python /odoo/scripts/apply_modules.py -c $ODOO_RC -d $DB_NAME --log-level=error --modules "$MODULES"
 fi
+
+python /odoo/scripts/uninstall_auto_install_modules.py -c $ODOO_RC -d $DB_NAME --log-level=error

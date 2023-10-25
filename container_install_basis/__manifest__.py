@@ -17,12 +17,23 @@
         "account_payment_mode",
         "account_payment_order",
         "account_payment_partner",
+        "sale_stock",
+        "payment_mollie",
+        "crm",
+        "hr_expense",
+        "hr_expense_remove_mobile_link",
+        "project_hr_expense",
+        "project_purchase",
+        "account_move_line_purchase_info",
+        "account_move_line_sale_info",
+        "account_move_line_stock_info",
+        "purchase_stock",
+        "sale_purchase_stock",
 
         # Extra security
         "website_security",
         "base_user_management",
         "base_company_management",
-        #"base_debug_disabled",  # enabling this will cause all flavors to have debug disabled
 
         # Accountancy
         "account_fiscal_position_vat_check",
@@ -30,11 +41,9 @@
         "account_invoice_constraint_chronology",
         "account_journal_lock_date",
         "account_lock_date_update",
-        "account_move_name_sequence",
         "account_move_print",
         "account_usability",
         "base_vat_optional_vies",
-        "product_category_tax",
         "account_reconcile_oca",
         "account_statement_base",
         "account_payment_sale",
@@ -44,34 +53,49 @@
         "report_xlsx",
         "report_xlsx_helper",
         "date_range",
+        "product_margin",
+        "account_financial_report",
+        "product_category_product_link",
+        "account_statement_import_camt",
+        "account_statement_import_camt54",
+        "account_statement_import_file_reconcile_oca",
+        "account_period_auto_create",
+        "account_fiscal_year_auto_create",
+        "account_statement_import_online_ponto",
+        "account_move_line_attachment_preview",
 
         # Dutch localization
         "l10n_nl_rgs",
+        "l10n_nl_rgs_usability",
         "l10n_nl_bank",
         "l10n_nl_xaf_auditfile_export",
+        "l10n_nl_postcode",
+        "l10n_nl_tax_statement",
+        "l10n_nl_tax_statement_date_range",
+        'l10n_nl_tax_statement_icp',
 
         # Containers
         "hr_employee_firstname",
         "partner_firstname",
-        #"password_security",
         "web_no_bubble",
         'base_customer_company',
         'base_customer_user',
         'base_partner_security',
         'base_mail_security',
         'base_onboarding',
-        "container_password_security",
+        "container_hr_recruitment",
+        "spreadsheet_dashboard_oca",
+        "partner_country_default_nl",
 
-        "crm",
-        #"mail_debrand",
-        #"web_tree_many2one_clickable",
-        #"web_dialog_size",
+        # Timesheets
+        "hr_timesheet_sheet",
 
         # Debranding
         "remove_odoo_enterprise",
         "base_import_debranding",
         "website_odoo_debranding",
         # 'support_branding',  # TODO do we need it?
+        "digest_disable"
     ],
     "data": [],
     "application": True,

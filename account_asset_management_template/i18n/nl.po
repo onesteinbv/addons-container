@@ -1,0 +1,278 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_asset_management_template
+#
+# Jan Tapper <j.tapper@onestein.nl>, 2023.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-05 13:50+0000\n"
+"PO-Revision-Date: 2023-07-17 10:14+0200\n"
+"Last-Translator: Jan Tapper [Onestein] <j.tapper@onestein.nl>\n"
+"Language-Team: Dutch <>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+"Language: nl\n"
+"X-Generator: Lokalize 22.12.3\n"
+
+#. module: account_asset_management_template
+#: model:ir.model,name:account_asset_management_template.model_account_chart_template
+msgid "Account Chart Template"
+msgstr "Grootboekschema sjabloon"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_group_template__message_needaction
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_profile_template__message_needaction
+msgid "Action Needed"
+msgstr "Actie nodig"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_profile_template__account_asset_id
+msgid "Asset Account"
+msgstr "Activarekening"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_profile_template__group_ids
+msgid "Asset Template Groups"
+msgstr "Activa-sjabloongroepen"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_group_template__message_attachment_count
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_profile_template__message_attachment_count
+msgid "Attachment Count"
+msgstr "Aantal bijlagen"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_profile_template__days_calc
+msgid "Calculate by days"
+msgstr "Bereken per dag"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_group_template__chart_template_id
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_profile_template__chart_template_id
+msgid "Chart Template"
+msgstr "Grafiek sjabloon"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_group_template__code
+msgid "Code"
+msgstr "Code"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_profile_template__method
+msgid "Computation Method"
+msgstr "Berekeningsmethode"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_profile_template__asset_product_item
+msgid "Create an asset by product item"
+msgstr "Maak een activum per productitem"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_group_template__create_uid
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_profile_template__create_uid
+msgid "Created by"
+msgstr "Gemaakt door"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_group_template__create_date
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_profile_template__create_date
+msgid "Created on"
+msgstr "Aangemaakt op"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_profile_template__method_progress_factor
+msgid "Degressive Factor"
+msgstr "Degressieve factor"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_profile_template__account_expense_depreciation_id
+msgid "Depr. Expense Account"
+msgstr "Afschrijvingskostenrekening"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_profile_template__account_depreciation_id
+msgid "Depreciation Account"
+msgstr "Afschrijvingsrekening"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_group_template__display_name
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_profile_template__display_name
+msgid "Display Name"
+msgstr "Weergavenaam"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_group_template__message_follower_ids
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_profile_template__message_follower_ids
+msgid "Followers"
+msgstr "Volgers"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_group_template__message_partner_ids
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_profile_template__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Volgers (partners)"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_group_template__has_message
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_profile_template__has_message
+msgid "Has Message"
+msgstr "Heeft bericht"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_group_template__id
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_profile_template__id
+msgid "ID"
+msgstr "ID"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,help:account_asset_management_template.field_account_asset_group_template__message_needaction
+#: model:ir.model.fields,help:account_asset_management_template.field_account_asset_profile_template__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Indien aangevinkt, vereisen nieuwe berichten uw aandacht."
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,help:account_asset_management_template.field_account_asset_group_template__message_has_error
+#: model:ir.model.fields,help:account_asset_management_template.field_account_asset_group_template__message_has_sms_error
+#: model:ir.model.fields,help:account_asset_management_template.field_account_asset_profile_template__message_has_error
+#: model:ir.model.fields,help:account_asset_management_template.field_account_asset_profile_template__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Indien aangevinkt, hebben sommige berichten een afleveringsfout."
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_group_template__message_is_follower
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_profile_template__message_is_follower
+msgid "Is Follower"
+msgstr "Is Volger"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_profile_template__journal_code
+msgid "Journal Code"
+msgstr "Tijdschriftcode"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_group_template____last_update
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_profile_template____last_update
+msgid "Last Modified on"
+msgstr "Laatst gewijzigd op"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_group_template__write_uid
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_profile_template__write_uid
+msgid "Last Updated by"
+msgstr "Laatst bijgewerkt door"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_group_template__write_date
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_profile_template__write_date
+msgid "Last Updated on"
+msgstr "Laatst bijgewerkt op"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_group_template__message_main_attachment_id
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_profile_template__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Belangrijkste bijlage"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_group_template__message_has_error
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_profile_template__message_has_error
+msgid "Message Delivery error"
+msgstr "Fout bij bezorging van bericht"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_group_template__message_ids
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_profile_template__message_ids
+msgid "Messages"
+msgstr "Berichten"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_group_template__name
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_profile_template__name
+msgid "Name"
+msgstr "Naam"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_profile_template__note
+msgid "Note"
+msgstr "Opmerking"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_group_template__message_needaction_counter
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_profile_template__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Aantal acties"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_profile_template__method_number
+msgid "Number of Years"
+msgstr "Aantal jaren"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_group_template__message_has_error_counter
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_profile_template__message_has_error_counter
+msgid "Number of errors"
+msgstr "Aantal fouten"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,help:account_asset_management_template.field_account_asset_group_template__message_needaction_counter
+#: model:ir.model.fields,help:account_asset_management_template.field_account_asset_profile_template__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Aantal berichten dat een actie vereist"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,help:account_asset_management_template.field_account_asset_group_template__message_has_error_counter
+#: model:ir.model.fields,help:account_asset_management_template.field_account_asset_profile_template__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Aantal berichten met bezorgingsfout"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_profile_template__method_period
+msgid "Period Length"
+msgstr "Periode lengte"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_profile_template__prorata
+msgid "Prorata Temporis"
+msgstr "Overeenstemming met de tijd"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_group_template__message_has_sms_error
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_profile_template__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "SMS-bezorgingsfout"
+
+#. module: account_asset_management_template
+#: model:ir.model,name:account_asset_management_template.model_account_asset_group_template
+msgid "Templates for Asset Groups"
+msgstr "Sjablonen voor activagroepen"
+
+#. module: account_asset_management_template
+#: model:ir.model,name:account_asset_management_template.model_account_asset_profile_template
+msgid "Templates for Asset Profiles"
+msgstr "Sjablonen voor activaprofielen"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,help:account_asset_management_template.field_account_asset_profile_template__method_number
+msgid "The number of years needed to depreciate your asset"
+msgstr "Het aantal jaren dat nodig is om uw activa af te schrijven"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_profile_template__method_time
+msgid "Time Method"
+msgstr "Tijd methode"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_group_template__website_message_ids
+#: model:ir.model.fields,field_description:account_asset_management_template.field_account_asset_profile_template__website_message_ids
+msgid "Website Messages"
+msgstr "Website-berichten"
+
+#. module: account_asset_management_template
+#: model:ir.model.fields,help:account_asset_management_template.field_account_asset_group_template__website_message_ids
+#: model:ir.model.fields,help:account_asset_management_template.field_account_asset_profile_template__website_message_ids
+msgid "Website communication history"
+msgstr "Communicatiegeschiedenis van de website"

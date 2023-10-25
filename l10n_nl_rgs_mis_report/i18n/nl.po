@@ -1,0 +1,1496 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_nl_rgs_mis_report
+#
+# Jan Tapper <j.tapper@onestein.nl>, 2023.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-05 13:55+0000\n"
+"PO-Revision-Date: 2023-07-17 10:15+0200\n"
+"Last-Translator: Jan Tapper [Onestein] <j.tapper@onestein.nl>\n"
+"Language-Team: Dutch <>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+"Language: nl\n"
+"X-Generator: Lokalize 22.12.3\n"
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_85_12
+msgid "(Amortisatie van) agio en disagio"
+msgstr "(Amortisatie van) gemak en ongemak"
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_89
+msgid "Aandeel derden"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_84
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_84_10
+msgid "Aandeel in resultaat van ondernemingen waarin wordt deelgenomen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_84_20
+msgid ""
+"Aandeel in resultaat van ondernemingen waarin wordt deelgenomen - "
+"vrijstelling"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_05_08
+msgid "Aandeel van derden"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_04_01
+msgid "Aandelen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_05_01
+msgid "Aandelenkapitaal"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_42_09
+msgid "Accountants- en advieskosten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_08_01
+msgid "Achtergestelde schulden"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_activa
+msgid "Activa"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_42_10
+msgid "Administratieve lasten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_85_15
+msgid "Aflossingspremies"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_12_01_05_9
+msgid "Aflossingsverplichtingen van langlopende leningen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_41
+msgid "Afschrijvingen op immateriële en materiële vaste activa"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_41_01
+msgid "Afschrijvingen op immateriële vaste activa"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_41_02
+msgid "Afschrijvingen op materiële vaste activa"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_41_03_00_8
+msgid "Afschrijvingen vastgoed"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_05_02
+msgid "Agio"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_43_02
+msgid "Agrarische bedrijfskosten veeteelt"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_80_06
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_80_08
+msgid "Agrarische bedrijfsopbrengsten veeteelt"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_80_9
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_80_90
+msgid "Algemene beheerskosten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_42_15
+msgid "Andere kosten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_02_14
+msgid "Andere vaste bedrijfsmiddelen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_42_08
+msgid "Assurantiekosten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_42_04
+msgid "Autokosten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_02_13
+msgid "Automobielen en overige transportmiddelen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_main
+msgid "Balance Sheet"
+msgstr "Balans"
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_42_16
+msgid "Baten uit niet-ondernemingsactiviteiten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_02_02
+msgid "Bedrijfsgebouwen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_comp_result
+msgid "Bedrijfsresultaat"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_60
+msgid "Belastingen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_08_06_03_9
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_12_05_00_9
+msgid "Belastingen en premies sociale verzekeringen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_91_01
+msgid "Belastingen over de winst of het verlies"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_05_07
+msgid "Bestemmingsfondsen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_05_05_01_9
+msgid "Bestemmingsreserves"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_70_08
+msgid "Betalingskortingen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_85_18
+msgid "Bijkomende kosten ter afsluiting van een financiering"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_41_06_00_9
+msgid "Bijzondere waardeverminderingen van vlottende activa"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_41_05
+msgid "Boekresultaat op immateriële vaste activa"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_41_06
+msgid "Boekresultaat op materiële vaste activa"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_41_07
+msgid "Boekresultaat vastgoed"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_80_32
+msgid "Boekwaarde verkochte vastgoedportefeuille"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_bruto_result
+msgid "Bruto-bedrijfsresultaat"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_82_11
+msgid "College-, cursus-, les- en examengelden"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_05_09_06_9
+msgid "Commanditair kapitaal"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_01_06
+msgid "Concessies, vergunningen en intellectuele eigendom"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_08_02
+msgid "Converteerbare leningen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_03_01
+msgid "Deelnemingen in groepsmaatschappijen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_03_02
+msgid "Deelnemingen in overige verbonden maatschappijen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_41_99
+msgid "Doorberekende afschrijvingen en waardeveranderingen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_84_99
+msgid "Doorberekende financiële baten en lasten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_82_19
+msgid "Doorberekening overige bedrijfsopbrengsten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_42_13
+msgid "Dotaties en vrijval (fiscale) reserves"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_42_14
+msgid "Dotaties en vrijval voorzieningen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_04
+msgid "Effecten (kortlopend)"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_06
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_06_01
+msgid "Egalisatierekening"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_05_09_10
+msgid "Eigen vermogen firmant 2"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_05_09_20
+msgid "Eigen vermogen firmant 3"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_05_09_30
+msgid "Eigen vermogen firmant 4"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_05_09_40
+msgid "Eigen vermogen firmant 5"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_05_09
+msgid "Eigen vermogen onderneming natuurlijke personen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_30_03
+msgid "Emballage"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_85_16
+msgid "Emissiekosten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_42_02
+msgid "Exploitatie- en machinekosten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_82_18_9
+msgid "Exploitatiesubsidies"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_50
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_fbl
+msgid "Financiële baten en lasten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_05_07_10
+msgid ""
+"Financiële instrumenten op basis van juridische vorm geclassificeerd als "
+"eigen vermogen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_08_04
+msgid "Financiële lease verplichtingen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_03
+msgid "Financiële vaste activa"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_05_10
+msgid "Fiscale reserves"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_81_04
+msgid "Geactiveerde productie voor het eigen bedrijf"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_02_22
+msgid "Gebruiksvee"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_41_06_20
+msgid "Gerealiseerde waardeveranderingen van beleggingen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_31_03
+msgid "Gereed product"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_01_07
+msgid "Goodwill"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_05
+msgid "Groepsvermogen - Eigen vermogen - Kapitaal"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_31_02
+msgid "Halffabrikaten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_30_01
+msgid "Handelsgoederen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_05_03
+msgid "Herwaarderingsreserves"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_42_01
+msgid "Huisvestingskosten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_02_09
+msgid "Huurdersinvesteringen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_80_10
+msgid "Huuropbrengsten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_01
+msgid "Immateriële vaste activa"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_70_07
+msgid "Inkoopkortingen en bonussen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_71_01
+msgid "Inkoopwaarde agrarisch"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_70_05
+msgid "Inkoopwaarde handelsgoederen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_70_06
+msgid "Inkoopwaarde productiegoederen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_02_15
+msgid "Inventaris"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_42_06
+msgid "Kantoorkosten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_05_09_04_9
+msgid "Kapitaal stichting, coöperatie en vereniging"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_10_01
+msgid "Kasmiddelen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_12_08_50
+msgid "Kortlopende financiële lease verplichtingen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_12_01
+msgid "Kortlopende leningen-schulden-verplichtingen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_12
+msgid "Kortlopende schulden"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_85_17
+msgid "Kosten bij vervroegde aflossing (eenmalig)"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_80_51
+msgid "Kosten overige activiteiten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_42_12
+msgid "Kosten stamrecht en lijfrentes"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_70_03
+msgid "Kosten uitbesteed werk en andere externe kosten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_84_09
+msgid "Kosten van beheer en administratie"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_84_08
+msgid "Kosten van beleggingen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_70_01
+msgid "Kosten van grond- en hulpstoffen / halffabrikaten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_01_02
+msgid "Kosten van ontwikkeling"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_01_01
+msgid "Kosten van oprichting en van uitgifte van aandelen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_70_02
+msgid "Kosten van personeel"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_70_04
+msgid "Kosten van rente en afschrijvingen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_72_00
+msgid "Kostprijs - inkoopwaarde groepen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_70_09
+msgid "Kostprijs intercompany transacties"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_70
+msgid "Kostprijs van de Omzet"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_72_01
+msgid "Kostprijs van de omzet niet ingekocht bij leden (Coöperatie)"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_10_03
+msgid "Kruisposten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_08
+msgid "Langlopende schulden"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_80_15
+msgid "Lasten onderhoudsactiviteiten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_80_12
+msgid "Lasten servicecontracten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_40
+msgid "Lasten uit hoofde van personeelsbeloningen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_42_16_10
+msgid "Lasten uit niet-ondernemingsactiviteiten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_80_14
+msgid "Lasten verhuur en beheeractiviteiten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_03_08
+msgid "Latente belastingvorderingen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_11_03_16_9
+msgid "Latente belastingvorderingen (kortlopend)"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_88
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_90_01_10
+msgid "Ledenbetalingen (inclusief reeds betaalde voorschotten)"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_03_20
+msgid "Leningen u/g (langlopend)"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_10
+msgid "Liquide middelen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_40_01
+msgid "Lonen en salarissen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_02_10
+msgid "Machines en installaties"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_81_30
+msgid "Marge-voorraden"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_02
+msgid "Materiële vaste activa"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_02_21
+msgid "Meerjaren plantopstand"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_70_10
+msgid "Mutatie omzetvorderingen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report,name:l10n_nl_rgs_mis_report.mis_report_l10n_nl_rgs_balance_sheet
+msgid "NL RGS Balance Sheet"
+msgstr "NL RGS Balans"
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report,name:l10n_nl_rgs_mis_report.mis_report_l10n_nl_rgs_pl
+msgid "NL RGS Profit Loss"
+msgstr "NL RGS Winst en Verlies"
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_07_05
+msgid "Negatieve goodwill"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_85_14
+msgid "Negatieve herwaarderingen van puttable financiële instrumenten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_85_13
+msgid ""
+"Negatieve verschil tussen het ontvangen bedrag en de bij het aangaan van de "
+"lening als schuld erkende hoofdsom"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_80
+msgid "Netto-omzet"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_80_09
+msgid "Netto-omzet groepen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_80_05
+msgid "Netto-omzet intercompany transacties"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_80_01
+msgid "Netto-omzet uit leveringen geproduceerde goederen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_80_02
+msgid "Netto-omzet uit verkoop van handelsgoederen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_02_17
+msgid "Niet aan de bedrijfsuitoefening dienstbare materiële vaste activa"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_31_05
+msgid "Niet gebruiksvee"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_41_06_30
+msgid "Niet-gerealiseerde waardeveranderingen van beleggingen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_resultaat_boekjaar
+msgid "Niet-toegewezen resultaat van het boekjaar"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_resultaat_vorig_jaar
+msgid "Niet-toegewezen resultaat van vorige boekjaar"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_08_03
+msgid "Obligatieleningen, pandbrieven en andere leningen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_04_02
+msgid "Obligaties"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_35
+msgid "Onderhanden projecten (activa)"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_12_09_11_9
+msgid "Onderhanden projecten (passiva) overige schulden"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_35_01
+msgid "Onderhanden projecten in opdracht van derden"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_31_01
+msgid "Onderhanden werk"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_82_02
+msgid "Ontvangen doorbelasting personeelskosten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_82_01
+msgid "Ontvangen managementvergoeding"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_08_06_05_9
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_12_09_04
+msgid "Ontvangen vooruitbetalingen op bestellingen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_05_06_00_9
+msgid "Onverdeelde winst"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_45
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_84_01
+msgid ""
+"Opbrengst van vorderingen die tot de vaste activa behoren en van effecten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_80_50
+msgid "Opbrengsten overige activiteiten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_80_11
+msgid "Opbrengsten servicecontracten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_80_03
+msgid "Opbrengsten uit het verlenen van diensten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_84_97
+msgid "Opbrengsten uit niet op netto-vermogenswaarde e.d. "
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_04_04
+msgid "Optierechten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_04_05
+msgid "Optieverplichtingen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_42_07
+msgid "Organisatiekosten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_08_06_14_8
+msgid "Oudedagsverplichting"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_42
+msgid "Overige bedrijfskosten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_82
+msgid "Overige bedrijfsopbrengsten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_03_03
+msgid "Overige deelnemingen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_80_16
+msgid "Overige directe operationele lasten explotatie bezit"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_04_03
+msgid "Overige effecten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_03_04
+msgid "Overige effecten (langlopend)"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_01_10
+msgid "Overige immateriële vaste activa"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_05_09_07_9
+msgid "Overige kapitaalcomponenten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_40_04_00_8
+msgid "Overige lasten uit hoofde van personeelsbeloningen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_80_04
+msgid "Overige netto-omzet"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_82_13
+msgid "Overige opbrengsten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_40_12
+msgid "Overige personeelsgerelateerde kosten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_84_06
+msgid "Overige rentelasten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_05_06
+msgid "Overige reserves"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_08_06_12_9
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_12_09
+msgid "Overige schulden"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_31_06
+msgid "Overige voorraden"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_07_04
+msgid "Overige voorzieningen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_03_09
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_11_03
+msgid "Overige vorderingen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_41_2
+msgid "Overige waardeveranderingen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_80_40
+msgid "Overige waardeveranderingen van vastgoedportefeuille"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_11_04
+msgid "Overlopende activa"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_12_10
+msgid "Overlopende passiva"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_08_07
+msgid "Participaties (geclassificeerd als vreemd vermogen)"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_passiva
+msgid "Passiva en Eigen vermogen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_40_03
+msgid "Pensioenlasten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_85_11
+msgid "Positieve herwaarderingen van puttable financiële instrumenten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_85_10
+msgid ""
+"Positieve verschil tussen het ontvangen bedrag en de bij het aangaan van de "
+"lening als schuld erkende hoofdsom"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_70_13
+msgid "Privé-gebruik diensten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_70_12
+msgid "Privé-gebruik goederen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_pl
+msgid "Profit and Loss"
+msgstr "Winst en verlies"
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_84_02
+msgid "Rentebaten en soortgelijke opbrengsten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_85_20
+msgid ""
+"Rentekosten begrepen in de leasetermijn in geval van financiële leasing"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_84_04
+msgid "Rentelasten en soortgelijke kosten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_90_01
+msgid "Resultaat aandeel van derden"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_result_after_tax
+msgid "Resultaat na belastingen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_result_no_tax
+msgid "Resultaat voor belastingen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_12_04
+msgid "Salarisverwerking"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_02_12
+msgid "Schepen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_08_05
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_12_09_02_9
+msgid "Schulden aan banken"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_08_06_00_9
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_12_08_10
+msgid "Schulden aan groepsmaatschappijen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_12_60
+msgid "Schulden aan leden van de coöperatie"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_08_06_06_9
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_12_03
+msgid "Schulden aan leveranciers en handelskredieten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_08_06_01_9
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_12_08_20
+msgid "Schulden aan overige verbonden maatschappijen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_08_06_02_9
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_12_08_30
+msgid ""
+"Schulden aan participanten en aan maatschappijen waarin wordt deelgenomen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_08_06_04_9
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_12_04_08_9
+msgid "Schulden ter zake van pensioenen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_12_08_40
+msgid "Schulden uit hoofde van belasting naar de winst"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_08_06_04_4
+msgid "Schulden uit hoofde van belastingen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_40_02
+msgid "Sociale lasten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_82_14
+msgid "Som van de (geworven) baten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_82_16
+msgid "Sponsorbijdragen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_05_05
+msgid "Statutaire reserves"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_82_07
+msgid "Subsidiebaten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_08_06_07_9
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_12_09_07_9
+msgid "Te betalen wissels en cheques"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_11_03_03_9
+msgid "Te vorderen subsidies"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_10_02
+msgid "Tegoeden op bankgirorekeningen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_02_01
+msgid "Terreinen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_43_01
+msgid "Toegerekende kosten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_80_07
+msgid "Toegerekende opbrengsten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_89_total
+msgid "Totaal Aandeel derden"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_84_total
+msgid "Totaal Aandeel in resultaat van ondernemingen waarin wordt deelgenomen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_41_total
+msgid "Totaal Afschrijvingen op immateriële en materiële vaste activa"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_60_total
+msgid "Totaal Belastingen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_bruto_result_total
+msgid "Totaal Bruto-bedrijfsresultaat"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_fbl_total
+msgid "Totaal Financiële baten en lasten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_40_total
+msgid "Totaal Lasten uit hoofde van personeelsbeloningen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_88_total
+msgid "Totaal Ledenbetalingen (inclusief reeds betaalde voorschotten)"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_42_total
+msgid "Totaal Overige bedrijfskosten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_41_2_total
+msgid "Totaal Overige waardeveranderingen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_passiva_total
+msgid "Totaal Passiva en Eigen vermogen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_46_total
+msgid "Totaal Vrijval herwaarderingsreserve"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_72_02
+msgid "Totaal van lasten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_activa_total
+msgid "Total Activa"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_41_1_total
+msgid "Total Waardeveranderingen van immateriële en materiële vaste "
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_42_05
+msgid "Transportkosten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_11_05
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_12_20
+msgid "Tussenrekeningen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_12_30
+msgid "Uit te keren dividend aan houders van aandelen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_12_40
+msgid "Uit te keren dividend aan houders van preferente aandelen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_85_19
+msgid ""
+"Valutaverschillen op leningen voor zover zij als een correctie van de "
+"verschuldigde rentekosten kunnen worden aangemerkt"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_11_03_12_9
+msgid "Van aandeelhouders opgevraagde stortingen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_02_16
+msgid "Vaste bedrijfsmiddelen in uitvoering"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_02_1
+msgid "Vastgoedbeleggingen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_02_05
+msgid "Vastgoedbeleggingen in exploitatie"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_02_04
+msgid "Vastgoedbeleggingen in ontwikkeling bestemd voor eigen exploitatie"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_02_03
+msgid "Verbouwingen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_42_03
+msgid "Verkoop gerelateerde kosten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_80_33
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_80_8
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_80_80
+msgid "Verkoopkosten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_80_30
+msgid "Verkoopopbrengst vastgoedportefeuille"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_82_06
+msgid "Verzekeringsuitkeringen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_02_11
+msgid "Vliegtuigen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_30_02
+msgid "Voorraad grond- en hulpstoffen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_70_11
+msgid "Voorraadmutatie"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_30
+msgid "Voorraden"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_01_09
+msgid "Vooruitbetalingen op immateriële vaste activa"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_02_16_1
+msgid "Vooruitbetalingen op materiële vaste activa"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_30_04
+msgid "Vooruitbetalingen op voorraden"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_07_02
+msgid "Voorziening voor belastingen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_07_01
+msgid "Voorziening voor pensioenen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_07
+msgid "Voorzieningen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_11
+msgid "Vorderingen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_03_05
+msgid "Vorderingen op groepsmaatschappijen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_11_03_09_9
+msgid "Vorderingen op groepsmaatschappijen (kortlopend)"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_11_01
+msgid "Vorderingen op handelsdebiteuren"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_11_03_30_9
+msgid "Vorderingen op leden van de coöperatie"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_03_07
+msgid "Vorderingen op overige verbonden maatschappijen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_11_03_10_9
+msgid "Vorderingen op overige verbonden maatschappijen (kortlopend)"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_03_06
+msgid ""
+"Vorderingen op participanten en op maatschappijen waarin wordt deelgenomen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_11_03_11_9
+msgid ""
+"Vorderingen op participanten en op maatschappijen waarin wordt deelgenomen "
+"(kortlopend)"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_11_03_15_9
+msgid "Vorderingen uit hoofde van belastingen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_11_03_14_9
+msgid "Vorderingen uit hoofde van pensioenen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_46
+msgid "Vrijval herwaarderingsreserve"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_83_01
+msgid "Vrijval uit herwaarderingsreserve"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_81_20
+msgid "Waardeveranderingen van agrarische voorraden"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_47
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_84_05
+msgid "Waardeveranderingen van financiële vaste activa en van effecten"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_41_1
+msgid "Waardeveranderingen van immateriële en materiële vaste "
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_41_03
+msgid "Waardeveranderingen van immateriële vaste activa"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_41_04
+msgid "Waardeveranderingen van materiële vaste activa"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_84_98
+msgid ""
+"Waardeveranderingen van niet op netto-vermogenswaarde e.d. gewaardeerde "
+"deelnemingen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_40_03_99_9
+msgid "Werkkostenregeling - detail"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_balance_sheet_05_04
+msgid "Wettelijke reserves"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_81_10
+msgid "Wijziging agrarische voorraden"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_41_05_50
+msgid "Wijziging in de reële waarde van vastgoedbeleggingen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_81_03
+msgid "Wijziging in onderhanden projecten in opdracht van derden"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_81_01
+msgid ""
+"Wijziging in voorraden grond- en hulpstoffen, gereed product en "
+"handelsgoederen"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_81_02
+msgid "Wijziging in voorraden onderhanden werk"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_81
+msgid "Wijziging voorraden"
+msgstr ""
+
+#. module: l10n_nl_rgs_mis_report
+#: model:mis.report.kpi,description:l10n_nl_rgs_mis_report.mis_report_kpi_l10n_nl_rgs_pl_84_07
+msgid "Wisselkoersverschillen"
+msgstr ""
