@@ -1524,7 +1524,7 @@
             <field name="name">nl_05</field>
             <field name="description">Groepsvermogen - Eigen vermogen - Kapitaal</field>
             <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l2" />
-            <field name="expression">+nl_05_01+nl_05_09_04_9+nl_05_09_06_9+nl_05_02+nl_05_03+nl_05_04+nl_05_05+nl_05_07+nl_05_05_01_9+nl_05_07_10+nl_05_06+nl_05_06_00_9+nl_05_09+nl_05_09_10+nl_05_09_20+nl_05_09_30+nl_05_09_40+nl_05_09_07_9+nl_05_10+nl_05_08</field>
+            <field name="expression">+nl_05_01+nl_05_09_04_9+nl_05_09_06_9+nl_05_02+nl_05_03+nl_05_04+nl_05_05+nl_05_07+nl_05_05_01_9+nl_05_07_10+nl_05_06+nl_05_06_00_9+nl_05_09+nl_05_09_10+nl_05_09_20+nl_05_09_30+nl_05_09_40+nl_05_09_07_9+nl_05_10+nl_05_08+resultaat_vorig_jaar+resultaat_boekjaar</field>
         </record>
         <record
             id="mis_report_kpi_l10n_nl_rgs_balance_sheet_05_01"
@@ -1765,6 +1765,36 @@
                 name="auto_expand_accounts_style_id"
                 ref="mis_report_style_l10n_nl_rgs_l4i"
             />
+        </record>
+        <record
+            id="mis_report_kpi_l10n_nl_rgs_balance_sheet_resultaat_vorig_jaar"
+            model="mis.report.kpi"
+        >
+            <field name="report_id" ref="mis_report_l10n_nl_rgs_balance_sheet" />
+            <field name="type">num</field>
+            <field name="compare_method">pct</field>
+            <field name="sequence">1215</field>
+            <field name="name">resultaat_vorig_jaar</field>
+            <field name="description">Niet-toegewezen resultaat van vorige boekjaar</field>
+            <field
+                name="expression"
+            >balu[]</field>
+            <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l3" />
+        </record>
+        <record
+            id="mis_report_kpi_l10n_nl_rgs_balance_sheet_resultaat_boekjaar"
+            model="mis.report.kpi"
+        >
+            <field name="report_id" ref="mis_report_l10n_nl_rgs_balance_sheet" />
+            <field name="type">num</field>
+            <field name="compare_method">pct</field>
+            <field name="sequence">1216</field>
+            <field name="name">resultaat_boekjaar</field>
+            <field name="description">Niet-toegewezen resultaat van het boekjaar</field>
+            <field
+                name="expression"
+            >bal[('account_type', 'in', ('income', 'income_other', 'expense_direct_cost', 'expense', 'expense_depreciation'))]</field>
+            <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l3" />
         </record>
         <record
             id="mis_report_kpi_l10n_nl_rgs_balance_sheet_05_09"

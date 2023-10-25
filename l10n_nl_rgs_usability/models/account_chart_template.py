@@ -10,14 +10,19 @@ class AccountChartTemplate(models.Model):
 
         # Generate payment modes
         self._generate_payment_modes(company)
+        # Generate spread templates
+        company._create_spread_templates()
         return res
 
     @api.model
     def _generate_payment_modes(self, company):
         """Generate payment modes"""
-        if not company.bank_journal_ids:
+        bank_journal = self.env["account.journal"].search([
+            ("type", "=", "bank"),
+            ("company_id", "=", company.id),
+        ], limit=1)
+        if not bank_journal:
             return
-        bank_journal = company.bank_journal_ids[0]
         payment_mode_vals = [
             {
                 "name": "Manual",
@@ -73,4 +78,6 @@ class AccountChartTemplate(models.Model):
         for vals in payment_mode_vals:
             xml_id = "%s.%s_%s" % (module, company.id, re.sub('[^a-zA-Z]+', '', vals["name"].lower()))
             data_list.append(dict(xml_id=xml_id, values=vals, noupdate=True))
-        return self.env["account.payment.mode"]._load_records(data_list)
+        res = self.env["account.payment.mode"]._load_records(data_list)
+        company._create_direct_debit_in_payment_mode()
+        return res

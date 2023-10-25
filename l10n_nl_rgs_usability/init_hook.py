@@ -37,3 +37,7 @@ def post_init_hook(cr, _):
         company._create_fiscal_year_for_current_year()
         # Verify VAT Numbers set to True
         company.vat_check_vies = True
+        # Create Direct debit in payment mode
+        company._create_direct_debit_in_payment_mode()
+        # Create spread templates
+        company._create_spread_templates()

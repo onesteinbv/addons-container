@@ -47,6 +47,13 @@ class AccountChartTemplate(models.Model):
             account.tag_ids = [Command.link(self.env.ref('l10n_nl_rgs.account_tag_1003000').id)]
             if account.referentiecode:
                 account.reconcile = True
+
+                installed_langs = dict(self.env['res.lang'].get_installed())
+                # Install Dutch language if not done yet
+                lang = "nl_NL"
+                if lang not in installed_langs:
+                    self.env['res.lang']._activate_lang(lang)
+                account.update_field_translations('name', {'nl_NL': 'Nog af te letteren bank'})
         return account
 
     def _get_account_vals(self, company, account_template, code_acc, tax_template_ref):
