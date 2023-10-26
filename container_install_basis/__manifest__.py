@@ -10,6 +10,7 @@
     "version": "16.0.1.0.0",
     "license": "AGPL-3",
     "depends": [
+        "base_user_role",
         "sale_management",
         "website",
         "web_responsive",
@@ -97,6 +98,8 @@
         # 'support_branding',  # TODO do we need it?
         "digest_disable"
     ],
-    "data": [],
+    "data": [
+        "data/res.users.role.csv",
+    ],
     "application": True,
 }
