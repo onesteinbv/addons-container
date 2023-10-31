@@ -13,6 +13,8 @@
         "base_user_role",
         "sale_management",
         "website",
+        "website_payment",
+        "website_sale",
         "web_responsive",
         "disable_odoo_online",
         "account_payment_mode",
@@ -99,7 +101,12 @@
         "base_import_debranding",
         "website_odoo_debranding",
         # 'support_branding',  # TODO do we need it?
-        "digest_disable"
+        "digest_disable",
+
+        # THIRD-PARTY
+        "mollie_account_sync",
+        "payment_mollie_official",
+
     ],
     "data": [
         "data/res.users.role.csv",
