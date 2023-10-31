@@ -10,7 +10,6 @@
     "version": "16.0.1.0.0",
     "license": "AGPL-3",
     "depends": [
-        "base_user_role",
         "sale_management",
         "website",
         "website_payment",
@@ -109,7 +108,7 @@
 
     ],
     "data": [
-        "data/res.users.role.csv",
+        # "data/res.users.role.csv",  # TODO disabled for now
     ],
     "application": True,
 }
