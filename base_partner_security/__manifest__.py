@@ -15,5 +15,6 @@
     ],
     "data": [
         "security/res_groups.xml"
-    ]
+    ],
+    "installable": False  # deprecated remove after next update
 }

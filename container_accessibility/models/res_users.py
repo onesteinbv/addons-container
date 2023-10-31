@@ -1,5 +1,6 @@
 from lxml import etree
 from odoo import api, fields, models, Command
+from odoo.osv import expression
 
 
 class ResUsers(models.Model):
@@ -15,6 +16,10 @@ class ResUsers(models.Model):
             self.env.ref("base.user_admin") == self or
             self.env.ref("base.user_root") == self
         )
+
+    def is_curq_user(self):
+        self.ensure_one()
+        return self.has_group("container_accessibility.group_curq")
 
     @api.model
     def get_view(self, view_id=None, view_type="form", **options):
@@ -61,3 +66,17 @@ class ResUsers(models.Model):
         if not self.env.context.get("no_group_force"):
             res._force_groups()
         return res
+
+    @api.model
+    def _search(self, args, offset=0, limit=None, order=None, count=False, access_rights_uid=None):
+        model = self.with_user(access_rights_uid) if access_rights_uid else self
+
+        if model.env.user.is_curq_user():
+            args = expression.AND(
+                [
+                    args,
+                    [("id", "not in", (self.env.ref("base.user_admin") + self.env.ref("base.user_root")).ids)],
+                ]
+            )
+
+        return super()._search(args, offset, limit, order, count, access_rights_uid)

@@ -6,6 +6,7 @@
         "base",
     ],
     "data": [
+        "security/ir_rule.xml",
         "security/res_groups.xml"
     ],
     "license": "LGPL-3",
