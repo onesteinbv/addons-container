@@ -34,6 +34,7 @@ addons-generic/membership_committee
 addons-generic/membership_hr
 addons-generic/membership_hr_recruitment
 addons-generic/membership_mollie_subscription
+addons-generic/membership_origin
 addons-generic/membership_section
 addons-generic/partner_country_default_nl
 addons-generic/project_role_members
@@ -156,7 +157,11 @@ oca/partner_contact_personal_information_page
 oca/partner_external_map
 oca/partner_firstname
 oca/product_category_product_link
+oca/product_category_tax
+oca/project_list
 oca/project_role
+oca/project_sequence
+oca/project_template
 oca/project_task_add_very_high
 oca/project_task_default_stage
 oca/project_timeline

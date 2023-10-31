@@ -12,6 +12,7 @@
     "depends": [
         "sale_management",
         "website",
+        "website_payment",
         "website_sale",
         "web_responsive",
         "disable_odoo_online",
@@ -68,6 +69,9 @@
         # Dutch localization
         "l10n_nl_rgs",
         "l10n_nl_rgs_usability",
+        "l10n_nl_rgs_mis_report",
+        "l10n_nl_rgs_account_financial_report",
+        "l10n_nl_rgs_asset",
         "l10n_nl_bank",
         "l10n_nl_xaf_auditfile_export",
         "l10n_nl_postcode",
@@ -96,8 +100,15 @@
         "base_import_debranding",
         "website_odoo_debranding",
         # 'support_branding',  # TODO do we need it?
-        "digest_disable"
+        "digest_disable",
+
+        # THIRD-PARTY
+        "mollie_account_sync",
+        "payment_mollie_official",
+
     ],
-    "data": [],
+    "data": [
+        # "data/res.users.role.csv",  # TODO disabled for now
+    ],
     "application": True,
 }

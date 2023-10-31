@@ -1,0 +1,3 @@
+"name","implied_ids/id"
+"Finance Manager","account.group_account_manager,account_payment_order.group_account_payment"
+"Finance Mederwerker","account_payment_order.group_account_payment,account.group_account_user"
