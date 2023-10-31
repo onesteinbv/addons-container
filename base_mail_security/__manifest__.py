@@ -21,5 +21,6 @@
         "views/ir_mail_server_view.xml",
 
         "menuitems.xml"
-    ]
+    ],
+    "installable": False  # deprecated remove after next update
 }

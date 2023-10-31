@@ -33,9 +33,6 @@
         "sale_purchase_stock",
 
         # Extra security
-        "website_security",
-        "base_user_management",
-        "base_company_management",
 
         # Accountancy
         "account_fiscal_position_vat_check",
@@ -85,7 +82,6 @@
         "web_no_bubble",
         'base_customer_company',
         'base_customer_user',
-        'base_mail_security',
         'base_onboarding',
         "container_hr_recruitment",
         "spreadsheet_dashboard_oca",
