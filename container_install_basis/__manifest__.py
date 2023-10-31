@@ -68,6 +68,7 @@
         # Dutch localization
         "l10n_nl_rgs",
         "l10n_nl_rgs_usability",
+        "l10n_nl_rgs_mis_report",
         "l10n_nl_bank",
         "l10n_nl_xaf_auditfile_export",
         "l10n_nl_postcode",
