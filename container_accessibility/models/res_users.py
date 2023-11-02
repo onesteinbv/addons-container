@@ -14,9 +14,9 @@ class ResUsers(models.Model):
 
     @api.model
     def _get_limit_included_user_count(self):
-        curq_group = self.env.ref("container_accessibility.group_curq")
+        restricted_group = self.env.ref("container_accessibility.group_restricted")
         count = self.search([
-            ("groups_id", "in", curq_group.ids)
+            ("groups_id", "in", restricted_group.ids)
         ], count=True)
         return count
 
@@ -27,16 +27,16 @@ class ResUsers(models.Model):
 
     @api.model
     def _get_forced_groups(self):
-        return ["container_accessibility.group_curq"]
+        return ["container_accessibility.group_restricted"]
 
-    def is_curq_user(self):
+    def is_restricted_user(self):
         self.ensure_one()
-        return self.has_group("container_accessibility.group_curq")
+        return self.has_group("container_accessibility.group_restricted")
 
     @api.model
     def get_view(self, view_id=None, view_type="form", **options):
         res = super().get_view(view_id=view_id, view_type=view_type, **options)
-        allow_override = not self.env.user.is_curq_user()
+        allow_override = not self.env.user.is_restricted_user()
         if view_type == "form" and not allow_override:
             forced_groups = self._get_forced_groups()
             for group in forced_groups:
@@ -53,7 +53,7 @@ class ResUsers(models.Model):
         return res
 
     def _force_groups(self):
-        allow_override = not self.env.user.is_curq_user()
+        allow_override = not self.env.user.is_restricted_user()
         if allow_override:
             return
         forced_groups = self._get_forced_groups()
@@ -85,16 +85,17 @@ class ResUsers(models.Model):
 
     @api.model
     def _search(self, args, offset=0, limit=None, order=None, count=False, access_rights_uid=None):
+        # Purely for UX purposes
         model = self.with_user(access_rights_uid) if access_rights_uid else self
 
-        if model.env.user.is_curq_user():
+        if model.env.user.is_restricted_user():
             args = expression.AND(
                 [
                     args,
                     [
                         "|",
                         ("share", "=", True),
-                        ("groups_id", "in", self.env.ref("container_accessibility.group_curq").ids)
+                        ("groups_id", "in", self.env.ref("container_accessibility.group_restricted").ids)
                     ],
                 ]
             )

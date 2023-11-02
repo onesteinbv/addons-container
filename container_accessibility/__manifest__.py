@@ -5,6 +5,7 @@
     "depends": [
         "base",
         "privacy_lookup",
+        "web_tour",
         "base_menu_visibility_restriction"
     ],
     "data": [
