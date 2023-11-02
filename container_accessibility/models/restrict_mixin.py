@@ -4,16 +4,18 @@ from odoo.exceptions import AccessError
 
 class RestrictMixin(models.AbstractModel):
     _name = "container.restrict.mixin"
+    _description = "Restrict Mixin"
 
     @api.model
     def _get_restrict_domain(self):
         return None
 
     def _check_restrict(self):
-        if self.env.user.is_restricted_user():
-            restrict_domain = self._get_restrict_domain()
-            if restrict_domain is None or not self.filtered_domain(restrict_domain):
-                raise AccessError(_("Access denied to this model"))
+        if not self.env.user.is_restricted_user() or self.env.context.get("no_restrict", False):
+            return
+        restrict_domain = self._get_restrict_domain()
+        if restrict_domain is None or not self.filtered_domain(restrict_domain):
+            raise AccessError(_("Access denied to this model (%s)", self._name))
 
     def write(self, vals):
         self._check_restrict()

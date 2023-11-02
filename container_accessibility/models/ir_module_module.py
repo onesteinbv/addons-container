@@ -6,16 +6,16 @@ class IrModuleModule(models.Model):
     _inherit = "ir.module.module"
 
     def button_immediate_install(self):
-        if self.env.user.is_restricted_user() and not self.env.context.get("install_payment_provider", False):
-            raise AccessError(_("Access denied to install modules"))
-        return super().button_immediate_install()
+        if not self.env.user.is_restricted_user() or self.env.context.get("no_restrict", False):
+            return super().button_immediate_install()
+        raise AccessError(_("Access denied to install modules"))
 
     def button_immediate_upgrade(self):
-        if self.env.user.is_restricted_user():
-            raise AccessError(_("Access denied to update modules"))
-        return super().button_immediate_upgrade()
+        if not self.env.user.is_restricted_user() or self.env.context.get("no_restrict", False):
+            return super().button_immediate_upgrade()
+        raise AccessError(_("Access denied to update modules"))
 
     def button_immediate_uninstall(self):
-        if self.env.user.is_restricted_user():
-            raise AccessError(_("Access denied to uninstall modules"))
-        return super().button_immediate_uninstall()
+        if not self.env.user.is_restricted_user() or self.env.context.get("no_restrict", False):
+            return super().button_immediate_uninstall()
+        raise AccessError(_("Access denied to uninstall modules"))
