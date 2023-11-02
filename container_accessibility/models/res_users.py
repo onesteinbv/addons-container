@@ -41,16 +41,16 @@ class ResUsers(models.Model):
         return res
 
     def _force_groups(self):
-        allow_override = self.env.user.is_allowed_overriding_forced_groups()
+        allow_override = not self.env.user.is_curq_user()
         if allow_override:
             return
         forced_groups = self._get_forced_groups()
-        for user in self:
+        for user in self.filtered(lambda u: u._is_internal()):
             for group in forced_groups:
                 if user.has_group(group):
                     continue
                 group_record = self.env.ref(group)
-                user.with_context(no_group_force=True).write({
+                user.sudo().with_context(no_group_force=True).write({
                     "groups_id": [Command.link(group_record.id)]
                 })
 

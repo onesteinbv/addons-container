@@ -62,7 +62,7 @@
                             <field name="website_name" attrs="{'required': [('state', '=', 'website')]}" />
                         </h1>
                     </div>
-                    <group string="Social Media Links" invisible="1">
+                    <group string="Social Media Links">
                         <field name="social_twitter" />
                         <field name="social_facebook" />
                         <field name="social_linkedin" />
@@ -126,9 +126,6 @@
                        name="mail" attrs="{'invisible': [('state', '!=', 'mailing')]}">
                     <group>
                         <field name="fetchmail_server_id" />
-                    </group>
-                    <field name="mail_choice" widget="radio" nolabel="1"/>
-                    <group attrs="{'invisible': [('mail_choice', '=', 'default')]}">
                         <field name="ir_mail_server_id" />
                     </group>
                 </group>

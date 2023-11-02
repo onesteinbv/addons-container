@@ -33,6 +33,7 @@
         "sale_purchase_stock",
 
         # Extra security
+        "container_accessibility",
 
         # Accountancy
         "account_fiscal_position_vat_check",
@@ -83,7 +84,6 @@
         'base_customer_company',
         'base_customer_user',
         'base_onboarding',
-        "container_hr_recruitment",
         "spreadsheet_dashboard_oca",
         "partner_country_default_nl",
 

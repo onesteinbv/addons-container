@@ -6,8 +6,7 @@
         <field
             name="implied_ids"
             eval="[
-                Command.link(ref('base_mail_security.manage_mail_servers_group')),
-                Command.link(ref('website_security.group_website_security_config'))
+                Command.link(ref('base.group_system'))
             ]"
         />
     </record>

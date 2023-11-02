@@ -57,14 +57,6 @@ class OnboardingWizard(models.TransientModel):
         readonly=False
     )
 
-    mail_choice = fields.Selection(
-        selection=[
-            ('default', 'I want to use the default SMTP servers.'),
-            ('own', 'I want to use my own SMTP servers.')
-        ],
-        default='default'
-    )
-
     fetchmail_server_id = fields.Many2one(
         comodel_name='fetchmail.server',
         string='Incoming Mail Server'

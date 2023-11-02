@@ -9,10 +9,10 @@ import click_odoo
 @click.option("--password")
 def main(env, host, user, password):
     click.echo("Setup SMTP...")
-    module_mail_security = env.ref("base.module_base_mail_security")
-    if module_mail_security.state != "installed":
+    module_container_accessibility = env.ref("base.module_container_accessibility")
+    if module_container_accessibility.state != "installed":
         return click.echo(
-            "Module `base_mail_security` must be installed for this script to work",
+            "Module `container_accessibility` must be installed for this script to work",
             err=True
         )
 
