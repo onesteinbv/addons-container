@@ -8,9 +8,9 @@
         <field name="excluded_group_ids" eval="[Command.link(ref('container_accessibility.group_restricted'))]"/>
     </record>
 
-<!--    <record id="base.next_id_2" model="ir.ui.menu">  &lt;!&ndash; Settings/Technical/User Interface &ndash;&gt;-->
-<!--        <field name="excluded_group_ids" eval="[Command.link(ref('container_accessibility.group_restricted'))]"/>-->
-<!--    </record>-->
+    <record id="base.next_id_2" model="ir.ui.menu">  <!-- Settings/Technical/User Interface -->
+        <field name="excluded_group_ids" eval="[Command.link(ref('container_accessibility.group_restricted'))]"/>
+    </record>
 
     <record id="base.next_id_9" model="ir.ui.menu">
         <field name="excluded_group_ids" eval="[Command.link(ref('container_accessibility.group_restricted'))]"/>
