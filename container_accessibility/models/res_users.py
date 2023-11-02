@@ -1,10 +1,29 @@
 from lxml import etree
-from odoo import api, fields, models, Command
+from odoo import _, api, fields, models, Command
 from odoo.osv import expression
+from odoo.tools import config
+from odoo.exceptions import UserError
 
 
 class ResUsers(models.Model):
     _inherit = "res.users"
+
+    @api.model
+    def _get_user_limit(self):
+        return int(config.get("user_limit", "0"))
+
+    @api.model
+    def _get_limit_included_user_count(self):
+        curq_group = self.env.ref("container_accessibility.group_curq")
+        count = self.search([
+            ("groups_id", "in", curq_group.ids)
+        ], count=True)
+        return count
+
+    def _check_user_limit_exceeded(self):
+        user_count = self._get_limit_included_user_count()
+        if user_count > self._get_user_limit():
+            raise UserError(_("User limit exceeded"))
 
     @api.model
     def _get_forced_groups(self):
@@ -51,6 +70,8 @@ class ResUsers(models.Model):
         res = super().write(vals)
         if not self.env.context.get("no_group_force"):
             self._force_groups()
+        if "active" in vals and vals["active"] and self._get_user_limit():  # If trying to activate / unarchive a user
+            self._check_user_limit_exceeded()
         return res
 
     @api.model_create_multi
@@ -58,6 +79,8 @@ class ResUsers(models.Model):
         res = super().create(vals_list)
         if not self.env.context.get("no_group_force"):
             res._force_groups()
+        if self._get_user_limit():
+            self._check_user_limit_exceeded()
         return res
 
     @api.model

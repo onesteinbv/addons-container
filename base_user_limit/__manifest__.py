@@ -9,4 +9,5 @@
     "depends": [
         "base"
     ],
+    "installable": False
 }
