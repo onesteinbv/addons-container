@@ -6,6 +6,8 @@
         "base",
         "privacy_lookup",
         "web_tour",
+        "website",
+        "payment",
         "base_menu_visibility_restriction"
     ],
     "data": [
