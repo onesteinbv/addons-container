@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="base.menu_action_res_groups" model="ir.ui.menu">
+        <field name="excluded_group_ids" eval="[Command.link(ref('container_accessibility.group_curq'))]"/>
+    </record>
+
+    <record id="base.next_id_6" model="ir.ui.menu">
+        <field name="excluded_group_ids" eval="[Command.link(ref('container_accessibility.group_curq'))]"/>
+    </record>
+
+    <record id="base.next_id_2" model="ir.ui.menu">
+        <field name="excluded_group_ids" eval="[Command.link(ref('container_accessibility.group_curq'))]"/>
+    </record>
+
+    <record id="base.next_id_9" model="ir.ui.menu">
+        <field name="excluded_group_ids" eval="[Command.link(ref('container_accessibility.group_curq'))]"/>
+    </record>
+
+    <record id="base.menu_automation" model="ir.ui.menu">
+        <field name="excluded_group_ids" eval="[Command.link(ref('container_accessibility.group_curq'))]"/>
+    </record>
+
+    <record id="base.reporting_menuitem" model="ir.ui.menu">
+        <field name="excluded_group_ids" eval="[Command.link(ref('container_accessibility.group_curq'))]"/>
+    </record>
+
+    <record id="base.ir_model_data_menu" model="ir.ui.menu">
+        <field name="excluded_group_ids" eval="[Command.link(ref('container_accessibility.group_curq'))]"/>
+    </record>
+
+    <record id="base.menu_theme_store" model="ir.ui.menu">
+        <field name="excluded_group_ids" eval="[Command.link(ref('container_accessibility.group_curq'))]"/>
+    </record>
+
+    <record id="base.theme_store" model="ir.ui.menu">
+        <field name="excluded_group_ids" eval="[Command.link(ref('container_accessibility.group_curq'))]"/>
+    </record>
+    <record id="base.module_mi" model="ir.ui.menu">
+        <field name="excluded_group_ids" eval="[Command.link(ref('container_accessibility.group_curq'))]"/>
+    </record>
+    <record id="base.menu_ir_property_form_all" model="ir.ui.menu">
+        <field name="excluded_group_ids" eval="[Command.link(ref('container_accessibility.group_curq'))]"/>
+    </record>
+    <record id="base.menu_third_party" model="ir.ui.menu">
+        <field name="excluded_group_ids" eval="[Command.link(ref('container_accessibility.group_curq'))]"/>
+    </record>
+    <record id="base.menu_module_updates" model="ir.ui.menu">
+        <field name="excluded_group_ids" eval="[Command.link(ref('container_accessibility.group_curq'))]"/>
+    </record>
+    <record id="base.menu_security" model="ir.ui.menu">
+        <field name="excluded_group_ids" eval="[Command.link(ref('container_accessibility.group_curq'))]"/>
+    </record>
+    <record id="privacy_lookup.privacy_menu" model="ir.ui.menu">
+        <field name="excluded_group_ids" eval="[Command.link(ref('container_accessibility.group_curq'))]"/>
+    </record>
+</odoo>

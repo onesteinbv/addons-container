@@ -10,13 +10,6 @@ class ResUsers(models.Model):
     def _get_forced_groups(self):
         return ["container_accessibility.group_curq"]
 
-    def is_allowed_overriding_forced_groups(self):
-        self.ensure_one()
-        return (
-            self.env.ref("base.user_admin") == self or
-            self.env.ref("base.user_root") == self
-        )
-
     def is_curq_user(self):
         self.ensure_one()
         return self.has_group("container_accessibility.group_curq")
@@ -24,7 +17,7 @@ class ResUsers(models.Model):
     @api.model
     def get_view(self, view_id=None, view_type="form", **options):
         res = super().get_view(view_id=view_id, view_type=view_type, **options)
-        allow_override = self.env.user.is_allowed_overriding_forced_groups()
+        allow_override = not self.env.user.is_curq_user()
         if view_type == "form" and not allow_override:
             forced_groups = self._get_forced_groups()
             for group in forced_groups:
@@ -75,7 +68,11 @@ class ResUsers(models.Model):
             args = expression.AND(
                 [
                     args,
-                    [("id", "not in", (self.env.ref("base.user_admin") + self.env.ref("base.user_root")).ids)],
+                    [
+                        "|",
+                        ("share", "=", True),
+                        ("groups_id", "in", self.env.ref("container_accessibility.group_curq").ids)
+                    ],
                 ]
             )
 

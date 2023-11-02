@@ -120,6 +120,7 @@ oca/account_usability
 oca/agreement
 oca/attachment_preview
 oca/auditlog
+oca/base_menu_visibility_restriction
 oca/base_tier_validation
 oca/base_tier_validation_formula
 oca/base_tier_validation_forward
