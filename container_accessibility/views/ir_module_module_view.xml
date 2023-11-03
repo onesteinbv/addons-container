@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="module_view_kanban" model="ir.ui.view">
+        <field name="model">ir.module.module</field>
+        <field name="inherit_id" ref="base.module_view_kanban" />
+        <field name="arch" type="xml">
+            <!-- Dropdown menu -->
+            <xpath expr="//div[hasclass('o_dropdown_kanban')]" position="attributes">
+                <attribute name="groups">!container_accessibility.group_restricted</attribute>
+            </xpath>
+
+            <!-- Default buttons (Activate, learn more, etc, etc) -->
+            <xpath expr="//div[hasclass('oe_module_action')]" position="attributes">
+                <attribute name="groups">!container_accessibility.group_restricted</attribute>
+            </xpath>
+
+            <!-- Show 'Professional Only' hide alot of buttons for restricted users -->
+            <xpath expr="//div[hasclass('oe_module_action')]" position="after">
+                <div class="oe_module_action d-flex flex-wrap justify-content-between" groups="container_accessibility.group_restricted">
+                    <div t-if="installed" class="d-flex align-items-center text-muted float-start">Installed</div>
+                    <div t-if="!installed" class="d-flex align-items-center text-muted float-start">Professional Only</div>
+                    <a type="edit" class="btn btn-secondary btn-sm float-end" role="button">Learn More</a>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

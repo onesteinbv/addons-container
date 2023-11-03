@@ -13,6 +13,7 @@
     "data": [
         "security/res_groups.xml",
         "security/ir_rule.xml",
+        "views/ir_module_module_view.xml",
         "menuitems.xml"
     ],
     "license": "LGPL-3",
