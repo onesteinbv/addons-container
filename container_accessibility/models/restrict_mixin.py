@@ -11,7 +11,11 @@ class RestrictMixin(models.AbstractModel):
         return None
 
     def _check_restrict(self):
-        if not self.env.user.is_restricted_user() or self.env.context.get("no_restrict", False):
+        if (
+            not self.env.user.is_restricted_user() or
+            self.env.context.get("no_restrict", False) or
+            self.env.su
+        ):
             return
         restrict_domain = self._get_restrict_domain()
         if restrict_domain is None or not self.filtered_domain(restrict_domain):
