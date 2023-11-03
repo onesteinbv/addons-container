@@ -101,6 +101,8 @@
         "mollie_account_sync",
         "payment_mollie_official",
 
+        "multi_company_disable"
+
     ],
     "data": [
         # "data/res.users.role.csv",  # TODO disabled for now
