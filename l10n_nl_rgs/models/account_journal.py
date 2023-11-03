@@ -21,7 +21,7 @@ class AccountJournal(models.Model):
         return account_vals
 
     @api.model
-    def _fill_missing_values(self, vals):
+    def _fill_missing_values(self, vals, protected_codes=False):
         chart_template = self.env.company.chart_template_id
         is_rgs = chart_template == self.env.ref('l10n_nl_rgs.l10nnl_rgs_chart_template')
         is_bank = vals.get('type') == "bank"
@@ -36,7 +36,7 @@ class AccountJournal(models.Model):
                     raise ValidationError(_("Bank Account is required."))
                 if is_cash:
                     raise ValidationError(_("Cash Account is required."))
-        return super()._fill_missing_values(vals)
+        return super()._fill_missing_values(vals, protected_codes)
 
     @api.model_create_multi
     def create(self, vals_list):
