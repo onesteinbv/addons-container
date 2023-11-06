@@ -16,7 +16,7 @@
         'account_edi',
         'account_edi_ubl_cii',
         'account_payment',
-        'sale_timesheet',
+        #'sale_timesheet',
         'account_qr_code_sepa',
         'analytic',
         'attachment_indexation',
