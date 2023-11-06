@@ -75,7 +75,7 @@
         'purchase',
         'purchase_stock',
         'rating',
-        'report_xlsx',
+        #'report_xlsx',
         'resource',
         'sale',
         'sale_loyalty',
