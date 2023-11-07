@@ -25,11 +25,12 @@ def post_init_hook(cr, _):
     if main_company and main_company.chart_template_id != rgs and not rgs.existing_accounting(main_company):
         rgs._load(main_company)
 
-        # Installing stock_account will create 2 ir.property property_stock_account_output_categ_id and property_stock_account_input_categ_id for the
-        # main_company. Somehow if this module is installed it removes the ir.model.data.
-        # This is just a fix to make sure updating stock_account doesn't fail
-        # Ensure xml ids
-        # TODO: Fix properly
+        # Installing stock_account will create ir.property property_stock_account_output_categ_id and property_stock_account_input_categ_id for the
+        # main_company. Somehow if this module is installed it removes the ir.model.data or ir.property. (in rgs._load(main_company) -> self.generate_properties())
+        # See: accounts/chart_template.py in def _load(self, company) it deletes ir.property
+        # This is a core issue it can also be triggered by creating a database installing stock_account installing belgium coa switch to it, and update stock_account
+        
+        # TODO: Fix in core
         xml_ids = [
             ("stock_account", "property_stock_account_output_categ_id"),
             ("stock_account", "property_stock_account_input_categ_id")
