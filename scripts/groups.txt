@@ -55,3 +55,4 @@ sales_team.group_sale_salesman_all_leads
 hr_timesheet.group_hr_timesheet_approver
 sales_team.group_sale_salesman
 hr_timesheet.group_hr_timesheet_user
+mass_mailing.group_mass_mailing_user

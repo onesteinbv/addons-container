@@ -41,12 +41,12 @@ def main(env, email, group_file, group):
         # Assign groups
         for group_xml_id in groups:
             group_record = env.ref(group_xml_id, raise_if_not_found=False)
-            if group_record:
+            if group_record and not customer_user.has_group(group_xml_id):
                 group_ids.append(group_record.id)
-            else:
+            elif not group_record:
                 click.echo(click.style("Group `%s` doesn't exists" % group_xml_id, fg="red"))
         customer_user.write({
-            "groups_id": [(6, 0, group_ids)]
+            "groups_id": [(4, group_id) for group_id in group_ids]
         })
     else:
         click.echo("Customer user doesn't exists", err=True)
