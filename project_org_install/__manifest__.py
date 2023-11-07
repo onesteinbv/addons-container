@@ -13,7 +13,6 @@
 
         # Base
         'project',
-        #'stock_account',
 
         # Community
         #'web_widget_dropdown_dynamic',

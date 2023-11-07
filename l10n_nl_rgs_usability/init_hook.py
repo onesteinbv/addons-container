@@ -25,6 +25,29 @@ def post_init_hook(cr, _):
     if main_company and main_company.chart_template_id != rgs and not rgs.existing_accounting(main_company):
         rgs._load(main_company)
 
+        # Installing stock_account will create 2 ir.property property_stock_account_output_categ_id and property_stock_account_input_categ_id for the
+        # main_company. Somehow if this module is installed it removes the ir.model.data.
+        # This is just a fix to make sure updating stock_account doesn't fail
+        # Ensure xml ids
+        # TODO: Fix properly
+        xml_ids = [
+            ("stock_account", "property_stock_account_output_categ_id"),
+            ("stock_account", "property_stock_account_input_categ_id")
+        ]
+        for xml_id in xml_ids:
+            ir_property = env.ref("%s.%s" % (xml_id[0], xml_id[1]), False)
+            if ir_property:
+                continue
+            env["ir.model.data"].create({
+                "res_id": env["ir.property"].search([
+                    ("name", "=", xml_id[1]), ("company_id", "=", main_company.id), ("res_id", "=", False)
+                ]),
+                "model": "ir.property",
+                "name": xml_id[1],
+                "module": xml_id[0],
+                "noupdate": True
+            })
+
     # Archive the cash basis tax journal
     journals = env['account.journal'].search([])
     for journal in journals.filtered(lambda j: j.code == "CABA"):
