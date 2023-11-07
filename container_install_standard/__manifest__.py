@@ -100,6 +100,8 @@
         # THIRD-PARTY
         "mollie_account_sync",
         "payment_mollie_official",
+        "partner_external_map",
+        "mass_mailing",
     ],
     "data": [],
     "application": True,

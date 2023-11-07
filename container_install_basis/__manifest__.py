@@ -100,9 +100,10 @@
         # THIRD-PARTY
         "mollie_account_sync",
         "payment_mollie_official",
+        "partner_external_map",
+        "mass_mailing",
 
-        "multi_company_disable"
-
+        "multi_company_disable",
     ],
     "data": [
         # "data/res.users.role.csv",  # TODO disabled for now
