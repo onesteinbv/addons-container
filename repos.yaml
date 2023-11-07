@@ -1,12 +1,11 @@
 ./odoo:
     defaults:
-        depth: 20
+        depth: 1000
     remotes:
         odoo: https://github.com/odoo/odoo.git
     merges:
-        -
-            remote: odoo
-            ref: ef6f903dac4d1ca94d2c480e7f93239897397d1d
+        - remote: odoo
+          ref: ef6f903dac4d1ca94d2c480e7f93239897397d1d
         - odoo refs/pull/140913/head
 
 # onestein
