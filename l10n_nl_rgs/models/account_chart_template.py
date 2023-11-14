@@ -192,6 +192,7 @@ class AccountChartTemplate(models.Model):
         all_journals = self.env['account.journal'].search([
             ('company_id', '=', company.id),
         ])
+        accrual_journal = all_journals.filtered(lambda j: j.code == "ACCR")
 
         for group_template in group_templates:
             group = all_groups.filtered(lambda g: g.referentiecode == group_template.referentiecode)
@@ -209,6 +210,8 @@ class AccountChartTemplate(models.Model):
                 accounts = group.get_all_account_ids()
                 for account in accounts:
                     account.allowed_journal_ids |= journals
+                    if accrual_journal and account.account_type == "asset_prepayments":
+                        account.allowed_journal_ids |= accrual_journal
 
     def get_allowed_account_journals_based_on_type(self, all_journals, type_list):
         return all_journals.filtered(lambda j: j.type in type_list)
