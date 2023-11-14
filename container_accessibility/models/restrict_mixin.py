@@ -14,7 +14,8 @@ class RestrictMixin(models.AbstractModel):
         if (
             not self.env.user.is_restricted_user() or
             self.env.context.get("no_restrict", False) or
-            self.env.su
+            self.env.su or
+            not self  # Deleting / writing empty recordsets
         ):
             return
         restrict_domain = self._get_restrict_domain()
