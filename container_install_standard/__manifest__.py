@@ -33,6 +33,7 @@
         "sale_purchase_stock",
 
         # Extra security
+        "auth_oidc",
         "container_accessibility",
 
         # Accountancy
