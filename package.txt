@@ -77,6 +77,7 @@ addons-generic/website_two_steps_share_technical
 addons-third-party/mollie_account_sync
 addons-third-party/mollie_subscription_ept
 addons-third-party/payment_mollie_official
+oca/auth_oidc
 oca/account_asset_management
 oca/account_spread_cost_revenue
 oca/account_banking_mandate

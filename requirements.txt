@@ -6,3 +6,4 @@ openupgradelib
 astor
 zxcvbn
 odfpy
+python-jose
