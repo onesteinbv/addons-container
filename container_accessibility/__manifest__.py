@@ -9,7 +9,8 @@
         "website",
         "payment",
         "base_menu_visibility_restriction",
-        "auth_oidc"
+        "auth_oidc",
+        "hr"
     ],
     "data": [
         "security/res_groups.xml",

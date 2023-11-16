@@ -2,7 +2,7 @@ from lxml import etree
 from odoo import _, api, fields, models, Command
 from odoo.osv import expression
 from odoo.tools import config
-from odoo.exceptions import UserError
+from odoo.exceptions import UserError, AccessError
 from odoo.addons.auth_signup.models.res_users import SignupError
 from odoo.tools.misc import ustr
 
@@ -70,6 +70,12 @@ class ResUsers(models.Model):
 
     def write(self, vals):
         res = super().write(vals)
+        # Disallow changing default access rights (for now)
+        # Changing groups in the default_user will change the groups in all internal users
+        if self.env.ref("base.default_user") in self and self.env.user.is_restricted_user():
+            raise AccessError(
+                _("Access denied to change default user")
+            )
         if not self.env.context.get("no_group_force"):
             self._force_groups()
         if "active" in vals and vals["active"] and self._get_user_limit():  # If trying to activate / unarchive a user
