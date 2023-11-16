@@ -35,7 +35,6 @@ base.group_multi_currency
 website.group_multi_website
 hr_recruitment.group_hr_recruitment_user
 hr.group_hr_user
-base_onboarding.onboarding_group
 sale_management.group_sale_order_template
 account.group_account_readonly
 container_accessibility.group_restricted
