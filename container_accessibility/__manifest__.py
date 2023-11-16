@@ -8,7 +8,8 @@
         "web_tour",
         "website",
         "payment",
-        "base_menu_visibility_restriction"
+        "base_menu_visibility_restriction",
+        "auth_oidc"
     ],
     "data": [
         "security/res_groups.xml",

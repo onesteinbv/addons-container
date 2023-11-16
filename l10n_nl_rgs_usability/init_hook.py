@@ -25,30 +25,6 @@ def post_init_hook(cr, _):
     if main_company and main_company.chart_template_id != rgs and not rgs.existing_accounting(main_company):
         rgs._load(main_company)
 
-        # Installing stock_account will create ir.property property_stock_account_output_categ_id and property_stock_account_input_categ_id for the
-        # main_company. Somehow if this module is installed it removes the ir.model.data or ir.property. (in rgs._load(main_company) -> self.generate_properties())
-        # See: accounts/chart_template.py in def _load(self, company) it deletes ir.property
-        # This is a core issue it can also be triggered by creating a database installing stock_account installing belgium coa switch to it, and update stock_account
-
-        # TODO: Fix in core
-        xml_ids = [
-            ("stock_account", "property_stock_account_output_categ_id"),
-            ("stock_account", "property_stock_account_input_categ_id")
-        ]
-        for xml_id in xml_ids:
-            ir_property = env.ref("%s.%s" % (xml_id[0], xml_id[1]), False)
-            if ir_property:
-                continue
-            env["ir.model.data"].create({
-                "res_id": env["ir.property"].search([
-                    ("name", "=", xml_id[1]), ("company_id", "=", main_company.id), ("res_id", "=", False)
-                ]),
-                "model": "ir.property",
-                "name": xml_id[1],
-                "module": xml_id[0],
-                "noupdate": True
-            })
-
     # Archive the cash basis tax journal
     journals = env['account.journal'].search([])
     for journal in journals.filtered(lambda j: j.code == "CABA"):
