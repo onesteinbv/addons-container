@@ -17,7 +17,6 @@
         "account_banking_sepa_direct_debit",
         "account_banking_mandate",
         "account_invoice_constraint_chronology",
-        "account_fiscal_year_auto_create",
         "account_financial_report",
         "account_spread_cost_revenue",
     ],
