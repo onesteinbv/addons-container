@@ -139,7 +139,6 @@
         'account_banking_sepa_credit_transfer',
         'account_banking_sepa_direct_debit',
         'account_fiscal_position_vat_check',
-        'account_fiscal_year',
         'account_invoice_constraint_chronology',
         'account_journal_lock_date',
         'account_lock_date_update',

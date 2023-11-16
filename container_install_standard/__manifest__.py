@@ -37,7 +37,6 @@
 
         # Accountancy
         "account_fiscal_position_vat_check",
-        "account_fiscal_year",
         "account_invoice_constraint_chronology",
         "account_journal_lock_date",
         "account_lock_date_update",
@@ -60,7 +59,6 @@
         "account_statement_import_camt54",
         "account_statement_import_file_reconcile_oca",
         "account_period_auto_create",
-        "account_fiscal_year_auto_create",
         "account_statement_import_online_ponto",
         "account_move_line_attachment_preview",
 

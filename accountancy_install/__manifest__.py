@@ -32,7 +32,6 @@
         'account_asset_management',
         'account_spread_cost_revenue',
         'account_fiscal_position_vat_check',
-        'account_fiscal_year',
         'account_invoice_constraint_chronology',
         'account_journal_lock_date',
         'account_lock_date_update',

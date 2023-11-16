@@ -57,8 +57,6 @@ def post_init_hook(cr, _):
 
     companies = env["res.company"].search([])
     for company in companies:
-        # Create fiscal year for current year
-        company._create_fiscal_year_for_current_year()
         # Verify VAT Numbers set to True
         company.vat_check_vies = True
         # Create Direct debit in payment mode
