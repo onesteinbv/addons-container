@@ -3,6 +3,8 @@ from odoo import _, api, fields, models, Command
 from odoo.osv import expression
 from odoo.tools import config
 from odoo.exceptions import UserError
+from odoo.addons.auth_signup.models.res_users import SignupError
+from odoo.tools.misc import ustr
 
 
 class ResUsers(models.Model):
@@ -101,3 +103,36 @@ class ResUsers(models.Model):
             )
 
         return super()._search(args, offset, limit, order, count, access_rights_uid)
+
+    @api.model
+    def _auth_oauth_signin(self, provider, validation, params):
+        provider_record = self.env["auth.oauth.provider"].sudo().browse(provider)
+        if provider_record.private:
+            self = self.with_context(
+                provider_private=True
+            )
+        return super(ResUsers, self)._auth_oauth_signin(provider, validation, params)
+
+    def _create_user_from_template(self, values):
+        # Maybe: inherit get_param (ir.config_parameter) instead because this is much redundancy 🤢
+        if self.env.context.get("provider_private", False):
+            template_user = self.env.ref("base.user_admin")
+            if not values.get("login"):
+                raise ValueError(_("Signup: no login given for new user"))
+            if not values.get("partner_id") and not values.get("name"):
+                raise ValueError(_('Signup: no name or partner given for new user'))
+            values["active"] = True
+            try:
+                with self.env.cr.savepoint():
+                    return template_user.with_context(no_reset_password=True).copy(values)
+            except Exception as e:
+                raise SignupError(ustr(e))
+
+        return super()._create_user_from_template(values)
+
+    @api.model
+    def _get_signup_invitation_scope(self):
+        # Trick the system into thinking uninvited singups (Free sign up) are allowed (just for support / private oauth providers)
+        if self.env.context.get("provider_private", False):
+            return "b2c"
+        return super()._get_signup_invitation_scope()
