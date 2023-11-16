@@ -5,3 +5,4 @@ from . import restrict_mixin
 from . import ir_module_module
 from . import payment_provider
 from . import res_config_settings
+from . import oauth_provider
