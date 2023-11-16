@@ -127,7 +127,6 @@ class ResUsers(models.Model):
                     return template_user.with_context(no_reset_password=True).copy(values)
             except Exception as e:
                 raise SignupError(ustr(e))
-
         return super()._create_user_from_template(values)
 
     @api.model
