@@ -16,7 +16,7 @@ class IrMailServer(models.Model):
                    smtp_debug=False, smtp_session=None):
         mail_server = self.sudo().browse(mail_server_id)  # Sudo?
         if mail_server.private and not self.env.context.get("allow_private_mail_server", False):
-            raise AccessError(_("You're not allowed to use a private mail server for this email"))
+            raise AccessError(_("Please configure an outgoing email server."))
         return super().send_email(
             message, mail_server_id, smtp_server, smtp_port,
             smtp_user, smtp_password, smtp_encryption,
