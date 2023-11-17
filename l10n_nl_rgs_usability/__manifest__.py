@@ -19,6 +19,7 @@
         "account_invoice_constraint_chronology",
         "account_financial_report",
         "account_spread_cost_revenue",
+        "sale",
     ],
     'data': [
         'security/ir_sequence_security.xml',
@@ -29,6 +30,7 @@
         'views/account_onboarding_templates.xml',
         'views/account_journal_dashboard.xml',
         'views/account_move_view.xml',
+        'views/sale_order.xml',
         'views/menuitems.xml',
     ],
     'demo': [
