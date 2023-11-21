@@ -524,8 +524,41 @@
     <record id="btw_verk_0" model="account.tax.template">
         <field name="sequence">15</field>
         <field name="chart_template_id" ref="l10nnl_rgs_chart_template"/>
-        <field name="name">Verkopen - BTW verlegd</field>
-        <field name="description">BTW verlegd</field>
+        <field name="name">Verkopen - BTW verlegd Producten</field>
+        <field name="description">BTW verlegd Producten</field>
+        <field eval="0" name="amount"/>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="tax_scope">consu</field>
+        <field name="tax_group_id" ref="l10n_nl.tax_group_0"/>
+        <field name="invoice_repartition_line_ids" eval="[(5,0,0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1e')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5,0,0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1e')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+    </record>
+    <record id="btw_verk_0_d" model="account.tax.template">
+        <field name="sequence">15</field>
+        <field name="chart_template_id" ref="l10nnl_rgs_chart_template"/>
+        <field name="name">Verkopen - BTW verlegd Diensten</field>
+        <field name="description">BTW verlegd Diensten</field>
         <field eval="0" name="amount"/>
         <field name="amount_type">percent</field>
         <field name="type_tax_use">sale</field>
