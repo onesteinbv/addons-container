@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record model="ir.ui.view" id="spreadsheet_spreadsheet_form_view">
+        <field name="inherit_id" ref="spreadsheet_oca.spreadsheet_spreadsheet_form_view" />
+        <field name="model">spreadsheet.spreadsheet</field>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='data']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>
+
+

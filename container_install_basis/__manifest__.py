@@ -84,6 +84,7 @@
         'base_customer_user',
         'base_onboarding',
         "spreadsheet_dashboard_oca",
+        "spreadsheet_oca_ux",
         "partner_country_default_nl",
 
         # Timesheets
