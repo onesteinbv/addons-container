@@ -1,8 +1,10 @@
-from odoo import models
+from odoo import fields, models
 
 
 class ResConfigSettings(models.TransientModel):
     _inherit = "res.config.settings"
+
+    module_auth_oauth = fields.Boolean(readonly=True)
 
     def execute(self):
         return super(

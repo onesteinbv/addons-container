@@ -4,6 +4,7 @@
     "version": "16.0.1.0.0",
     "depends": [
         "base",
+        "base_setup",
         "privacy_lookup",
         "web_tour",
         "website",
