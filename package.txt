@@ -25,6 +25,7 @@ account_statement_import_online_ponto_log
 digest_disable
 multi_company_disable
 container_accessibility
+
 addons-generic/account_period_auto_create
 addons-generic/base_debug_disabled
 addons-generic/base_import_debranding
@@ -179,6 +180,7 @@ oca/report_xlsx
 oca/report_xlsx_helper
 oca/spreadsheet_dashboard_oca
 oca/spreadsheet_oca
+oca/session_db
 oca/web_help
 oca/web_no_bubble
 oca/web_responsive
