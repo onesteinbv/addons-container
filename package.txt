@@ -18,6 +18,7 @@ l10n_nl_rgs_usability
 l10n_nl_rgs_mis_report
 membership_accessibility
 services_org_install
+spreadsheet_oca_ux
 trade_org_install
 university_org_install
 account_statement_import_online_ponto_log
@@ -178,6 +179,10 @@ oca/report_xlsx
 oca/report_xlsx_helper
 oca/spreadsheet_dashboard_oca
 oca/spreadsheet_oca
+oca/session_db
+oca/server_environment
+oca/fs_attachment
+oca/fs_storage
 oca/web_help
 oca/web_no_bubble
 oca/web_responsive
