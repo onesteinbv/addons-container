@@ -15,7 +15,7 @@ def main(env):
         ("stock_account", "property_stock_account_output_categ_id"),
         ("stock_account", "property_stock_account_input_categ_id")
     ]
-    main_company = env.ref('base.main_company', False)
+    main_company = env.ref("base.main_company", False)
     if not main_company:  # Not sure if main company can be deleted
         return
     for xml_id in xml_ids:
@@ -31,3 +31,7 @@ def main(env):
             "module": xml_id[0],
             "noupdate": True
         })
+
+
+if __name__ == '__main__':
+    main()
