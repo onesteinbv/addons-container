@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
     <record
+        id="auditlog_rule_res_users"
+        model="auditlog.rule"
+        context="{'auditlog_allow_crud': True}"
+    >
+        <field name="name">Users</field>
+        <field name="model_id" ref="base.model_res_users" />
+        <field name="log_type">full</field>
+        <field name="log_write" eval="True" />
+        <field name="log_unlink" eval="True" />
+        <field name="log_create" eval="True" />
+        <field name="private" eval="True" />
+    </record>
+
+    <record
         id="auditlog_rule_res_bank_account"
         model="auditlog.rule"
         context="{'auditlog_allow_crud': True}"
@@ -15,6 +29,6 @@
     </record>
 
     <function model="auditlog.rule" name="subscribe" context="{'auditlog_allow_crud': True}">
-        <function eval="[[('id', 'in', [ref('auditlog_rule_res_bank_account')]), ('state', '=', 'draft')]]" model="auditlog.rule" name="search"/>
+        <function eval="[[('id', 'in', [ref('auditlog_rule_res_bank_account'), ref('auditlog_rule_res_users')]), ('state', '=', 'draft')]]" model="auditlog.rule" name="search"/>
     </function>
 </odoo>

@@ -111,6 +111,11 @@ class PaperFormat(models.Model):
     _inherit = ["report.paperformat", "container.restrict.mixin"]
 
 
+class AuditlogRule(models.Model):
+    _name = "auditlog.rule"
+    _inherit = ["auditlog.rule", "container.restrict.mixin"]
+
+
 class IrUiView(models.Model):
     _name = "ir.ui.view"
     _inherit = ["ir.ui.view", "container.restrict.mixin"]
