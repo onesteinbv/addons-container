@@ -9,7 +9,6 @@ def main(env):
     # main_company. Somehow if this module is installed it removes the ir.model.data or ir.property. (in rgs._load(main_company) -> self.generate_properties())
     # See: accounts/chart_template.py in def _load(self, company) it deletes ir.property
     # This is a core issue it can also be triggered by creating a database installing stock_account installing belgium coa switch to it, and update stock_account
-
     # TODO: Fix in core, can be remove when done on existing databases
     xml_ids = [
         ("stock_account", "property_stock_account_output_categ_id"),
