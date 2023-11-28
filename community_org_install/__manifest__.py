@@ -174,6 +174,7 @@
         'report_xlsx_helper',
         #'web_widget_dropdown_dynamic',
         'web_responsive',
+        'web_responsive_disable_form_attachment_preview',
         'website_odoo_debranding',
         'hr_expense_remove_mobile_link',
 
