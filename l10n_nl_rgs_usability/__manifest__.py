@@ -27,6 +27,7 @@
         'data/res_groups.xml',
         'data/account_chart_template.xml',
         'views/account_journal_views.xml',
+        'views/account_account_views.xml',
         'views/account_onboarding_templates.xml',
         'views/account_journal_dashboard.xml',
         'views/account_move_view.xml',
