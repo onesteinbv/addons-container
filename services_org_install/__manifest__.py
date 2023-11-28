@@ -9,6 +9,7 @@
     'website': 'https://www.onestein.nl',
     'license': 'AGPL-3',
     'depends': [
+        'account_configuration',
         'container_install_standard',
 
         # Base
