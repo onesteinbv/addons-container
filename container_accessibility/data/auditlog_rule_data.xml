@@ -11,6 +11,7 @@
         <field name="log_write" eval="True" />
         <field name="log_unlink" eval="True" />
         <field name="log_create" eval="True" />
+        <field name="log_export_data" eval="True" />
         <field name="private" eval="True" />
     </record>
 
@@ -25,10 +26,49 @@
         <field name="log_write" eval="True" />
         <field name="log_unlink" eval="True" />
         <field name="log_create" eval="True" />
+        <field name="log_export_data" eval="True" />
         <field name="private" eval="True" />
     </record>
 
+    <record
+        id="auditlog_rule_res_partner"
+        model="auditlog.rule"
+        context="{'auditlog_allow_crud': True}"
+    >
+        <field name="name">Contacts</field>
+        <field name="model_id" ref="base.model_res_partner" />
+        <field name="log_type">full</field>
+        <field name="log_write" eval="False" />
+        <field name="log_unlink" eval="False" />
+        <field name="log_create" eval="False" />
+        <field name="log_export_data" eval="True" />
+        <field name="private" eval="True" />
+    </record>
+
+    <record
+        id="auditlog_rule_hr_employee"
+        model="auditlog.rule"
+        context="{'auditlog_allow_crud': True}"
+    >
+        <field name="name">Employees</field>
+        <field name="model_id" ref="hr.model_hr_employee" />
+        <field name="log_type">full</field>
+        <field name="log_write" eval="False" />
+        <field name="log_unlink" eval="False" />
+        <field name="log_create" eval="False" />
+        <field name="log_export_data" eval="True" />
+        <field name="private" eval="True" />
+    </record>
+
+    <function model="auditlog.rule" name="unsubscribe" context="{'auditlog_allow_crud': True}">
+        <function
+            eval="[[('private', '=', True), ('state', '=', 'subscribed')]]"
+            model="auditlog.rule" name="search"
+        />
+    </function>
+
     <function model="auditlog.rule" name="subscribe" context="{'auditlog_allow_crud': True}">
-        <function eval="[[('id', 'in', [ref('auditlog_rule_res_bank_account'), ref('auditlog_rule_res_users')]), ('state', '=', 'draft')]]" model="auditlog.rule" name="search"/>
+        <function eval="[[('private', '=', True), ('state', '=', 'draft')]]"
+                  model="auditlog.rule" name="search"/>
     </function>
 </odoo>
