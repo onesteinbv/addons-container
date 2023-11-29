@@ -86,6 +86,8 @@
         "spreadsheet_dashboard_oca",
         "spreadsheet_oca_ux",
         "partner_country_default_nl",
+        "fs_storage",
+        "fs_attachment",
 
         # Timesheets
         "hr_timesheet_sheet",
