@@ -11,6 +11,7 @@
     "author": "Onestein BV, André Schenkels",
     "website": "https://www.onestein.nl",
     "depends": [
+        'account_configuration',
         'container_install_standard',
 
         # PREOCA?

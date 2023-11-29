@@ -8,9 +8,11 @@
     </record>
 
     <!-- By default, allow all users to make use of analytic accounts -->
+    <!-- Disabled. Requested by Thijs
     <record id="base.group_user" model="res.groups">
         <field name="implied_ids" eval="[(4, ref('analytic.group_analytic_accounting'))]"/>
     </record>
+    -->
 
     <!-- By default, allow all users to add a bank number -->
     <record id="base.group_user" model="res.groups">
