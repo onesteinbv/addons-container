@@ -7,3 +7,5 @@ astor
 zxcvbn
 odfpy
 python-jose
+fsspec
+fsspec[s3]
