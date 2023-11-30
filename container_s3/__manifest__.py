@@ -7,6 +7,8 @@
         "fs_storage",
     ],
     "data": [
-        "data/fs_storage_data.xml"
+        "data/fs_storage_data.xml",
+        "data/ir_config_parameter_data.xml",
+        "data/ir_attachment_data.xml"
     ],
 }

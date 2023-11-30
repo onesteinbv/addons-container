@@ -10,6 +10,11 @@
     "version": "16.0.1.0.0",
     "license": "AGPL-3",
     "depends": [
+        # File storage
+        "fs_storage",
+        "fs_attachment",
+        # "container_s3",
+
         "sale_management",
         "website",
         "website_payment",
@@ -86,9 +91,6 @@
         "spreadsheet_dashboard_oca",
         "spreadsheet_oca_ux",
         "partner_country_default_nl",
-        "fs_storage",
-        "fs_attachment",
-        "container_s3",
 
         # Timesheets
         "hr_timesheet_sheet",
