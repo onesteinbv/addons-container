@@ -12,7 +12,9 @@
         "base_menu_visibility_restriction",
         "auth_oidc",
         "hr",
-        "auditlog"
+        "auditlog",
+        "server_environment",
+        "fs_storage"
     ],
     "data": [
         "security/res_groups.xml",

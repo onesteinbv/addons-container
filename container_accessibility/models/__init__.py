@@ -11,3 +11,4 @@ from . import auditlog_log
 from . import auditlog_log_line
 from . import auditlog_autovacuum
 from . import ir_cron
+from . import server_config

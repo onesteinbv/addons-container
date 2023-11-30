@@ -53,4 +53,12 @@
     <record id="privacy_lookup.privacy_menu" model="ir.ui.menu">
         <field name="excluded_group_ids" eval="[Command.link(ref('container_accessibility.group_restricted'))]"/>
     </record>
+
+    <record id="fs_storage.menu_storage" model="ir.ui.menu">
+        <field name="excluded_group_ids" eval="[Command.link(ref('container_accessibility.group_restricted'))]"/>
+    </record>
+
+    <record id="server_environment.menu_server_show_config" model="ir.ui.menu">
+        <field name="excluded_group_ids" eval="[Command.link(ref('container_accessibility.group_restricted'))]"/>
+    </record>
 </odoo>
