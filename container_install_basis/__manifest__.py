@@ -88,6 +88,7 @@
         "partner_country_default_nl",
         "fs_storage",
         "fs_attachment",
+        "container_s3",
 
         # Timesheets
         "hr_timesheet_sheet",
