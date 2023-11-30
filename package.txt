@@ -42,6 +42,7 @@ addons-generic/membership_origin
 addons-generic/membership_section
 addons-generic/partner_country_default_nl
 addons-generic/project_role_members
+addons-generic/web_responsive_disable_form_attachment_preview
 addons-generic/website_mass_mailing_membership_section
 addons-generic/website_membership_registration
 addons-generic/website_membership_section
