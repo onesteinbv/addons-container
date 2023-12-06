@@ -13,12 +13,13 @@
             <field name="days_calc">False</field>
             <field name="asset_product_item">False</field>
             <field name="method">linear</field>
-            <field name="method_number">60</field>
+            <field name="method_number">5</field>
             <field name="method_period">month</field>
             <field name="method_time">year</field>
             <field name="method_progress_factor">0.3</field>
             <field name="note"></field>
             <field name="chart_template_id" ref="l10n_nl_rgs.l10nnl_rgs_chart_template"/>
+            <field name="prorata">True</field>
         </record>
     
       
@@ -32,12 +33,13 @@
             <field name="days_calc">False</field>
             <field name="asset_product_item">False</field>
             <field name="method">linear</field>
-            <field name="method_number">240</field>
+            <field name="method_number">20</field>
             <field name="method_period">month</field>
             <field name="method_time">year</field>
             <field name="method_progress_factor">0.3</field>
             <field name="note"></field>
             <field name="chart_template_id" ref="l10n_nl_rgs.l10nnl_rgs_chart_template"/>
+            <field name="prorata">True</field>
         </record>
     
       
@@ -51,12 +53,13 @@
             <field name="days_calc">False</field>
             <field name="asset_product_item">False</field>
             <field name="method">linear</field>
-            <field name="method_number">120</field>
+            <field name="method_number">10</field>
             <field name="method_period">month</field>
             <field name="method_time">year</field>
             <field name="method_progress_factor">0.3</field>
             <field name="note"></field>
             <field name="chart_template_id" ref="l10n_nl_rgs.l10nnl_rgs_chart_template"/>
+            <field name="prorata">True</field>
         </record>
     
       
@@ -70,12 +73,13 @@
             <field name="days_calc">False</field>
             <field name="asset_product_item">False</field>
             <field name="method">linear</field>
-            <field name="method_number">60</field>
+            <field name="method_number">5</field>
             <field name="method_period">month</field>
             <field name="method_time">year</field>
             <field name="method_progress_factor">0.3</field>
             <field name="note"></field>
             <field name="chart_template_id" ref="l10n_nl_rgs.l10nnl_rgs_chart_template"/>
+            <field name="prorata">True</field>
         </record>
     
       
@@ -89,12 +93,13 @@
             <field name="days_calc">False</field>
             <field name="asset_product_item">False</field>
             <field name="method">linear</field>
-            <field name="method_number">60</field>
+            <field name="method_number">5</field>
             <field name="method_period">month</field>
             <field name="method_time">year</field>
             <field name="method_progress_factor">0.3</field>
             <field name="note"></field>
             <field name="chart_template_id" ref="l10n_nl_rgs.l10nnl_rgs_chart_template"/>
+            <field name="prorata">True</field>
         </record>
     
       
@@ -108,12 +113,13 @@
             <field name="days_calc">False</field>
             <field name="asset_product_item">False</field>
             <field name="method">linear</field>
-            <field name="method_number">60</field>
+            <field name="method_number">5</field>
             <field name="method_period">month</field>
             <field name="method_time">year</field>
             <field name="method_progress_factor">0.3</field>
             <field name="note"></field>
             <field name="chart_template_id" ref="l10n_nl_rgs.l10nnl_rgs_chart_template"/>
+            <field name="prorata">True</field>
         </record>
     
       
@@ -127,12 +133,13 @@
             <field name="days_calc">False</field>
             <field name="asset_product_item">False</field>
             <field name="method">linear</field>
-            <field name="method_number">60</field>
+            <field name="method_number">5</field>
             <field name="method_period">month</field>
             <field name="method_time">year</field>
             <field name="method_progress_factor">0.3</field>
             <field name="note"></field>
             <field name="chart_template_id" ref="l10n_nl_rgs.l10nnl_rgs_chart_template"/>
+            <field name="prorata">True</field>
         </record>
     
       
@@ -146,12 +153,13 @@
             <field name="days_calc">False</field>
             <field name="asset_product_item">False</field>
             <field name="method">linear</field>
-            <field name="method_number">240</field>
+            <field name="method_number">20</field>
             <field name="method_period">month</field>
             <field name="method_time">year</field>
             <field name="method_progress_factor">0.3</field>
             <field name="note"></field>
             <field name="chart_template_id" ref="l10n_nl_rgs.l10nnl_rgs_chart_template"/>
+            <field name="prorata">True</field>
         </record>
     
       
@@ -165,12 +173,13 @@
             <field name="days_calc">False</field>
             <field name="asset_product_item">False</field>
             <field name="method">linear</field>
-            <field name="method_number">120</field>
+            <field name="method_number">10</field>
             <field name="method_period">month</field>
             <field name="method_time">year</field>
             <field name="method_progress_factor">0.3</field>
             <field name="note"></field>
             <field name="chart_template_id" ref="l10n_nl_rgs.l10nnl_rgs_chart_template"/>
+            <field name="prorata">True</field>
         </record>
 
 
@@ -184,12 +193,13 @@
             <field name="days_calc">False</field>
             <field name="asset_product_item">False</field>
             <field name="method">linear</field>
-            <field name="method_number">60</field>
+            <field name="method_number">5</field>
             <field name="method_period">month</field>
             <field name="method_time">year</field>
             <field name="method_progress_factor">0.3</field>
             <field name="note"></field>
             <field name="chart_template_id" ref="l10n_nl_rgs.l10nnl_rgs_chart_template"/>
+            <field name="prorata">True</field>
         </record>
 
 
@@ -203,12 +213,13 @@
             <field name="days_calc">False</field>
             <field name="asset_product_item">False</field>
             <field name="method">linear</field>
-            <field name="method_number">60</field>
+            <field name="method_number">5</field>
             <field name="method_period">month</field>
             <field name="method_time">year</field>
             <field name="method_progress_factor">0.3</field>
             <field name="note"></field>
             <field name="chart_template_id" ref="l10n_nl_rgs.l10nnl_rgs_chart_template"/>
+            <field name="prorata">True</field>
         </record>
    </data>
 </odoo>
