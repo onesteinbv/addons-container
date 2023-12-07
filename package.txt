@@ -186,6 +186,7 @@ oca/session_db
 oca/server_environment
 oca/fs_attachment
 oca/fs_storage
+oca/fs_storage_backup
 oca/web_help
 oca/web_no_bubble
 oca/web_responsive

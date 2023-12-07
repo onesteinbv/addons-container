@@ -13,6 +13,7 @@
         # File storage
         "fs_storage",
         "fs_attachment",
+        "fs_storage_backup",
         # "container_s3",
 
         "sale_management",
