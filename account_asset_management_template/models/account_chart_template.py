@@ -76,6 +76,7 @@ class AccountChartTemplate(models.Model):
                 'method_progress_factor': profile.method_progress_factor,
                 'note': profile.note,
                 'company_id': company.id,
+                'prorata': profile.prorata,
             }
             if profile.journal_code:
                 journal = self.env['account.journal'].search([
