@@ -17,7 +17,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1e')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1e_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
@@ -28,7 +28,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1e')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1e_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
@@ -50,26 +50,26 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1b')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1b_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_payable_l'),
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1b')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1b_tag')],
                 }),
             ]"/>
         <field name="refund_repartition_line_ids" eval="[(5,0,0),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1b')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1b_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_payable_l'),
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1b')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1b_tag')],
                 }),
             ]"/>
     </record>
@@ -87,26 +87,26 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1a')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1a_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_payable_h'),
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1a')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1a_tag')],
                 }),
             ]"/>
         <field name="refund_repartition_line_ids" eval="[(5,0,0),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1a')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1a_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_payable_h'),
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1a')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1a_tag')],
                 }),
             ]"/>
     </record>
@@ -127,26 +127,26 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1b')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1b_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_payable_l'),
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1b')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1b_tag')],
                 }),
             ]"/>
         <field name="refund_repartition_line_ids" eval="[(5,0,0),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1b')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1b_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_payable_l'),
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1b')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1b_tag')],
                 }),
             ]"/>
     </record>
@@ -165,26 +165,26 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1a')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1a_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_payable_h'),
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1a')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1a_tag')],
                 }),
             ]"/>
         <field name="refund_repartition_line_ids" eval="[(5,0,0),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1a')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1a_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_payable_h'),
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1a')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1a_tag')],
                 }),
             ]"/>
     </record>
@@ -204,7 +204,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1e')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1e_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
@@ -215,7 +215,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1e')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1e_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
@@ -237,26 +237,26 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1b')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1b_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_payable_l_d'),
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1b')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1b_tag')],
                 }),
             ]"/>
         <field name="refund_repartition_line_ids" eval="[(5,0,0),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1b')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1b_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_payable_l_d'),
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1b')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1b_tag')],
                 }),
             ]"/>
     </record>
@@ -274,26 +274,26 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1a')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1a_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_payable_h_d'),
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1a')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1a_tag')],
                 }),
             ]"/>
         <field name="refund_repartition_line_ids" eval="[(5,0,0),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1a')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1a_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_payable_h_d'),
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1a')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1a_tag')],
                 }),
             ]"/>
     </record>
@@ -314,26 +314,26 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1b')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1b_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_payable_l_d'),
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1b')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1b_tag')],
                 }),
             ]"/>
         <field name="refund_repartition_line_ids" eval="[(5,0,0),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1b')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1b_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_payable_l_d'),
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1b')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1b_tag')],
                 }),
             ]"/>
     </record>
@@ -352,26 +352,26 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1a')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1a_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_payable_h_d'),
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1a')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1a_tag')],
                 }),
             ]"/>
         <field name="refund_repartition_line_ids" eval="[(5,0,0),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1a')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1a_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_payable_h_d'),
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1a')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_1a_tag')],
                 }),
             ]"/>
     </record>
@@ -396,7 +396,7 @@
                     'factor_percent': 100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_refund_l'),
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_5b')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_5b_tag')],
                 }),
             ]"/>
         <field name="refund_repartition_line_ids" eval="[(5,0,0),
@@ -408,7 +408,7 @@
                     'factor_percent': 100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_refund_l'),
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_5b')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_5b_tag')],
                 }),
             ]"/>
     </record>
@@ -432,7 +432,7 @@
                     'factor_percent': 100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_refund_l'),
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_5b')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_5b_tag')],
                 }),
             ]"/>
         <field name="refund_repartition_line_ids" eval="[(5,0,0),
@@ -444,7 +444,7 @@
                     'factor_percent': 100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_refund_l'),
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_5b')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_5b_tag')],
                 }),
             ]"/>
     </record>
@@ -467,7 +467,7 @@
                     'factor_percent': 100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_refund_h'),
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_5b')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_5b_tag')],
                 }),
             ]"/>
         <field name="refund_repartition_line_ids" eval="[(5,0,0),
@@ -479,7 +479,7 @@
                     'factor_percent': 100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_refund_h'),
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_5b')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_5b_tag')],
                 }),
             ]"/>
     </record>
@@ -503,7 +503,7 @@
                     'factor_percent': 100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_refund_h'),
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_5b')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_5b_tag')],
                 }),
             ]"/>
         <field name="refund_repartition_line_ids" eval="[(5,0,0),
@@ -515,7 +515,7 @@
                     'factor_percent': 100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_refund_h'),
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_5b')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_5b_tag')],
                 }),
             ]"/>
     </record>
@@ -535,7 +535,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1e')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1e_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
@@ -546,7 +546,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1e')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1e_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
@@ -568,7 +568,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1e')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1e_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
@@ -579,7 +579,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1e')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1e_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
@@ -600,38 +600,38 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_2a')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_2a_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_payable_v'),
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_2a')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_2a_tag')],
                 }),
                 (0,0, {
                     'factor_percent': -100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_payable_v'),
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_5b')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_5b_tag')],
                 }),
             ]"/>
         <field name="refund_repartition_line_ids" eval="[(5,0,0),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_2a')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_2a_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_payable_v'),
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_2a')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_2a_tag')],
                 }),
                 (0,0, {
                     'factor_percent': -100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_payable_v'),
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_5b')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_5b_tag')],
                 }),
             ]"/>
     </record>
@@ -651,38 +651,38 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_4b')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_4b_tag')],
                 }),
                 (0,0, {
                     'factor_percent': -100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_payable_l_eu'),
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_4b')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_4b_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_refund_l_eu'),
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_5b')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_5b_tag')],
                 }),
             ]"/>
         <field name="refund_repartition_line_ids" eval="[(5,0,0),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_4b')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_4b_tag')],
                 }),
                 (0,0, {
                     'factor_percent': -100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_payable_l_eu'),
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_4b')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_4b_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_refund_l_eu'),
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_5b')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_5b_tag')],
                 }),
             ]"/>
     </record>
@@ -699,38 +699,38 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_4b')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_4b_tag')],
                 }),
                 (0,0, {
                     'factor_percent': -100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_payable_h_eu'),
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_4b')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_4b_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_refund_h_eu'),
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_5b')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_5b_tag')],
                 }),
             ]"/>
         <field name="refund_repartition_line_ids" eval="[(5,0,0),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_4b')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_4b_tag')],
                 }),
                 (0,0, {
                     'factor_percent': -100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_payable_h_eu'),
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_4b')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_4b_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_refund_h_eu'),
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_5b')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_5b_tag')],
                 }),
             ]"/>
     </record>
@@ -818,38 +818,38 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_4a')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_4a_tag')],
                 }),
                 (0,0, {
                     'factor_percent': -100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_payable_l_non_eu'),
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_4a')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_4a_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_refund_l_non_eu'),
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_5b')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_5b_tag')],
                 }),
             ]"/>
         <field name="refund_repartition_line_ids" eval="[(5,0,0),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_4a')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_4a_tag')],
                 }),
                 (0,0, {
                     'factor_percent': -100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_payable_l_non_eu'),
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_4a')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_4a_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_refund_l_non_eu'),
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_5b')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_5b_tag')],
                 }),
             ]"/>
     </record>
@@ -866,38 +866,38 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_4a')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_4a_tag')],
                 }),
                 (0,0, {
                     'factor_percent': -100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_payable_h_non_eu'),
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_4a')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_4a_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_refund_h_non_eu'),
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_5b')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_5b_tag')],
                 }),
             ]"/>
         <field name="refund_repartition_line_ids" eval="[(5,0,0),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_4a')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_4a_tag')],
                 }),
                 (0,0, {
                     'factor_percent': -100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_payable_h_non_eu'),
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_4a')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_4a_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
                     'account_id': ref('vat_refund_h_non_eu'),
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_5b')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_btw_5b_tag')],
                 }),
             ]"/>
     </record>
@@ -917,7 +917,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_3a')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_3a_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
@@ -928,7 +928,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_3a')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_3a_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
@@ -981,7 +981,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_3c')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_3c_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
@@ -992,7 +992,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_3c')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_3c_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
@@ -1015,7 +1015,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1e')],
+                    'plus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1e_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
@@ -1026,7 +1026,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1e')],
+                    'minus_report_expression_ids': [ref('l10n_nl.tax_report_rub_1e_tag')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
