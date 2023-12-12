@@ -32,6 +32,7 @@ addons-generic/base_debug_disabled
 addons-generic/base_import_debranding
 addons-generic/base_company_management
 addons-generic/base_municipality
+addons-generic/gitlab
 addons-generic/mass_mailing_membership_committee
 addons-generic/mass_mailing_membership_section
 addons-generic/mass_mailing_help
