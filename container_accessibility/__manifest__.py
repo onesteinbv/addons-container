@@ -14,7 +14,8 @@
         "hr",
         "auditlog",
         "server_environment",
-        "fs_storage"
+        "fs_storage",
+        "fs_storage_backup",
     ],
     "data": [
         "security/res_groups.xml",
