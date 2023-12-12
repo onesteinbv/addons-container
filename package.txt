@@ -178,6 +178,7 @@ oca/project_task_add_very_high
 oca/project_task_default_stage
 oca/project_timeline
 oca/project_timeline_hr_timesheet
+oca/queue_job
 oca/remove_odoo_enterprise
 oca/report_qr
 oca/report_qweb_parameter
