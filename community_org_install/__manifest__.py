@@ -156,6 +156,7 @@
         'account_statement_import_camt',
         'account_statement_import_online',
         'account_statement_import_online_ponto',
+        'attachment_preview_remove_preview_button',
         'currency_rate_update',
         'date_range',
         'l10n_nl_bank',
@@ -175,7 +176,7 @@
         'report_xlsx_helper',
         #'web_widget_dropdown_dynamic',
         'web_responsive',
-        'web_responsive_disable_form_attachment_preview',
+        # 'web_responsive_disable_form_attachment_preview',
         'website_odoo_debranding',
         'hr_expense_remove_mobile_link',
 
