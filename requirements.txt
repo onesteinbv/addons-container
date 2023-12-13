@@ -10,5 +10,5 @@ python-jose
 fsspec
 fsspec[s3]
 python-slugify
-PyGithub
+PyGithub==1.59.1
 python-gitlab
