@@ -69,6 +69,22 @@
         "account_statement_import_online_ponto",
         "account_move_line_attachment_preview",
 
+        # Accountancy extra
+        "account_configuration",
+        "account_invoice_overdue_reminder",
+        "account_move_line_tax_editable",
+        "account_move_tier_validation",
+        "account_statement_import_online_paypal",
+        "base_municipality",
+        "base_tier_validation",
+        "contract",
+        "contract_payment_mode",
+        "currency_rate_update",
+        "l10n_nl_bsn",
+        "mollie_subscription_ept",
+        "payment_custom",
+        "payment_demo",
+
         # Dutch localization
         "l10n_nl_rgs",
         "l10n_nl_rgs_usability",
