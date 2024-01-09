@@ -1,0 +1,2 @@
+# Does this work?
+addons-generic https://github.com/onesteinbv/addons-generic 16.0
