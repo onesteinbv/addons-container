@@ -41,6 +41,7 @@ addons-generic/membership_activity
 addons-generic/membership_activity_cde
 addons-generic/membership_activity_github
 addons-generic/membership_activity_gitlab
+addons-generic/membership_activity_project_type
 addons-generic/membership_committee
 addons-generic/membership_hr
 addons-generic/membership_hr_recruitment
@@ -204,4 +205,5 @@ oca/website_analytics_matomo
 oca/website_odoo_debranding
 oca/website_snippet_dynamic_link
 oca/website_snippet_openstreetmap
+oca/project_type
 design-themes/*
