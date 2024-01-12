@@ -43,6 +43,7 @@ addons-generic/membership_activity_github
 addons-generic/membership_activity_gitlab
 addons-generic/membership_activity_project_type
 addons-generic/membership_committee
+addons-generic/membership_contribution
 addons-generic/membership_hr
 addons-generic/membership_hr_recruitment
 addons-generic/membership_mollie_subscription
