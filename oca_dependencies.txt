@@ -1,3 +1,0 @@
-# Does this work?
-addons-generic https://github.com/onesteinbv/addons-generic 16.0
-addons-oca https://github.com/onesteinbv/addons-oca 16.0
