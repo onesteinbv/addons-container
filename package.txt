@@ -47,6 +47,7 @@ addons-generic/membership_hr
 addons-generic/membership_hr_recruitment
 addons-generic/membership_mollie_subscription
 addons-generic/membership_origin
+addons-generic/membership_report
 addons-generic/membership_section
 addons-generic/partner_country_default_nl
 addons-generic/project_role_members
