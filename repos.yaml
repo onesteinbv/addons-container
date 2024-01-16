@@ -1,6 +1,6 @@
 ./odoo:
     defaults:
-        depth: 1000
+        depth: 10
     remotes:
         odoo: https://github.com/odoo/odoo.git
     merges:
