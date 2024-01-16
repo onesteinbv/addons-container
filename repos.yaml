@@ -10,7 +10,7 @@
 # onestein
 ./addons-generic:
     defaults:
-        depth: 20
+        depth: 10
     remotes:
         onestein: git@github.com:onesteinbv/addons-generic.git
     merges:
