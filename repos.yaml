@@ -9,6 +9,8 @@
 
 # onestein
 ./addons-generic:
+    defaults:
+        depth: 20
     remotes:
         onestein: git@github.com:onesteinbv/addons-generic.git
     merges:
@@ -25,6 +27,8 @@
 
 # oca
 ./oca:
+    defaults:
+        depth: 20
     remotes:
         onestein: git@github.com:onesteinbv/addons-oca.git
     merges:
@@ -32,6 +36,8 @@
 
 # third-party
 ./addons-third-party:
+    defaults:
+        depth: 20
     remotes:
         onestein: git@github.com:onesteinbv/addons-third-party.git
     merges:
