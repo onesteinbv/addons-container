@@ -55,22 +55,22 @@
         <field name="tax_dest_id" ref="btw_X3"/>
     </record>
     <!-- VAT on buying from outside the EU -->
-    <record id="position_tax_extracom_9" model="account.fiscal.position.tax.template">
+    <record id="position_tax_extracom_9_buy" model="account.fiscal.position.tax.template">
         <field name="position_id" ref="fiscal_position_template_non_eu"/>
         <field name="tax_src_id" ref="btw_9_buy"/>
         <field name="tax_dest_id" ref="btw_E1_9"/>
     </record>
-    <record id="position_tax_extracom_7" model="account.fiscal.position.tax.template">
+    <record id="position_tax_extracom_7_buy" model="account.fiscal.position.tax.template">
         <field name="position_id" ref="fiscal_position_template_non_eu"/>
         <field name="tax_src_id" ref="btw_21_buy"/>
         <field name="tax_dest_id" ref="btw_E2"/>
     </record>
-    <record id="position_tax_extracom_9_incl" model="account.fiscal.position.tax.template">
+    <record id="position_tax_extracom_9_incl_buy" model="account.fiscal.position.tax.template">
         <field name="position_id" ref="fiscal_position_template_non_eu"/>
         <field name="tax_src_id" ref="btw_9_buy_incl"/>
         <field name="tax_dest_id" ref="btw_E1_9"/>
     </record>
-    <record id="position_tax_extracom_7_incl" model="account.fiscal.position.tax.template">
+    <record id="position_tax_extracom_7_incl_buy" model="account.fiscal.position.tax.template">
         <field name="position_id" ref="fiscal_position_template_non_eu"/>
         <field name="tax_src_id" ref="btw_21_buy_incl"/>
         <field name="tax_dest_id" ref="btw_E2"/>
