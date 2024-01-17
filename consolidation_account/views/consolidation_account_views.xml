@@ -5,7 +5,7 @@
         <field name="name">consolidation.account.tree</field>
         <field name="model">consolidation.account</field>
         <field name="arch" type="xml">
-            <tree string="Consolidation Accounts">
+            <tree>
                 <field name="chart_id"/>
                 <field name="name"/>
                 <field name="code"/>
