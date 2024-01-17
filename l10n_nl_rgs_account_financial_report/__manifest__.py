@@ -6,7 +6,7 @@
     "version": "16.0.1.0.0",
     "category": "Accounting/Localizations/Account Charts",
     "author": "Onestein",
-    "website": "http://www.onestein.eu",
+    "website": "https://www.onestein.eu",
     "depends": ["l10n_nl_rgs", "account_financial_report"],
     "data": ["views/account_group_views.xml"],
     "post_init_hook": "post_init_hook",

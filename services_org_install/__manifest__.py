@@ -6,7 +6,7 @@
     "category": "Technical Settings",
     "version": "16.0.1.0.0",
     "author": "Onestein",
-    "website": "https://www.onestein.nl",
+    "website": "https://www.onestein.eu",
     "license": "AGPL-3",
     "depends": [
         "account_configuration",

@@ -10,6 +10,7 @@
     "version": "16.0.1.0.0",
     "category": "Membership",
     "author": "Onestein",
+    "website": "https://www.onestein.eu",
     "license": "AGPL-3",
     "application": False,
     "installable": True,

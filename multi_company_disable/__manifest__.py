@@ -1,6 +1,8 @@
 {
     "name": "Disable Multi-company",
     "summary": "Remove multi-company features for all users",
+    "author": "Onestein",
+    "website": "https://www.onestein.eu",
     "category": "Technical",
     "version": "16.0.1.0.0",
     "license": "AGPL-3",

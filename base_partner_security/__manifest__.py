@@ -5,7 +5,7 @@
     "name": "Partner Security",
     "summary": "Adds a specific group that allows the user to see (read) the Admin partner",
     "author": "Onestein",
-    "website": "https://onestein.nl",
+    "website": "https://www.onestein.eu",
     "category": "Technical Settings",
     "version": "16.0.1.0.0",
     "license": "AGPL-3",

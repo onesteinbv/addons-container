@@ -6,7 +6,7 @@
     "version": "16.0.1.0.0",
     "category": "Accounting & Finance",
     "author": "Onestein",
-    "website": "http://www.onestein.eu",
+    "website": "https://www.onestein.eu",
     "depends": [
         "account_asset_management",
     ],

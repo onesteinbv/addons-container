@@ -7,7 +7,7 @@
     "category": "Accounting & Finance",
     "license": "AGPL-3",
     "author": "Onestein BV",
-    "website": "https://www.onestein.nl",
+    "website": "https://www.onestein.eu",
     "depends": [
         # BASE
         "account",

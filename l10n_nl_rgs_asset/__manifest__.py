@@ -6,7 +6,7 @@
     "version": "16.0.1.0.0",
     "category": "Accounting/Localizations/Account Charts",
     "author": "Onestein",
-    "website": "http://www.onestein.eu",
+    "website": "https://www.onestein.eu",
     "depends": ["l10n_nl_rgs", "account_asset_management_template"],
     "data": [
         "data/account_chart_template.xml",

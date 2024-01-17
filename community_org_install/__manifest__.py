@@ -6,7 +6,7 @@
     "category": "Technical Settings",
     "version": "16.0.1.0.0",
     "author": "Onestein",
-    "website": "https://www.onestein.nl",
+    "website": "https://www.onestein.eu",
     "license": "AGPL-3",
     "depends": [
         "account_configuration",
@@ -172,7 +172,7 @@
         "report_wkhtmltopdf_param",
         "report_xlsx",
         "report_xlsx_helper",
-        #'web_widget_dropdown_dynamic',
+        # 'web_widget_dropdown_dynamic',
         "web_responsive",
         # 'web_responsive_disable_form_attachment_preview',
         "website_odoo_debranding",

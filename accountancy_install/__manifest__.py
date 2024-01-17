@@ -9,7 +9,7 @@
     "category": "Accounting & Finance",
     "license": "AGPL-3",
     "author": "Onestein BV, André Schenkels",
-    "website": "https://www.onestein.nl",
+    "website": "https://www.onestein.eu",
     "depends": [
         "account_configuration",
         "container_install_standard",

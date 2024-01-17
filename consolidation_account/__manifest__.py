@@ -5,6 +5,7 @@
     "version": "16.0.1.0.0",
     "license": "AGPL-3",
     "author": "Onestein BV, André Schenkels",
+    "website": "https://www.onestein.eu",
     "category": "Accounting",
     "summary": "",
     "depends": ["account"],
