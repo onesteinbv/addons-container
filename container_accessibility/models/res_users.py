@@ -149,7 +149,7 @@ class ResUsers(models.Model):
                         values
                     )
             except Exception as e:
-                raise SignupError(ustr(e))
+                raise SignupError(ustr(e)) from e
         return super()._create_user_from_template(values)
 
     @api.model
