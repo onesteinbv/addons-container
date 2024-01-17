@@ -8,9 +8,9 @@ import click_odoo
 @click.option("--email")
 @click.option("--coc")
 @click.option("--city")
-@click.option("--zip")
+@click.option("--zip", "zip_code")  # To not override inbuilt zip
 @click.option("--street")
-def main(env, name, email, coc, city, zip, street):
+def main(env, name, email, coc, city, zip_code, street):
     click.echo("Update company information...")
     required_modules = env["ir.module.module"]
     required_modules += env.ref("base.module_l10n_nl")
@@ -36,7 +36,7 @@ def main(env, name, email, coc, city, zip, street):
         "company_registry": coc,
         "l10n_nl_kvk": coc,
         "city": city,
-        "zip": zip,
+        "zip": zip_code,
         "street": street,
         "updated_by_script": True,
     }
