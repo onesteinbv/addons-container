@@ -116,7 +116,8 @@ class ConsolidationGroup(models.Model):
             self._adapt_parent_consolidation_group()
         return res
 
-    def unlink(self):
+    @api.ondelete(at_uninstall=False)
+    def _unlink_with_correct_parenting(self):
         for record in self:
             account_ids = self.env["consolidation.account"].search(
                 [("group_id", "=", record.id)]
@@ -127,7 +128,6 @@ class ConsolidationGroup(models.Model):
                 [("parent_id", "=", record.id)]
             )
             children_ids.write({"parent_id": record.parent_id.id})
-        super(ConsolidationGroup, self).unlink()
 
     def _adapt_accounts_for_consolidation_groups(self, account_ids=None):
         """Ensure consistency between accounts and consolidation groups.

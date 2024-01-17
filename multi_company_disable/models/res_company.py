@@ -9,5 +9,6 @@ class ResCompany(models.Model):
     def create(self, vals_list):
         raise AccessError(_("Multi-company is disabled"))
 
-    def unlink(self):
+    @api.ondelete(at_uninstall=False)
+    def _unlink_prevent(self):
         raise AccessError(_("Multi-company is disabled"))
