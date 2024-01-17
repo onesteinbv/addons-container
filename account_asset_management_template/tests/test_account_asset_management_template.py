@@ -37,8 +37,8 @@ class TestAssetTemplate(TransactionCase):
         """When try_loading a COA, the related asset groups and asset profiles are
         loaded from the templates"""
         # Load asset group templates and asset profile templates
-        self._load("test_files", "account_asset_group_template.xml")
-        self._load("test_files", "account_asset_profile_template.xml")
+        self._load("tests", "account_asset_group_template.xml")
+        self._load("tests", "account_asset_profile_template.xml")
 
         # The asset groups and asset profiles are empty
         group_count = self.env["account.asset.group"].search_count(

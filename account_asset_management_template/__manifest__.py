@@ -1,6 +1,7 @@
 # Copyright 2023 Onestein (<http://www.onestein.eu>)
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
+# pylint: disable=file-not-used
 {
     "name": "Asset management template",
     "version": "16.0.1.0.0",
