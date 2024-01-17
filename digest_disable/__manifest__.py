@@ -6,7 +6,5 @@
     "depends": [
         "digest",
     ],
-    "data": [
-        "data/ir_cron_data.xml"
-    ],
+    "data": ["data/ir_cron_data.xml"],
 }

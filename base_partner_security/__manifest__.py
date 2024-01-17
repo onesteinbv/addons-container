@@ -9,12 +9,7 @@
     "category": "Technical Settings",
     "version": "16.0.1.0.0",
     "license": "AGPL-3",
-    "depends": [
-        "base",
-        "hr"
-    ],
-    "data": [
-        "security/res_groups.xml"
-    ],
-    "installable": False  # deprecated remove after next update
+    "depends": ["base", "hr"],
+    "data": ["security/res_groups.xml"],
+    "installable": False,  # deprecated remove after next update
 }

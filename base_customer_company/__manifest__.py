@@ -6,6 +6,5 @@
     "author": "Onestein",
     "website": "https://www.onestein.nl",
     "depends": ["base"],
-    "data": [
-    ]
+    "data": [],
 }

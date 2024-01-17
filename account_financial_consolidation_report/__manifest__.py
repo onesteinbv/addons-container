@@ -14,8 +14,8 @@
         "consolidation_account",
     ],
     "data": [
-        'view/consolidation_account_view.xml',
+        "view/consolidation_account_view.xml",
         # 'report/templates/trial_balance.xml',
-        'wizard/trial_balance_wizard_view.xml',
+        "wizard/trial_balance_wizard_view.xml",
     ],
 }

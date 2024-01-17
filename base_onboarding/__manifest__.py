@@ -8,21 +8,14 @@
     "category": "Extra Tools",
     "version": "16.0.1.0.0",
     "license": "AGPL-3",
-    "depends": [
-        "website",
-        "multi_step_wizard",
-        "web",
-        "mail"
-    ],
+    "depends": ["website", "multi_step_wizard", "web", "mail"],
     "data": [
         "security/res_groups.xml",
         "security/ir.model.access.csv",
         "wizards/onboarding_wizard_view.xml",
-        "views/base_document_layout_view.xml"
+        "views/base_document_layout_view.xml",
     ],
-    "demo": [
-        "demo/res_groups_demo.xml"
-    ],
+    "demo": ["demo/res_groups_demo.xml"],
     "assets": {
         "web.assets_backend": [
             "base_onboarding/static/src/js/backend.js",

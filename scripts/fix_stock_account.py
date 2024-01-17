@@ -12,7 +12,7 @@ def main(env):
     # TODO: Fix in core, can be remove when done on existing databases
     xml_ids = [
         ("stock_account", "property_stock_account_output_categ_id"),
-        ("stock_account", "property_stock_account_input_categ_id")
+        ("stock_account", "property_stock_account_input_categ_id"),
     ]
     main_company = env.ref("base.main_company", False)
     if not main_company:  # Not sure if main company can be deleted
@@ -21,16 +21,22 @@ def main(env):
         ir_property = env.ref("%s.%s" % (xml_id[0], xml_id[1]), False)
         if ir_property:
             continue
-        env["ir.model.data"].create({
-            "res_id": env["ir.property"].search([
-                ("name", "=", xml_id[1]), ("company_id", "=", main_company.id), ("res_id", "=", False)
-            ]),
-            "model": "ir.property",
-            "name": xml_id[1],
-            "module": xml_id[0],
-            "noupdate": True
-        })
+        env["ir.model.data"].create(
+            {
+                "res_id": env["ir.property"].search(
+                    [
+                        ("name", "=", xml_id[1]),
+                        ("company_id", "=", main_company.id),
+                        ("res_id", "=", False),
+                    ]
+                ),
+                "model": "ir.property",
+                "name": xml_id[1],
+                "module": xml_id[0],
+                "noupdate": True,
+            }
+        )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

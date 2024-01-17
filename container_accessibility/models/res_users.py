@@ -1,10 +1,12 @@
 from lxml import etree
-from odoo import _, api, fields, models, Command
+
+from odoo import Command, _, api, models
+from odoo.exceptions import AccessError, UserError
 from odoo.osv import expression
 from odoo.tools import config
-from odoo.exceptions import UserError, AccessError
-from odoo.addons.auth_signup.models.res_users import SignupError
 from odoo.tools.misc import ustr
+
+from odoo.addons.auth_signup.models.res_users import SignupError
 
 
 class ResUsers(models.Model):
@@ -17,9 +19,7 @@ class ResUsers(models.Model):
     @api.model
     def _get_limit_included_user_count(self):
         restricted_group = self.env.ref("container_accessibility.group_restricted")
-        count = self.search([
-            ("groups_id", "in", restricted_group.ids)
-        ], count=True)
+        count = self.search([("groups_id", "in", restricted_group.ids)], count=True)
         return count
 
     def _check_user_limit_exceeded(self):
@@ -64,21 +64,24 @@ class ResUsers(models.Model):
                 if user.has_group(group):
                     continue
                 group_record = self.env.ref(group)
-                user.sudo().with_context(no_group_force=True).write({
-                    "groups_id": [Command.link(group_record.id)]
-                })
+                user.sudo().with_context(no_group_force=True).write(
+                    {"groups_id": [Command.link(group_record.id)]}
+                )
 
     def write(self, vals):
         res = super().write(vals)
         # Disallow changing default access rights (for now)
         # Changing groups in the default_user will change the groups in all internal users
-        if self.env.ref("base.default_user") in self and self.env.user.is_restricted_user():
-            raise AccessError(
-                _("Access denied to change default user")
-            )
+        if (
+            self.env.ref("base.default_user") in self
+            and self.env.user.is_restricted_user()
+        ):
+            raise AccessError(_("Access denied to change default user"))
         if not self.env.context.get("no_group_force"):
             self._force_groups()
-        if "active" in vals and vals["active"] and self._get_user_limit():  # If trying to activate / unarchive a user
+        if (
+            "active" in vals and vals["active"] and self._get_user_limit()
+        ):  # If trying to activate / unarchive a user
             self._check_user_limit_exceeded()
         return res
 
@@ -92,7 +95,15 @@ class ResUsers(models.Model):
         return res
 
     @api.model
-    def _search(self, args, offset=0, limit=None, order=None, count=False, access_rights_uid=None):
+    def _search(
+        self,
+        args,
+        offset=0,
+        limit=None,
+        order=None,
+        count=False,
+        access_rights_uid=None,
+    ):
         # Purely for UX purposes
         model = self.with_user(access_rights_uid) if access_rights_uid else self
 
@@ -103,7 +114,13 @@ class ResUsers(models.Model):
                     [
                         "|",
                         ("share", "=", True),
-                        ("groups_id", "in", self.env.ref("container_accessibility.group_restricted").ids)
+                        (
+                            "groups_id",
+                            "in",
+                            self.env.ref(
+                                "container_accessibility.group_restricted"
+                            ).ids,
+                        ),
                     ],
                 ]
             )
@@ -114,9 +131,7 @@ class ResUsers(models.Model):
     def _auth_oauth_signin(self, provider, validation, params):
         provider_record = self.env["auth.oauth.provider"].sudo().browse(provider)
         if provider_record.private:
-            self = self.with_context(
-                provider_private=True
-            )
+            self = self.with_context(provider_private=True)
         return super(ResUsers, self)._auth_oauth_signin(provider, validation, params)
 
     def _create_user_from_template(self, values):
@@ -126,11 +141,13 @@ class ResUsers(models.Model):
             if not values.get("login"):
                 raise ValueError(_("Signup: no login given for new user"))
             if not values.get("partner_id") and not values.get("name"):
-                raise ValueError(_('Signup: no name or partner given for new user'))
+                raise ValueError(_("Signup: no name or partner given for new user"))
             values["active"] = True
             try:
                 with self.env.cr.savepoint():
-                    return template_user.with_context(no_reset_password=True).copy(values)
+                    return template_user.with_context(no_reset_password=True).copy(
+                        values
+                    )
             except Exception as e:
                 raise SignupError(ustr(e))
         return super()._create_user_from_template(values)
@@ -143,4 +160,6 @@ class ResUsers(models.Model):
         return super()._get_signup_invitation_scope()
 
     def action_reset_password(self):
-        return super(ResUsers, self.with_context(allow_private_mail_server=True)).action_reset_password()
+        return super(
+            ResUsers, self.with_context(allow_private_mail_server=True)
+        ).action_reset_password()

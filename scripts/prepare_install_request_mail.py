@@ -11,5 +11,5 @@ def main(env, email):
     mail_template.email_to = email
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

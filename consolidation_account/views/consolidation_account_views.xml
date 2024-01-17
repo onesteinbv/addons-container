@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <odoo>
-    
+
     <record id="consolidation_account_view_tree" model="ir.ui.view">
         <field name="name">consolidation.account.tree</field>
         <field name="model">consolidation.account</field>

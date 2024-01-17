@@ -1,18 +1,18 @@
 # Copyright 2023 Onestein BV
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 
-from odoo import _, api, fields, models
+from odoo import api, fields, models
 
 
 class TrialBalanceReportWizard(models.TransientModel):
     _inherit = "trial.balance.report.wizard"
 
     schema_type = fields.Selection(
-        [('normal', 'Normal Accounts'), ('consolidation', 'Consolidation Accounts')],
+        [("normal", "Normal Accounts"), ("consolidation", "Consolidation Accounts")],
         required=True,
-        default='consolidation'
+        default="consolidation",
     )
-    consolidation_chart_id = fields.Many2one('consolidation.chart')
+    consolidation_chart_id = fields.Many2one("consolidation.chart")
     consolidation_account_ids = fields.Many2many(
         comodel_name="consolidation.account", string="Filter consolidation accounts"
     )
@@ -34,7 +34,9 @@ class TrialBalanceReportWizard(models.TransientModel):
     def _compute_unaffected_earnings_consolidation_account(self):
         account_type = "equity_unaffected"
         for record in self:
-            record.unaffected_earnings_consolidation_account = self.env["consolidation.account"].search(
+            record.unaffected_earnings_consolidation_account = self.env[
+                "consolidation.account"
+            ].search(
                 [
                     ("chart_id", "=", record.consolidation_chart_id.id),
                     ("account_type", "=", account_type.id),
@@ -55,13 +57,15 @@ class TrialBalanceReportWizard(models.TransientModel):
                 [("code", ">=", start_range), ("code", "<=", end_range)]
             )
             if self.consolidation_chart_id:
-                self.consolidation_account_ids = self.consolidation_account_ids.filtered(
-                    lambda a: a.chart_id == self.consolidation_chart_id
+                self.consolidation_account_ids = (
+                    self.consolidation_account_ids.filtered(
+                        lambda a: a.chart_id == self.consolidation_chart_id
+                    )
                 )
 
     @api.onchange("consolidation_chart_id", "schema_type")
     def onchange_consolidation_chart_id(self):
-        if self.schema_type == 'consolidation':
+        if self.schema_type == "consolidation":
             account_type = "equity_unaffected"
             count = self.env["consolidation.account"].search_count(
                 [
@@ -79,12 +83,14 @@ class TrialBalanceReportWizard(models.TransientModel):
             if not self.consolidation_chart_id:
                 return res
             else:
-                res["domain"]["consolidation_account_ids"] += [("chart_id", "=", self.consolidation_chart_id.id)]
+                res["domain"]["consolidation_account_ids"] += [
+                    ("chart_id", "=", self.consolidation_chart_id.id)
+                ]
             return res
 
     @api.onchange("company_id", "schema_type")
     def onchange_company_id(self):
-        if self.schema_type != 'consolidation':
+        if self.schema_type != "consolidation":
             return super(TrialBalanceReportWizard, self).onchange_company_id()
 
     @api.onchange("receivable_accounts_only", "payable_accounts_only")
@@ -98,16 +104,20 @@ class TrialBalanceReportWizard(models.TransientModel):
                 domain += [("internal_group", "=", "receivable")]
             elif self.payable_accounts_only:
                 domain += [("internal_group", "=", "payable")]
-            self.consolidation_account_ids = self.env["consolidation.account"].search(domain)
+            self.consolidation_account_ids = self.env["consolidation.account"].search(
+                domain
+            )
         else:
             self.consolidation_account_ids = None
         return res
 
     def _prepare_report_trial_balance(self):
         res = super(TrialBalanceReportWizard, self)._prepare_report_trial_balance()
-        res.update({
-            'schema_type': self.schema_type,
-            'chart_id': self.consolidation_chart_id.id,
-            'consolidation_account_ids': self.consolidation_account_ids.ids or [],
-        })
+        res.update(
+            {
+                "schema_type": self.schema_type,
+                "chart_id": self.consolidation_chart_id.id,
+                "consolidation_account_ids": self.consolidation_account_ids.ids or [],
+            }
+        )
         return res

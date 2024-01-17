@@ -8,7 +8,9 @@ class ConsolidationGroup(models.Model):
     _inherit = "consolidation.group"
 
     group_child_ids = fields.One2many(
-        comodel_name="consolidation.group", inverse_name="parent_id", string="Child Groups"
+        comodel_name="consolidation.group",
+        inverse_name="parent_id",
+        string="Child Groups",
     )
     level = fields.Integer(compute="_compute_level", recursive=True)
     account_ids = fields.One2many(

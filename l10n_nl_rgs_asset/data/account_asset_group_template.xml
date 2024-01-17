@@ -7,12 +7,12 @@
             <field name="code">01</field>
             <field name="chart_template_id" ref="l10n_nl_rgs.l10nnl_rgs_chart_template"/>
     </record>
-    
+
     <record id="account_asset_group_02" model="account.asset.group.template">
             <field name="name">Materiële vaste activa</field>
             <field name="code">02</field>
             <field name="chart_template_id" ref="l10n_nl_rgs.l10nnl_rgs_chart_template"/>
     </record>
-    
+
    </data>
 </odoo>
