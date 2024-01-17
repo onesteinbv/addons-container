@@ -54,7 +54,7 @@ class OnboardingWizard(models.TransientModel):
         related="website_id.social_instagram", readonly=False
     )
     theme_module_ids = fields.Many2many(
-        comodel_name="ir.module.module", compute="_get_theme_module_ids"
+        comodel_name="ir.module.module", compute="_compute_theme_module_ids"
     )
 
     def _reopen_self(self):
@@ -62,7 +62,7 @@ class OnboardingWizard(models.TransientModel):
         action["name"] = _("Welcome to Odoo")
         return action
 
-    def _get_theme_module_ids(self):
+    def _compute_theme_module_ids(self):
         for wizard in self:
             wizard.theme_module_ids = self.env["ir.module.module"].search(
                 [
