@@ -13,15 +13,15 @@
         # Base
         "project",
         # Community
-        #'web_widget_dropdown_dynamic',
+        # 'web_widget_dropdown_dynamic',
         "web_responsive",
         "website_odoo_debranding",
         # Onestein
-        #'base_municipality',
-        #'mass_mailing_membership_committee',
+        # 'base_municipality',
+        # 'mass_mailing_membership_committee',
         # 3rd-Party
-        #'nextcloud_odoo_sync',
-        #'nextcloud_calendar_instance_per_user',
+        # 'nextcloud_odoo_sync',
+        # 'nextcloud_calendar_instance_per_user',
     ],
     "data": [],
 }

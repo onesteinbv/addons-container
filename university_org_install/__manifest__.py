@@ -132,7 +132,7 @@
         "account_statement_import_online_ponto",
         "partner_external_map",
         "project_role",
-        #'web_widget_dropdown_dynamic',
+        # 'web_widget_dropdown_dynamic',
         "web_responsive",
         "website_odoo_debranding",
         "hr_expense_remove_mobile_link",

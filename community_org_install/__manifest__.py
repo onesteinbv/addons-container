@@ -231,8 +231,8 @@
         "l10n_nl_rgs_account_financial_report",
         "l10n_nl_rgs_asset",
         "l10n_nl_rgs_mis_report",
-        #'nextcloud_odoo_sync',
-        #'nextcloud_calendar_instance_per_user',
+        # 'nextcloud_odoo_sync',
+        # 'nextcloud_calendar_instance_per_user',
     ],
     "data": [],
 }
