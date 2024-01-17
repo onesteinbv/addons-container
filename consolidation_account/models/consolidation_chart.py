@@ -21,7 +21,6 @@ class ConsolidationChart(models.Model):
     )
     consolidation_accounts_count = fields.Integer(
         compute="_compute_consolidation_accounts_count",
-        string="Consolidation Accounts Count",
     )
 
     @api.depends("consolidation_account_ids")

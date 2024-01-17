@@ -8,7 +8,8 @@ class AccountAccount(models.Model):
     _inherit = "account.account"
     _order = "is_off_balance, sort_code, code, company_id"
 
-    referentiecode = fields.Char(string="Referentiecode")
+    # FIXME: This should be English with Dutch translation
+    referentiecode = fields.Char()
     sort_code = fields.Char(string="Sorting code")
 
     def write(self, vals):

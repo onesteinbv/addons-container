@@ -21,7 +21,7 @@ class AccountAssetProfileTemplate(models.Model):
     account_expense_depreciation_id = fields.Many2one(
         string="Depr. Expense Account", comodel_name="account.account.template"
     )
-    journal_code = fields.Char(string="Journal Code")
+    journal_code = fields.Char()
     group_ids = fields.Many2many(
         comodel_name="account.asset.group.template",
         relation="account_asset_profile_template_group_rel",

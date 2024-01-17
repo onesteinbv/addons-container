@@ -9,8 +9,9 @@ class AccountGroup(models.Model):
     _inherit = "account.group"
     _order = "sort_code, code, code_prefix_start"
 
-    referentiecode = fields.Char(string="Referentiecode")
-    code = fields.Char(string="Code")
+    # FIXME: This should be English with Dutch translation
+    referentiecode = fields.Char()
+    code = fields.Char()
     sort_code = fields.Char(string="Sorting code")
 
     # From account financial report

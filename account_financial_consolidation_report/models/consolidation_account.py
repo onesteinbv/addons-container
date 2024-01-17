@@ -46,7 +46,6 @@ class ConsolidationAccount(models.Model):
             ("expense", "Expense"),
             ("off_balance", "Off Balance"),
         ],
-        string="Internal Group",
         readonly=True,
         compute="_compute_internal_group",
         store=True,

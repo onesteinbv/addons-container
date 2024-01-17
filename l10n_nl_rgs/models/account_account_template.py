@@ -8,5 +8,6 @@ from odoo import fields, models
 class AccountAccountTemplate(models.Model):
     _inherit = "account.account.template"
 
-    referentiecode = fields.Char(string="Referentiecode")
+    # FIXME: This should be English with Dutch translation
+    referentiecode = fields.Char()
     sort_code = fields.Char(string="Sorting code")

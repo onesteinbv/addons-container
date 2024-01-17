@@ -8,8 +8,9 @@ from odoo import api, fields, models
 class AccountGroup(models.Model):
     _inherit = "account.group"
 
-    referentiecode = fields.Char(string="Referentiecode")
-    code = fields.Char(string="Code")
+    # FIXME: This should be English with Dutch translation
+    referentiecode = fields.Char()
+    code = fields.Char()
     compute_account_ids = fields.Many2many(
         "account.account",
         compute="_compute_group_accounts",
