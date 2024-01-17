@@ -104,7 +104,7 @@ class TrialBalanceReport(models.AbstractModel):
                 consolidation_account
                 and consolidation_account in consolidation_accounts
             ):
-                if not consolidation_account.id in new_accounts_data:
+                if consolidation_account.id not in new_accounts_data:
                     new_accounts_data[consolidation_account.id] = {
                         "id": consolidation_account.id,
                         "code": consolidation_account.code,
@@ -218,7 +218,7 @@ class TrialBalanceReport(models.AbstractModel):
                 consolidation_account
                 and consolidation_account in consolidation_accounts
             ):
-                if not consolidation_account.id in new_total_amount:
+                if consolidation_account.id not in new_total_amount:
                     new_total_amount[consolidation_account.id] = {
                         "initial_balance": 0.0,
                         "credit": 0.0,
