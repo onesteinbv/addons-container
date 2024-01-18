@@ -90,21 +90,26 @@ class AccountChartTemplate(models.Model):
         # This is a core issue it can also be triggered by creating a database installing stock_account installing belgium coa switch to it, and update stock_account
 
         # TODO: Fix in core
-        xml_ids = [
-            ("stock_account", "property_stock_account_output_categ_id"),
-            ("stock_account", "property_stock_account_input_categ_id")
-        ]
-        main_company = self.env.ref('base.main_company', False)
-        for xml_id in xml_ids:
-            ir_property = self.env.ref("%s.%s" % (xml_id[0], xml_id[1]), False)
-            if ir_property:
-                continue
-            self.env["ir.model.data"].create({
-                "res_id": self.env["ir.property"].search([
-                    ("name", "=", xml_id[1]), ("company_id", "=", main_company.id), ("res_id", "=", False)
-                ]),
-                "model": "ir.property",
-                "name": xml_id[1],
-                "module": xml_id[0],
-                "noupdate": True
-            })
+        is_stock_account_module_installed = self.env['ir.module.module'].sudo().search([
+            ('name', '=', 'stock_account'),
+            ('state', '=', 'installed'),
+        ])
+        if is_stock_account_module_installed:
+            xml_ids = [
+                ("stock_account", "property_stock_account_output_categ_id"),
+                ("stock_account", "property_stock_account_input_categ_id")
+            ]
+            main_company = self.env.ref('base.main_company', False)
+            for xml_id in xml_ids:
+                ir_property = self.env.ref("%s.%s" % (xml_id[0], xml_id[1]), False)
+                if ir_property:
+                    continue
+                self.env["ir.model.data"].create({
+                    "res_id": self.env["ir.property"].search([
+                        ("name", "=", xml_id[1]), ("company_id", "=", main_company.id), ("res_id", "=", False)
+                    ]),
+                    "model": "ir.property",
+                    "name": xml_id[1],
+                    "module": xml_id[0],
+                    "noupdate": True
+                })
