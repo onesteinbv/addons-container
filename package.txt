@@ -209,3 +209,4 @@ oca/website_snippet_dynamic_link
 oca/website_snippet_openstreetmap
 oca/project_type
 design-themes/*
+ProjectManagement/*
