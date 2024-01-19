@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <template id="job_filter_by_label" inherit_id="website_hr_recruitment.index" active="False"
+                  name="Filter by Label">
+            <xpath expr="//div[@id='jobs_grid_left']" position="inside">
+                <ul class="nav nav-pills flex-column mb32">
+                    <li class="nav-item"><a
+                            t-attf-href="/jobs#{ '/country/%s' % slug(country_id) if country_id else '' }#{ '/department/%s' % slug(department_id) if department_id else '' }#{ '/office/%s' % office_id if office_id else '' }#{ '/employment_type/%s' % contract_type_id if contract_type_id else '' }#{ '/label/%s' % label_id if label_id else '' }"
+                            t-attf-class="nav-link#{'' if label_id else ' active'}">All labels</a></li>
+                    <t t-foreach="labels" t-as="label">
+                        <li class="nav-item">
+                            <a t-attf-href="/jobs#{ '/country/%s' % slug(country_id) if country_id else '' }#{ '/department/%s' % slug(department_id) if department_id else '' }#{ '/office/%s' % office_id if office_id else '' }#{ '/employment_type/%s' % contract_type_id if contract_type_id else '' }#{ '/label/%s' % label.id if label else '' }"
+                               t-attf-class="nav-link#{' active' if label_id and label_id == label.id else ''}">
+                                <span t-field="label.name"/>
+                            </a>
+                        </li>
+                    </t>
+                </ul>
+            </xpath>
+            <xpath expr="//div[@id='jobs_grid_left']" position="attributes">
+                <attribute name="class">col-lg-3</attribute>
+            </xpath>
+        </template>
+</odoo>

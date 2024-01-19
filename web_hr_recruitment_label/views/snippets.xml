@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="snippet_options" inherit_id="website_hr_recruitment.snippet_options" name="Hr Recruitment Label Snippet Options">
+        <xpath expr="//div[contains(@data-selector,'main:has(.o_website_hr_recruitment_jobs_list)')]" position="inside">
+                        <we-checkbox string="Labels"
+                         data-customize-website-views="website_hr_recruitment_label.job_filter_by_label"
+                         data-no-preview="true"
+                         data-reload="/"/>
+        </xpath>
+    </template>
+</odoo>

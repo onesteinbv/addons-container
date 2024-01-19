@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_job_form_inherit" model="ir.ui.view">
+        <field name="name">hr_recruitment_label.hr_job.form.inherit</field>
+        <field name="model">hr.job</field>
+        <field name="inherit_id" ref="hr.view_hr_job_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='contract_type_id']" position="after">
+                <field name="label_ids" widget="many2many_tags"
+                       options="{'color_field': 'colour'}"/>
+            </xpath>
+        </field>
+    </record>
+    <record id="hr_job_kanban_inherit" model="ir.ui.view">
+        <field name="name">hr_recruitment_label.hr_job.kanban.inherit</field>
+        <field name="model">hr.job</field>
+        <field name="inherit_id" ref="hr_recruitment.view_hr_job_kanban"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='active']" position="after">
+                <field name="label_ids"/>
+            </xpath>
+            <xpath expr="//ul/*[last()]" position="after">
+                <li>
+                    <field name="label_ids"
+                           widget="many2many_tags"
+                           options="{'color_field': 'colour'}"/>
+                </li>
+            </xpath>
+        </field>
+    </record>
+    <record id="hr_job_search_inherit" model="ir.ui.view">
+        <field name="name">hr_recruitment_label.hr_job.search.inherit</field>
+        <field name="model">hr.job</field>
+        <field name="inherit_id" ref="hr.view_job_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='department_id']" position="after">
+                <field name="label_ids"/>
+            </xpath>
+            <xpath expr="//filter[@name='employment_type']" position="after">
+                <filter string="Labels" name="label_ids" domain="[]" context="{'group_by': 'label_ids'}"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

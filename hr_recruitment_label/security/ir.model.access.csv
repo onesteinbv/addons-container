@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_job_label_user,access_hr_job_label_user,hr_recruitment_label.model_hr_job_label,base.group_user,1,0,0,0
+access_hr_job_label_manager,access_hr_job_label_manager,hr_recruitment_label.model_hr_job_label,hr_recruitment.group_hr_recruitment_user,1,1,1,1

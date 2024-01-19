@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+
+        <record id="hr_job_label_tree_view" model="ir.ui.view">
+            <field name="name">hr_recruitment_label.hr_job_label.tree</field>
+            <field name="model">hr.job.label</field>
+            <field name="arch" type="xml">
+                <tree string="Job Labels" editable="top">
+                    <field name="name"/>
+                    <field name="colour" widget="color_picker"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <record id="hr_job_label_search_view" model="ir.ui.view">
+            <field name="name">hr_recruitment_label.hr_job_label.search</field>
+            <field name="model">hr.job.label</field>
+            <field name="arch" type="xml">
+                <search string="ModelTitle">
+                    <field name="name"/>
+                </search>
+            </field>
+        </record>
+
+
+        <record id="hr_job_label_act_window" model="ir.actions.act_window">
+            <field name="name">Labels</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hr.job.label</field>
+            <field name="view_mode">tree</field>
+        </record>
+
+        <menuitem name="Labels"
+                  id="hr_job_label_menu"
+                  parent="hr_recruitment.menu_hr_recruitment_config_jobs"
+                  action="hr_job_label_act_window"/>
+
+    </data>
+</odoo>
