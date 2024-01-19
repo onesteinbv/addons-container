@@ -7,7 +7,7 @@
             <field name="name">hr_recruitment_label.hr_job_label.tree</field>
             <field name="model">hr.job.label</field>
             <field name="arch" type="xml">
-                <tree string="Job Labels" editable="top">
+                <tree editable="top">
                     <field name="name"/>
                     <field name="colour" widget="color_picker"/>
                 </tree>
@@ -19,7 +19,7 @@
             <field name="name">hr_recruitment_label.hr_job_label.search</field>
             <field name="model">hr.job.label</field>
             <field name="arch" type="xml">
-                <search string="ModelTitle">
+                <search string="Job Labels">
                     <field name="name"/>
                 </search>
             </field>
