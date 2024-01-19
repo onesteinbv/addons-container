@@ -9,9 +9,6 @@ on:
       - "16.0"
 
 jobs:
-  pre-commit:
-    runs-on: ubuntu-22.04
-    steps:
   test:
     runs-on: ubuntu-22.04
     container: docker.io/onestein/odoo-ci:16.0
