@@ -27,7 +27,7 @@ jobs:
       - name: Aggregate
         run: gitaggregate -c repos.yaml
       - name: Install external dependencies
-        run: oca_install_addons
+        run: pip3 install -r requirements.txt
       - name: Pack
         run: python3 scripts/pack.py --location . --package-file "package.txt" --destination package
       - name: Run tests
