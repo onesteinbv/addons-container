@@ -98,10 +98,16 @@ class AccountChartTemplate(models.Model):
         # This is a core issue it can also be triggered by creating a database installing stock_account installing belgium coa switch to it, and update stock_account
 
         # TODO: Fix in core
-        is_stock_account_module_installed = self.env['ir.module.module'].sudo().search([
-            ('name', '=', 'stock_account'),
-            ('state', '=', 'installed'),
-        ])
+        is_stock_account_module_installed = (
+            self.env["ir.module.module"]
+            .sudo()
+            .search(
+                [
+                    ("name", "=", "stock_account"),
+                    ("state", "=", "installed"),
+                ]
+            )
+        )
         if is_stock_account_module_installed:
             xml_ids = [
                 ("stock_account", "property_stock_account_output_categ_id"),
