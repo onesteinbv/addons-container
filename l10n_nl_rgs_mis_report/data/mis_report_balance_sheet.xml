@@ -6,7 +6,7 @@
             <field name="style_id" ref="mis_report_style_l10n_nl_rgs_base" />
         </record>
 
-        
+
         <record id="mis_report_kpi_l10n_nl_rgs_balance_sheet_main" model="mis.report.kpi">
             <field name="report_id" ref="mis_report_l10n_nl_rgs_balance_sheet" />
             <field name="type">str</field>
@@ -1416,80 +1416,6 @@
             />
         </record>
 
-
-
-        <!-- 10 Liquide middelen -->
-        <record id="mis_report_kpi_l10n_nl_rgs_balance_sheet_10" model="mis.report.kpi">
-            <field name="report_id" ref="mis_report_l10n_nl_rgs_balance_sheet" />
-            <field name="type">num</field>
-            <field name="compare_method">pct</field>
-            <field name="sequence">700</field>
-            <field name="name">nl_10</field>
-            <field name="description">Liquide middelen</field>
-            <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l2" />
-            <field name="expression">+nl_10_01+nl_10_02+nl_10_03</field>
-        </record>
-        <record
-            id="mis_report_kpi_l10n_nl_rgs_balance_sheet_10_01"
-            model="mis.report.kpi"
-        >
-            <field name="report_id" ref="mis_report_l10n_nl_rgs_balance_sheet" />
-            <field name="type">num</field>
-            <field name="compare_method">pct</field>
-            <field name="sequence">710</field>
-            <field name="name">nl_10_01</field>
-            <field name="description">Kasmiddelen</field>
-            <field
-                name="expression"
-            >+bale[('group_id.code', '=', '1001000')]</field>
-            <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l3" />
-            <field name="auto_expand_accounts">True</field>
-            <field
-                name="auto_expand_accounts_style_id"
-                ref="mis_report_style_l10n_nl_rgs_l4i"
-            />
-        </record>
-        <record
-            id="mis_report_kpi_l10n_nl_rgs_balance_sheet_10_02"
-            model="mis.report.kpi"
-        >
-            <field name="report_id" ref="mis_report_l10n_nl_rgs_balance_sheet" />
-            <field name="type">num</field>
-            <field name="compare_method">pct</field>
-            <field name="sequence">720</field>
-            <field name="name">nl_10_02</field>
-            <field name="description">Tegoeden op bankgirorekeningen</field>
-            <field
-                name="expression"
-            >+bale[('group_id.code', '=', '1002000')]</field>
-            <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l3" />
-            <field name="auto_expand_accounts">True</field>
-            <field
-                name="auto_expand_accounts_style_id"
-                ref="mis_report_style_l10n_nl_rgs_l4i"
-            />
-        </record>
-        <record
-            id="mis_report_kpi_l10n_nl_rgs_balance_sheet_10_03"
-            model="mis.report.kpi"
-        >
-            <field name="report_id" ref="mis_report_l10n_nl_rgs_balance_sheet" />
-            <field name="type">num</field>
-            <field name="compare_method">pct</field>
-            <field name="sequence">730</field>
-            <field name="name">nl_10_03</field>
-            <field name="description">Kruisposten</field>
-            <field
-                name="expression"
-            >+bale[('group_id.code', '=', '1003000')]</field>
-            <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l3" />
-            <field name="auto_expand_accounts">True</field>
-            <field
-                name="auto_expand_accounts_style_id"
-                ref="mis_report_style_l10n_nl_rgs_l4i"
-            />
-        </record>
-
         <!-- Totaal Activa -->
         <record id="mis_report_kpi_l10n_nl_rgs_balance_sheet_activa_total" model="mis.report.kpi">
             <field name="report_id" ref="mis_report_l10n_nl_rgs_balance_sheet" />
@@ -2433,7 +2359,7 @@
                 ref="mis_report_style_l10n_nl_rgs_l4i"
             />
         </record>
-                
+
         <!-- 12 Kortlopende schulden -->
         <record id="mis_report_kpi_l10n_nl_rgs_balance_sheet_12" model="mis.report.kpi">
             <field name="report_id" ref="mis_report_l10n_nl_rgs_balance_sheet" />
@@ -2876,6 +2802,6 @@
             <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l1i" />
             <field name="expression">+nl_05+nl_06+nl_07+nl_08+nl_12</field>
         </record>
-        
+
     </data>
 </odoo>

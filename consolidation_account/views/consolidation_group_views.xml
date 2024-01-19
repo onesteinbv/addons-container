@@ -42,7 +42,7 @@
         <field name="name">consolidation.group.tree</field>
         <field name="model">consolidation.group</field>
         <field name="arch" type="xml">
-            <tree string="Consolidation Group">
+            <tree>
                 <field name="code_prefix_start"/>
                 <field name="code_prefix_end"/>
                 <field name="name"/>

@@ -1,5 +1,6 @@
 from lxml import etree
-from odoo import _, api, fields, models, Command
+
+from odoo import Command, api, models
 
 
 class ResUsers(models.Model):
@@ -34,9 +35,9 @@ class ResUsers(models.Model):
                 if not user.has_group(group):
                     continue
                 group_record = self.env.ref(group)
-                user.sudo().with_context(no_multi_company_group_force=True).write({
-                    "groups_id": [Command.unlink(group_record.id)]
-                })
+                user.sudo().with_context(no_multi_company_group_force=True).write(
+                    {"groups_id": [Command.unlink(group_record.id)]}
+                )
 
     def write(self, vals):
         res = super().write(vals)

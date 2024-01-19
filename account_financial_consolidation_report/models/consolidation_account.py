@@ -34,22 +34,35 @@ class ConsolidationAccount(models.Model):
             ("expense_direct_cost", "Cost of Revenue"),
             ("off_balance", "Off-Balance Sheet"),
         ],
-        string='Type', required=True)
+        string="Type",
+        required=True,
+    )
     internal_group = fields.Selection(
         selection=[
-            ('equity', 'Equity'),
-            ('asset', 'Asset'),
-            ('liability', 'Liability'),
-            ('income', 'Income'),
-            ('expense', 'Expense'),
-            ('off_balance', 'Off Balance'),
+            ("equity", "Equity"),
+            ("asset", "Asset"),
+            ("liability", "Liability"),
+            ("income", "Income"),
+            ("expense", "Expense"),
+            ("off_balance", "Off Balance"),
         ],
-        string="Internal Group", readonly=True, compute="_compute_internal_group", store=True
+        readonly=True,
+        compute="_compute_internal_group",
+        store=True,
     )
-    currency_id = fields.Many2one('res.currency', string='Account Currency', help="Forces all moves for this account to have this account currency.", tracking=True)
+    currency_id = fields.Many2one(
+        "res.currency",
+        string="Account Currency",
+        help="Forces all moves for this account to have this account currency.",
+        tracking=True,
+    )
 
-    @api.depends('account_type')
+    @api.depends("account_type")
     def _compute_internal_group(self):
         for account in self:
             if account.account_type:
-                account.internal_group = 'off_balance' if account.account_type == 'off_balance' else account.account_type.split('_')[0]
+                account.internal_group = (
+                    "off_balance"
+                    if account.account_type == "off_balance"
+                    else account.account_type.split("_")[0]
+                )

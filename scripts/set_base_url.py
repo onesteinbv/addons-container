@@ -12,19 +12,12 @@ def main(env, domain):
         )
     click.echo("Setting web.base.url to `https://%s`" % domain)
 
-    base_url = env["ir.config_parameter"].search([
-        ("key", "=", "web.base.url")
-    ])
+    base_url = env["ir.config_parameter"].search([("key", "=", "web.base.url")])
     if base_url:
-        base_url.write({
-            "value": "https://%s" % domain
-        })
+        base_url.write({"value": "https://%s" % domain})
     else:
-        base_url.create({
-            "key": "web.base.url",
-            "value": "https://%s" % domain
-        })
+        base_url.create({"key": "web.base.url", "value": "https://%s" % domain})
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

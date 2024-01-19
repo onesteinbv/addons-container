@@ -6,6 +6,7 @@
     "version": "16.0.1.0.0",
     "license": "AGPL-3",
     "author": "Onestein BV, André Schenkels",
+    "website": "https://www.onestein.eu",
     "category": "Accounting",
     "summary": "",
     "depends": [
@@ -14,8 +15,8 @@
         "consolidation_account",
     ],
     "data": [
-        'view/consolidation_account_view.xml',
+        "view/consolidation_account_view.xml",
         # 'report/templates/trial_balance.xml',
-        'wizard/trial_balance_wizard_view.xml',
+        "wizard/trial_balance_wizard_view.xml",
     ],
 }

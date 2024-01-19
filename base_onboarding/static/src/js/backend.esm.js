@@ -1,8 +1,8 @@
 /** @odoo-module */
 import { WebClient } from "@web/webclient/webclient";
+import { onMounted } from "@odoo/owl";
 import { patch } from "@web/core/utils/patch";
 import { useService } from "@web/core/utils/hooks";
-import { onMounted } from "@odoo/owl";
 
 
 patch(WebClient.prototype, "base_onboarding", {

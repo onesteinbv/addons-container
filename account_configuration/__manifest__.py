@@ -7,15 +7,14 @@
     "category": "Accounting & Finance",
     "license": "AGPL-3",
     "author": "Onestein BV",
-    "website": "https://www.onestein.nl",
+    "website": "https://www.onestein.eu",
     "depends": [
         # BASE
-        'account',
-
+        "account",
         # COMMUNITY
         # OCA currency
-        'account_invoice_constraint_chronology',
-        'currency_rate_update',
+        "account_invoice_constraint_chronology",
+        "currency_rate_update",
     ],
     "data": [],
     "post_init_hook": "post_init_hook",

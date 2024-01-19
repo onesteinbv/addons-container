@@ -14,12 +14,10 @@ def main(env, url, realm, client_id, client_secret):
     if module_container_accessibility.state != "installed":
         return click.echo(
             "Module `container_accessibility` must be installed for this script to work",
-            err=True
+            err=True,
         )
 
-    keycloak = env["auth.oauth.provider"].search([
-        ("private", "=", True)
-    ])
+    keycloak = env["auth.oauth.provider"].search([("private", "=", True)])
     values = {
         "name": "Keycloak Onestein",
         "flow": "id_token_code",
@@ -33,7 +31,7 @@ def main(env, url, realm, client_id, client_secret):
         "scope": "openid email",
         "token_endpoint": "%s/realms/%s/protocol/openid-connect/token" % (url, realm),
         "jwks_uri": "%s/realms/%s/protocol/openid-connect/certs" % (url, realm),
-        "private": True
+        "private": True,
     }
     if keycloak:
         keycloak.write(values)
@@ -46,5 +44,5 @@ def main(env, url, realm, client_id, client_secret):
         provider_openerp.unlink()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

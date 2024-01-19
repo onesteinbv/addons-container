@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+    <!-- oca-hooks:disable=xml-duplicate-record-id -->
+    <!-- We define the RGS chart in two steps - first the template, then we load accounts,
+         Then we assign the accounts to the template -->
     <record id="l10nnl_rgs_chart_template" model="account.chart.template">
         <field name="code_digits">7</field>
         <field name="property_account_receivable_id" ref="recv"/>

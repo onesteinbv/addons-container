@@ -5,7 +5,7 @@
             <field name="name">NL RGS Profit Loss</field>
             <field name="style_id" ref="mis_report_style_l10n_nl_rgs_base" />
         </record>
-        
+
         <record id="mis_report_kpi_l10n_nl_rgs_pl_pl" model="mis.report.kpi">
             <field name="report_id" ref="mis_report_l10n_nl_rgs_pl" />
             <field name="type">str</field>
@@ -16,7 +16,7 @@
             <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l1" />
             <field name="expression"/>
         </record>
-       
+
         <record id="mis_report_kpi_l10n_nl_rgs_pl_bruto_result" model="mis.report.kpi">
             <field name="report_id" ref="mis_report_l10n_nl_rgs_pl" />
             <field name="type">str</field>
@@ -531,7 +531,7 @@
             <field name="description"></field>
             <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l2" />
             <field name="expression"/>
-            
+
         </record>
 
         <!-- 80.9 Algemene beheerskosten -->
@@ -584,7 +584,7 @@
             <field name="description"></field>
             <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l2" />
             <field name="expression"/>
-            
+
         </record>
 
         <!-- 81 Wijziging voorraden -->
@@ -757,7 +757,7 @@
             <field name="description"></field>
             <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l2" />
             <field name="expression"/>
-            
+
         </record>
 
         <!-- 70 Kostprijs van de Omzet -->
@@ -1170,7 +1170,7 @@
             <field name="description"></field>
             <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l2" />
             <field name="expression"/>
-            
+
         </record>
 
         <!-- 82 Overige bedrijfsopbrengsten -->
@@ -1405,7 +1405,7 @@
             <field name="description"></field>
             <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l2" />
             <field name="expression"/>
-            
+
         </record>
 
         <!-- Totaal Bruto-bedrijfsresultaat -->
@@ -1436,7 +1436,7 @@
             <field name="description"></field>
             <field name="style_id" ref="mis_report_style_l10n_nl_rgs_l2" />
             <field name="expression"/>
-            
+
         </record>
 
         <!-- 40 Lasten uit hoofde van personeelsbeloningen  -->
@@ -2386,7 +2386,7 @@
                 name="expression"
             >+nl_bruto_result_total+nl_40_total+nl_41_total+nl_41_1_total+nl_41_2_total+nl_42_total</field>
         </record>
-        
+
         <!-- Empty Line -->
         <record
             id="mis_report_kpi_l10n_nl_rgs_pl_el_13"
@@ -2569,7 +2569,7 @@
                 ref="mis_report_style_l10n_nl_rgs_l5i"
             />
         </record>
-        
+
         <!-- Empty Line -->
         <record
             id="mis_report_kpi_l10n_nl_rgs_pl_el_16"

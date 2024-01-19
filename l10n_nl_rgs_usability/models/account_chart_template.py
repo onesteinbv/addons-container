@@ -1,9 +1,10 @@
 import re
+
 from odoo import api, models
 
 
 class AccountChartTemplate(models.Model):
-    _inherit = 'account.chart.template'
+    _inherit = "account.chart.template"
 
     def _load(self, company):
         res = super(AccountChartTemplate, self)._load(company)
@@ -17,10 +18,13 @@ class AccountChartTemplate(models.Model):
     @api.model
     def _generate_payment_modes(self, company):
         """Generate payment modes"""
-        bank_journal = self.env["account.journal"].search([
-            ("type", "=", "bank"),
-            ("company_id", "=", company.id),
-        ], limit=1)
+        bank_journal = self.env["account.journal"].search(
+            [
+                ("type", "=", "bank"),
+                ("company_id", "=", company.id),
+            ],
+            limit=1,
+        )
         if not bank_journal:
             return
         payment_mode_vals = [
@@ -71,12 +75,16 @@ class AccountChartTemplate(models.Model):
                 "default_date_prefered": "due",
                 "fixed_journal_id": bank_journal.id,
                 "sequence": 14,
-            }
+            },
         ]
         module = "l10n_nl_rgs_usability"
         data_list = []
         for vals in payment_mode_vals:
-            xml_id = "%s.%s_%s" % (module, company.id, re.sub('[^a-zA-Z]+', '', vals["name"].lower()))
+            xml_id = "%s.%s_%s" % (
+                module,
+                company.id,
+                re.sub("[^a-zA-Z]+", "", vals["name"].lower()),
+            )
             data_list.append(dict(xml_id=xml_id, values=vals, noupdate=True))
         res = self.env["account.payment.mode"]._load_records(data_list)
         company._create_direct_debit_in_payment_mode()
@@ -97,19 +105,26 @@ class AccountChartTemplate(models.Model):
         if is_stock_account_module_installed:
             xml_ids = [
                 ("stock_account", "property_stock_account_output_categ_id"),
-                ("stock_account", "property_stock_account_input_categ_id")
+                ("stock_account", "property_stock_account_input_categ_id"),
             ]
-            main_company = self.env.ref('base.main_company', False)
+
+            main_company = self.env.ref("base.main_company", False)
             for xml_id in xml_ids:
                 ir_property = self.env.ref("%s.%s" % (xml_id[0], xml_id[1]), False)
                 if ir_property:
                     continue
-                self.env["ir.model.data"].create({
-                    "res_id": self.env["ir.property"].search([
-                        ("name", "=", xml_id[1]), ("company_id", "=", main_company.id), ("res_id", "=", False)
-                    ]),
-                    "model": "ir.property",
-                    "name": xml_id[1],
-                    "module": xml_id[0],
-                    "noupdate": True
-                })
+                self.env["ir.model.data"].create(
+                    {
+                        "res_id": self.env["ir.property"].search(
+                            [
+                                ("name", "=", xml_id[1]),
+                                ("company_id", "=", main_company.id),
+                                ("res_id", "=", False),
+                            ]
+                        ),
+                        "model": "ir.property",
+                        "name": xml_id[1],
+                        "module": xml_id[0],
+                        "noupdate": True,
+                    }
+                )

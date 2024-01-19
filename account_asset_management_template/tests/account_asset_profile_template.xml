@@ -4,7 +4,7 @@
 
         <record id="account_asset_profile_01" model="account.asset.profile.template">
             <field name="name">Other fixed assets</field>
-            <field name="account_asset_id" ref="l10n_generic_coa.fixed_assets"/>            
+            <field name="account_asset_id" ref="l10n_generic_coa.fixed_assets"/>
             <field name="account_expense_depreciation_id" ref="l10n_generic_coa.expense"/>
             <field name="account_depreciation_id" ref="l10n_generic_coa.fixed_assets"/>
             <field name="journal_code">MISC</field>

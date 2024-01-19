@@ -12,5 +12,5 @@ def main(env, login, password):
     user.password = password
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

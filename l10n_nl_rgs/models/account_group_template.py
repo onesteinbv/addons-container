@@ -1,17 +1,17 @@
-# -*- coding: utf-8 -*-
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 # Copyright (C) 2016 Onestein (<http://www.onestein.eu>).
 
-from odoo import api, fields, models, _
+from odoo import fields, models
 
 
 class AccountGroupTemplate(models.Model):
-    _inherit = 'account.group.template'
+    _inherit = "account.group.template"
 
-    referentiecode = fields.Char(string='Referentiecode')
-    code = fields.Char(string='Code')
-    sort_code = fields.Char(string='Sorting code')
+    # FIXME: This should be English with Dutch translation
+    referentiecode = fields.Char()
+    code = fields.Char()
+    sort_code = fields.Char(string="Sorting code")
     rgs_basic = fields.Boolean(default=False)
     rgs_extended = fields.Boolean(default=False)
     rgs_ez = fields.Boolean(default=False)

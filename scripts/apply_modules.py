@@ -5,7 +5,9 @@ import click_odoo
 def _recurse_dependencies(env, modules):
     all_modules = modules
     for module in modules:
-        all_modules += _recurse_dependencies(env, module.dependencies_id.mapped("depend_id"))
+        all_modules += _recurse_dependencies(
+            env, module.dependencies_id.mapped("depend_id")
+        )
     return all_modules
 
 
@@ -16,13 +18,10 @@ def _recurse_dependencies(env, modules):
 def main(env, modules, do_uninstall):
     modules = list(map(lambda m: m.strip(), modules.split(",")))
     click.echo("Applying modules...")
-    modules = env["ir.module.module"].search([
-        ("name", "in", modules)
-    ])
-    installed_modules = env["ir.module.module"].search([
-        ("state", "=", "installed"),
-        ("auto_install", "=", False)
-    ])
+    modules = env["ir.module.module"].search([("name", "in", modules)])
+    installed_modules = env["ir.module.module"].search(
+        [("state", "=", "installed"), ("auto_install", "=", False)]
+    )
     desired_modules = _recurse_dependencies(env, modules)
     to_uninstall = installed_modules - desired_modules
     # Filter themes
@@ -31,7 +30,10 @@ def main(env, modules, do_uninstall):
     click.echo("Install modules...")
     modules.button_immediate_install()
 
-    click.echo("Found %s modules to uninstall: %s" % (len(to_uninstall), ", ".join(to_uninstall.mapped("name"))))
+    click.echo(
+        "Found %s modules to uninstall: %s"
+        % (len(to_uninstall), ", ".join(to_uninstall.mapped("name")))
+    )
     if do_uninstall:
         click.echo("Uninstalling...")
         to_uninstall.button_immediate_uninstall()
@@ -39,5 +41,5 @@ def main(env, modules, do_uninstall):
         click.echo("Not uninstalling")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

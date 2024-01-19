@@ -1,12 +1,15 @@
-import click
 import os
 import shutil
 import sys
-from os import path, listdir
+from os import listdir, path
+
+import click
 
 
 @click.command()
-@click.option("--location", help="Location of git repository on file system", required=True)
+@click.option(
+    "--location", help="Location of git repository on file system", required=True
+)
 @click.option("--package-file", help="Package file name")
 @click.option("--destination", help="Destination", required=True)
 def main(location, package_file, destination):

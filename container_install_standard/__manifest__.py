@@ -15,7 +15,6 @@
         "fs_attachment",
         "fs_storage_backup",
         # "container_s3",
-
         "sale_management",
         "website",
         "website_payment",
@@ -37,11 +36,9 @@
         "account_move_line_stock_info",
         "purchase_stock",
         "sale_purchase_stock",
-
         # Extra security
         "auth_oidc",
         "container_accessibility",
-
         # Accountancy
         "account_fiscal_position_vat_check",
         "account_invoice_constraint_chronology",
@@ -68,7 +65,6 @@
         "account_period_auto_create",
         "account_statement_import_online_ponto",
         "account_move_line_attachment_preview",
-
         # Accountancy extra
         "account_configuration",
         "account_invoice_overdue_reminder",
@@ -84,7 +80,6 @@
         "mollie_subscription_ept",
         "payment_custom",
         "payment_demo",
-
         # Dutch localization
         "l10n_nl_rgs",
         "l10n_nl_rgs_usability",
@@ -96,29 +91,25 @@
         "l10n_nl_postcode",
         "l10n_nl_tax_statement",
         "l10n_nl_tax_statement_date_range",
-        'l10n_nl_tax_statement_icp',
-
+        "l10n_nl_tax_statement_icp",
         # Containers
         "hr_employee_firstname",
         "partner_firstname",
         "web_no_bubble",
-        'base_customer_company',
-        'base_customer_user',
-        'base_onboarding',
+        "base_customer_company",
+        "base_customer_user",
+        "base_onboarding",
         "spreadsheet_dashboard_oca",
         "spreadsheet_oca_ux",
         "partner_country_default_nl",
-
         # Timesheets
         "hr_timesheet_sheet",
-
         # Debranding
         "remove_odoo_enterprise",
         "base_import_debranding",
         "website_odoo_debranding",
         # 'support_branding',  # TODO do we need it?
         "digest_disable",
-
         # THIRD-PARTY
         "mollie_account_sync",
         "payment_mollie_official",

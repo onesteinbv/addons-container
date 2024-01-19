@@ -8,9 +8,9 @@ import click_odoo
 @click.option("--email")
 @click.option("--coc")
 @click.option("--city")
-@click.option("--zip")
+@click.option("--zip", "zip_code")  # To not override inbuilt zip
 @click.option("--street")
-def main(env, name, email, coc, city, zip, street):
+def main(env, name, email, coc, city, zip_code, street):
     click.echo("Update company information...")
     required_modules = env["ir.module.module"]
     required_modules += env.ref("base.module_l10n_nl")
@@ -19,10 +19,11 @@ def main(env, name, email, coc, city, zip, street):
     for required_module in required_modules:
         if required_module.state != "installed":
             return click.echo(
-                "%s must be installed for this script to run (updating company information)" % required_module.name, 
-                err=True
+                "%s must be installed for this script to run (updating company information)"
+                % required_module.name,
+                err=True,
             )
-    
+
     main_company = env.ref("base.main_company", raise_if_not_found=False)
 
     if not main_company or main_company.updated_by_script:
@@ -35,19 +36,19 @@ def main(env, name, email, coc, city, zip, street):
         "company_registry": coc,
         "l10n_nl_kvk": coc,
         "city": city,
-        "zip": zip,
+        "zip": zip_code,
         "street": street,
-        "updated_by_script": True
+        "updated_by_script": True,
     }
-    
-    netherlands = env.ref("base.nl", raise_if_not_found=False)  # Should always exists but I don't ever want this to have errors
+
+    netherlands = env.ref(
+        "base.nl", raise_if_not_found=False
+    )  # Should always exists but I don't ever want this to have errors
     if netherlands:
-        values.update({
-            "country_id": netherlands.id
-        })
+        values.update({"country_id": netherlands.id})
 
     main_company.write(values)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

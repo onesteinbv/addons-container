@@ -7,7 +7,4 @@ class ResConfigSettings(models.TransientModel):
     module_auth_oauth = fields.Boolean(readonly=True)
 
     def execute(self):
-        return super(
-            ResConfigSettings, self.with_context(no_restrict=True)
-        ).execute()
-
+        return super(ResConfigSettings, self.with_context(no_restrict=True)).execute()

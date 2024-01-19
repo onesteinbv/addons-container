@@ -12,7 +12,8 @@ class AccountMoveLine(models.Model):
         string="Consolidation Accounts",
         compute="_compute_consolidation_account_ids",
         inverse="_inverse_consolidation_account_ids",
-        store=True)
+        store=True,
+    )
 
     @api.depends("account_id.consolidation_account_ids")
     def _compute_consolidation_account_ids(self):
@@ -29,7 +30,11 @@ class AccountMoveLine(models.Model):
         if self.consolidation_account_ids:
             res["domain"] = {
                 "account_id": [
-                    ("id", "in", self.mapped('consolidation_account_ids.account_ids').ids),
+                    (
+                        "id",
+                        "in",
+                        self.mapped("consolidation_account_ids.account_ids").ids,
+                    ),
                     ("company_id", "=", self.move_id.company_id.id),
                     ("deprecated", "=", False),
                 ]

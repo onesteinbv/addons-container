@@ -13,12 +13,10 @@ def main(env, host, user, password):
     if module_container_accessibility.state != "installed":
         return click.echo(
             "Module `container_accessibility` must be installed for this script to work",
-            err=True
+            err=True,
         )
 
-    smtp_server = env["ir.mail_server"].search([
-        ("private", "=", True)
-    ])
+    smtp_server = env["ir.mail_server"].search([("private", "=", True)])
     values = {
         "name": "Default SMTP",
         "smtp_authentication": "login",
@@ -28,7 +26,7 @@ def main(env, host, user, password):
         "smtp_host": host,
         "smtp_user": user,
         "smtp_pass": password,
-        "private": True
+        "private": True,
     }
     if smtp_server:
         smtp_server.write(values)
@@ -36,5 +34,5 @@ def main(env, host, user, password):
         env["ir.mail_server"].create(values)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

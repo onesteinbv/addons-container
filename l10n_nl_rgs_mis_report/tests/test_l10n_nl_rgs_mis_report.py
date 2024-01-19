@@ -4,7 +4,6 @@ from odoo.tests import HttpCase
 
 
 class TestL10nNlRgsMisReports(HttpCase):
-
     def test_01_rgs_balance_sheet(self):
         """"""
         report = "l10n_nl_rgs_mis_report.mis_report_l10n_nl_rgs_balance_sheet"
@@ -14,7 +13,7 @@ class TestL10nNlRgsMisReports(HttpCase):
                 "report_id": self.env.ref(report).id,
             }
         )
-        preview = instance.preview()
+        instance.preview()
 
     def test_02_rgs_profit_loss(self):
         """"""
@@ -25,4 +24,4 @@ class TestL10nNlRgsMisReports(HttpCase):
                 "report_id": self.env.ref(report).id,
             }
         )
-        preview = instance.preview()
+        instance.preview()

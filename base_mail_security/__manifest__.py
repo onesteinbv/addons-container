@@ -5,7 +5,7 @@
     "name": "Mail Security",
     "summary": "Let users add / edit mail servers without full admin right",
     "author": "Onestein",
-    "website": "https://onestein.nl",
+    "website": "https://www.onestein.eu",
     "category": "Technical Settings",
     "version": "16.0.1.0.0",
     "license": "AGPL-3",
@@ -16,11 +16,9 @@
         "security/res_groups.xml",
         "security/ir_model_access.xml",
         "security/ir_rule.xml",
-
         "views/fetchmail_server_view.xml",
         "views/ir_mail_server_view.xml",
-
-        "menuitems.xml"
+        "menuitems.xml",
     ],
-    "installable": False  # deprecated remove after next update
+    "installable": False,  # deprecated remove after next update
 }
