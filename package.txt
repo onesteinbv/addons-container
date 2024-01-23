@@ -27,6 +27,7 @@ digest_disable
 multi_company_disable
 container_accessibility
 container_s3
+web_environment_ribbon
 addons-generic/account_period_auto_create
 addons-generic/attachment_preview_remove_preview_button
 addons-generic/base_debug_disabled
