@@ -306,6 +306,11 @@ class AccountChartTemplate(models.Model):
         return all_journals.filtered(lambda j: j.type in type_list)
 
     def get_allowed_account_journals_based_on_code(self, all_journals, code_list):
+        # Not so nice fix, needs more testing and different approach
+        nl_mapping = {"MISC": "MEM", "WAG": "SAL", "DEPR": "AFSC"}
+        for k, v in nl_mapping.items():
+            if k in code_list and v not in code_list:
+                code_list.append(v)
         return all_journals.filtered(lambda j: j.code in code_list)
 
     def _create_bank_journals(self, company, acc_template_ref):
