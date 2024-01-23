@@ -14,16 +14,8 @@
     remotes:
         onestein: git@github.com:onesteinbv/addons-generic.git
     merges:
-        - onestein 16.0
-
-# third-party
-./design-themes:
-    defaults:
-        depth: 20
-    remotes:
-        odoo: git@github.com:odoo/design-themes.git
-    merges:
-        - odoo 16.0
+        - remote: onestein
+          ref: b9ef721da120f54e0e482d54da2f41ba148d409f
 
 # oca
 ./oca:
@@ -32,7 +24,8 @@
     remotes:
         onestein: git@github.com:onesteinbv/addons-oca.git
     merges:
-        - onestein 16.0
+        - remote: onestein
+          ref: 7b08f43feec9e34f1dcc6158f8cf62288e142c64
 
 # third-party
 ./addons-third-party:
@@ -41,7 +34,17 @@
     remotes:
         onestein: git@github.com:onesteinbv/addons-third-party.git
     merges:
-        - onestein 16.0
+        - remote: onestein
+          ref: 7347968dadd5e3823ef27822419f8f385d484a1b
+
+# design themes
+./design-themes:
+    defaults:
+        depth: 20
+    remotes:
+        odoo: git@github.com:odoo/design-themes.git
+    merges:
+        - odoo 16.0
 
 # ProjectManagement
 ./ProjectManagement:
