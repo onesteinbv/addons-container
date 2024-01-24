@@ -1,24 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-        <template id="job_filter_by_label" inherit_id="website_hr_recruitment.index" active="False"
-                  name="Filter by Label">
-            <xpath expr="//div[@id='jobs_grid_left']" position="inside">
-                <ul class="nav nav-pills flex-column mb32">
-                    <li class="nav-item"><a
-                            t-attf-href="/jobs#{ '/country/%s' % slug(country_id) if country_id else '' }#{ '/department/%s' % slug(department_id) if department_id else '' }#{ '/office/%s' % office_id if office_id else '' }#{ '/employment_type/%s' % contract_type_id if contract_type_id else '' }#{ '/label/%s' % label_id if label_id else '' }"
-                            t-attf-class="nav-link#{'' if label_id else ' active'}">All labels</a></li>
-                    <t t-foreach="labels" t-as="label">
-                        <li class="nav-item">
-                            <a t-attf-href="/jobs#{ '/country/%s' % slug(country_id) if country_id else '' }#{ '/department/%s' % slug(department_id) if department_id else '' }#{ '/office/%s' % office_id if office_id else '' }#{ '/employment_type/%s' % contract_type_id if contract_type_id else '' }#{ '/label/%s' % label.id if label else '' }"
-                               t-attf-class="nav-link#{' active' if label_id and label_id == label.id else ''}">
-                                <span t-field="label.name"/>
-                            </a>
-                        </li>
-                    </t>
-                </ul>
-            </xpath>
-            <xpath expr="//div[@id='jobs_grid_left']" position="attributes">
-                <attribute name="class">col-lg-3</attribute>
-            </xpath>
-        </template>
+    <template id="job_filter_by_label" inherit_id="website_hr_recruitment.index" active="False"
+              name="Filter by Label">
+        <xpath expr="//div[@id='jobs_grid_left']" position="inside">
+            <ul class="nav nav-pills flex-column mb32">
+                <li class="nav-item"><a
+                        t-attf-href="/jobs#{ '/country/%s' % slug(country_id) if country_id else '' }#{ '/department/%s' % slug(department_id) if department_id else '' }#{ '/office/%s' % office_id if office_id else '' }#{ '/employment_type/%s' % contract_type_id if contract_type_id else '' }#{ '/label/%s' % label_id if label_id else '' }"
+                        t-attf-class="nav-link#{'' if label_id else ' active'}">All labels</a></li>
+                <t t-foreach="labels" t-as="label">
+                    <li class="nav-item">
+                        <a t-attf-href="/jobs#{ '/country/%s' % slug(country_id) if country_id else '' }#{ '/department/%s' % slug(department_id) if department_id else '' }#{ '/office/%s' % office_id if office_id else '' }#{ '/employment_type/%s' % contract_type_id if contract_type_id else '' }#{ '/label/%s' % label.id if label else '' }"
+                           t-attf-class="nav-link#{' active' if label_id and label_id == label.id else ''}">
+                            <span t-field="label.name" />
+                        </a>
+                    </li>
+                </t>
+            </ul>
+        </xpath>
+        <xpath expr="//div[@id='jobs_grid_left']" position="attributes">
+            <attribute name="class">col-lg-3</attribute>
+        </xpath>
+    </template>
+
+    <template id="job_filter_by_countries" inherit_id="website_hr_recruitment.job_filter_by_countries" active="False"
+              name="Filter by Countries - Labels">
+        <xpath expr="//ul" position="replace">
+            <ul class="nav nav-pills flex-column mb32">
+                <li class="nav-item"><a
+                        t-attf-href="/jobs#{ '/country/%s' % slug(country_id) if country_id else '' }#{ '/department/%s' % slug(department_id) if department_id else '' }#{ '/office/%s' % office_id if office_id else '' }#{ '/employment_type/%s' % contract_type_id if contract_type_id else '' }#{ '/label/%s' % label_id if label_id else '' }"
+                        t-attf-class="nav-link#{'' if country_id else ' active'}">All Countries</a></li>
+                <t t-foreach="countries" t-as="country">
+                    <li class="nav-item">
+                        <a t-attf-href="/jobs#{ '/country/%s' % slug(country_id) if country_id else '' }#{ '/department/%s' % slug(department_id) if department_id else '' }#{ '/office/%s' % office_id if office_id else '' }#{ '/employment_type/%s' % contract_type_id if contract_type_id else '' }#{ '/label/%s' % label.id if label else '' }"
+                           t-attf-class="nav-link#{' active' if country_id and country_id.id == country.id else ''}"><span
+                                t-field="country.name" /></a>
+                    </li>
+                </t>
+            </ul>
+        </xpath>
+    </template>
+
+    <template id="job_filter_by_departments" inherit_id="website_hr_recruitment.job_filter_by_departments" active="False"
+              name="Filter by Departments - Labels">
+        <xpath expr="//ul" position="replace">
+            <ul class="nav nav-pills flex-column mb32">
+                <li class="nav-item"><a
+                        t-attf-href="/jobs#{ '/country/%s' % slug(country_id) if country_id else '' }#{ '/department/%s' % slug(department_id) if department_id else '' }#{ '/office/%s' % office_id if office_id else '' }#{ '/employment_type/%s' % contract_type_id if contract_type_id else '' }#{ '/label/%s' % label_id if label_id else '' }"
+                        t-attf-class="nav-link#{'' if department_id else ' active'}">All Departments</a></li>
+                <t t-foreach="departments" t-as="department">
+                    <li class="nav-item">
+                        <a t-attf-href="/jobs#{ '/country/%s' % slug(country_id) if country_id else '' }#{ '/department/%s' % slug(department_id) if department_id else '' }#{ '/office/%s' % office_id if office_id else '' }#{ '/employment_type/%s' % contract_type_id if contract_type_id else '' }#{ '/label/%s' % label.id if label else '' }"
+                           t-attf-class="nav-link#{' active' if department_id and department_id.id == department.id else ''}"><span
+                                t-field="department.name" /></a>
+                    </li>
+                </t>
+            </ul>
+        </xpath>
+    </template>
+
+    <template id="job_filter_by_offices" inherit_id="website_hr_recruitment.job_filter_by_offices" active="False"
+              name="Filter by Offices - Labels">
+        <xpath expr="//ul" position="replace">
+            <ul class="nav nav-pills flex-column mb32">
+                <li class="nav-item"><a
+                        t-attf-href="/jobs#{ '/country/%s' % slug(country_id) if country_id else '' }#{ '/department/%s' % slug(department_id) if department_id else '' }#{ '/office/%s' % office_id if office_id else '' }#{ '/employment_type/%s' % contract_type_id if contract_type_id else '' }#{ '/label/%s' % label_id if label_id else '' }"
+                        t-attf-class="nav-link#{'' if office_id else ' active'}">All Offices</a></li>
+                <t t-foreach="offices" t-as="thisoffice">
+                    <li class="nav-item">
+                        <a t-attf-href="/jobs#{ '/country/%s' % slug(country_id) if country_id else '' }#{ '/department/%s' % slug(department_id) if department_id else '' }#{ '/office/%s' % office_id if office_id else '' }#{ '/employment_type/%s' % contract_type_id if contract_type_id else '' }#{ '/label/%s' % label.id if label else '' }"
+                           t-attf-class="nav-link#{' active' if office_id and office_id == thisoffice.id else ''}">
+                            <span t-field="thisoffice.city" />
+                            <t t-if="thisoffice.country_id">,
+                                <span t-field="thisoffice.country_id.name" />
+                            </t>
+                        </a>
+                    </li>
+                </t>
+            </ul>
+        </xpath>
+    </template>
+
+    <template id="job_filter_by_employment_type_inherit" inherit_id="website_hr_recruitment.job_filter_by_employment_type"
+              name="Filter by Employment Type - Labels">
+        <xpath expr="//ul" position="replace">
+            <ul class="nav nav-pills flex-column mb32">
+                <li class="nav-item"><a
+                        t-attf-href="/jobs#{ '/country/%s' % slug(country_id) if country_id else '' }#{ '/department/%s' % slug(department_id) if department_id else '' }#{ '/office/%s' % office_id if office_id else '' }#{ '/employment_type/%s' % contract_type_id if contract_type_id else '' }#{ '/label/%s' % label_id if label_id else '' }"
+                        t-attf-class="nav-link#{'' if contract_type_id else ' active'}">All Employment Types</a></li>
+                <t t-foreach="employment_types" t-as="employment_type">
+                    <li class="nav-item">
+                        <a t-attf-href="/jobs#{ '/country/%s' % slug(country_id) if country_id else '' }#{ '/department/%s' % slug(department_id) if department_id else '' }#{ '/office/%s' % office_id if office_id else '' }#{ '/employment_type/%s' % contract_type_id if contract_type_id else '' }#{ '/label/%s' % label.id if label else '' }"
+                           t-attf-class="nav-link#{' active' if contract_type_id and contract_type_id == employment_type.id else ''}">
+                            <span t-field="employment_type.name" />
+                        </a>
+                    </li>
+                </t>
+            </ul>
+        </xpath>
+    </template>
 </odoo>
