@@ -43,7 +43,9 @@ jobs:
           cp odoo/requirements.txt /opt/odoo/requirements.txt
           pip install -r /opt/odoo/requirements.txt
       - name: Install external dependencies
-        run: pip3 install -r requirements.txt
+        run: |
+          pip3 install -r requirements.txt
+          pip3 install odoo-test-helper
       - name: Pack
         run: python3 scripts/pack.py --location . --package-file "package.txt" --destination package
       - name: Initialize test db
