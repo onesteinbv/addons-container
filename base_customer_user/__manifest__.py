@@ -5,7 +5,7 @@
     "category": "Technical Settings",
     "author": "Onestein",
     "website": "https://www.onestein.eu",
-    "depends": ["base", "mail", "mail_bot"],
+    "depends": ["base", "mail", "mail_bot", "base_setup"],
     "data": [
         "data/res_users_data.xml",
         "data/res_currency_data.xml",
