@@ -212,7 +212,6 @@ design-themes/theme_zap
 design-themes/theme_yes
 design-themes/theme_vehicle
 design-themes/theme_treehouse
-design-themes/theme_test_custo
 design-themes/theme_real_estate
 design-themes/theme_paptic
 design-themes/theme_orchid
