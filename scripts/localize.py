@@ -1,20 +1,12 @@
-# Copyright 2023 Onestein (<https://www.onestein.eu>)
-# License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
-
-import logging
-
-from odoo import SUPERUSER_ID, api
+import click
+import click_odoo
 
 
-def pre_init_hook(cr):
-    """
-    Pre-install script. Install nl_NL language pack if not already installed.
-    """
-    logging.getLogger("odoo.addons.base_customer_user").info(
-        "Check/Install nl_NL language pack"
-    )
+@click.command()
+@click_odoo.env_options(default_log_level="error")
+def main(env):
+    click.echo("Check/Install nl_NL language pack...")
 
-    env = api.Environment(cr, SUPERUSER_ID, {})
     installed_langs = dict(env["res.lang"].get_installed())
     # Dutch
     lang = "nl_NL"
@@ -32,3 +24,7 @@ def pre_init_hook(cr):
     # Force position of EUR currency to "before"
     currency = env["res.currency"].search([("name", "=", "EUR")])
     currency.write({"position": "before"})
+
+
+if __name__ == "__main__":
+    main()

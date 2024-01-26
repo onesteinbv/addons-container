@@ -22,30 +22,30 @@ def main(env, email, group_file, group):
         "base_customer_user.user_customer", raise_if_not_found=False
     )
     group_ids = []
-    if customer_user:
-        if customer_user.login == "customer_user":
-            customer_user.write({"login": email})
-            customer_user.partner_id.write({"email": email})
+    if not customer_user:
+        return click.echo("Customer user doesn't exists", err=True)
 
-        if customer_user.state == "new":
-            group_ids.append(env.ref("base_onboarding.onboarding_group").id)
-            try:
-                customer_user.action_reset_password()
-            except Exception as e:
-                click.echo(click.style(str(e), fg="red"))
+    if customer_user.login == "customer_user":
+        customer_user.write({"login": email})
+        customer_user.partner_id.write({"email": email})
 
-        # Assign groups
-        for group_xml_id in groups:
-            group_record = env.ref(group_xml_id, raise_if_not_found=False)
-            if group_record and not customer_user.has_group(group_xml_id):
-                group_ids.append(group_record.id)
-            elif not group_record:
-                click.echo(
-                    click.style("Group `%s` doesn't exists" % group_xml_id, fg="red")
-                )
-        customer_user.write({"groups_id": [(4, group_id) for group_id in group_ids]})
-    else:
-        click.echo("Customer user doesn't exists", err=True)
+    if customer_user.state == "new":
+        group_ids.append(env.ref("base_onboarding.onboarding_group").id)
+        try:
+            customer_user.action_reset_password()
+        except Exception as e:
+            click.echo(click.style(str(e), fg="red"))
+
+    # Assign groups
+    for group_xml_id in groups:
+        group_record = env.ref(group_xml_id, raise_if_not_found=False)
+        if group_record and not customer_user.has_group(group_xml_id):
+            group_ids.append(group_record.id)
+        elif not group_record:
+            click.echo(
+                click.style("Group `%s` doesn't exists" % group_xml_id, fg="red")
+            )
+    customer_user.write({"groups_id": [(4, group_id) for group_id in group_ids]})
 
 
 if __name__ == "__main__":
