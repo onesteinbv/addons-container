@@ -26,8 +26,7 @@ def main(env, email, group_file, group):
         return click.echo("Customer user doesn't exists", err=True)
 
     if customer_user.login == "customer_user":
-        customer_user.write({"login": email})
-        customer_user.write({"lang": "nl_NL"})
+        customer_user.write({"login": email, "lang": "nl_NL"})
         customer_user.partner_id.write({"email": email})
 
     if customer_user.state == "new":
