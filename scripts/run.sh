@@ -9,6 +9,8 @@ if [[ -n "$SMTP_HOST" && "$SETUP_SMTP" == "true" ]]; then
   python /odoo/scripts/setup_smtp.py -c $ODOO_RC -d $DB_NAME --log-level=error --host "$SMTP_HOST" --user "$SMTP_USER" --password "$SMTP_PASSWORD"
 fi
 
+python /odoo/scripts/localize.py
+
 if [[ "$PREPARE_CUSTOMER_USER" == "true" ]]; then
   python /odoo/scripts/prepare_customer_user.py -c $ODOO_RC -d $DB_NAME --log-level=error --email "$COMPANY_EMAIL" --group-file /odoo/scripts/groups.txt
 fi
@@ -30,5 +32,3 @@ python /odoo/scripts/uninstall_auto_install_modules.py -c $ODOO_RC -d $DB_NAME -
 if [[ -n "$KEYCLOAK_URL" ]]; then
   python /odoo/scripts/setup_oauth.py -c $ODOO_RC -d $DB_NAME --log-level=error --url "$KEYCLOAK_URL" --realm "$KEYCLOAK_REALM" --client-id "$KEYCLOAK_CLIENT_ID" --client-secret "$KEYCLOAK_CLIENT_SECRET"
 fi
-
-python /odoo/scripts/localize.py
