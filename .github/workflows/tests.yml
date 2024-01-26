@@ -53,13 +53,13 @@ jobs:
         env:
           ADDONS_DIR: package
           EXCLUDE: partner_country_default_nl,accountancy_install,community_org_install,container_install_basis,container_install_standard,project_org_install,services_org_install,trade_org_install,university_org_install
-          ODOO_VERSION: 16.0
+          ODOO_VERSION: "16.0"
       - name: Run tests
         run: oca_run_tests
         env:
           ADDONS_DIR: package
           EXCLUDE: partner_country_default_nl,accountancy_install,community_org_install,container_install_basis,container_install_standard,project_org_install,services_org_install,trade_org_install,university_org_install
-          ODOO_VERSION: 16.0
+          ODOO_VERSION: "16.0"
       - name: Prepare report
         run: coverage xml -o report.xml --data-file .coverage
       - name: Upload coverage reports to Codecov
