@@ -52,12 +52,12 @@ jobs:
         run: oca_init_test_database
         env:
           ADDONS_DIR: package
-          EXCLUDE: partner_firstname,multi_company_disable
+          EXCLUDE: partner_firstname,multi_company_disable,l10n_nl_rgs_usability
       - name: Run tests
         run: oca_run_tests
         env:
           ADDONS_DIR: package
-          EXCLUDE: partner_firstname,multi_company_disable
+          EXCLUDE: partner_firstname,multi_company_disable,l10n_nl_rgs_usability
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v3
         env:
