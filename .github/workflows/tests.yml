@@ -58,7 +58,7 @@ jobs:
         run: oca_run_tests
         env:
           ADDONS_DIR: package
-          EXCLUDE: partner_country_default_nl,accountancy_install,community_org_install,container_install_basis,container_install_standard,project_org_install,services_org_install,trade_org_install,university_org_install,auditlog,fs_storage,fs_attachment,fs_storage_backup,report_xlsx,base_menu_visibility_restriction,fs_storage_backup,queue_job,base_municipality,helpdesk_mgmt,account_invoice_constraint_chronology,account_spread_cost_revenue,mis_builder,project_sequence,base_vat_optional_vies,l10n_nl_rgs_asset,account_banking_mandate_contact,account_banking_sepa_credit_transfer,hr_timesheet_sheet,multi_company_disable
+          EXCLUDE: partner_country_default_nl,accountancy_install,community_org_install,container_install_basis,container_install_standard,project_org_install,services_org_install,trade_org_install,university_org_install,auditlog,fs_storage,fs_attachment,report_xlsx,base_menu_visibility_restriction,fs_storage_backup,queue_job,base_municipality,helpdesk_mgmt,account_invoice_constraint_chronology,account_spread_cost_revenue,mis_builder,project_sequence,base_vat_optional_vies,l10n_nl_rgs_asset,account_banking_mandate_contact,account_banking_sepa_credit_transfer,hr_timesheet_sheet,multi_company_disable
           ODOO_VERSION: "16.0"
       - name: Prepare report
         run: coverage xml -o report.xml --data-file .coverage
