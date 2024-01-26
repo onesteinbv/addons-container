@@ -52,12 +52,12 @@ jobs:
         run: oca_init_test_database
         env:
           ADDONS_DIR: package
-          INCLUDE: partner_firstname  # Test one 1 module
+          INCLUDE: container_install_basis  # Test only basic package
       - name: Run tests
         run: oca_run_tests
         env:
           ADDONS_DIR: package
-          INCLUDE: partner_firstname  # Test one 1 module
+          INCLUDE: container_install_basis  # Test only basic package
       - name: Prepare report
         run: coverage xml -o report.xml --data-file .coverage
       - name: Upload coverage reports to Codecov
