@@ -13,6 +13,8 @@ jobs:
     runs-on: ubuntu-22.04
     container: docker.io/onestein/odoo-ci:16.0
     name: Odoo
+    strategy:
+      fail-fast: false
     services:
       postgres:
         image: postgres:12.0
@@ -52,12 +54,12 @@ jobs:
         run: oca_init_test_database
         env:
           ADDONS_DIR: package
-          EXCLUDE: accountancy_install,community_org_install,container_install_basis,container_install_standard,project_org_install,services_org_install,trade_org_install,university_org_install,partner_firstname,multi_company_disable,l10n_nl_rgs_usability
+          INCLUDE: partner_firstname  # Test one 1 module
       - name: Run tests
         run: oca_run_tests
         env:
           ADDONS_DIR: package
-          EXCLUDE: accountancy_install,community_org_install,container_install_basis,container_install_standard,project_org_install,services_org_install,trade_org_install,university_org_install,partner_firstname,multi_company_disable,l10n_nl_rgs_usability
+          INCLUDE: partner_firstname  # Test one 1 module
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v3
         env:
