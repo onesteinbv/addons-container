@@ -53,6 +53,7 @@ jobs:
         env:
           ADDONS_DIR: package
           EXCLUDE: mis_builder_budget,partner_country_default_nl,accountancy_install,community_org_install,container_install_basis,container_install_standard,project_org_install,services_org_install,trade_org_install,university_org_install,auditlog,fs_storage,fs_attachment,report_xlsx,base_menu_visibility_restriction,fs_storage_backup,queue_job,base_municipality,helpdesk_mgmt,account_invoice_constraint_chronology,account_spread_cost_revenue,project_sequence,base_vat_optional_vies,l10n_nl_rgs_asset,account_banking_mandate_contact,account_banking_sepa_credit_transfer,hr_timesheet_sheet,multi_company_disable,account_financial_report,hr_timesheet_sheet,account_asset_management,account_chart_update,account_financial_report,account_journal_lock_date,account_move_line_tax_editable,currency_rate_update,account_asset_management_template,account_reconcile_oca,account_payment_order,fs_storage_backup,mis_builder,l10n_nl_rgs_asset,l10n_nl_rgs_mis_report,account_banking_sepa_credit_transfer
+          ODOO_VERSION: "16.0"          
       - name: Run tests
         run: oca_run_tests
         env:
