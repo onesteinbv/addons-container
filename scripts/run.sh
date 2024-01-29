@@ -9,6 +9,8 @@ if [[ -n "$SMTP_HOST" && "$SETUP_SMTP" == "true" ]]; then
   python /odoo/scripts/setup_smtp.py -c $ODOO_RC -d $DB_NAME --log-level=error --host "$SMTP_HOST" --user "$SMTP_USER" --password "$SMTP_PASSWORD"
 fi
 
+python /odoo/scripts/localize.py
+
 if [[ "$PREPARE_CUSTOMER_USER" == "true" ]]; then
   python /odoo/scripts/prepare_customer_user.py -c $ODOO_RC -d $DB_NAME --log-level=error --email "$COMPANY_EMAIL" --group-file /odoo/scripts/groups.txt
 fi

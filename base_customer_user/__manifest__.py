@@ -14,5 +14,4 @@
         "data/res_users_data.xml",
         "data/res_currency_data.xml",
     ],
-    "pre_init_hook": "pre_init_hook",
 }
