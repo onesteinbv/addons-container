@@ -131,13 +131,20 @@ class ResUsers(models.Model):
     def _auth_oauth_signin(self, provider, validation, params):
         provider_record = self.env["auth.oauth.provider"].sudo().browse(provider)
         if provider_record.private:
-            self = self.with_context(provider_private=True)
+            self = self.with_context(private_provider_id=provider_record.id)
         return super(ResUsers, self)._auth_oauth_signin(provider, validation, params)
 
     def _create_user_from_template(self, values):
         # Maybe: inherit get_param (ir.config_parameter) instead because this is much redundancy 🤢
-        if self.env.context.get("provider_private", False):
-            template_user = self.env.ref("base.user_admin")
+        if self.env.context.get("private_provider_id", False):
+            provider_record = (
+                self.env["auth.oauth.provider"]
+                .sudo()
+                .browse(self.env.context["private_provider_id"])
+            )
+            template_user = provider_record.template_user_id or self.env.ref(
+                "base.user_admin"
+            )
             if not values.get("login"):
                 raise ValueError(_("Signup: no login given for new user"))
             if not values.get("partner_id") and not values.get("name"):
@@ -145,9 +152,11 @@ class ResUsers(models.Model):
             values["active"] = True
             try:
                 with self.env.cr.savepoint():
-                    return template_user.with_context(no_reset_password=True).copy(
+                    new_user = template_user.with_context(no_reset_password=True).copy(
                         values
                     )
+                    new_user.groups_id += provider_record.group_ids
+                    return new_user
             except Exception as e:
                 raise SignupError(ustr(e)) from e
         return super()._create_user_from_template(values)
