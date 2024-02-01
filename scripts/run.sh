@@ -40,7 +40,7 @@ if [[ -n "$KEYCLOAK_URL" ]]; then
   if [[ "${KEYCLOAK_RESELLER_REALM:-False}" != "False" ]]; then
     python /odoo/scripts/setup_oauth.py -c $ODOO_RC -d $DB_NAME --log-level=error \
       --url "$KEYCLOAK_URL" --realm "$KEYCLOAK_REALM" \
-      --client-id "$KEYCLOAK_CLIENT_ID" --client-secret "$KEYCLOAK_CLIENT_SECRET" \
+      --client-id "$KEYCLOAK_CLIENT_ID" --client-secret "$KEYCLOAK_RESELLER_CLIENT_SECRET" \
       --xml-id="__export__.oauth_provider_reseller" \
       --group-id="container_accessibility.group_restricted"
   fi
