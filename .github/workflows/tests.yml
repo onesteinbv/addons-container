@@ -66,3 +66,21 @@ jobs:
         uses: codecov/codecov-action@v3
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+      - name: Run scripts
+        env:
+          DOMAIN: https://onestein.nl
+          ADMIN_USER_PWD: admin
+          CHANGE_ADMIN_USER_PWD: admin
+          SETUP_SMTP: "false"
+          SMTP_HOST: "false"
+          COMPANY_EMAIL: info@onestein.nl,
+          PREPARE_CUSTOMER_USER: "true"
+          UPDATE_COMPANY: "false"
+          KEYCLOAK_URL: https://keycloak.onestein.nl
+          KEYCLOAK_REALM: main
+          KEYCLOAK_CLIENT_ID: odoo
+          KEYCLOAK_CLIENT_SECRET: odoo
+          KEYCLOAK_RESELLER_REALM: reseller
+          KEYCLOAK_RESELLER_CLIENT_SECRET: odoo
+        run: |
+          ./scripts/run.sh
