@@ -143,7 +143,7 @@ class ResUsers(models.Model):
                 .browse(self.env.context["private_provider_id"])
             )
             template_user = provider_record.template_user_id or self.env.ref(
-                "base.user_admin"
+                "base.template_portal_user_id"
             )
             if not values.get("login"):
                 raise ValueError(_("Signup: no login given for new user"))

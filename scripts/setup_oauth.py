@@ -10,8 +10,11 @@ import click_odoo
 @click.option("--client-secret")
 @click.option("--xml-id")
 @click.option("--body")
+@click.option("--template-user-id")
 @click.option("--group-id", "-g", "group_ids", multiple=True)
-def main(env, url, realm, client_id, client_secret, xml_id, body, group_ids):
+def main(
+    env, url, realm, client_id, client_secret, xml_id, body, template_user_id, group_ids
+):
     click.echo("Setup Keycloak... (%s)" % xml_id)
     module_container_accessibility = env.ref("base.module_container_accessibility")
     if module_container_accessibility.state != "installed":
@@ -35,6 +38,7 @@ def main(env, url, realm, client_id, client_secret, xml_id, body, group_ids):
         "token_endpoint": "%s/realms/%s/protocol/openid-connect/token" % (url, realm),
         "jwks_uri": "%s/realms/%s/protocol/openid-connect/certs" % (url, realm),
         "private": True,
+        "template_user_id": env.ref(template_user_id).id,
     }
     groups = env["res.groups"]
     for group_id in group_ids:
