@@ -82,6 +82,11 @@ jobs:
           KEYCLOAK_CLIENT_SECRET: odoo
           KEYCLOAK_RESELLER_REALM: reseller
           KEYCLOAK_RESELLER_CLIENT_SECRET: odoo
+          DB_HOST: postgres
+          DB_USER: odoo
+          DB_PASSWORD: odoo
+          DB_NAME: odoo
+          DB_PORT: "5432"
         run: |
           mkdir /odoo/
           mv ./scripts /odoo/scripts && /odoo/scripts/run.sh
