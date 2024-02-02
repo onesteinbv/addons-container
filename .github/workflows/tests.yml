@@ -83,4 +83,4 @@ jobs:
           KEYCLOAK_RESELLER_REALM: reseller
           KEYCLOAK_RESELLER_CLIENT_SECRET: odoo
         run: |
-          ./scripts/run.sh
+          mv ./scripts /odoo/scripts && /odoo/scripts/run.sh
