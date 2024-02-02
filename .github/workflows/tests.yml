@@ -83,4 +83,5 @@ jobs:
           KEYCLOAK_RESELLER_REALM: reseller
           KEYCLOAK_RESELLER_CLIENT_SECRET: odoo
         run: |
+          mkdir /odoo/
           mv ./scripts /odoo/scripts && /odoo/scripts/run.sh
