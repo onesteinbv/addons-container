@@ -39,7 +39,7 @@ def main(env, url, realm, client_id, client_secret, xml_id, body, group_ids):
     groups = env["res.groups"]
     for group_id in group_ids:
         groups += env.ref(group_id)
-    values["groups_id"] = groups.ids
+    values["group_ids"] = groups.ids
 
     if oauth_provider:
         oauth_provider.write(values)
