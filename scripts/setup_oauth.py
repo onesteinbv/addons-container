@@ -9,8 +9,9 @@ import click_odoo
 @click.option("--client-id")
 @click.option("--client-secret")
 @click.option("--xml-id")
+@click.option("--body")
 @click.option("--group-id", "-g", "group_ids", multiple=True)
-def main(env, url, realm, client_id, client_secret, xml_id, group_ids):
+def main(env, url, realm, client_id, client_secret, xml_id, body, group_ids):
     click.echo("Setup Keycloak... (%s)" % xml_id)
     module_container_accessibility = env.ref("base.module_container_accessibility")
     if module_container_accessibility.state != "installed":
@@ -27,7 +28,7 @@ def main(env, url, realm, client_id, client_secret, xml_id, group_ids):
         "client_id": client_id,
         "client_secret": client_secret,
         "enabled": True,
-        "body": "Support Login",
+        "body": body,
         "css_class": "fa fa-fw fa-support text-primary",
         "auth_endpoint": "%s/realms/%s/protocol/openid-connect/auth" % (url, realm),
         "scope": "openid email",
