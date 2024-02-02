@@ -9,7 +9,7 @@ import click_odoo
 @click.option("--client-id")
 @click.option("--client-secret")
 @click.option("--xml-id")
-@click.option("--group-id", "-g", "groups_ids", multiple=True)
+@click.option("--group-id", "-g", "group_ids", multiple=True)
 def main(env, url, realm, client_id, client_secret, xml_id, group_ids):
     click.echo("Setup Keycloak... (%s)" % xml_id)
     module_container_accessibility = env.ref("base.module_container_accessibility")
