@@ -29,6 +29,21 @@ fi
 
 python /odoo/scripts/uninstall_auto_install_modules.py -c $ODOO_RC -d $DB_NAME --log-level=error
 
+python /odoo/scripts/remove_odoo_oauth_provider.py -c $ODOO_RC -d $DB_NAME --log-level=error
+
 if [[ -n "$KEYCLOAK_URL" ]]; then
-  python /odoo/scripts/setup_oauth.py -c $ODOO_RC -d $DB_NAME --log-level=error --url "$KEYCLOAK_URL" --realm "$KEYCLOAK_REALM" --client-id "$KEYCLOAK_CLIENT_ID" --client-secret "$KEYCLOAK_CLIENT_SECRET"
+  python /odoo/scripts/setup_oauth.py -c $ODOO_RC -d $DB_NAME --log-level=error \
+    --url "$KEYCLOAK_URL" --realm "$KEYCLOAK_REALM" \
+    --client-id "$KEYCLOAK_CLIENT_ID" --client-secret "$KEYCLOAK_CLIENT_SECRET" \
+    --xml-id="__export__.__oauth_provider_onestein" \
+    --body="Support Login"
+
+  if [[ "${KEYCLOAK_RESELLER_REALM:-False}" != "False" ]]; then
+    python /odoo/scripts/setup_oauth.py -c $ODOO_RC -d $DB_NAME --log-level=error \
+      --url "$KEYCLOAK_URL" --realm "$KEYCLOAK_RESELLER_REALM" \
+      --client-id "$KEYCLOAK_CLIENT_ID" --client-secret "$KEYCLOAK_RESELLER_CLIENT_SECRET" \
+      --xml-id="__export__.__oauth_provider_reseller" \
+      --body="${KEYCLOAK_RESELLER_BUTTON:-Reseller Login}" \
+      --group-id="container_accessibility.group_restricted"
+  fi
 fi

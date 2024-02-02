@@ -8,8 +8,11 @@ import click_odoo
 @click.option("--realm")
 @click.option("--client-id")
 @click.option("--client-secret")
-def main(env, url, realm, client_id, client_secret):
-    click.echo("Setup Keycloak...")
+@click.option("--xml-id")
+@click.option("--body")
+@click.option("--group-id", "-g", "group_ids", multiple=True)
+def main(env, url, realm, client_id, client_secret, xml_id, body, group_ids):
+    click.echo("Setup Keycloak... (%s)" % xml_id)
     module_container_accessibility = env.ref("base.module_container_accessibility")
     if module_container_accessibility.state != "installed":
         return click.echo(
@@ -17,7 +20,7 @@ def main(env, url, realm, client_id, client_secret):
             err=True,
         )
 
-    keycloak = env["auth.oauth.provider"].search([("private", "=", True)])
+    oauth_provider = env.ref(xml_id, raise_if_not_found=False)
     values = {
         "name": "Keycloak Onestein",
         "flow": "id_token_code",
@@ -25,7 +28,7 @@ def main(env, url, realm, client_id, client_secret):
         "client_id": client_id,
         "client_secret": client_secret,
         "enabled": True,
-        "body": "Support Login",
+        "body": body,
         "css_class": "fa fa-fw fa-support text-primary",
         "auth_endpoint": "%s/realms/%s/protocol/openid-connect/auth" % (url, realm),
         "scope": "openid email",
@@ -33,15 +36,24 @@ def main(env, url, realm, client_id, client_secret):
         "jwks_uri": "%s/realms/%s/protocol/openid-connect/certs" % (url, realm),
         "private": True,
     }
-    if keycloak:
-        keycloak.write(values)
-    else:
-        env["auth.oauth.provider"].create(values)
+    groups = env["res.groups"]
+    for group_id in group_ids:
+        groups += env.ref(group_id)
+    values["group_ids"] = groups.ids
 
-    click.echo("Remove Odoo.com login...")
-    provider_openerp = env.ref("auth_oauth.provider_openerp", raise_if_not_found=False)
-    if provider_openerp:
-        provider_openerp.unlink()
+    if oauth_provider:
+        oauth_provider.write(values)
+    else:
+        module, name = xml_id.split(".")
+        new_provider = env["auth.oauth.provider"].create(values)
+        env["ir.model.data"].create(
+            {
+                "module": module,
+                "name": name,
+                "model": "auth.oauth.provider",
+                "res_id": new_provider.id,
+            }
+        )
 
 
 if __name__ == "__main__":
