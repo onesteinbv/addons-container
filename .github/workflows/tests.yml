@@ -72,7 +72,11 @@ jobs:
           ADMIN_USER_PWD: admin
           CHANGE_ADMIN_USER_PWD: admin
           SETUP_SMTP: "false"
-          SMTP_HOST: "false"
+          SMTP_HOST: smtp.onestein.nl
+          SMTP_USER: user@smtp.onestein.nl
+          SMTP_PASSWORD: mypassword
+          SMTP_ENCRYPTION: "ssl"
+          SMTP_PORT: "465"
           COMPANY_EMAIL: info@onestein.nl,
           PREPARE_CUSTOMER_USER: "true"
           UPDATE_COMPANY: "false"
@@ -87,6 +91,11 @@ jobs:
           DB_PASSWORD: odoo
           DB_NAME: odoo
           DB_PORT: "5432"
+          SETUP_INCOMING_MAIL: "true"
+          INCOMING_MAIL_SERVER: imap.onestein.nl
+          INCOMING_MAIL_USER: user@someserver.onestein.nl
+          INCOMING_MAIL_PASSWORD: mypassword
+          INCOMING_MAIL_CONFIRM: "false"
         run: |
           mkdir /odoo/
           mv ./scripts /odoo/scripts && /odoo/scripts/run.sh

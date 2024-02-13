@@ -13,3 +13,4 @@ from . import auditlog_autovacuum
 from . import ir_cron
 from . import server_config
 from . import fs_storage
+from . import fetchmail_server
