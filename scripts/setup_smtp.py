@@ -7,7 +7,11 @@ import click_odoo
 @click.option("--host")
 @click.option("--user")
 @click.option("--password")
-def main(env, host, user, password):
+@click.option(
+    "--encryption", type=click.Choice(["none", "starttls", "ssl"], case_sensitive=True)
+)
+@click.option("--port", type=int)
+def main(env, host, user, password, encryption, port):
     click.echo("Setup SMTP...")
     module_container_accessibility = env.ref("base.module_container_accessibility")
     if module_container_accessibility.state != "installed":
@@ -20,13 +24,14 @@ def main(env, host, user, password):
     values = {
         "name": "Default SMTP",
         "smtp_authentication": "login",
-        "smtp_encryption": "starttls",
-        "smtp_port": 587,
+        "smtp_encryption": encryption,
+        "smtp_port": port,  # 587
         "sequence": 9999999,
         "smtp_host": host,
         "smtp_user": user,
         "smtp_pass": password,
         "private": True,
+        "from_filter": user.split("@")[1],
     }
     if smtp_server:
         smtp_server.write(values)

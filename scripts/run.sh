@@ -6,8 +6,22 @@ if [[ -n "$ADMIN_USER_PWD" && "$CHANGE_ADMIN_USER_PWD" == "true" ]]; then
 fi
 
 if [[ -n "$SMTP_HOST" && "$SETUP_SMTP" == "true" ]]; then
-  python /odoo/scripts/setup_smtp.py -c $ODOO_RC -d $DB_NAME --log-level=error --host "$SMTP_HOST" --user "$SMTP_USER" --password "$SMTP_PASSWORD"
+  python /odoo/scripts/setup_smtp.py -c $ODOO_RC -d $DB_NAME --log-level=error \
+    --host "$SMTP_HOST" \
+    --user "$SMTP_USER" \
+    --password "$SMTP_PASSWORD" \
+    --encryption "$SMTP_ENCRYPTION" \
+    --port "$SMTP_PORT"
 fi
+
+if [[ -n "$INCOMING_MAIL_SERVER" && "$SETUP_INCOMING_MAIL" == "true" ]]; then
+  if [[ $INCOMING_MAIL_CONFIRM == "true" ]]; then
+    python /odoo/scripts/setup_incoming_mail.py -c $ODOO_RC -d $DB_NAME --log-level=error --server "$INCOMING_MAIL_SERVER" --user "$INCOMING_MAIL_USER" --password "$INCOMING_MAIL_PASSWORD" --confirm
+  else
+    python /odoo/scripts/setup_incoming_mail.py -c $ODOO_RC -d $DB_NAME --log-level=error --server "$INCOMING_MAIL_SERVER" --user "$INCOMING_MAIL_USER" --password "$INCOMING_MAIL_PASSWORD"
+  fi
+fi
+
 
 python /odoo/scripts/localize.py
 

@@ -415,6 +415,7 @@ class AccountChartTemplate(models.Model):
                 and journal.with_context(lang="en_US").name == "Customer Invoices"
             ):
                 journal.update_field_translations("name", {"nl_NL": "Klantfacturen"})
+                journal.alias_name = "klantfacturen"
             elif (
                 journal.code == "BILL"
                 and journal.with_context(lang="en_US").name == "Vendor Bills"
@@ -422,6 +423,7 @@ class AccountChartTemplate(models.Model):
                 journal.update_field_translations(
                     "name", {"nl_NL": "Leveranciersfacturen"}
                 )
+                journal.alias_name = "facturen"
             elif (
                 journal.code == "MISC"
                 and journal.with_context(lang="en_US").name
