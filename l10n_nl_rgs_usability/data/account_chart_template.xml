@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<odoo>
-    <function model="account.chart.template" name="_patch_fix_stock_account" />
-</odoo>
