@@ -41,9 +41,6 @@ def main(env, server, user, password, confirm):
     )
     mail_domain = user.split("@")[1]
     env["ir.config_parameter"].set_param("mail.catchall.domain", mail_domain)
-    env["ir.config_parameter"].set_param(
-        "mail.default.from", "notifications@" + mail_domain
-    )
 
 
 if __name__ == "__main__":
