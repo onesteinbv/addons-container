@@ -24,7 +24,6 @@
         "security/ir_sequence_security.xml",
         "data/account_payment_term.xml",
         "data/res_groups.xml",
-        "data/account_chart_template.xml",
         "views/account_journal_views.xml",
         "views/account_account_views.xml",
         "views/account_onboarding_templates.xml",
