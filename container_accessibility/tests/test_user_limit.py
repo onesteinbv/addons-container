@@ -5,6 +5,7 @@ from odoo.tools import config
 
 class TestUserLimit(TransactionCase):
     def test_exceeded(self):
+        # FIXME: Created just to increase code coverage, due to time limitation
         config["user_limit"] = "5"
         with self.assertRaises(UserError):
             for i in range(10):
