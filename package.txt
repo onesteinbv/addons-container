@@ -152,6 +152,7 @@ oca/disable_odoo_online
 oca/helpdesk_mgmt
 oca/helpdesk_mgmt_project
 oca/hr_employee_firstname
+oca/hr_expense_fleet
 oca/hr_expense_remove_mobile_link
 oca/hr_timesheet_sheet
 oca/l10n_nl_bank
@@ -173,6 +174,7 @@ oca/partner_contact_birthdate
 oca/partner_contact_personal_information_page
 oca/partner_external_map
 oca/partner_firstname
+oca/product_analytic
 oca/product_category_product_link
 oca/product_category_tax
 oca/project_list
@@ -190,6 +192,7 @@ oca/report_qweb_parameter
 oca/report_wkhtmltopdf_param
 oca/report_xlsx
 oca/report_xlsx_helper
+oca/sale_order_amount_to_invoice
 oca/spreadsheet_dashboard_oca
 oca/spreadsheet_oca
 oca/session_db

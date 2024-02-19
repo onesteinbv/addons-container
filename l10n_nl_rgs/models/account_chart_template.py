@@ -205,6 +205,9 @@ class AccountChartTemplate(models.Model):
             # Set the transfer account 1003010 on the company (delete 1003011)
             self._set_liquidity_transfer_account(company)
 
+            # Fix for stock account properties
+            self._patch_fix_stock_account()
+
         return res
 
     def _set_liquidity_transfer_account(self, company):
@@ -475,4 +478,49 @@ class AccountChartTemplate(models.Model):
             ):
                 journal.update_field_translations(
                     "name", {"nl_NL": "Voorraadwaardering"}
+                )
+
+    @api.model
+    def _patch_fix_stock_account(self):
+        # Installing stock_account will create ir.property property_stock_account_output_categ_id and property_stock_account_input_categ_id for the
+        # main_company. Somehow if this module is installed it removes the ir.model.data or ir.property. (in rgs._load(main_company) -> self.generate_properties())
+        # See: accounts/chart_template.py in def _load(self, company) it deletes ir.property
+        # This is a core issue it can also be triggered by creating a database installing stock_account installing belgium coa switch to it, and update stock_account
+
+        # TODO: Fix in core
+        is_stock_account_module_installed = (
+            self.env["ir.module.module"]
+            .sudo()
+            .search(
+                [
+                    ("name", "=", "stock_account"),
+                    ("state", "=", "installed"),
+                ]
+            )
+        )
+        if is_stock_account_module_installed:
+            xml_ids = [
+                ("stock_account", "property_stock_account_output_categ_id"),
+                ("stock_account", "property_stock_account_input_categ_id"),
+            ]
+
+            main_company = self.env.ref("base.main_company", False)
+            for xml_id in xml_ids:
+                ir_property = self.env.ref("%s.%s" % (xml_id[0], xml_id[1]), False)
+                if ir_property:
+                    continue
+                self.env["ir.model.data"].create(
+                    {
+                        "res_id": self.env["ir.property"].search(
+                            [
+                                ("name", "=", xml_id[1]),
+                                ("company_id", "=", main_company.id),
+                                ("res_id", "=", False),
+                            ]
+                        ),
+                        "model": "ir.property",
+                        "name": xml_id[1],
+                        "module": xml_id[0],
+                        "noupdate": True,
+                    }
                 )

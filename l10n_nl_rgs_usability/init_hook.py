@@ -28,7 +28,6 @@ def post_init_hook(cr, _):
         and not rgs.existing_accounting(main_company)
     ):
         rgs._load(main_company)
-        rgs._patch_fix_stock_account()
 
     # Archive the cash basis tax journal
     journals = env["account.journal"].search([])
