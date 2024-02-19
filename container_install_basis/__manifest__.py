@@ -35,6 +35,7 @@
         "account_move_line_sale_info",
         "account_move_line_stock_info",
         "purchase_stock",
+        "sale_order_amount_to_invoice",
         "sale_purchase_stock",
         # Extra security
         "auth_oidc",
