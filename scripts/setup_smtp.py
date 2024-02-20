@@ -38,9 +38,8 @@ def main(env, host, user, password, encryption, port):
     else:
         env["ir.mail_server"].create(values)
     mail_domain = user.split("@")[1]
-    env["ir.config_parameter"].set_param(
-        "mail.default.from", "notifications@" + mail_domain
-    )
+    env["ir.config_parameter"].set_param("mail.default.from", "info")
+    env["ir.config_parameter"].set_param("mail.catchall.domain", mail_domain)
 
 
 if __name__ == "__main__":
