@@ -17,7 +17,16 @@ def main(env, server, user, password, confirm):
             err=True,
         )
 
-    fetchmail_server = env["mail.fetchmail_server"].search([("private", "=", True)])
+    module_fetchmail_notify_error_to_sender = env.ref(
+        "base.module_fetchmail_notify_error_to_sender"
+    )
+    if module_fetchmail_notify_error_to_sender.state != "installed":
+        return click.echo(
+            "Module `fetchmail_notify_error_to_sender` must be installed for this script to work",
+            err=True,
+        )
+
+    fetchmail_server = env["fetchmail.server"].search([("private", "=", True)])
     values = {
         "name": "Default Incoming Mail Server",
         "server_type": "imap",
@@ -28,11 +37,14 @@ def main(env, server, user, password, confirm):
         "user": user,
         "password": password,
         "private": True,
+        "error_notice_template_id": env.ref(
+            "fetchmail_notify_error_to_sender.email_template_error_notice"
+        ).id,
     }
     if fetchmail_server:
         fetchmail_server.write(values)
     else:
-        fetchmail_server = env["mail.fetchmail_server"].create(values)
+        fetchmail_server = env["fetchmail.server"].create(values)
         if confirm:
             fetchmail_server.button_confirm_login()
 
