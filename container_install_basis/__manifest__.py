@@ -116,6 +116,7 @@
         "payment_mollie_official",
         "partner_external_map",
         "mass_mailing",
+        "mass_mailing_force_dedicated_server",
     ],
     "data": [
         # "data/res.users.role.csv",  # TODO disabled for now

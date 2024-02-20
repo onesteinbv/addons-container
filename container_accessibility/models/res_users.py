@@ -167,8 +167,3 @@ class ResUsers(models.Model):
         if self.env.context.get("provider_private", False):
             return "b2c"
         return super()._get_signup_invitation_scope()
-
-    def action_reset_password(self):
-        return super(
-            ResUsers, self.with_context(allow_private_mail_server=True)
-        ).action_reset_password()
