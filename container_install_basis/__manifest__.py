@@ -111,12 +111,12 @@
         "website_odoo_debranding",
         # 'support_branding',  # TODO do we need it?
         "digest_disable",
-        # THIRD-PARTY
         "mollie_account_sync",
         "payment_mollie_official",
         "partner_external_map",
         "mass_mailing",
         "mass_mailing_force_dedicated_server",
+        "fetchmail_notify_error_to_sender",
     ],
     "data": [
         # "data/res.users.role.csv",  # TODO disabled for now

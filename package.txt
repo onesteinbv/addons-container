@@ -150,6 +150,7 @@ oca/contract_payment_mode
 oca/currency_rate_update
 oca/date_range
 oca/disable_odoo_online
+oca/fetchmail_notify_error_to_sender
 oca/helpdesk_mgmt
 oca/helpdesk_mgmt_project
 oca/hr_employee_firstname
