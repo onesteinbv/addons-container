@@ -18,7 +18,7 @@
     "demo": ["demo/res_groups_demo.xml"],
     "assets": {
         "web.assets_backend": [
-            "base_onboarding/static/src/js/backend.js",
+            "base_onboarding/static/src/js/backend.esm.js",
         ],
     },
 }
