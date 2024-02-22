@@ -25,8 +25,8 @@ def main(env, server, user, password, confirm):
             "Module `fetchmail_notify_error_to_sender` must be installed for this script to work",
             err=True,
         )
-
-    fetchmail_server = env["fetchmail.server"].search([("private", "=", True)])
+    fetchmail_server_model = env["fetchmail.server"]
+    fetchmail_server = fetchmail_server_model.search([("private", "=", True)])
     values = {
         "name": "Default Incoming Mail Server",
         "server_type": "imap",
@@ -44,18 +44,15 @@ def main(env, server, user, password, confirm):
     if fetchmail_server:
         fetchmail_server.write(values)
     else:
-        fetchmail_server = env["fetchmail.server"].create(values)
+        fetchmail_server = fetchmail_server_model.create(values)
         if confirm:
             fetchmail_server.button_confirm_login()
 
-    env["ir.config_parameter"].set_param(
-        "base_setup.default_external_email_server", "True"
-    )
+    config_parameter = env["ir.config_parameter"]
+    config_parameter.set_param("base_setup.default_external_email_server", "True")
     mail_domain = user.split("@")[1]
-    env["ir.config_parameter"].set_param("mail.catchall.domain", mail_domain)
-    env["ir.config_parameter"].set_param(
-        "mass_mailing_force_dedicated_server.enabled", "True"
-    )
+    config_parameter.set_param("mail.catchall.domain", mail_domain)
+    config_parameter.set_param("mass_mailing_force_dedicated_server.enabled", "True")
 
 
 if __name__ == "__main__":
