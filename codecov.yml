@@ -1,2 +1,7 @@
 ignore:
-  - "package"
+  - "package/"
+  - "odoo/"
+  - "oca/"
+  - "design-themes/"
+  - "ProjectManagement/"
+  - "addons-generic/"
