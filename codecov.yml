@@ -1,3 +1,5 @@
+fixes:
+  - "package/::"
 ignore:
   - "package/**/*"
   - "odoo/**/*"
