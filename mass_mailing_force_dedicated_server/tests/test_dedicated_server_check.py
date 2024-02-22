@@ -15,20 +15,23 @@ class TestDedicatedServerCheck(TransactionCase):
 
     def test_enabled_not_configured(self):
         """Check if mass mailing is failing when mass_mailing_force_dedicated_server.enabled is True and dedicated server is not configured"""
-        self.env["ir.config_parameter"].set_param(
-            "mass_mailing_force_dedicated_server.enabled", True
-        )
-        self.env["ir.config_parameter"].set_param("mass_mailing.mail_server_id", "0")
-        self.env["ir.config_parameter"].set_param(
-            "mass_mailing.outgoing_mail_server", "False"
-        )
+        config_parameter = self.env["ir.config_parameter"]
+        config_parameter.set_param("mass_mailing_force_dedicated_server.enabled", True)
+        config_parameter.set_param("mass_mailing.mail_server_id", "0")
+        config_parameter.set_param("mass_mailing.outgoing_mail_server", "False")
 
         mailing = self.env["mailing.mailing"].create({"subject": "normal test"})
-        with self.assertRaises(UserError):
+        with self.assertRaisesRegex(
+            UserError, "Please configure a dedicated outgoing server"
+        ):
             mailing.action_test()
-        with self.assertRaises(UserError):
+        with self.assertRaisesRegex(
+            UserError, "Please configure a dedicated outgoing server"
+        ):
             mailing.action_put_in_queue()
-        with self.assertRaises(UserError):
+        with self.assertRaisesRegex(
+            UserError, "Please configure a dedicated outgoing server"
+        ):
             mailing.action_schedule()
 
     def test_enabled_configured(self):
@@ -36,15 +39,10 @@ class TestDedicatedServerCheck(TransactionCase):
         mail_server = self.env["ir.mail_server"].create(
             {"name": "mail server", "smtp_host": "localhost"}
         )
-        self.env["ir.config_parameter"].set_param(
-            "mass_mailing_force_dedicated_server.enabled", True
-        )
-        self.env["ir.config_parameter"].set_param(
-            "mass_mailing.mail_server_id", mail_server.id
-        )
-        self.env["ir.config_parameter"].set_param(
-            "mass_mailing.outgoing_mail_server", "True"
-        )
+        config_parameter = self.env["ir.config_parameter"]
+        config_parameter.set_param("mass_mailing_force_dedicated_server.enabled", True)
+        config_parameter.set_param("mass_mailing.mail_server_id", mail_server.id)
+        config_parameter.set_param("mass_mailing.outgoing_mail_server", "True")
 
         mailing = self.env["mailing.mailing"].create({"subject": "normal test"})
         mailing.action_test()
@@ -52,9 +50,9 @@ class TestDedicatedServerCheck(TransactionCase):
         mailing.action_schedule()
 
         mailing.mail_server_id = False
-        with self.assertRaises(UserError):
+        with self.assertRaisesRegex(UserError, "Please select a mail server"):
             mailing.action_test()
-        with self.assertRaises(UserError):
+        with self.assertRaisesRegex(UserError, "Please select a mail server"):
             mailing.action_put_in_queue()
-        with self.assertRaises(UserError):
+        with self.assertRaisesRegex(UserError, "Please select a mail server"):
             mailing.action_schedule()

@@ -9,23 +9,20 @@ class MailingMailing(models.Model):
     def _force_dedicated_server(self):
         """Check if dedicated server should be enforced"""
         self.ensure_one()
-        force_dedicated_server = (
-            self.env["ir.config_parameter"]
-            .sudo()
-            .get_param("mass_mailing_force_dedicated_server.enabled", "False")
+        sudo_config_parameter = self.env["ir.config_parameter"].sudo()
+        force_dedicated_server = sudo_config_parameter.get_param(
+            "mass_mailing_force_dedicated_server.enabled", "False"
         )
         if bool(
             safe_eval(force_dedicated_server)
         ):  # Allow also 0 and 1 and other falsy / truthy values
             param_mail_server_id = safe_eval(
-                self.env["ir.config_parameter"]
-                .sudo()
-                .get_param("mass_mailing.mail_server_id", "0")
+                sudo_config_parameter.get_param("mass_mailing.mail_server_id", "0")
             )
             param_outgoing_mail_server = safe_eval(
-                self.env["ir.config_parameter"]
-                .sudo()
-                .get_param("mass_mailing.outgoing_mail_server", "False")
+                sudo_config_parameter.get_param(
+                    "mass_mailing.outgoing_mail_server", "False"
+                )
             )
             if not param_mail_server_id or not param_outgoing_mail_server:
                 raise UserError(_("Please configure a dedicated outgoing server."))
