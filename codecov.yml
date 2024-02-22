@@ -1,11 +1,10 @@
-codecov:
-  disable_default_path_fixes: true
 fixes:
-  - "__w/addons-container/addons-container/::"
+  - "/::"
 ignore:
   - "package/**/*"
   - "odoo/**/*"
   - "oca/**/*"
   - "design-themes/**/*"
   - "addons-generic/**/*"
+  - "addons-third-party/**/*"
   - "ProjectManagement/**/*"
