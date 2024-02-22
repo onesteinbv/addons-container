@@ -63,12 +63,11 @@ jobs:
       - name: Prepare report
         run: coverage xml -o coverage.xml --data-file .coverage
       - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v4
+        uses: codecov/codecov-action@v3
         with:
           files: ./coverage.xml
-          token: ${{ secrets.CODECOV_TOKEN }}
-          fail_ci_if_error: true
-          verbose: true
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
       - name: Run scripts
         env:
           DOMAIN: https://onestein.nl
