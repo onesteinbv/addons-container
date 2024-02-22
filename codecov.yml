@@ -1,7 +1,7 @@
-ignore:
-  - "package"
-  - "odoo"
-  - "oca"
-  - "design-themes"
-  - "addons-generic"
-  - "ProjectManagement"
+#ignore:
+#  - "package"
+#  - "odoo"
+#  - "oca"
+#  - "design-themes"
+#  - "addons-generic"
+#  - "ProjectManagement"
