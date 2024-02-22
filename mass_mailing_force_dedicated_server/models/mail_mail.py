@@ -1,5 +1,9 @@
+import logging
+
 from odoo import models
 from odoo.exceptions import UserError
+
+_logger = logging.getLogger(__name__)
 
 
 class MailMail(models.Model):
@@ -12,5 +16,8 @@ class MailMail(models.Model):
             except UserError as e:
                 if raise_exception:
                     raise e
-                self.write({"state": "exception", "failure_reason": str(e)})
+                failure_reason = str(e)
+                # We don't care to log if exception will be raised
+                _logger.info("Refused to send mailing %s", failure_reason)
+                self.write({"state": "exception", "failure_reason": failure_reason})
         return super()._send(auto_commit, raise_exception, smtp_session)

@@ -13,6 +13,17 @@ class TestDedicatedServerCheck(TransactionCase):
         mailing.action_put_in_queue()
         mailing.action_schedule()
 
+        mailing_test_wizard = self.env["mailing.mailing.test"].create(
+            {"mass_mailing_id": mailing.id}
+        )
+        mailing_test_wizard.send_mail_test()
+        self.assertFalse(
+            mailing.message_ids.filtered(
+                lambda m: "Please configure a dedicated outgoing server" in m.body
+                or "Please select a mail server" in m.body
+            )
+        )
+
     def test_enabled_not_configured(self):
         """Check if mass mailing is failing when mass_mailing_force_dedicated_server.enabled is True and dedicated server is not configured"""
         config_parameter = self.env["ir.config_parameter"]
@@ -33,6 +44,16 @@ class TestDedicatedServerCheck(TransactionCase):
             UserError, "Please configure a dedicated outgoing server"
         ):
             mailing.action_schedule()
+
+        mailing_test_wizard = self.env["mailing.mailing.test"].create(
+            {"mass_mailing_id": mailing.id}
+        )
+        mailing_test_wizard.send_mail_test()
+        self.assertTrue(
+            mailing.message_ids.filtered(
+                lambda m: "Please configure a dedicated outgoing server" in m.body
+            )
+        )
 
     def test_enabled_configured(self):
         """Check if mass mailing is failing when mass_mailing_force_dedicated_server.enabled is True and dedicated server is configured"""
@@ -56,3 +77,13 @@ class TestDedicatedServerCheck(TransactionCase):
             mailing.action_put_in_queue()
         with self.assertRaisesRegex(UserError, "Please select a mail server"):
             mailing.action_schedule()
+
+        mailing_test_wizard = self.env["mailing.mailing.test"].create(
+            {"mass_mailing_id": mailing.id}
+        )
+        mailing_test_wizard.send_mail_test()  # raise_exception is False and log is too assertLogs("INFO") is too generic
+        self.assertTrue(
+            mailing.message_ids.filtered(
+                lambda m: "Please select a mail server" in m.body
+            )
+        )
