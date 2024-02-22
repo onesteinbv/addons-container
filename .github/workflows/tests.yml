@@ -64,6 +64,8 @@ jobs:
         run: coverage xml -o report.xml --data-file .coverage
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v3
+        with:
+          files: ./report.xml
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
       - name: Run scripts
