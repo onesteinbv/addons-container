@@ -77,6 +77,7 @@
         "contract",
         "contract_payment_mode",
         "currency_rate_update",
+        "digest_configuration",
         "l10n_nl_bsn",
         "mollie_subscription_ept",
         "payment_custom",
@@ -103,6 +104,7 @@
         "spreadsheet_dashboard_oca",
         "spreadsheet_oca_ux",
         "partner_country_default_nl",
+        "project_parent",
         # Timesheets
         "hr_timesheet_sheet",
         # Debranding
