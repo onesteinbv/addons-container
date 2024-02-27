@@ -119,6 +119,8 @@
         "mass_mailing",
         "mass_mailing_force_dedicated_server",
         "fetchmail_notify_error_to_sender",
+        "l10n_nl_hr_recruitment",
+        "l10n_nl_hr_expense",
     ],
     "data": [
         # "data/res.users.role.csv",  # TODO disabled for now
