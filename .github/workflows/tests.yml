@@ -51,19 +51,21 @@ jobs:
       - name: Initialize test db
         run: oca_init_test_database
         env:
-          ADDONS_DIR: package
+          ADDONS_DIR: .,package  # Duplicate modules but Odoo will only load the first found
           EXCLUDE: account_configuration,l10n_nl_rgs_account_financial_report,accountancy_install,management_dashboard,auditlog,account_asset_management,account_journal_lock_date,project_scrum_agile_extended,l10n_nl_rgs_usability,l10n_nl_rgs_asset,partner_country_default_nl,agreement_extended,account_statement_import_file_reconcile_oca,multi_company_disable,theme_onestein,base_menu_visibility_restriction,account_financial_consolidation_report,helpdesk_ticket_custom_priority,project_timesheet_management,account_banking_mandate_contact,project_scrum_agile,project_timeline_hr_timesheet,university_org_install,pm_migration_custom,account_financial_report,account_asset_management_template,helpdesk_mgmt,hr_timesheet_sheet,mis_builder,account_reconcile_oca,report_xlsx,project_org_install,queue_job,services_org_install,account_banking_sepa_credit_transfer,account_payment_order,project_budget_management,project_team_leave_management,fs_storage,fs_attachment,fs_storage_backup,project_sequence,account_chart_update,l10n_nl_rgs_mis_report,account_spread_cost_revenue,container_install_basis,container_install_standard,currency_rate_update,account_move_line_tax_editable,base_vat_optional_vies,trade_org_install,account_invoice_constraint_chronology,container_s3,community_org_install,base_municipality,project_management_security,mis_builder_budget
           ODOO_VERSION: "16.0"          
       - name: Run tests
         run: oca_run_tests
         env:
-          ADDONS_DIR: package
+          ADDONS_DIR: .,package
           EXCLUDE: account_configuration,l10n_nl_rgs_account_financial_report,accountancy_install,management_dashboard,auditlog,account_asset_management,account_journal_lock_date,project_scrum_agile_extended,l10n_nl_rgs_usability,l10n_nl_rgs_asset,partner_country_default_nl,agreement_extended,account_statement_import_file_reconcile_oca,multi_company_disable,theme_onestein,base_menu_visibility_restriction,account_financial_consolidation_report,helpdesk_ticket_custom_priority,project_timesheet_management,account_banking_mandate_contact,project_scrum_agile,project_timeline_hr_timesheet,university_org_install,pm_migration_custom,account_financial_report,account_asset_management_template,helpdesk_mgmt,hr_timesheet_sheet,mis_builder,account_reconcile_oca,report_xlsx,project_org_install,queue_job,services_org_install,account_banking_sepa_credit_transfer,account_payment_order,project_budget_management,project_team_leave_management,fs_storage,fs_attachment,fs_storage_backup,project_sequence,account_chart_update,l10n_nl_rgs_mis_report,account_spread_cost_revenue,container_install_basis,container_install_standard,currency_rate_update,account_move_line_tax_editable,base_vat_optional_vies,trade_org_install,account_invoice_constraint_chronology,container_s3,community_org_install,base_municipality,project_management_security,mis_builder_budget
           ODOO_VERSION: "16.0"
       - name: Prepare report
-        run: coverage xml -o report.xml --data-file .coverage
+        run: coverage xml -o coverage.xml --data-file .coverage
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v3
+        with:
+          files: ./coverage.xml
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
       - name: Run scripts

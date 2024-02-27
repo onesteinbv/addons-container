@@ -12,6 +12,7 @@ consolidation_account
 container_install_standard
 container_install_basis
 container_hr_recruitment
+digest_configuration
 l10n_nl_rgs
 l10n_nl_rgs_account_financial_report
 l10n_nl_rgs_asset
@@ -180,6 +181,7 @@ oca/product_analytic
 oca/product_category_product_link
 oca/product_category_tax
 oca/project_list
+oca/project_parent
 oca/project_role
 oca/project_sequence
 oca/project_template
