@@ -28,6 +28,7 @@ digest_disable
 multi_company_disable
 container_accessibility
 container_s3
+mass_mailing_force_dedicated_server
 addons-generic/account_period_auto_create
 addons-generic/attachment_preview_remove_preview_button
 addons-generic/base_debug_disabled
@@ -150,6 +151,7 @@ oca/contract_payment_mode
 oca/currency_rate_update
 oca/date_range
 oca/disable_odoo_online
+oca/fetchmail_notify_error_to_sender
 oca/helpdesk_mgmt
 oca/helpdesk_mgmt_project
 oca/hr_employee_firstname

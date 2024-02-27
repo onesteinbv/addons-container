@@ -20,6 +20,7 @@ def main(env, host, user, password, encryption, port):
             err=True,
         )
 
+    mail_domain = user.split("@")[1]
     smtp_server = env["ir.mail_server"].search([("private", "=", True)])
     values = {
         "name": "Default SMTP",
@@ -31,16 +32,14 @@ def main(env, host, user, password, encryption, port):
         "smtp_user": user,
         "smtp_pass": password,
         "private": True,
-        "from_filter": user.split("@")[1],
+        "from_filter": mail_domain,
     }
     if smtp_server:
         smtp_server.write(values)
     else:
         env["ir.mail_server"].create(values)
-    mail_domain = user.split("@")[1]
-    env["ir.config_parameter"].set_param(
-        "mail.default.from", "notifications@" + mail_domain
-    )
+    env["ir.config_parameter"].set_param("mail.default.from", "info")
+    env["ir.config_parameter"].set_param("mail.catchall.domain", mail_domain)
 
 
 if __name__ == "__main__":
