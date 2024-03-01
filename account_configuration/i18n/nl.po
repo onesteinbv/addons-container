@@ -1,6 +1,7 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* account
+# 	* account_configuration
+
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
@@ -14,9 +15,32 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
+#. module: account_configuration
+#: model:mail.template,name:account_configuration.email_template_send_invoice
+msgid "Send Invoice"
+msgstr "Stuur Factuur"
 
-#. module: account
-#: model:mail.template,body_html:account.email_template_edi_invoice
+#. module: account_configuration
+#: model:mail.template,report_name:account_configuration.email_template_send_invoice
+msgid ""
+"Invoice_{{ (object.name or '').replace('/','_') }}{{ object.state == 'draft'"
+" and '_draft' or '' }}"
+msgstr ""
+"Factuur_{{ (object.name or '').replace('/','_') }}{{ object.state == 'draft'"
+" and '_draft' or '' }}"
+
+#. module: account_configuration
+#: model:mail.template,description:account_configuration.email_template_send_invoice
+msgid "Sent to customers with their invoices in attachment"
+msgstr "Verzonden naar klanten met hun facturen in bijlage"
+
+#. module: account_configuration
+#: model:mail.template,subject:account_configuration.email_template_send_invoice
+msgid "{{ object.company_id.name }} Invoice (Ref {{ object.name or 'n/a' }})"
+msgstr "{{ object.company_id.name }} Factuur (Ref {{ object.name or 'nvt' }})"
+
+#. module: account_configuration
+#: model:mail.template,body_html:account_configuration.email_template_send_invoice
 msgid ""
 "<div style=\"margin: 0px; padding: 0px;\">\n"
 "    <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
@@ -30,13 +54,13 @@ msgid ""
 "        <br><br>\n"
 "        Please find attached the invoice of:\n"
 "        <br><br>\n"
-"        Company name:<span style=\"font-weight:bold;\" t-out=\"object.company_id.name or ''\">YourCompany</span>.\n"
+"        Company name: <span style=\"font-weight:bold;\" t-out=\"object.company_id.name or ''\">YourCompany</span>.\n"
 "        <br><br>\n"
 "        <t t-if=\"object.name\">\n"
 "            Invoice number: <span style=\"font-weight:bold;\" t-out=\"object.name or ''\">INV/2021/05/0005</span><br><br>\n"
 "        </t>\n"
 "        <t t-if=\"object.invoice_date_due\">\n"
-"             Due date:<span style=\"font-weight:bold;\" t-out=\"object.invoice_date_due or ''\">12/05/2024</span><br><br>\n"
+"             Due date: <span style=\"font-weight:bold;\" t-out=\"object.invoice_date_due or ''\">12/05/2024</span><br><br>\n"
 "        </t>\n"
 "        Amount: <span style=\"font-weight:bold;\" t-out=\"format_amount(object.amount_total, object.currency_id) or ''\">$ 143,750.00</span>\n"
 "        <br><br><br>\n"
@@ -78,13 +102,13 @@ msgstr ""
 "        <br><br>\n"
 "        In de bijlage treft u de factuur van:\n"
 "        <br><br>\n"
-"        Bedrijfsnaam:<span style=\"font-weight:bold;\" t-out=\"object.company_id.name or ''\">YourCompany</span>.\n"
+"        Bedrijfsnaam: <span style=\"font-weight:bold;\" t-out=\"object.company_id.name or ''\">YourCompany</span>.\n"
 "        <br><br>\n"
 "        <t t-if=\"object.name\">\n"
 "            Factuurnummer: <span style=\"font-weight:bold;\" t-out=\"object.name or ''\">INV/2021/05/0005</span><br><br>\n"
 "        </t>\n"
 "        <t t-if=\"object.invoice_date_due\">\n"
-"             Vervaldatum:<span style=\"font-weight:bold;\" t-out=\"object.invoice_date_due or ''\">12/05/2024</span><br><br>\n"
+"             Vervaldatum: <span style=\"font-weight:bold;\" t-out=\"object.invoice_date_due or ''\">12/05/2024</span><br><br>\n"
 "        </t>\n"
 "        Bedrag: <span style=\"font-weight:bold;\" t-out=\"format_amount(object.amount_total, object.currency_id) or ''\">$ 143,750.00</span>\n"
 "        <br><br><br>\n"
@@ -92,7 +116,7 @@ msgstr ""
 "            Deze factuur is reeds betaald.\n"
 "        </t>\n"
 "        <t t-else=\"\">\n"
-"            Graag de betaling zo spoedig mogelijk over te maken \n"
+"            Graag de betaling zo spoedig mogelijk overmaken\n"
 "            <t t-if=\"object.company_id.bank_ids and object.company_id.bank_ids[0].acc_number\">\n"
 "                op <span style=\"font-weight:bold;\" t-out=\"object.company_id.bank_ids[0].acc_number or ''\">329237899</span>\n"
 "            </t>\n"
@@ -101,7 +125,7 @@ msgstr ""
 "            </t>\n"
 "        </t>\n"
 "        <br><br>\n"
-"        Mocht u vragen hebben, aarzel dan niet om contact met ons op te nemen..\n"
+"        Mocht u vragen hebben, aarzel dan niet om contact met ons op te nemen.\n"
 "        <t t-if=\"not is_html_empty(object.invoice_user_id.signature)\">\n"
 "            <br><br>\n"
 "            <t t-out=\"object.invoice_user_id.signature or ''\"><br>Mitchell Admin</t>\n"
@@ -113,4 +137,3 @@ msgstr ""
 "    </p>\n"
 "</div>\n"
 "            "
-
