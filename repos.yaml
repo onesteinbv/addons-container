@@ -35,7 +35,7 @@
         onestein: git@github.com:onesteinbv/addons-third-party.git
     merges:
         - remote: onestein
-          ref: 7347968dadd5e3823ef27822419f8f385d484a1b
+          ref: d2275bd04028360524d59f40cfea16aa8e0bbca8
 
 # design themes
 ./design-themes:
