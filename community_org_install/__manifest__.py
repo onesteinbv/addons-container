@@ -156,6 +156,7 @@
         "account_statement_import_online_ponto",
         "account_statement_import_sheet_file",
         "attachment_preview_remove_preview_button",
+        "base_fontawesome",
         "currency_rate_update",
         "date_range",
         "l10n_nl_bank",

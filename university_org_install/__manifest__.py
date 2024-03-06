@@ -26,6 +26,7 @@
         "barcodes",
         "base_address_extended",
         "base_automation",
+        "base_fontawesome",
         "base_geolocalize",
         "base_iban",
         "base_import",
