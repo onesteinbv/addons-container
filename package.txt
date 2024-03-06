@@ -136,6 +136,7 @@ oca/account_statement_import_camt54
 oca/account_statement_import_online
 oca/account_statement_import_online_paypal
 oca/account_statement_import_online_ponto
+oca/account_statement_import_sheet_file
 oca/account_usability
 oca/agreement
 oca/attachment_preview
