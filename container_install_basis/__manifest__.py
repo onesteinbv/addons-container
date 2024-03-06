@@ -37,6 +37,7 @@
         "purchase_stock",
         "sale_order_amount_to_invoice",
         "sale_purchase_stock",
+        "base_fontawesome",
         # Extra security
         "auth_oidc",
         "container_accessibility",

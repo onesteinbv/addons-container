@@ -52,6 +52,7 @@
         "account_statement_import_camt54",
         "account_statement_import_online_paypal",
         "account_statement_import_online_ponto",
+        "account_statement_import_sheet_file",
         # OCA credit-control
         "account_invoice_overdue_reminder",
         # OCA currency
