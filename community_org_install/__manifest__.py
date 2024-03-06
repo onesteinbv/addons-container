@@ -154,6 +154,7 @@
         "account_statement_import_camt",
         "account_statement_import_online",
         "account_statement_import_online_ponto",
+        "account_statement_import_sheet_file",
         "attachment_preview_remove_preview_button",
         "currency_rate_update",
         "date_range",

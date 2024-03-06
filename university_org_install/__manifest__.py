@@ -127,6 +127,7 @@
         "account_reconcile_oca",
         "website_analytics_matomo",
         "account_statement_import_file_reconcile_oca",
+        "account_statement_import_sheet_file",
         "account_statement_import_camt",
         "account_statement_import_online",
         "account_statement_import_online_ponto",
