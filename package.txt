@@ -13,11 +13,7 @@ container_install_standard
 container_install_basis
 container_hr_recruitment
 digest_configuration
-l10n_nl_rgs
-l10n_nl_rgs_account_financial_report
-l10n_nl_rgs_asset
 l10n_nl_rgs_usability
-l10n_nl_rgs_mis_report
 l10n_nl_hr_recruitment
 l10n_nl_hr_expense
 membership_accessibility
@@ -31,6 +27,10 @@ multi_company_disable
 container_accessibility
 container_s3
 mass_mailing_force_dedicated_server
+addons-generic/l10n_nl_rgs
+addons-generic/l10n_nl_rgs_account_financial_report
+addons-generic/l10n_nl_rgs_asset
+addons-generic/l10n_nl_rgs_mis_report
 addons-generic/account_period_auto_create
 addons-generic/attachment_preview_remove_preview_button
 addons-generic/base_debug_disabled
