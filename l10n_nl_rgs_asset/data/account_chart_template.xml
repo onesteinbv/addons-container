@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<odoo>
-    <!-- Chart Template -->
-    <record id="l10n_nl_rgs.l10nnl_rgs_chart_template" model="account.chart.template">
-        <field name="name">Nederlands Referentie Grootboekschema met Assets</field>
-    </record>
-</odoo>
