@@ -1,4 +1,3 @@
-account_asset_management_template
 account_configuration
 account_financial_consolidation_report
 accountancy_install
@@ -27,6 +26,7 @@ multi_company_disable
 container_accessibility
 container_s3
 mass_mailing_force_dedicated_server
+addons-generic/account_asset_management_template
 addons-generic/l10n_nl_rgs
 addons-generic/l10n_nl_rgs_account_financial_report
 addons-generic/l10n_nl_rgs_asset
