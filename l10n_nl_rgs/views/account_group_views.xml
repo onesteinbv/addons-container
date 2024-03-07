@@ -42,17 +42,5 @@
             </field>
         </record>
 
-        <record id="account_account_group_action" model="ir.actions.act_window">
-            <field name="name">Account Groups</field>
-            <field name="res_model">account.group</field>
-            <field name="view_mode">tree,form</field>
-        </record>
-
-        <menuitem id="menu_action_account_group"
-        action="account_account_group_action"
-        sequence="10"
-        groups="base.group_no_one"
-        parent="account.account_account_menu"/>
-
     </data>
 </odoo>
