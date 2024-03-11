@@ -53,4 +53,4 @@
     remotes:
         onestein: git@github.com:onesteinbv/ProjectManagement.git
     merges:
-        - onestein 084d9eadf4e6ac4fff13b14ef24aca8ed4a8bc55
+        - onestein f6703dad530ee4a7c4e0f7435d91e0d6766e1886
