@@ -170,6 +170,7 @@ oca/l10n_nl_tax_statement_date_range
 oca/l10n_nl_tax_statement_icp
 oca/l10n_nl_xaf_auditfile_export
 oca/mail_tracking
+oca/mail_multicompany
 oca/mass_mailing_partner
 oca/membership_extension
 oca/membership_variable_period
@@ -205,6 +206,7 @@ oca/spreadsheet_dashboard_oca
 oca/spreadsheet_oca
 oca/session_db
 oca/server_environment
+oca/subscription_oca
 oca/fs_attachment
 oca/fs_storage
 oca/fs_storage_backup
