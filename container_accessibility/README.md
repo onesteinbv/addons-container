@@ -9,4 +9,5 @@
 
 # Other
 * Create a normal user when logging in with a private oauth provider
-  **Use case**: Easy sign in for support employees
+
+* **Use case**: Easy sign in for support employees
