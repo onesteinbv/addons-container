@@ -162,6 +162,7 @@ oca/hr_employee_firstname
 oca/hr_expense_fleet
 oca/hr_expense_remove_mobile_link
 oca/hr_timesheet_sheet
+oca/hr_timesheet_sheet_autodraft
 oca/l10n_nl_bank
 oca/l10n_nl_bsn
 oca/l10n_nl_postcode
