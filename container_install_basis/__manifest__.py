@@ -19,6 +19,7 @@
         "website",
         "website_payment",
         "website_sale",
+        "website_blog",
         "web_responsive",
         "disable_odoo_online",
         "account_payment_mode",
