@@ -107,7 +107,9 @@ class ResUsers(models.Model):
         # Purely for UX purposes
         model = self.with_user(access_rights_uid) if access_rights_uid else self
 
-        if model.env.user.is_restricted_user():
+        if model.env.user.is_restricted_user() and not self.env.context.get(
+            "no_restrict", False
+        ):
             args = expression.AND(
                 [
                     args,
