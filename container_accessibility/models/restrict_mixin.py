@@ -8,6 +8,13 @@ class RestrictMixin(models.AbstractModel):
 
     @api.model
     def _get_restrict_domain(self):
+        """
+        Domain of records that are allowed to be cud. e.g. [("name", "=", "Onestein")] will only allow
+        cud on records with name Onestein.
+
+        To be overridden by inheritance
+        @return: domain
+        """
         return None
 
     def _check_restrict(self):
@@ -123,3 +130,12 @@ class IrUiView(models.Model):
     @api.model
     def _get_restrict_domain(self):
         return [("type", "=", "qweb")]
+
+
+class OauthProvider(models.Model):
+    _name = "auth.oauth.provider"
+    _inherit = ["auth.oauth.provider", "container.restrict.mixin"]
+
+    @api.model
+    def _get_restrict_domain(self):
+        return [("private", "=", False)]
