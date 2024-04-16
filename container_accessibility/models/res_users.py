@@ -164,6 +164,6 @@ class ResUsers(models.Model):
     @api.model
     def _get_signup_invitation_scope(self):
         # Trick the system into thinking uninvited singups (Free sign up) are allowed (just for support / private oauth providers)
-        if self.env.context.get("provider_private", False):
+        if self.env.context.get("private_provider_id", False):
             return "b2c"
         return super()._get_signup_invitation_scope()
