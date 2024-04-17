@@ -66,6 +66,7 @@
         "account_statement_import_file_reconcile_oca",
         "account_period_auto_create",
         "account_statement_import_online_ponto",
+        "account_statement_import_online_ponto_statement_creation_mode",
         "account_statement_import_sheet_file",
         "account_statement_import_sheet_file_sheet_mappings",
         "account_move_line_attachment_preview",

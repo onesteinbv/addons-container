@@ -1,6 +1,7 @@
 account_configuration
 account_financial_consolidation_report
 accountancy_install
+account_statement_import_online_ponto_statement_creation_mode
 account_statement_import_sheet_file_sheet_mappings
 base_customer_company
 base_customer_user
