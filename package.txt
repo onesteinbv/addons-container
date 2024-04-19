@@ -11,6 +11,7 @@ addons-generic/attachment_preview_remove_preview_button
 addons-generic/base_company_management
 addons-generic/base_debug_disabled
 addons-generic/base_import_debranding
+addons-generic/base_list_owned_databases
 addons-generic/base_municipality
 addons-generic/gitlab
 addons-generic/l10n_nl_rgs
