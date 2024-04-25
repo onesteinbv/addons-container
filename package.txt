@@ -141,6 +141,7 @@ oca/account_fiscal_position_vat_check
 oca/account_fiscal_year
 oca/account_fiscal_year_auto_create
 oca/account_invoice_constraint_chronology
+oca/account_invoice_line_default_account
 oca/account_invoice_overdue_reminder
 oca/account_journal_lock_date
 oca/account_lock_date_update
@@ -177,6 +178,7 @@ oca/auditlog
 oca/auth_oidc
 oca/base_fontawesome
 oca/base_menu_visibility_restriction
+oca/base_partition
 oca/base_tier_validation
 oca/base_tier_validation_formula
 oca/base_tier_validation_forward
@@ -195,6 +197,7 @@ oca/fs_storage
 oca/fs_storage_backup
 oca/helpdesk_mgmt
 oca/helpdesk_mgmt_project
+oca/helpdesk_mgmt_timesheet
 oca/hr_employee_firstname
 oca/hr_expense_fleet
 oca/hr_expense_remove_mobile_link
@@ -236,6 +239,7 @@ oca/project_task_default_stage
 oca/project_template
 oca/project_timeline
 oca/project_timeline_hr_timesheet
+oca/project_timesheet_time_control
 oca/project_type
 oca/queue_job
 oca/remove_odoo_enterprise

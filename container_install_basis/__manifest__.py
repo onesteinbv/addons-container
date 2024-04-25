@@ -44,6 +44,7 @@
         # Accountancy
         "account_fiscal_position_vat_check",
         "account_invoice_constraint_chronology",
+        "account_invoice_line_default_account",
         "account_journal_lock_date",
         "account_lock_date_update",
         "account_move_print",
