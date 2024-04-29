@@ -7,6 +7,7 @@ account_statement_import_sheet_file_sheet_mappings
 accountancy_install
 addons-generic/account_asset_management_template
 addons-generic/account_period_auto_create
+addons-generic/account_journal_subtype
 addons-generic/attachment_preview_remove_preview_button
 addons-generic/base_company_management
 addons-generic/base_debug_disabled
