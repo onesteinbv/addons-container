@@ -247,6 +247,7 @@ oca/project_timeline
 oca/project_timeline_hr_timesheet
 oca/project_timesheet_time_control
 oca/project_type
+oca/purchase_sign
 oca/queue_job
 oca/remove_odoo_enterprise
 oca/report_qr
