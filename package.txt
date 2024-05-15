@@ -181,6 +181,12 @@ oca/account_statement_import_online_ponto
 oca/account_statement_import_sheet_file
 oca/account_usability
 oca/agreement
+oca/agreement_legal
+oca/agreement_legal_tier_validation_sign
+oca/agreement_legal_portal
+oca/agreement_legal_portal_tier_validation
+oca/agreement_legal_portal_tier_validation_sign
+oca/agreement_tier_validation
 oca/attachment_preview
 oca/auditlog
 oca/auth_oidc
@@ -190,6 +196,7 @@ oca/base_partition
 oca/base_tier_validation
 oca/base_tier_validation_formula
 oca/base_tier_validation_forward
+oca/base_tier_validation_sign
 oca/base_user_management
 oca/base_user_role
 oca/base_vat_optional_vies
