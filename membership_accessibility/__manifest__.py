@@ -18,7 +18,7 @@
         "membership_extension",
         "sale",
         "crm",
-        "mollie_subscription_ept",
+        "subscription_oca",
         "project",
         "hr_timesheet",
         "membership_hr_recruitment",
