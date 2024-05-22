@@ -7,7 +7,7 @@ astor
 zxcvbn
 odfpy
 python-jose
-fsspec
+fsspec>=2024.5.0
 fsspec[s3]
 fsspec[sftp]
 python-slugify
