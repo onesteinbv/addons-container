@@ -15,14 +15,26 @@ class ResPartner(models.Model):
         count=False,
         access_rights_uid=None,
     ):
+        # Purely for UX purposes
         model = self.with_user(access_rights_uid) if access_rights_uid else self
         if model.env.user.is_restricted_user():
-            partners = (
-                self.env.ref("base.partner_admin")
-                + self.env.ref("hr.res_partner_admin_private_address")
-                + self.env.ref("base.partner_root")
+            hidden_partners = (
+                self.env["res.users"]
+                .with_context(no_restrict=True)
+                .search(
+                    [
+                        (
+                            "groups_id",
+                            "not in",
+                            self.env.ref(
+                                "container_accessibility.group_restricted"
+                            ).ids,
+                        )
+                    ]
+                )
+                .mapped("partner_id")
             )
-            domain = expression.AND([domain, [("id", "not in", partners.ids)]])
+            domain = expression.AND([domain, [("id", "not in", hidden_partners.ids)]])
         return super()._search(
             domain,
             offset=offset,

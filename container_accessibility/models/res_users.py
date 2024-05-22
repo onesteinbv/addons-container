@@ -107,7 +107,9 @@ class ResUsers(models.Model):
         # Purely for UX purposes
         model = self.with_user(access_rights_uid) if access_rights_uid else self
 
-        if model.env.user.is_restricted_user():
+        if model.env.user.is_restricted_user() and not self.env.context.get(
+            "no_restrict", False
+        ):
             args = expression.AND(
                 [
                     args,
@@ -164,6 +166,6 @@ class ResUsers(models.Model):
     @api.model
     def _get_signup_invitation_scope(self):
         # Trick the system into thinking uninvited singups (Free sign up) are allowed (just for support / private oauth providers)
-        if self.env.context.get("provider_private", False):
+        if self.env.context.get("private_provider_id", False):
             return "b2c"
         return super()._get_signup_invitation_scope()

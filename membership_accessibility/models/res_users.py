@@ -20,5 +20,5 @@ class ResUsers(models.Model):
             "member_lines",
             "section_membership_ids",
             "committee_membership_ids",
-            "mollie_subscription_ids",
+            "subscription_ids",
         ]
