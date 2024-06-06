@@ -25,10 +25,6 @@ fi
 
 python /odoo/scripts/localize.py
 
-if [[ "$PREPARE_CUSTOMER_USER" == "true" ]]; then
-  python /odoo/scripts/prepare_customer_user.py -c $ODOO_RC -d $DB_NAME --log-level=error --email "$COMPANY_EMAIL" --group-file /odoo/scripts/groups.txt
-fi
-
 if [[ "$UPDATE_COMPANY" == "true" ]]; then
   python /odoo/scripts/update_company.py -c $ODOO_RC -d $DB_NAME --log-level=error --name "$COMPANY_NAME" --email "$COMPANY_EMAIL" --coc "$COMPANY_COC" --city "$COMPANY_CITY" --zip "$COMPANY_ZIP" --street "$COMPANY_STREET"
 fi
@@ -62,4 +58,8 @@ if [[ -n "$KEYCLOAK_URL" ]]; then
       --template-user-id="base.user_admin" \
       --group-id="container_accessibility.group_restricted"
   fi
+fi
+
+if [[ "$PREPARE_CUSTOMER_USER" == "true" ]]; then
+  python /odoo/scripts/prepare_customer_user.py -c $ODOO_RC -d $DB_NAME --log-level=error --email "$COMPANY_EMAIL" --group-file /odoo/scripts/groups.txt
 fi
