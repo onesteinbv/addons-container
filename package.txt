@@ -254,6 +254,7 @@ oca/project_task_default_stage
 oca/project_template
 oca/project_timeline
 oca/project_timeline_hr_timesheet
+oca/project_timeline_task_dependency
 oca/project_timesheet_time_control
 oca/project_type
 oca/purchase_sign
