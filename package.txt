@@ -15,6 +15,7 @@ addons-generic/base_disable_scheduled_actions
 addons-generic/base_import_debranding
 addons-generic/base_list_owned_databases
 addons-generic/base_municipality
+addons-generic/crypto_currency
 addons-generic/gitlab
 addons-generic/l10n_nl_rgs
 addons-generic/l10n_nl_rgs_account_financial_report
