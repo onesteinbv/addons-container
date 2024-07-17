@@ -25,7 +25,7 @@
         onestein: git@github.com:onesteinbv/addons-oca.git
     merges:
         - remote: onestein
-          ref: a67a7b1fb62590e8acc3fc525d487fbe192dd307
+          ref: 0aa883092242dd6b150657a83b079932dceb15eb
 
 # third-party
 ./addons-third-party:
@@ -53,4 +53,4 @@
     remotes:
         onestein: git@github.com:onesteinbv/ProjectManagement.git
     merges:
-        - onestein fb34e537c714204a56d233451553c2aabd0ad500
+        - onestein 484c38bb7932061bc87165b07f7214633e103e00
