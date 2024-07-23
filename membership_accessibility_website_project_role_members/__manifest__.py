@@ -11,9 +11,7 @@
     "license": "AGPL-3",
     "application": False,
     "installable": True,
-    "depends": [
-        "membership_accessibility",
-        "website_project_role_members"
-    ],
+    "auto_install": True,
+    "depends": ["membership_accessibility", "website_project_role_members"],
     "data": ["views/views.xml"],
 }
