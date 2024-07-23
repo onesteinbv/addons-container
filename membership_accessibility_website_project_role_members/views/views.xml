@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_users_view_form_simple_modif" model="ir.ui.view">
+        <field name="name">res.users.preferences.form.simplified.inherit</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="membership_accessibility.res_users_view_form_simple_modif"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='associate_member']" position="before">
+                <field name="is_anonymous" string="Stay Anonymous"/>
+                <field name="is_published" widget="boolean_toggle" string="Publish Me"/>
+            </xpath>
+            <xpath expr="//field[@name='member_lines']" position="before">
+                <group>
+                    <field name="website_description" string="Website Member Description"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
