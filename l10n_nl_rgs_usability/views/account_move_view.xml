@@ -53,22 +53,22 @@
         <field name="arch" type="xml">
             <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='account_id']" position="attributes">
                 <attribute name="domain">[('deprecated', '=', False), ('account_type', 'not in', ('asset_receivable',
-                    'liability_payable')), ('company_id', '=', parent.company_id), ('is_off_balance', '=', False),
+                    'liability_payable')), ('company_id', '=', parent.company_id), ('is_off_balance', '=', False),'|',('allowed_journal_ids','=',False),
                     ('allowed_journal_ids','in',[parent.journal_id])]
                 </attribute>
             </xpath>
             <xpath expr="//field[@name='invoice_line_ids']/form//field[@name='account_id']" position="attributes">
-                <attribute name="domain">[('company_id', '=', parent.company_id),
+                <attribute name="domain">[('company_id', '=', parent.company_id),'|',('allowed_journal_ids','=',False),
                     ('allowed_journal_ids','in',[parent.journal_id])]
                 </attribute>
             </xpath>
             <xpath expr="//field[@name='line_ids']/tree/field[@name='account_id']" position="attributes">
-                <attribute name="domain">[('deprecated', '=', False), ('company_id', '=', parent.company_id),
+                <attribute name="domain">[('deprecated', '=', False), ('company_id', '=', parent.company_id),'|',('allowed_journal_ids','=',False),
                     ('allowed_journal_ids','in',[parent.journal_id])]
                 </attribute>
             </xpath>
             <xpath expr="//field[@name='line_ids']/form//field[@name='account_id']" position="attributes">
-                <attribute name="domain">[('company_id', '=', parent.company_id),('deprecated', '=', False),
+                <attribute name="domain">[('company_id', '=', parent.company_id),('deprecated', '=', False),'|',('allowed_journal_ids','=',False),
                     ('allowed_journal_ids','in',[parent.journal_id])]
                 </attribute>
             </xpath>
