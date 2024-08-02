@@ -6,6 +6,6 @@ class AuditlogAutovacuum(models.TransientModel):
 
     @api.model
     def autovacuum(self, days, chunk_size=None):
-        return super(
-            AuditlogAutovacuum, self.with_context(auditlog_allow_crud=True)
-        ).autovacuum(days, chunk_size=chunk_size)
+        return super(AuditlogAutovacuum, self.sudo()).autovacuum(
+            days, chunk_size=chunk_size
+        )

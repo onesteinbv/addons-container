@@ -20,7 +20,6 @@ class RestrictMixin(models.AbstractModel):
     def _check_restrict(self):
         if (
             not self.env.user.is_restricted_user()
-            or self.env.context.get("no_restrict", False)
             or self.env.su
             or not self  # Deleting / writing empty recordsets
         ):

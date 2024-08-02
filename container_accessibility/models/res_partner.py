@@ -20,7 +20,7 @@ class ResPartner(models.Model):
         if model.env.user.is_restricted_user():
             hidden_partners = (
                 self.env["res.users"]
-                .with_context(no_restrict=True)
+                .sudo()
                 .search(
                     [
                         (

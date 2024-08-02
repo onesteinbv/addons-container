@@ -12,10 +12,12 @@ class TestOauth(TransactionCase):
                 "body": "Support Login",
             }
         )
-        new_user = (
-            self.env["res.users"]
-            .with_context(private_provider_id=private_provider.id)
-            ._create_user_from_template({"login": "support1", "name": "Support 1"})
+        new_user = self.env["res.users"]._create_user_from_template(
+            {
+                "login": "support1",
+                "name": "Support 1",
+                "oauth_provider_id": private_provider.id,
+            }
         )
         self.assertTrue(new_user.has_group("base.group_system"))
 
@@ -32,10 +34,12 @@ class TestOauth(TransactionCase):
                 "body": "Reseller Login",
             }
         )
-        new_user = (
-            self.env["res.users"]
-            .with_context(private_provider_id=private_provider.id)
-            ._create_user_from_template({"login": "reseller1", "name": "Reseller 1"})
+        new_user = self.env["res.users"]._create_user_from_template(
+            {
+                "login": "reseller1",
+                "name": "Reseller 1",
+                "oauth_provider_id": private_provider.id,
+            }
         )
         self.assertTrue(new_user.has_group("base.group_system"))
         self.assertTrue(new_user.has_group("container_accessibility.group_restricted"))
