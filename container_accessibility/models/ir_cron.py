@@ -7,7 +7,7 @@ class IrCron(models.Model):
 
     def write(self, vals):
         res = super().write(vals)
-        if not self.env.context.get("auditlog_allow_crud", False) and self.env.ref(
+        if not self.env.su and self.env.ref(
             "auditlog.model_auditlog_autovacuum"
         ) in self.mapped("model_id"):
             raise AccessError(_("Access Denied"))
@@ -16,14 +16,14 @@ class IrCron(models.Model):
     @api.model_create_multi
     def create(self, vals_list):
         res = super().create(vals_list)
-        if not self.env.context.get("auditlog_allow_crud", False) and self.env.ref(
+        if not self.env.su and self.env.ref(
             "auditlog.model_auditlog_autovacuum"
         ) in self.mapped("model_id"):
             raise AccessError(_("Access Denied"))
         return res
 
     def unlink(self):
-        if not self.env.context.get("auditlog_allow_crud", False) and self.env.ref(
+        if not self.env.su and self.env.ref(
             "auditlog.model_auditlog_autovacuum"
         ) in self.mapped("model_id"):
             raise AccessError(_("Access Denied"))
@@ -31,5 +31,5 @@ class IrCron(models.Model):
 
     def method_direct_trigger(self):
         return super(
-            IrCron, self.with_context(auditlog_allow_crud=True)
+            IrCron, self.env.user.has_group("base.group_system") and self.sudo() or self
         ).method_direct_trigger()

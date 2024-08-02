@@ -9,25 +9,19 @@ class AuditlogRule(models.Model):
 
     def write(self, vals):
         res = super().write(vals)
-        if not self.env.context.get("auditlog_allow_crud", False) and self.filtered(
-            lambda r: r.private
-        ):
+        if not self.env.su and self.filtered(lambda r: r.private):
             raise AccessError(_("Restricted to edit required auditlog rules"))
         return res
 
     @api.model_create_multi
     def create(self, vals_list):
         res = super().create(vals_list)
-        if not self.env.context.get("auditlog_allow_crud", False) and self.filtered(
-            lambda r: r.private
-        ):
+        if not self.env.su and self.filtered(lambda r: r.private):
             raise AccessError(_("Restricted to create required auditlog rule"))
         return res
 
     def unlink(self):
-        if not self.env.context.get("auditlog_allow_crud", False) and self.filtered(
-            lambda r: r.private
-        ):
+        if not self.env.su and self.filtered(lambda r: r.private):
             raise AccessError(_("Restricted to delete required auditlog rules"))
         return super().unlink()
 
@@ -41,9 +35,7 @@ class AuditlogRule(models.Model):
         new_values=None,
         additional_log_values=None,
     ):
-        return super(
-            AuditlogRule, self.with_context(auditlog_allow_crud=True)
-        ).create_logs(
+        return super(AuditlogRule, self.sudo()).create_logs(
             uid,
             res_model,
             res_ids,

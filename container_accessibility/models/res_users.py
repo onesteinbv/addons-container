@@ -64,9 +64,7 @@ class ResUsers(models.Model):
                 if user.has_group(group):
                     continue
                 group_record = self.env.ref(group)
-                user.sudo().with_context(no_group_force=True).write(
-                    {"groups_id": [Command.link(group_record.id)]}
-                )
+                user.sudo().write({"groups_id": [Command.link(group_record.id)]})
 
     def write(self, vals):
         res = super().write(vals)
@@ -77,7 +75,7 @@ class ResUsers(models.Model):
             and self.env.user.is_restricted_user()
         ):
             raise AccessError(_("Access denied to change default user"))
-        if not self.env.context.get("no_group_force"):
+        if not self.env.su:
             self._force_groups()
         if (
             "active" in vals and vals["active"] and self._get_user_limit()
@@ -88,7 +86,7 @@ class ResUsers(models.Model):
     @api.model_create_multi
     def create(self, vals_list):
         res = super().create(vals_list)
-        if not self.env.context.get("no_group_force"):
+        if not self.env.su:
             res._force_groups()
         if self._get_user_limit():
             self._check_user_limit_exceeded()
@@ -106,10 +104,7 @@ class ResUsers(models.Model):
     ):
         # Purely for UX purposes
         model = self.with_user(access_rights_uid) if access_rights_uid else self
-
-        if model.env.user.is_restricted_user() and not self.env.context.get(
-            "no_restrict", False
-        ):
+        if model.env.user.is_restricted_user() and not self.env.su:
             args = expression.AND(
                 [
                     args,
@@ -129,21 +124,17 @@ class ResUsers(models.Model):
 
         return super()._search(args, offset, limit, order, count, access_rights_uid)
 
-    @api.model
-    def _auth_oauth_signin(self, provider, validation, params):
-        provider_record = self.env["auth.oauth.provider"].sudo().browse(provider)
-        if provider_record.private:
-            self = self.with_context(private_provider_id=provider_record.id)
-        return super(ResUsers, self)._auth_oauth_signin(provider, validation, params)
-
     def _create_user_from_template(self, values):
         # Maybe: inherit get_param (ir.config_parameter) instead because this is much redundancy 🤢
-        if self.env.context.get("private_provider_id", False):
+        if values.get("oauth_provider_id", False):
             provider_record = (
                 self.env["auth.oauth.provider"]
                 .sudo()
-                .browse(self.env.context["private_provider_id"])
+                .browse(values["oauth_provider_id"])
             )
+            if not provider_record.private:
+                return super()._create_user_from_template(values)
+
             template_user = provider_record.template_user_id or self.env.ref(
                 "base.template_portal_user_id"
             )
@@ -164,8 +155,14 @@ class ResUsers(models.Model):
         return super()._create_user_from_template(values)
 
     @api.model
-    def _get_signup_invitation_scope(self):
-        # Trick the system into thinking uninvited singups (Free sign up) are allowed (just for support / private oauth providers)
-        if self.env.context.get("private_provider_id", False):
-            return "b2c"
-        return super()._get_signup_invitation_scope()
+    def _signup_create_user(self, values):
+        if values.get("oauth_provider_id", False):
+            provider_record = (
+                self.env["auth.oauth.provider"]
+                .sudo()
+                .browse(values["oauth_provider_id"])
+            )
+            if provider_record.private:
+                return self._create_user_from_template(values)
+
+        return super()._signup_create_user(values)

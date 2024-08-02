@@ -7,4 +7,9 @@ class ResConfigSettings(models.TransientModel):
     module_auth_oauth = fields.Boolean(readonly=True)
 
     def execute(self):
-        return super(ResConfigSettings, self.with_context(no_restrict=True)).execute()
+        sudo_self = self
+        if self.env.user.is_restricted_user() and self.env.user.has_group(
+            "base.group_system"
+        ):
+            sudo_self = self.sudo()
+        return super(ResConfigSettings, sudo_self).execute()
