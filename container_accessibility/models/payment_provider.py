@@ -6,7 +6,7 @@ class PaymentProvider(models.Model):
 
     def button_immediate_install(self):
         sudo_self = self
-        if self.env.user.is_restricted_user() and self.user.has_group(
+        if self.env.user.is_restricted_user() and self.env.user.has_group(
             "base.group_system"
         ):
             sudo_self = self.sudo()

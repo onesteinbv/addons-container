@@ -31,5 +31,5 @@ class IrCron(models.Model):
 
     def method_direct_trigger(self):
         return super(
-            IrCron, self.user.has_group("base.group_system") and self.sudo() or self
+            IrCron, self.env.user.has_group("base.group_system") and self.sudo() or self
         ).method_direct_trigger()
