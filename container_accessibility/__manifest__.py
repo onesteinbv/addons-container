@@ -19,6 +19,7 @@
         "server_environment",
         "fs_storage",
         "fs_storage_backup",
+        "fs_attachment",
     ],
     "data": [
         "security/res_groups.xml",
