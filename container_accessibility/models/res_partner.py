@@ -26,9 +26,12 @@ class ResPartner(models.Model):
                         (
                             "groups_id",
                             "not in",
-                            self.env.ref(
-                                "container_accessibility.group_restricted"
-                            ).ids,
+                            [
+                                self.env.ref("base.group_portal").id,
+                                self.env.ref(
+                                    "container_accessibility.group_restricted"
+                                ).id,
+                            ],
                         )
                     ]
                 )
