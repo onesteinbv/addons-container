@@ -32,6 +32,7 @@
         "hr_expense_remove_mobile_link",
         "project_hr_expense",
         "project_purchase",
+        "project_timeline",
         "account_move_line_purchase_info",
         "account_move_line_sale_info",
         "account_move_line_stock_info",
@@ -127,6 +128,7 @@
         "fetchmail_notify_error_to_sender",
         "l10n_nl_hr_recruitment",
         "l10n_nl_hr_expense",
+        "",
     ],
     "data": [
         # "data/res.users.role.csv",  # TODO disabled for now
