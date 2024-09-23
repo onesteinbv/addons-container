@@ -25,7 +25,9 @@ class RestrictMixin(models.AbstractModel):
         ):
             return
         restrict_domain = self._get_restrict_domain()
-        if restrict_domain is None or len(self.filtered_domain(restrict_domain)) < len(self):
+        if restrict_domain is None or len(self.filtered_domain(restrict_domain)) < len(
+            self
+        ):
             raise AccessError(_("Access denied to this model (%s)", self._name))
 
     def write(self, vals):
@@ -36,7 +38,7 @@ class RestrictMixin(models.AbstractModel):
     def create(self, vals_list):
         res = super().create(vals_list)
         res._check_restrict()
-        return res 
+        return res
 
     def unlink(self):
         self._check_restrict()
