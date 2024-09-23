@@ -17,11 +17,11 @@ class RestrictMixin(models.AbstractModel):
         """
         return None
 
-    def _check_restrict(self, action):
+    def _check_restrict(self):
         if (
             not self.env.user.is_restricted_user()
             or self.env.su
-            or (not self and action != "create")  # Deleting / writing empty recordsets
+            or not self  # Deleting / writing empty recordsets, creating with empty vals_list
         ):
             return
         restrict_domain = self._get_restrict_domain()
@@ -29,16 +29,17 @@ class RestrictMixin(models.AbstractModel):
             raise AccessError(_("Access denied to this model (%s)", self._name))
 
     def write(self, vals):
-        self._check_restrict("write")
+        self._check_restrict()
         return super().write(vals)
 
     @api.model_create_multi
     def create(self, vals_list):
-        self._check_restrict("create")
-        return super().create(vals_list)
+        res = super().create(vals_list)
+        res._check_restrict()
+        return res 
 
     def unlink(self):
-        self._check_restrict("unlink")
+        self._check_restrict()
         return super().unlink()
 
 
