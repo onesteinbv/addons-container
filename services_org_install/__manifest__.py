@@ -186,4 +186,5 @@
         # 'nextcloud_odoo_sync',
     ],
     "data": [],
+    "installable": False,
 }

@@ -171,4 +171,5 @@
         "website_two_steps_share_technical",
     ],
     "data": [],
+    "installable": False,
 }

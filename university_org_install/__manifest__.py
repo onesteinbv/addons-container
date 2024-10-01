@@ -185,4 +185,5 @@
         # 3rd-Party
     ],
     "data": [],
+    "installable": False,
 }
