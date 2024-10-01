@@ -12,4 +12,5 @@
     "depends": ["container_install_basis"],
     "data": [],
     "application": True,
+    "installable": False,  # This module has to be removed
 }
