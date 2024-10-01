@@ -24,4 +24,5 @@
         # 'nextcloud_calendar_instance_per_user',
     ],
     "data": [],
+    "installable": False,
 }

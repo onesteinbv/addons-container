@@ -93,4 +93,5 @@
         "payment_mollie_official",
     ],
     "data": [],
+    "installable": False,
 }
