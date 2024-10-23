@@ -257,6 +257,7 @@ oca/project_role
 oca/project_sequence
 oca/project_task_add_very_high
 oca/project_task_default_stage
+oca/project_task_link
 oca/project_template
 oca/project_timeline
 oca/project_timeline_hr_timesheet
